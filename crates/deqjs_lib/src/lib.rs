@@ -1133,13 +1133,6 @@ fn disassemble_function_with_atoms_and_instrs(
     Ok(out)
 }
 
-#[allow(dead_code)]
-fn disassemble_function_with_atoms(b: &FunctionBytecode, atoms: &AtomTable) -> Result<String, DeqjsError> {
-    let instrs = decode_instructions(b)?;
-    let func_name = b.func_name.to_string();
-    disassemble_function_with_atoms_and_instrs(b, atoms, &instrs, &func_name)
-}
-
 fn decode_instructions_v1(b: &FunctionBytecode) -> Result<Vec<Instr>, DeqjsError> {
     let mut out = Vec::new();
     let mut pc: usize = 0;
@@ -1264,8 +1257,10 @@ fn decompile_functions_with(
         let instrs = decode(b)?;
         let func_name = display_func_name(options, b, idx);
         let s = match options.mode {
-            DecompileMode::Pseudo => pseudo_decompile_from_instrs(b, atoms, &instrs, &func_name, options.optimize, options.deobfuscate)
-                .or_else(|_| disassemble_function_with_atoms_and_instrs(b, atoms, &instrs, &func_name))?,
+            DecompileMode::Pseudo => match pseudo_decompile_from_instrs(b, atoms, &instrs, &func_name, options.optimize, options.deobfuscate) {
+                Ok(s) => s,
+                Err(e) => format!("// Pseudo decompilation error: {}\n", e),
+            },
             DecompileMode::Disasm => disassemble_function_with_atoms_and_instrs(b, atoms, &instrs, &func_name)?,
         };
         if s.trim().is_empty() {
@@ -2106,20 +2101,45 @@ fn pseudo_decompile_from_instrs(
 
         for ins in &blk.instrs {
             match ins.name {
+                "push_i8" => {
+                    if let Some(Operand::I8(v)) = ins.operand {
+                        stack.push(v.to_string());
+                    }
+                }
+                "push_i16" => {
+                    if let Some(Operand::I16(v)) = ins.operand {
+                        stack.push(v.to_string());
+                    }
+                }
                 "push_i32" => {
                     if let Some(Operand::I32(v)) = ins.operand {
                         stack.push(v.to_string());
                     }
                 }
-                n if n == "push_minus1" || n.starts_with("push_") => {
-                    let num_str = if n == "push_minus1" { "-1" } else { &n[5..] };
-                    if let Ok(n) = num_str.parse::<i32>() {
-                        stack.push(n.to_string());
-                    } else {
-                        stack.push(format!("<{}>", n));
+                "push_u8" => {
+                    if let Some(Operand::U8(v)) = ins.operand {
+                        stack.push(v.to_string());
                     }
                 }
+                "push_u16" => {
+                    if let Some(Operand::U16(v)) = ins.operand {
+                        stack.push(v.to_string());
+                    }
+                }
+                "push_u32" => {
+                    if let Some(Operand::U32(v)) = ins.operand {
+                        stack.push(v.to_string());
+                    }
+                }
+                n if n == "push_minus1" || (n.starts_with("push_") && n.chars().skip(5).all(|c| c.is_ascii_digit())) => {
+                    let n = if n == "push_minus1" { -1 } else {
+                        let idx_str = &n[5..];
+                        idx_str.parse::<i32>().unwrap()
+                    };
+                    stack.push(n.to_string());
+                }
                 "push_true" => stack.push("true".into()),
+                "push_false" => stack.push("false".into()),
                 "push_this" => stack.push("this".into()),
                 "push_empty_string" => stack.push("\"\"".into()),
                 "undefined" => stack.push("undefined".into()),
@@ -2158,6 +2178,11 @@ fn pseudo_decompile_from_instrs(
                     }
                 }
                 "get_loc" => {
+                    if let Some(Operand::U16(idx)) = ins.operand {
+                        stack.push(loc_name(b, idx));
+                    }
+                }
+                "get_loc_check" => {
                     if let Some(Operand::U16(idx)) = ins.operand {
                         stack.push(loc_name(b, idx));
                     }
@@ -2280,6 +2305,30 @@ fn pseudo_decompile_from_instrs(
                     };
                     stack.push(format!("({lhs} {op} {rhs})"));
                 }
+                "post_inc" => {
+                    let value = stack.pop().unwrap_or("<value>".into());
+                    stack.push(value.clone());
+                    stack.push(format!("{} + 1", value));
+                }
+                "is_undefined" => {
+                    let val = stack.pop().unwrap_or("<val>".into());
+                    stack.push(format!("{} === undefined", val));
+                }
+                "to_object" => {
+                    let val = stack.pop().unwrap_or("<val>".into());
+                    stack.push(format!("Object({})", val));
+                }
+                "to_propkey2" => {
+                    let val2 = stack.pop().unwrap_or("<val2>".into());
+                    let val1 = stack.pop().unwrap_or("<val1>".into());
+                    stack.push(format!("String({})", val1));
+                    stack.push(format!("String({})", val2));
+                }
+                "inc_loc" => {
+                    if let Some(Operand::U8(idx)) = ins.operand {
+                        stmts.push(Stmt::Expr(format!("{}++", loc_name(b, idx as u16))));
+                    }
+                }
                 "regexp" => {
                     let flags = stack.pop().unwrap_or("<flags>".into());
                     let pattern = stack.pop().unwrap_or("<pattern>".into());
@@ -2294,6 +2343,15 @@ fn pseudo_decompile_from_instrs(
                     let obj = stack.pop().unwrap_or("<obj>".into());
                     stack.push(format!("({} in {})", prop, obj));
                 }
+                "object" => stack.push("{}".into()),
+                // TODO: find corresponding object kinds
+                "special_object" => {
+                    if let Some(Operand::U8(kind)) = ins.operand {
+                        stack.push(format!("<special_object_{}>", kind));
+                    } else {
+                        stack.push("<special_object>".into());
+                    }
+                }
                 "instanceof" => {
                     let constructor = stack.pop().unwrap_or("<constructor>".into());
                     let obj = stack.pop().unwrap_or("<obj>".into());
@@ -2307,7 +2365,13 @@ fn pseudo_decompile_from_instrs(
                     let value = stack.pop().unwrap_or("<value>".into());
                     let obj = stack.pop().unwrap_or("<obj>".into());
                     if let Some(Operand::Atom(idx)) = ins.operand {
-                        let prop = atoms.resolve_idx(idx)?;
+                        let prop: String = match atoms.resolve_idx(idx) {
+                            Ok(p) => p.to_string(),
+                            Err(e) => {
+                                stmts.push(Stmt::Expr(format!("// Atom resolution error: {}", e)));
+                                "<invalid_atom>".to_string()
+                            }
+                        };
                         stmts.push(Stmt::Expr(format!("{obj}.{} = {value}", prop)));
                         stack.push(obj);
                     } else {
@@ -2316,13 +2380,62 @@ fn pseudo_decompile_from_instrs(
                     }
                 }
                 "set_name" => {
-                    let value = stack.pop().unwrap_or("<value>".into());
+                    let obj = stack.pop().unwrap_or("<obj>".into());
                     if let Some(Operand::Atom(idx)) = ins.operand {
-                        let name = atoms.resolve_idx(idx)?;
-                        stack.push(format!("set_name({}, {})", name, value));
+                        let name: String = match atoms.resolve_idx(idx) {
+                            Ok(n) => n.to_string(),
+                            Err(e) => {
+                                stmts.push(Stmt::Expr(format!("// Atom resolution error: {}", e)));
+                                "<invalid_atom>".to_string()
+                            }
+                        };
+                        stmts.push(Stmt::Expr(format!("{}.name = \"{}\"", obj, name)));
+                        stack.push(obj);
                     } else {
-                        stack.push(format!("<set_name> {value}"));
+                        stack.push("<set_name>".into());
                     }
+                }
+                "define_class" => {
+                    let parent_ctor = stack.pop().unwrap_or("<parent_ctor>".into());
+                    if let Some(Operand::AtomU8(idx, _flags)) = ins.operand {
+                        let name: String = match atoms.resolve_idx(idx as u32) {
+                            Ok(n) => n.to_string(),
+                            Err(e) => {
+                                stmts.push(Stmt::Expr(format!("// Atom resolution error: {}", e)));
+                                "<invalid_atom>".to_string()
+                            }
+                        };
+                        stmts.push(Stmt::Expr(format!("class {} extends {}", name, parent_ctor)));
+                        stack.push("<ctor>".into());
+                        stack.push("<proto>".into());
+                    } else {
+                        stack.push("<define_class>".into());
+                    }
+                }
+                "define_method" => {
+                    let method = stack.pop().unwrap_or("<method>".into());
+                    let obj = stack.pop().unwrap_or("<obj>".into());
+                    if let Some(Operand::AtomU8(idx, _flags)) = ins.operand {
+                        let name: String = match atoms.resolve_idx(idx as u32) {
+                            Ok(n) => n.to_string(),
+                            Err(e) => {
+                                stmts.push(Stmt::Expr(format!("// Atom resolution error: {}", e)));
+                                "<invalid_atom>".to_string()
+                            }
+                        };
+                        stmts.push(Stmt::Expr(format!("{}.{} = {}", obj, name, method)));
+                        stack.push(obj);
+                    } else {
+                        stack.push("<define_method>".into());
+                    }
+                }
+                "close_loc" => {
+                    if let Some(Operand::U16(idx)) = ins.operand {
+                        stmts.push(Stmt::Expr(format!("close {}", loc_name(b, idx))));
+                    }
+                }
+                "check_ctor" => {
+                    stmts.push(Stmt::Expr("check_ctor".into()));
                 }
                 "not" | "lnot" => {
                     let v = stack.pop().unwrap_or("<v>".into());
@@ -2340,19 +2453,16 @@ fn pseudo_decompile_from_instrs(
                         stack.push(format!("{func}({})", args.join(", ")));
                     }
                 }
-                n if n.starts_with("call") && n != "call" && n != "tail_call" && n != "call_method" && n != "tail_call_method" && n != "call_constructor" && n != "array_from" && n.chars().skip(4).all(|c| c.is_ascii_digit()) => {
+                n if n.starts_with("call") && n.chars().skip(4).all(|c| c.is_ascii_digit()) => {
                     let idx_str = &n[4..];
-                    if let Ok(argc) = idx_str.parse::<u32>() {
-                        let mut args = Vec::with_capacity(argc as usize);
-                        for _ in 0..argc {
-                            args.push(stack.pop().unwrap_or("<arg>".into()));
-                        }
-                        args.reverse();
-                        let func = stack.pop().unwrap_or("<func>".into());
-                        stack.push(format!("{func}({})", args.join(", ")));
-                    } else {
-                        stack.push(format!("<{}>", n));
+                    let argc = idx_str.parse::<usize>().unwrap();
+                    let mut args = Vec::with_capacity(argc);
+                    for _ in 0..argc {
+                        args.push(stack.pop().unwrap_or("<arg>".into()));
                     }
+                    args.reverse();
+                    let func = stack.pop().unwrap_or("<func>".into());
+                    stack.push(format!("{func}({})", args.join(", ")));
                 }
                 "put_loc" | "put_loc8" => {
                     let rhs = stack.pop().unwrap_or("<rhs>".into());
@@ -2374,6 +2484,12 @@ fn pseudo_decompile_from_instrs(
                         stack.push(format!("<{}>", n));
                     }
                 }
+                "put_loc_check" => {
+                    if let Some(Operand::U16(idx)) = ins.operand {
+                        let rhs = stack.pop().unwrap_or("<rhs>".into());
+                        stmts.push(Stmt::Assign(loc_name(b, idx), rhs));
+                    }
+                }
                 "set_loc" | "set_loc8" => {
                     let rhs = stack.last().cloned().unwrap_or("<rhs>".into());
                     let idx = match ins.operand {
@@ -2382,6 +2498,11 @@ fn pseudo_decompile_from_instrs(
                         _ => 0,
                     };
                     stmts.push(Stmt::Assign(loc_name(b, idx), rhs));
+                }
+                "set_loc_uninitialized" => {
+                    if let Some(Operand::U16(idx)) = ins.operand {
+                        stmts.push(Stmt::Expr(format!("{} = undefined", loc_name(b, idx))));
+                    }
                 }
                 n if n.starts_with("set_loc") && n != "set_loc" && n != "set_loc8" && n.chars().skip(7).all(|c| c.is_ascii_digit()) => {
                     let idx_str = &n[7..];
@@ -2434,22 +2555,6 @@ fn pseudo_decompile_from_instrs(
                         stack.push(a.to_string());
                     }
                 }
-                // "get_length" => {
-                //     let obj = stack.pop().unwrap_or("<obj>".into());
-                //     stack.push(format!("{obj}.length"));
-                // }
-                // "get_array_el" | "get_array_el2" => {
-                //     let idx = stack.pop().unwrap_or("<idx>".into());
-                //     let arr = stack.pop().unwrap_or("<arr>".into());
-                //     stack.push(format!("{arr}[{idx}]"));
-                // }
-                // "get_loc_check" => {
-                //     if let Some(Operand::U16(idx)) = ins.operand {
-                //         stack.push(loc_name(b, idx));
-                //     } else {
-                //         stack.push("<get_loc_check>".into());
-                //     }
-                // }
                 "put_var" | "put_var_init" => {
                     let rhs = stack.pop().unwrap_or("<rhs>".into());
                     if let Some(Operand::Atom(idx)) = ins.operand {
@@ -2472,12 +2577,37 @@ fn pseudo_decompile_from_instrs(
                         stmts.push(Stmt::Expr(format!("{obj}.{} = {rhs}", prop)));
                     }
                 }
+                "get_array_el" | "get_array_el2" => {
+                    let prop = stack.pop().unwrap_or("<prop>".into());
+                    let obj = stack.pop().unwrap_or("<obj>".into());
+                    let value = format!("{obj}[{prop}]");
+                    if ins.name == "get_array_el" {
+                        stack.push(value);
+                    } else {
+                        stack.push(obj);
+                        stack.push(value);
+                    }
+                }
+                "put_array_el" => {
+                    let rhs = stack.pop().unwrap_or("<rhs>".into());
+                    let index = stack.pop().unwrap_or("<index>".into());
+                    let obj = stack.pop().unwrap_or("<obj>".into());
+                    stmts.push(Stmt::Expr(format!("{obj}[{index}] = {rhs}")));
+                }
+                "get_length" => {
+                    let obj = stack.pop().unwrap_or("<obj>".into());
+                    stack.push(format!("{obj}.length"));
+                }
                 "return" => {
                     let v = stack.pop().unwrap_or("undefined".into());
                     stmts.push(Stmt::Return(Some(v)));
                 }
                 "return_undef" => {
                     stmts.push(Stmt::Return(None));
+                }
+                "ret" => {
+                    let v = stack.pop().unwrap_or("undefined".into());
+                    stmts.push(Stmt::Expr(format!("ret {}", v)));
                 }
                 "throw" => {
                     let v = stack.pop().unwrap_or("<value>".into());
@@ -2503,6 +2633,61 @@ fn pseudo_decompile_from_instrs(
                 "goto" | "goto8" | "goto16" => {
                     let target = label_target(ins).unwrap_or(0);
                     stmts.push(Stmt::Goto(target));
+                }
+                "gosub" => {
+                    let target = label_target(ins).unwrap_or(0);
+                    stmts.push(Stmt::Expr(format!("gosub L{}", target)));
+                }
+                "catch" => {
+                    stack.push("<exception>".into());
+                }
+                "for_of_start" => {
+                    let _iterable = stack.pop();
+                    stack.push("<iterator>".into());
+                    stack.push("<method>".into());
+                    stack.push("<done>".into());
+                }
+                "for_of_next" => {
+                    let done = stack.pop().unwrap_or("<done>".into());
+                    let method = stack.pop().unwrap_or("<method>".into());
+                    let iterator = stack.pop().unwrap_or("<iterator>".into());
+                    stack.push(iterator);
+                    stack.push(method);
+                    stack.push(done);
+                    stack.push("<value>".into());
+                    stack.push("<done>".into());
+                }
+                "iterator_close" => {
+                    let _done = stack.pop();
+                    let _method = stack.pop();
+                    let _iterator = stack.pop();
+                }
+                "insert2" => {
+                    let a = stack.pop().unwrap_or("<a>".into());
+                    let obj = stack.pop().unwrap_or("<obj>".into());
+                    stack.push(a.clone());
+                    stack.push(obj);
+                    stack.push(a);
+                }
+                "insert3" => {
+                    let a = stack.pop().unwrap_or("<a>".into());
+                    let prop = stack.pop().unwrap_or("<prop>".into());
+                    let obj = stack.pop().unwrap_or("<obj>".into());
+                    stack.push(a.clone());
+                    stack.push(obj);
+                    stack.push(prop);
+                    stack.push(a);
+                }
+                "insert4" => {
+                    let a = stack.pop().unwrap_or("<a>".into());
+                    let prop = stack.pop().unwrap_or("<prop>".into());
+                    let obj = stack.pop().unwrap_or("<obj>".into());
+                    let this = stack.pop().unwrap_or("<this>".into());
+                    stack.push(a.clone());
+                    stack.push(this);
+                    stack.push(obj);
+                    stack.push(prop);
+                    stack.push(a);
                 }
                 _ => {
                     // generic stack-effect-based fallback
@@ -2552,13 +2737,6 @@ fn pseudo_decompile_from_instrs(
     out.push_str(&stmts_to_string(&stmts, 2));
     out.push_str("}\n");
     Ok(out)
-}
-
-#[allow(dead_code)]
-fn pseudo_decompile(b: &FunctionBytecode, atoms: &AtomTable) -> Result<String, DeqjsError> {
-    let instrs = decode_instructions(b)?;
-    let func_name = b.func_name.to_string();
-    pseudo_decompile_from_instrs(b, atoms, &instrs, &func_name, false, false)
 }
 
 pub fn decompile_with_mode(bytecode: &[u8], mode: DecompileMode) -> Result<String, DeqjsError> {
