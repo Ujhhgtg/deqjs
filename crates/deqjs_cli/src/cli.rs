@@ -66,5 +66,9 @@ pub enum DecompileCommand {
         /// Apply simple output optimizations to reduce generated pseudo code size
         #[arg(long, default_value_t = false)]
         optimize: bool,
+
+        /// Output file path (default: stdout)
+        #[arg(long)]
+        output: Option<PathBuf>,
     }
 }

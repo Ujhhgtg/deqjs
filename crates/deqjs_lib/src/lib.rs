@@ -1,4 +1,3 @@
-
 use std::fmt;
 
 use byteorder::{ByteOrder, LittleEndian};

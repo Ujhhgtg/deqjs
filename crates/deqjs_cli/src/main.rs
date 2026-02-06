@@ -15,6 +15,7 @@ fn main() {
                 version,
                 deobfuscate,
                 optimize,
+                output,
             } => {
                 let mode = match mode {
                     DecompileModeCli::Pseudo => deqjs_lib::DecompileMode::Pseudo,
@@ -36,7 +37,14 @@ fn main() {
                         },
                     ) {
                         Ok(out) => {
-                            print!("{out}");
+                            if let Some(output_path) = output {
+                                if let Err(e) = std::fs::write(&output_path, &out) {
+                                    eprintln!("failed to write to {output_path:?}: {e}");
+                                    std::process::exit(1);
+                                }
+                            } else {
+                                print!("{out}");
+                            }
                         }
                         Err(e) => {
                             eprintln!("decompile error: {e}");
