@@ -1,0 +1,12 @@
+[package]
+name = "deqjs_cli"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+deqjs_lib = { path = "../deqjs_lib" }
+serde = { version = "*", features = ["derive"] }
+clap = { version = "*", features = ["derive", "cargo"] }
+clap_complete = "*"
+anyhow = "*"
+thiserror = "*"
