@@ -1,11 +1,8 @@
 function Uint8Array() {
   L0:
-  <push_this>;
   if (!<push_this>) goto L12;
   L3:
-  <fclosure8>;
-  <set_name>;
-  ___HyperBilibili_node_modules_semver_functions_patch_js = <set_name>;
+  ___HyperBilibili_node_modules_semver_functions_patch_js = set_name(default, closure_0);
   return;
   L12:
   return;
@@ -14,7 +11,6 @@ function Uint8Array() {
 function closure_1() {
   L0:
   loc0 = $app_require$;
-  <fclosure8>;
   return;
 }
 
@@ -28,21 +24,14 @@ function closure_2() {
   L37:
   L39:
   loc4 = <rhs>;
-  <fclosure8>;
-  <set_name>;
-  loc5 = <set_name>;
-  <fclosure8>;
-  <set_name>;
-  loc6 = <set_name>;
+  loc5 = set_name($translateStyle$, closure_0);
+  loc6 = set_name(createPageHandler, closure_1);
 }
 
 function closure_3() {
   L0:
-  <typeof>;
-  if (!(<typeof> === "string")) goto L57;
+  if (!(typeof arg0 === <push_atom_value>)) goto L57;
   L10:
-  <fclosure8>;
-  <fclosure8>;
   L57:
   return arg0;
 }
@@ -57,8 +46,7 @@ function closure_4() {
 function closure_5() {
   L0:
   <set_loc_uninitialized>;
-  <regexp>;
-  loc0 = arg0.match(<regexp>);
+  loc0 = arg0.match(new RegExp(<push_const8>));
   <get_loc_check>;
   if (!<cond>) goto L76;
   L23:
@@ -68,8 +56,6 @@ function closure_5() {
   L31:
   <get_loc_check>;
   <get_array_el>;
-  <regexp>;
-  <fclosure8>;
   <get_loc_check>;
   <get_array_el>;
   return <func>(<get_array_el>, <get_array_el>.trim());
@@ -77,352 +63,146 @@ function closure_5() {
   return <func>();
 }
 
-function closure_7() {
-  L0:
-  <fclosure8>;
-}
-
 function closure_8() {
   L0:
-  <fclosure8>;
-  loc2 = <fclosure8>;
+  loc2 = atom_1970;
   <object>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  loc0 = <define_field>;
+  <object>../src/tsimports.js = set_name(./src/tsimports.js, closure_0);
+  <object>.../HyperBilibili/node_modules/dayjs/dayjs.min.js = set_name(../HyperBilibili/node_modules/dayjs/dayjs.min.js, closure_1);
+  <object>.../HyperBilibili/node_modules/semver/classes/comparator.js = set_name(../HyperBilibili/node_modules/semver/classes/comparator.js, closure_2);
+  <object>.../HyperBilibili/node_modules/semver/classes/range.js = set_name(../HyperBilibili/node_modules/semver/classes/range.js, closure_3);
+  <object>.../HyperBilibili/node_modules/semver/classes/semver.js = set_name(../HyperBilibili/node_modules/semver/classes/semver.js, closure_4);
+  <object>.../HyperBilibili/node_modules/semver/functions/clean.js = set_name(../HyperBilibili/node_modules/semver/functions/clean.js, closure_5);
+  <object>.../HyperBilibili/node_modules/semver/functions/cmp.js = set_name(../HyperBilibili/node_modules/semver/functions/cmp.js, closure_6);
+  <object>.../HyperBilibili/node_modules/semver/functions/coerce.js = set_name(../HyperBilibili/node_modules/semver/functions/coerce.js, closure_7);
+  <object>.../HyperBilibili/node_modules/semver/functions/compare-build.js = set_name(../HyperBilibili/node_modules/semver/functions/compare-build.js, closure_8);
+  <object>.../HyperBilibili/node_modules/semver/functions/compare-loose.js = set_name(../HyperBilibili/node_modules/semver/functions/compare-loose.js, closure_9);
+  <object>.../HyperBilibili/node_modules/semver/functions/compare.js = set_name(../HyperBilibili/node_modules/semver/functions/compare.js, closure_10);
+  <object>.../HyperBilibili/node_modules/semver/functions/diff.js = set_name(../HyperBilibili/node_modules/semver/functions/diff.js, closure_11);
+  <object>.../HyperBilibili/node_modules/semver/functions/eq.js = set_name(../HyperBilibili/node_modules/semver/functions/eq.js, closure_12);
+  <object>.../HyperBilibili/node_modules/semver/functions/gt.js = set_name(../HyperBilibili/node_modules/semver/functions/gt.js, closure_13);
+  <object>.../HyperBilibili/node_modules/semver/functions/gte.js = set_name(../HyperBilibili/node_modules/semver/functions/gte.js, closure_14);
+  <object>.../HyperBilibili/node_modules/semver/functions/inc.js = set_name(../HyperBilibili/node_modules/semver/functions/inc.js, closure_15);
+  <object>.../HyperBilibili/node_modules/semver/functions/lt.js = set_name(../HyperBilibili/node_modules/semver/functions/lt.js, closure_16);
+  <object>.../HyperBilibili/node_modules/semver/functions/lte.js = set_name(../HyperBilibili/node_modules/semver/functions/lte.js, closure_17);
+  <object>.../HyperBilibili/node_modules/semver/functions/major.js = set_name(../HyperBilibili/node_modules/semver/functions/major.js, closure_18);
+  <object>.../HyperBilibili/node_modules/semver/functions/minor.js = set_name(../HyperBilibili/node_modules/semver/functions/minor.js, closure_19);
+  <object>.../HyperBilibili/node_modules/semver/functions/neq.js = set_name(../HyperBilibili/node_modules/semver/functions/neq.js, closure_20);
+  <object>.../HyperBilibili/node_modules/semver/functions/parse.js = set_name(../HyperBilibili/node_modules/semver/functions/parse.js, closure_21);
+  <object>.../HyperBilibili/node_modules/semver/functions/patch.js = set_name(../HyperBilibili/node_modules/semver/functions/patch.js, closure_22);
+  <object>.../HyperBilibili/node_modules/semver/functions/prerelease.js = set_name(../HyperBilibili/node_modules/semver/functions/prerelease.js, closure_23);
+  <object>.../HyperBilibili/node_modules/semver/functions/rcompare.js = set_name(../HyperBilibili/node_modules/semver/functions/rcompare.js, closure_24);
+  <object>.../HyperBilibili/node_modules/semver/functions/rsort.js = set_name(../HyperBilibili/node_modules/semver/functions/rsort.js, closure_25);
+  <object>.../HyperBilibili/node_modules/semver/functions/satisfies.js = set_name(../HyperBilibili/node_modules/semver/functions/satisfies.js, closure_26);
+  <object>.../HyperBilibili/node_modules/semver/functions/sort.js = set_name(../HyperBilibili/node_modules/semver/functions/sort.js, closure_27);
+  <object>.../HyperBilibili/node_modules/semver/functions/valid.js = set_name(../HyperBilibili/node_modules/semver/functions/valid.js, closure_28);
+  <object>.../HyperBilibili/node_modules/semver/index.js = set_name(../HyperBilibili/node_modules/semver/index.js, closure_29);
+  <object>.../HyperBilibili/node_modules/semver/internal/constants.js = set_name(../HyperBilibili/node_modules/semver/internal/constants.js, closure_30);
+  <object>.../HyperBilibili/node_modules/semver/internal/debug.js = set_name(../HyperBilibili/node_modules/semver/internal/debug.js, closure_31);
+  <object>.../HyperBilibili/node_modules/semver/internal/identifiers.js = set_name(../HyperBilibili/node_modules/semver/internal/identifiers.js, closure_32);
+  <object>.../HyperBilibili/node_modules/semver/internal/lrucache.js = set_name(../HyperBilibili/node_modules/semver/internal/lrucache.js, closure_33);
+  <object>.../HyperBilibili/node_modules/semver/internal/parse-options.js = set_name(../HyperBilibili/node_modules/semver/internal/parse-options.js, closure_34);
+  <object>.../HyperBilibili/node_modules/semver/internal/re.js = set_name(../HyperBilibili/node_modules/semver/internal/re.js, closure_35);
+  <object>.../HyperBilibili/node_modules/semver/ranges/gtr.js = set_name(../HyperBilibili/node_modules/semver/ranges/gtr.js, closure_36);
+  <object>.../HyperBilibili/node_modules/semver/ranges/intersects.js = set_name(../HyperBilibili/node_modules/semver/ranges/intersects.js, closure_37);
+  <object>.../HyperBilibili/node_modules/semver/ranges/ltr.js = set_name(../HyperBilibili/node_modules/semver/ranges/ltr.js, closure_38);
+  <object>.../HyperBilibili/node_modules/semver/ranges/max-satisfying.js = set_name(../HyperBilibili/node_modules/semver/ranges/max-satisfying.js, closure_39);
+  <object>.../HyperBilibili/node_modules/semver/ranges/min-satisfying.js = set_name(../HyperBilibili/node_modules/semver/ranges/min-satisfying.js, closure_40);
+  <object>.../HyperBilibili/node_modules/semver/ranges/min-version.js = set_name(../HyperBilibili/node_modules/semver/ranges/min-version.js, closure_41);
+  <object>.../HyperBilibili/node_modules/semver/ranges/outside.js = set_name(../HyperBilibili/node_modules/semver/ranges/outside.js, closure_42);
+  <object>.../HyperBilibili/node_modules/semver/ranges/simplify.js = set_name(../HyperBilibili/node_modules/semver/ranges/simplify.js, closure_43);
+  <object>.../HyperBilibili/node_modules/semver/ranges/subset.js = set_name(../HyperBilibili/node_modules/semver/ranges/subset.js, closure_44);
+  <object>.../HyperBilibili/node_modules/semver/ranges/to-comparators.js = set_name(../HyperBilibili/node_modules/semver/ranges/to-comparators.js, closure_45);
+  <object>.../HyperBilibili/node_modules/semver/ranges/valid.js = set_name(../HyperBilibili/node_modules/semver/ranges/valid.js, closure_46);
+  <object>../src/animation/defaults.ts = set_name(./src/animation/defaults.ts, closure_47);
+  <object>../src/animation/defaults/loading.ts = set_name(./src/animation/defaults/loading.ts, closure_48);
+  <object>../src/animation/defaults/page.ts = set_name(./src/animation/defaults/page.ts, closure_49);
+  <object>../src/animation/engine.ts = set_name(./src/animation/engine.ts, closure_50);
+  <object>../src/articletools.ts = set_name(./src/articletools.ts, closure_51);
+  <object>../src/asyncapi/file.ts = set_name(./src/asyncapi/file.ts, closure_52);
+  <object>../src/bgimg.ts = set_name(./src/bgimg.ts, closure_53);
+  <object>../src/bilibiliclient/account/login.ts = set_name(./src/bilibiliclient/account/login.ts, closure_54);
+  <object>../src/bilibiliclient/api/request.ts = set_name(./src/bilibiliclient/api/request.ts, closure_55);
+  <object>../src/bilibiliclient/article/article.ts = set_name(./src/bilibiliclient/article/article.ts, closure_56);
+  <object>../src/bilibiliclient/client.ts = set_name(./src/bilibiliclient/client.ts, closure_57);
+  <object>../src/bilibiliclient/comment/comment.ts = set_name(./src/bilibiliclient/comment/comment.ts, closure_58);
+  <object>../src/bilibiliclient/dynamic/dynamic.ts = set_name(./src/bilibiliclient/dynamic/dynamic.ts, closure_59);
+  <object>../src/bilibiliclient/folder/favfolder.ts = set_name(./src/bilibiliclient/folder/favfolder.ts, closure_60);
+  <object>../src/bilibiliclient/folder/history.ts = set_name(./src/bilibiliclient/folder/history.ts, closure_61);
+  <object>../src/bilibiliclient/message/message.ts = set_name(./src/bilibiliclient/message/message.ts, closure_62);
+  <object>../src/bilibiliclient/search/search.ts = set_name(./src/bilibiliclient/search/search.ts, closure_63);
+  <object>../src/bilibiliclient/user/user.ts = set_name(./src/bilibiliclient/user/user.ts, closure_64);
+  <object>../src/bilibiliclient/utils/utils.ts = set_name(./src/bilibiliclient/utils/utils.ts, closure_65);
+  <object>../src/bilibiliclient/video/action.ts = set_name(./src/bilibiliclient/video/action.ts, closure_66);
+  <object>../src/bilibiliclient/video/video.ts = set_name(./src/bilibiliclient/video/video.ts, closure_67);
+  <object>../src/eula.ts = set_name(./src/eula.ts, closure_68);
+  <object>../src/funnytips.ts = set_name(./src/funnytips.ts, closure_69);
+  <object>../src/htmlparser.ts = set_name(./src/htmlparser.ts, closure_70);
+  <object>../src/jumpcheck.ts = set_name(./src/jumpcheck.ts, closure_71);
+  <object>../src/logger/logger.ts = set_name(./src/logger/logger.ts, closure_72);
+  <object>../src/savedcontent.ts = set_name(./src/savedcontent.ts, closure_73);
+  <object>../src/settings.ts = set_name(./src/settings.ts, closure_74);
+  <object>../src/tools.ts = set_name(./src/tools.ts, closure_75);
+  <object>../src/ui/ui.ts = set_name(./src/ui/ui.ts, closure_76);
+  <object>../src/usertracker.ts = set_name(./src/usertracker.ts, closure_77);
+  <object>../src/manifest.json = set_name(./src/manifest.json, closure_78);
+  loc0 = <object>;
   <object>;
   loc1 = <object>;
-  <fclosure8>;
-  <fclosure8>;
-  <fclosure8>;
-  <fclosure8>;
-  <fclosure8>;
-  <fclosure8>;
-  <fclosure8>;
   <object>;
   loc3 = <object>;
-  <fclosure8>;
   return;
 }
 
 function closure_9() {
   L0:
-  <fclosure8>;
-  loc11 = <fclosure8>;
+  loc11 = createToken;
   <object>;
-  <define_field>;
+  <object>.value = <push_true>;
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
+  <object>.enumerable = <push_true>;
+  <object>.get = set_name(get, closure_0);
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
+  <object>.enumerable = <push_true>;
+  <object>.get = set_name(get, closure_1);
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
+  <object>.enumerable = <push_true>;
+  <object>.get = set_name(get, closure_2);
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
+  <object>.enumerable = <push_true>;
+  <object>.get = set_name(get, closure_3);
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
+  <object>.enumerable = <push_true>;
+  <object>.get = set_name(get, closure_4);
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
+  <object>.enumerable = <push_true>;
+  <object>.get = set_name(get, closure_5);
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
+  <object>.enumerable = <push_true>;
+  <object>.get = set_name(get, closure_6);
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
+  <object>.enumerable = <push_true>;
+  <object>.get = set_name(get, closure_7);
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
+  <object>.enumerable = <push_true>;
+  <object>.get = set_name(get, closure_8);
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
+  <object>.enumerable = <push_true>;
+  <object>.get = set_name(get, closure_9);
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <get_loc8>;
-  loc0 = <get_loc8>(var_ref0("@app-module/system.fetch"));
-  <get_loc8>;
-  loc1 = <get_loc8>(var_ref0("@app-module/system.storage"));
-  <get_loc8>;
-  loc2 = <get_loc8>(var_ref0("@app-module/system.crypto"));
-  <get_loc8>;
-  loc3 = <get_loc8>(var_ref0("@app-module/system.device"));
-  <get_loc8>;
-  loc4 = <get_loc8>(var_ref0("@app-module/system.folme"));
-  <get_loc8>;
-  loc5 = <get_loc8>(var_ref0("@app-module/system.router"));
-  <get_loc8>;
-  loc6 = <get_loc8>(var_ref0("@app-module/system.interconnect"));
-  <get_loc8>;
-  loc7 = <get_loc8>(var_ref0("@app-module/system.prompt"));
-  <get_loc8>;
-  loc8 = <get_loc8>(var_ref0("@app-module/system.network"));
-  <get_loc8>;
-  loc9 = <get_loc8>(var_ref0("@app-module/system.file"));
-  <get_loc8>;
-  loc10 = <get_loc8>(var_ref0("@app-module/system.request"));
+  <object>.enumerable = <push_true>;
+  <object>.get = set_name(get, closure_10);
+  loc0 = loc8(var_ref0(<push_atom_value>));
+  loc1 = loc8(var_ref0(<push_atom_value>));
+  loc2 = loc8(var_ref0(<push_atom_value>));
+  loc3 = loc8(var_ref0(<push_atom_value>));
+  loc4 = loc8(var_ref0(<push_atom_value>));
+  loc5 = loc8(var_ref0(<push_atom_value>));
+  loc6 = loc8(var_ref0(<push_atom_value>));
+  loc7 = loc8(var_ref0(<push_atom_value>));
+  loc8 = loc8(var_ref0(<push_atom_value>));
+  loc9 = loc8(var_ref0(<push_atom_value>));
+  loc10 = loc8(var_ref0(<push_atom_value>));
   return;
 }
 
@@ -457,16 +237,13 @@ function createToken() {
   return arg0;
   L13:
   <object>;
-  <define_field>;
-  return <define_field>;
+  <object>.default = arg0;
+  return <object>;
 }
 
 function closure_22() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
-  <fclosure8>;
   return;
 }
 
@@ -479,127 +256,68 @@ function closure_23() {
 
 function closure_24() {
   L0:
-  <push_i16>;
   loc0 = <push_i16>;
   loc1 = 60000;
   loc2 = 3600000;
-  loc3 = "millisecond";
-  loc4 = "second";
-  loc5 = "minute";
-  loc6 = "hour";
-  loc7 = "day";
-  loc8 = "week";
-  loc9 = "month";
-  loc10 = "quarter";
-  loc11 = "year";
-  loc12 = "date";
-  loc13 = "Invalid Date";
-  <regexp>;
-  loc14 = <regexp>;
-  <regexp>;
-  loc15 = <regexp>;
+  loc3 = <push_atom_value>;
+  loc4 = <push_atom_value>;
+  loc5 = <push_atom_value>;
+  loc6 = <push_atom_value>;
+  loc7 = <push_atom_value>;
+  loc8 = <push_atom_value>;
+  loc9 = <push_atom_value>;
+  loc10 = <push_atom_value>;
+  loc11 = <push_atom_value>;
+  loc12 = <push_atom_value>;
+  loc13 = <push_atom_value>;
+  loc14 = new RegExp(<push_const8>);
+  loc15 = new RegExp(<push_const8>);
   <object>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  loc16 = <define_field>;
-  <fclosure8>;
-  <set_name>;
-  loc17 = <set_name>;
+  <object>.name = <push_atom_value>;
+  <object>.weekdays = <push_atom_value>.split(<push_atom_value>);
+  <object>.months = <push_atom_value>.split(<push_atom_value>);
+  <object>.ordinal = set_name(ordinal, closure_4);
+  loc16 = <object>;
+  loc17 = set_name(m, closure_5);
   <object>;
-  <get_loc8>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  loc18 = <define_field>;
-  loc19 = "en";
+  <object>.s = loc8;
+  <object>.z = set_name(z, closure_6);
+  <object>.m = _create_class;
+  <object>.a = set_name(a, closure_8);
+  <object>.p = set_name(p, closure_9);
+  <object>.u = set_name(u, closure_10);
+  loc18 = <object>;
+  loc19 = <push_atom_value>;
   <object>;
   loc20 = <object>;
-  <get_loc8>;
-  <get_loc8>;
   <put_array_el>;
-  loc21 = "$isDayjsObject";
-  <fclosure8>;
-  <set_name>;
-  loc22 = <set_name>;
-  <fclosure8>;
-  loc23 = <fclosure8>;
-  <fclosure8>;
-  <set_name>;
-  loc24 = <set_name>;
-  <get_loc8>;
-  loc25 = <get_loc8>;
-  <get_loc8>;
-  <get_loc8>.l = <get_loc8>;
-  <get_loc8>;
-  <get_loc8>;
-  <get_loc8>.i = <get_loc8>;
-  <get_loc8>;
-  <fclosure8>;
-  <get_loc8>.w = <fclosure8>;
-  <fclosure8>;
-  loc26 = <fclosure8>();
-  loc27 = <fclosure8>().prototype;
-  <get_loc8>;
-  <get_loc8>;
-  <get_loc8>.prototype = <get_loc8>;
-  <get_loc8>;
-  <get_loc8>;
-  <get_loc8>;
-  <get_loc8>;
-  <get_loc8>;
-  <get_loc8>;
-  <get_loc8>;
-  <fclosure8>;
-  <get_loc8>;
-  <fclosure8>;
-  <get_loc8>.extend = <fclosure8>;
-  <get_loc8>;
-  <get_loc8>;
-  <get_loc8>.locale = <get_loc8>;
-  <get_loc8>;
-  <get_loc8>;
-  <get_loc8>.isDayjs = <get_loc8>;
-  <get_loc8>;
-  <fclosure8>;
-  <get_loc8>.unix = <fclosure8>;
-  <get_loc8>;
-  <get_loc8>;
-  <get_loc8>;
+  loc21 = <push_atom_value>;
+  loc22 = set_name(S, closure_11);
+  loc23 = _create_class;
+  loc24 = set_name(O, closure_13);
+  loc25 = loc8;
+  loc8.l = loc8;
+  loc8.i = loc8;
+  loc8.w = closure_14;
+  loc26 = closure_15();
+  loc27 = closure_15().prototype;
+  loc8.prototype = loc8;
+  loc8.extend = closure_17;
+  loc8.locale = loc8;
+  loc8.isDayjs = loc8;
+  loc8.unix = closure_18;
   <get_array_el>;
   <get_array_el>.en = <get_array_el>;
-  <get_loc8>;
-  <get_loc8>;
-  <get_loc8>.Ls = <get_loc8>;
-  <get_loc8>;
+  loc8.Ls = loc8;
   <object>;
-  <get_loc8>.p = <object>;
-  <get_loc8>;
-  return <get_loc8>;
+  loc8.p = <object>;
+  return loc8;
 }
 
 function closure_25() {
   L0:
-  loc0 = <func>("th", "st", "nd", "rd");
-  <push_i8>;
+  loc0 = <func>(<push_atom_value>, <push_atom_value>, <push_atom_value>, <push_atom_value>);
   loc1 = (arg0 % <push_i8>);
-  <push_i8>;
-  <push_i8>;
   <get_array_el>;
   if (<get_array_el>) goto L59;
   L48:
@@ -608,7 +326,7 @@ function closure_25() {
   L55:
   <get_array_el>;
   L59:
-  return ((<lhs> + <rhs>) + "]");
+  return ((<lhs> + <rhs>) + <push_atom_value>);
 }
 
 function closure_26() {
@@ -622,7 +340,6 @@ function closure_26() {
   L19:
   return arg0;
   L21:
-  <push_empty_string>;
   <get_length>;
   return ((<push_empty_string> + Array(((arg1 + 1) - <get_length>)).join(arg2)) + arg0);
 }
@@ -632,16 +349,14 @@ function closure_27() {
   <neg>;
   loc0 = <neg>;
   loc1 = Math.abs(loc0);
-  <push_i8>;
   loc2 = Math.floor((loc1 / <push_i8>));
-  <push_i8>;
   loc3 = (loc1 % <push_i8>);
   if (!(loc0 <= 0)) goto L61;
   L54:
   goto L66;
   L61:
   L66:
-  return (((<lhs> + var_ref0(loc2, 2, "0")) + ":") + var_ref0(loc3, 2, "0"));
+  return (((<lhs> + var_ref0(loc2, 2, <push_const8>)) + <push_atom_value>) + var_ref0(loc3, 2, <push_const8>));
 }
 
 function _create_class() {
@@ -650,11 +365,9 @@ function _create_class() {
   loc4 = <special_object>;
   if (!(arg0.date() < arg1.date())) goto L32;
   L25:
-  <get_loc8>;
   <neg>;
   return <neg>;
   L32:
-  <push_i8>;
   loc0 = ((<push_i8> * (arg1.year() - arg0.year())) + (arg1.month() - arg0.month()));
   loc1 = arg0.clone().add(loc0, var_ref0);
   loc2 = ((arg1 - loc1) < 0);
@@ -692,25 +405,22 @@ function closure_29() {
 function closure_30() {
   L0:
   <object>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
+  <object>.M = var_ref0;
+  <object>.y = var_ref1;
+  <object>.w = var_ref2;
+  <object>.d = var_ref3;
+  <object>.D = var_ref4;
+  <object>.h = var_ref5;
+  <object>.m = var_ref6;
+  <object>.s = var_ref7;
+  <object>.ms = var_ref8;
+  <object>.Q = var_ref9;
   <get_array_el>;
   if (<get_array_el>) goto L113;
   L78:
   if (arg0) goto L90;
   L88:
-  <push_empty_string>;
   L90:
-  <regexp>;
-  <push_empty_string>;
   L113:
   return undefined;
 }
@@ -719,8 +429,7 @@ function closure_31() { return (undefined === arg0); }
 
 function closure_32() {
   L0:
-  <instanceof>;
-  if (<instanceof>) goto L18;
+  if ((arg0 instanceof var_ref0)) goto L18;
   L6:
   if ((!arg0)) goto L17;
   L12:
@@ -738,8 +447,7 @@ function _create_class() {
   L8:
   return var_ref0;
   L10:
-  <typeof>;
-  if (!(<lhs> == <typeof>)) goto L85;
+  if (!(<push_atom_value> == typeof arg0)) goto L85;
   L20:
   loc1 = arg0.toLowerCase();
   <get_array_el>;
@@ -752,13 +460,12 @@ function _create_class() {
   <put_array_el>;
   loc0 = loc1;
   L51:
-  loc2 = arg0.split("-");
+  loc2 = arg0.split(<push_atom_value>);
   if (!(!loc0)) goto L98;
   L71:
   <get_length>;
   if (!(<get_length> > 1)) goto L98;
   L77:
-  <get_loc8>;
   <get_array_el>;
   L85:
   loc3 = arg0.name;
@@ -786,8 +493,7 @@ function closure_34() {
   if (!var_ref0(arg0)) goto L17;
   L8:
   L17:
-  <typeof>;
-  if (!(<lhs> == <typeof>)) goto L30;
+  if (!(<push_atom_value> == typeof arg1)) goto L30;
   L27:
   goto L31;
   L30:
@@ -802,79 +508,49 @@ function closure_34() {
 function closure_35() {
   L0:
   <object>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
+  <object>.locale = arg1.$L;
+  <object>.utc = arg1.$u;
+  <object>.x = arg1.$x;
+  <object>.$offset = arg1.$offset;
 }
 
 function closure_36() {
   L0:
-  <fclosure8>;
-  loc0 = <fclosure8>;
-  loc1 = <fclosure8>.prototype;
-  <fclosure8>;
-  <fclosure8>.prototype.parse = <fclosure8>;
-  <fclosure8>;
-  loc1.init = <fclosure8>;
-  <fclosure8>;
-  loc1.$utils = <fclosure8>;
-  <fclosure8>;
-  loc1.isValid = <fclosure8>;
-  <fclosure8>;
-  loc1.isSame = <fclosure8>;
-  <fclosure8>;
-  loc1.isAfter = <fclosure8>;
-  <fclosure8>;
-  loc1.isBefore = <fclosure8>;
-  <fclosure8>;
-  loc1.$g = <fclosure8>;
-  <fclosure8>;
-  loc1.unix = <fclosure8>;
-  <fclosure8>;
-  loc1.valueOf = <fclosure8>;
-  <fclosure8>;
-  loc1.startOf = <fclosure8>;
-  <fclosure8>;
-  loc1.endOf = <fclosure8>;
-  <fclosure8>;
-  loc1.$set = <fclosure8>;
-  <fclosure8>;
-  loc1.set = <fclosure8>;
-  <fclosure8>;
-  loc1.get = <fclosure8>;
-  <fclosure8>;
-  loc1.add = <fclosure8>;
-  <fclosure8>;
-  loc1.subtract = <fclosure8>;
-  <fclosure8>;
-  loc1.format = <fclosure8>;
-  <fclosure8>;
-  loc1.utcOffset = <fclosure8>;
-  <fclosure8>;
-  loc1.diff = <fclosure8>;
-  <fclosure8>;
-  loc1.daysInMonth = <fclosure8>;
-  <fclosure8>;
-  loc1.$locale = <fclosure8>;
-  <fclosure8>;
-  loc1.locale = <fclosure8>;
-  <fclosure8>;
-  loc1.clone = <fclosure8>;
-  <fclosure8>;
-  loc1.toDate = <fclosure8>;
-  <fclosure8>;
-  loc1.toJSON = <fclosure8>;
-  <fclosure8>;
-  loc1.toISOString = <fclosure8>;
-  <fclosure8>;
-  loc1.toString = <fclosure8>;
+  loc0 = _possible_constructor_return;
+  loc1 = _possible_constructor_return.prototype;
+  _possible_constructor_return.prototype.parse = closure_1;
+  loc1.init = closure_2;
+  loc1.$utils = closure_3;
+  loc1.isValid = closure_4;
+  loc1.isSame = closure_5;
+  loc1.isAfter = closure_6;
+  loc1.isBefore = closure_7;
+  loc1.$g = closure_8;
+  loc1.unix = closure_9;
+  loc1.valueOf = closure_10;
+  loc1.startOf = closure_11;
+  loc1.endOf = closure_12;
+  loc1.$set = closure_13;
+  loc1.set = closure_14;
+  loc1.get = closure_15;
+  loc1.add = closure_16;
+  loc1.subtract = closure_17;
+  loc1.format = closure_18;
+  loc1.utcOffset = closure_19;
+  loc1.diff = closure_20;
+  loc1.daysInMonth = closure_21;
+  loc1.$locale = closure_22;
+  loc1.locale = closure_23;
+  loc1.clone = closure_24;
+  loc1.toDate = closure_25;
+  loc1.toJSON = closure_26;
+  loc1.toISOString = closure_27;
+  loc1.toString = closure_28;
   return loc0;
 }
 
 function _possible_constructor_return() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   loc0.$L = var_ref0(arg0.locale, null, (!0));
   if (loc0.$x) goto L52;
@@ -891,10 +567,8 @@ function _possible_constructor_return() {
 
 function closure_38() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
-  loc0.$d = <fclosure8>(arg0);
+  loc0.$d = closure_0(arg0);
   return;
 }
 
@@ -910,16 +584,13 @@ function closure_39() {
   L46:
   return Date();
   L56:
-  <instanceof>;
-  if (!<instanceof>) goto L76;
+  if (!(loc0 instanceof Date)) goto L76;
   L65:
   return Date(loc0);
   L76:
-  <typeof>;
-  if (!(<lhs> == <typeof>)) goto L269;
+  if (!(<push_atom_value> == typeof loc0)) goto L269;
   L89:
-  <regexp>;
-  if (!(!<regexp>.test(loc0))) goto L269;
+  if (!(!new RegExp(<push_const8>).test(loc0))) goto L269;
   L109:
   loc2 = loc0.match(var_ref1);
   if (!loc0.match(var_ref1)) goto L269;
@@ -953,8 +624,7 @@ function closure_39() {
   if (<get_array_el>) goto L212;
   L210:
   L212:
-  <get_loc8>;
-  return <func>(<func>(<arg>, <arg>, <arg>, <arg>, <arg>, <arg>, <get_loc8>));
+  return <func>(<func>(<arg>, <arg>, <arg>, <arg>, <arg>, <arg>, loc8));
   L221:
   <get_array_el>;
   <get_array_el>;
@@ -973,15 +643,13 @@ function closure_39() {
   if (<get_array_el>) goto L263;
   L261:
   L263:
-  <get_loc8>;
-  return <func>(<arg>, <arg>, <arg>, <arg>, <arg>, <arg>, <get_loc8>);
+  return <func>(<arg>, <arg>, <arg>, <arg>, <arg>, <arg>, loc8);
   L269:
   return Date(loc0);
 }
 
 function closure_40() {
   L0:
-  <push_this>;
   loc1 = <push_this>;
   loc0 = loc1.$d;
   loc1.$y = loc0.getFullYear();
@@ -999,14 +667,12 @@ function closure_41() { return Move_failed_with_code_; }
 
 function closure_42() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   return (!(loc0.$d.toString() === var_ref0));
 }
 
 function closure_43() {
   L0:
-  <push_this>;
   loc1 = <push_this>;
   loc0 = var_ref0(arg0);
   if (!(loc1.startOf(arg1) <= loc0)) goto L34;
@@ -1017,21 +683,18 @@ function closure_43() {
 
 function closure_44() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   return (var_ref0(arg0) < loc0.startOf(arg1));
 }
 
 function closure_45() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   return (loc0.endOf(arg1) < var_ref0(arg0));
 }
 
 function closure_46() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   if (!var_ref0.u(arg0)) goto L18;
   L14:
@@ -1043,46 +706,32 @@ function closure_46() {
 
 function closure_47() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <push_i16>;
 }
 
 function closure_48() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
 }
 
 function closure_49() {
   L0:
-  <push_this>;
   loc11 = <push_this>;
-  <get_loc8>;
-  loc0 = <get_loc8>;
+  loc0 = loc8;
   if ((!(!var_ref0.u(arg1)))) goto L23;
   L21:
   L23:
   loc1 = <rhs>;
   loc2 = var_ref0.p(arg0);
-  <fclosure8>;
-  <set_name>;
-  loc3 = <set_name>;
-  <fclosure8>;
-  <set_name>;
-  loc4 = <set_name>;
-  <get_loc8>;
-  loc5 = <get_loc8>.$W;
-  <get_loc8>;
-  loc6 = <get_loc8>.$M;
-  <get_loc8>;
-  loc7 = <get_loc8>.$D;
-  <get_loc8>;
-  if (!<get_loc8>.$u) goto L100;
+  loc3 = set_name(l, closure_0);
+  loc4 = set_name($, closure_1);
+  loc5 = loc8.$W;
+  loc6 = loc8.$M;
+  loc7 = loc8.$D;
+  if (!loc8.$u) goto L100;
   L93:
   goto L101;
   L100:
-  <push_empty_string>;
   L101:
   loc8 = (<lhs> + <rhs>);
   if (!(loc2 === var_ref2)) goto L125;
@@ -1091,72 +740,48 @@ function closure_49() {
   L113:
   return loc3(1, 0);
   L118:
-  <push_i8>;
-  <push_i8>;
   return loc3(<push_i8>, <push_i8>);
   L125:
   if (!(<lhs> === var_ref3)) goto L147;
   L130:
   if (!loc1) goto L139;
   L133:
-  <get_loc8>;
-  return loc3(1, <get_loc8>);
+  return loc3(1, loc8);
   L139:
-  <get_loc8>;
-  return loc3(0, (<get_loc8> + 1));
+  return loc3(0, (loc8 + 1));
   L147:
   if (!(<lhs> === var_ref4)) goto L219;
   L154:
-  <get_loc8>;
-  if (<get_loc8>.$locale().weekStart) goto L174;
+  if (loc8.$locale().weekStart) goto L174;
   L172:
   L174:
   loc9 = <rhs>;
-  <get_loc8>;
-  <get_loc8>;
-  if (!(<get_loc8> < <get_loc8>)) goto L189;
+  if (!(loc8 < loc8)) goto L189;
   L183:
-  <get_loc8>;
   goto L191;
   L189:
-  <get_loc8>;
   L191:
-  <get_loc8>;
-  loc10 = (<lhs> - <get_loc8>);
+  loc10 = (<lhs> - loc8);
   if (!loc1) goto L207;
   L200:
-  <get_loc8>;
-  <get_loc8>;
   goto L214;
   L207:
-  <get_loc8>;
-  <get_loc8>;
   L214:
-  <get_loc8>;
   L219:
   if ((<lhs> === var_ref1)) goto L231;
   L224:
   if (!(<lhs> === var_ref5)) goto L245;
   L231:
-  <get_loc8>;
-  <get_loc8>;
   L245:
   if (!(<lhs> === var_ref6)) goto L266;
   L252:
-  <get_loc8>;
-  <get_loc8>;
   L266:
   if (!(<lhs> === var_ref7)) goto L287;
   L273:
-  <get_loc8>;
-  <get_loc8>;
   L287:
   if (!(<lhs> === var_ref8)) goto L308;
   L294:
-  <get_loc8>;
-  <get_loc8>;
   L308:
-  <get_loc8>;
 }
 
 function closure_50() {
@@ -1181,30 +806,22 @@ function closure_51() {
   L39:
   goto L60;
   L48:
-  <push_i8>;
-  <push_i8>;
-  <push_i8>;
-  <push_i16>;
   L60:
 }
 
 function closure_52() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
 }
 
 function closure_53() {
   L0:
-  <push_this>;
   loc6 = <push_this>;
   loc1 = var_ref0.p(arg0);
-  <get_loc8>;
-  if (!<get_loc8>.$u) goto L35;
+  if (!loc8.$u) goto L35;
   L28:
   goto L36;
   L35:
-  <push_empty_string>;
   L36:
   loc2 = (<lhs> + <rhs>);
   <object>;
@@ -1229,8 +846,6 @@ function closure_53() {
   loc3 = <get_array_el>;
   if (!(loc1 === var_ref1)) goto L165;
   L146:
-  <get_loc8>;
-  <get_loc8>;
   goto L166;
   L165:
   L166:
@@ -1240,63 +855,42 @@ function closure_53() {
   L180:
   if (!<cond>) goto L283;
   L182:
-  <get_loc8>;
-  loc5 = <get_loc8>.clone().set(var_ref2, 1);
+  loc5 = loc8.clone().set(var_ref2, 1);
   <get_array_el2>;
-  <get_loc8>;
-  <get_loc8>;
-  <get_loc8>;
-  <get_loc8>;
-  <get_loc8>;
-  <get_loc8>;
-  <get_loc8>.$d = <get_loc8>.set(var_ref2, Math.min(<get_loc8>.$D, <get_loc8>.daysInMonth())).$d;
+  loc8.$d = loc8.set(var_ref2, Math.min(loc8.$D, loc8.daysInMonth())).$d;
   goto L303;
   L283:
   if (!loc3) goto L302;
   L287:
-  <get_loc8>;
   <get_array_el2>;
-  <get_loc8>;
   L302:
   L303:
-  <get_loc8>;
-  <get_loc8>;
-  return <get_loc8>;
+  return loc8;
 }
 
 function closure_54() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
 }
 
 function closure_55() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   <get_array_el2>;
 }
 
 function closure_56() {
   L0:
-  <push_this>;
   loc6 = <push_this>;
-  <get_loc8>;
-  loc1 = <get_loc8>;
+  loc1 = loc8;
   arg0 = Number(arg0);
   loc2 = var_ref1.p(arg1);
-  <fclosure8>;
-  <set_name>;
-  loc3 = <set_name>;
+  loc3 = set_name(y, closure_0);
   if (!(loc2 === var_ref2)) goto L58;
   L38:
-  <get_loc8>;
-  <get_loc8>;
   L58:
   if (!(loc2 === var_ref3)) goto L83;
   L63:
-  <get_loc8>;
-  <get_loc8>;
   L83:
   if (!(loc2 === var_ref4)) goto L95;
   L90:
@@ -1314,11 +908,7 @@ function closure_56() {
   L138:
   L140:
   loc4 = <rhs>;
-  <get_loc8>;
-  <get_loc8>;
-  loc5 = (<get_loc8>.$d.getTime() + (arg0 * <get_loc8>));
-  <get_loc8>;
-  <get_loc8>;
+  loc5 = (loc8.$d.getTime() + (arg0 * loc8));
 }
 
 function closure_57() {
@@ -1328,20 +918,15 @@ function closure_57() {
 
 function closure_58() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
 }
 
 function closure_59() {
   L0:
-  <push_this>;
   loc13 = <push_this>;
-  <get_loc8>;
-  loc0 = <get_loc8>;
-  <get_loc8>;
-  loc1 = <get_loc8>.$locale();
-  <get_loc8>;
-  if (!(!<get_loc8>.isValid())) goto L42;
+  loc0 = loc8;
+  loc1 = loc8.$locale();
+  if (!(!loc8.isValid())) goto L42;
   L30:
   if (loc1.invalidDate) goto L41;
   L39:
@@ -1352,30 +937,19 @@ function closure_59() {
   L46:
   L52:
   loc2 = <rhs>;
-  <get_loc8>;
-  loc3 = var_ref0.z(<get_loc8>);
-  <get_loc8>;
-  loc4 = <get_loc8>.$H;
-  <get_loc8>;
-  loc5 = <get_loc8>.$m;
-  <get_loc8>;
-  loc6 = <get_loc8>.$M;
+  loc3 = var_ref0.z(loc8);
+  loc4 = loc8.$H;
+  loc5 = loc8.$m;
+  loc6 = loc8.$M;
   loc7 = loc1.weekdays;
   loc8 = loc1.months;
   loc9 = loc1.meridiem;
-  <fclosure8>;
-  <set_name>;
-  loc10 = <set_name>;
-  <fclosure8>;
-  <set_name>;
-  loc11 = <set_name>;
-  <get_loc8>;
-  if (<get_loc8>) goto L142;
+  loc10 = set_name(h, closure_0);
+  loc11 = set_name(d, closure_1);
+  if (loc8) goto L142;
   L139:
-  <fclosure8>;
   L142:
   loc12 = <rhs>;
-  <fclosure8>;
 }
 
 function closure_60() {
@@ -1395,16 +969,13 @@ function closure_60() {
 
 function closure_61() {
   L0:
-  <push_i8>;
   if ((var_ref1 % <push_i8>)) goto L16;
   L13:
-  <push_i8>;
   L16:
 }
 
 function closure_62() {
   L0:
-  <push_i8>;
   if (!(arg0 < <push_i8>)) goto L13;
   L6:
   goto L18;
@@ -1422,91 +993,88 @@ function closure_63() {
   L0:
   if (arg1) goto L30;
   L4:
-  <fclosure8>;
-  if (<fclosure8>(arg0)) goto L30;
+  if (closure_0(arg0)) goto L30;
   L12:
-  <push_empty_string>;
   L30:
   return undefined;
 }
 
 function closure_64() {
   L0:
-  if (!(arg0 === "YY")) goto L32;
+  if (!(arg0 === <push_atom_value>)) goto L32;
   L10:
-  <push_i8>;
   L32:
-  if (!(<lhs> === "YYYY")) goto L59;
+  if (!(<lhs> === <push_atom_value>)) goto L59;
   L41:
   L59:
-  if (!(<lhs> === "M")) goto L72;
+  if (!(<lhs> === <push_atom_value>)) goto L72;
   L68:
   return (var_ref2 + 1);
   L72:
-  if (!(<lhs> === "MM")) goto L96;
+  if (!(<lhs> === <push_atom_value>)) goto L96;
   L81:
   L96:
-  if (!(<lhs> === "MMM")) goto L122;
+  if (!(<lhs> === <push_atom_value>)) goto L122;
   L105:
   L122:
-  if (!(<lhs> === "MMMM")) goto L139;
+  if (!(<lhs> === <push_atom_value>)) goto L139;
   L131:
   L139:
-  if (!(<lhs> === "D")) goto L155;
+  if (!(<lhs> === <push_atom_value>)) goto L155;
   L148:
   return var_ref0.$D;
   L155:
-  if (!(<lhs> === "DD")) goto L182;
+  if (!(<lhs> === <push_atom_value>)) goto L182;
   L164:
   L182:
-  if (!(<lhs> === "d")) goto L205;
+  if (!(<lhs> === <push_atom_value>)) goto L205;
   L191:
   L205:
-  if (!(<lhs> === "dd")) goto L236;
+  if (!(<lhs> === <push_atom_value>)) goto L236;
   L214:
   L236:
-  if (!(<lhs> === "ddd")) goto L267;
+  if (!(<lhs> === <push_atom_value>)) goto L267;
   L245:
   L267:
-  if (!(<lhs> === "dddd")) goto L287;
+  if (!(<lhs> === <push_atom_value>)) goto L287;
   L276:
   <get_array_el>;
   return <get_array_el>;
   L287:
-  if (!(<lhs> === "H")) goto L307;
+  if (!(<lhs> === <push_atom_value>)) goto L307;
   L296:
   L307:
-  if (!(<lhs> === "HH")) goto L331;
+  if (!(<lhs> === <push_atom_value>)) goto L331;
   L316:
   L331:
-  if (!(<lhs> === "h")) goto L347;
+  if (!(<lhs> === <push_atom_value>)) goto L347;
   L340:
   L347:
-  if (!(<lhs> === "hh")) goto L363;
+  if (!(<lhs> === <push_atom_value>)) goto L363;
   L356:
   L363:
-  if (!(<lhs> === "a")) goto L386;
+  if (!(<lhs> === <push_atom_value>)) goto L386;
   L372:
   L386:
-  if (!(<lhs> === "A")) goto L409;
+  if (!(<lhs> === <push_atom_value>)) goto L409;
   L395:
   L409:
-  if (!(<lhs> === "m")) goto L429;
+  if (!(<lhs> === <push_atom_value>)) goto L429;
   L418:
   L429:
-  if (!(<lhs> === "mm")) goto L453;
+  if (!(<lhs> === <push_atom_value>)) goto L453;
   L438:
   L453:
-  if (!(<lhs> === "s")) goto L476;
+  if (!(<lhs> === <push_atom_value>)) goto L476;
   L462:
   L476:
-  if (!(<lhs> === "ss")) goto L503;
+  if (!(<lhs> === <push_atom_value>)) goto L503;
   L485:
   L503:
-  if (!(<lhs> === "SSS")) goto L530;
+  if (!(<lhs> === <push_atom_value>)) goto L530;
   L512:
   L530:
-  if (!(<lhs> === "Z")) goto L543;
+  if (!(<lhs> === <push_atom_value>)) goto L543;
   L539:
   return var_ref11;
   L543:
@@ -1515,82 +1083,61 @@ function closure_64() {
 
 function closure_65() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <push_i8>;
-  <push_i8>;
   <neg>;
   return (<push_i8> * <neg>);
 }
 
 function closure_66() {
   L0:
-  <push_this>;
   loc7 = <push_this>;
-  <get_loc8>;
-  loc1 = <get_loc8>;
+  loc1 = loc8;
   loc2 = var_ref0.p(arg1);
   loc3 = var_ref1(arg0);
-  <get_loc8>;
-  loc4 = ((var_ref1(arg0).utcOffset() - <get_loc8>.utcOffset()) * var_ref2);
-  <get_loc8>;
-  loc5 = (<get_loc8> - loc3);
-  <fclosure8>;
-  <set_name>;
-  loc6 = <set_name>;
+  loc4 = ((var_ref1(arg0).utcOffset() - loc8.utcOffset()) * var_ref2);
+  loc5 = (loc8 - loc3);
+  loc6 = set_name(D, closure_0);
   if (!(loc2 === var_ref3)) goto L74;
   L65:
-  <get_loc8>;
-  <push_i8>;
-  loc0 = (<get_loc8>() / <push_i8>);
+  loc0 = (loc8() / <push_i8>);
   goto L193;
   L74:
   if (!(<lhs> === var_ref4)) goto L87;
   L81:
-  <get_loc8>;
-  loc0 = <get_loc8>();
+  loc0 = loc8();
   goto L193;
   L87:
   if (!(<lhs> === var_ref5)) goto L102;
   L94:
-  <get_loc8>;
-  loc0 = (<get_loc8>() / 3);
+  loc0 = (loc8() / 3);
   goto L193;
   L102:
   if (!(<lhs> === var_ref6)) goto L123;
   L109:
-  <get_loc8>;
-  <get_loc8>;
-  loc0 = ((<get_loc8> - <get_loc8>) / 604800000);
+  loc0 = ((loc8 - loc8) / 604800000);
   goto L193;
   L123:
   if (!(<lhs> === var_ref7)) goto L144;
   L130:
-  <get_loc8>;
-  <get_loc8>;
-  loc0 = ((<get_loc8> - <get_loc8>) / 86400000);
+  loc0 = ((loc8 - loc8) / 86400000);
   goto L193;
   L144:
   if (!(<lhs> === var_ref8)) goto L160;
   L151:
-  <get_loc8>;
-  loc0 = (<get_loc8> / var_ref9);
+  loc0 = (loc8 / var_ref9);
   goto L193;
   L160:
   if (!(<lhs> === var_ref10)) goto L174;
   L167:
-  <get_loc8>;
-  loc0 = (<get_loc8> / var_ref2);
+  loc0 = (loc8 / var_ref2);
   goto L193;
   L174:
   if (!(<lhs> === var_ref11)) goto L190;
   L181:
-  <get_loc8>;
-  loc0 = (<get_loc8> / var_ref12);
+  loc0 = (loc8 / var_ref12);
   goto L193;
   L190:
-  <get_loc8>;
-  loc0 = <get_loc8>;
+  loc0 = loc8;
   L193:
   if (!arg2) goto L199;
   L197:
@@ -1601,14 +1148,12 @@ function closure_66() {
 
 function closure_68() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   return loc0.endOf(var_ref0).$D;
 }
 
 function closure_69() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   <get_array_el>;
   return <get_array_el>;
@@ -1616,7 +1161,6 @@ function closure_69() {
 
 function closure_70() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
   if (!(!arg0)) goto L13;
   L6:
@@ -1634,20 +1178,17 @@ function closure_70() {
 
 function closure_71() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
 }
 
 function closure_72() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   return Date(loc0.valueOf());
 }
 
 function closure_73() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   if (!loc0.isValid()) goto L23;
   L13:
@@ -1658,13 +1199,11 @@ function closure_73() {
 
 function closure_74() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
 }
 
 function closure_75() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
 }
 
@@ -1672,14 +1211,12 @@ function closure_76() {
   L0:
   <get_array_el>;
   <to_propkey2>;
-  <fclosure8>;
   <put_array_el>;
   return;
 }
 
 function closure_77() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   <get_array_el>;
   <get_array_el>;
@@ -1695,11 +1232,6 @@ function closure_78() {
   return var_ref1;
 }
 
-function closure_79() {
-  L0:
-  <push_i16>;
-}
-
 function closure_80() {
   L0:
   <set_loc_uninitialized>;
@@ -1711,19 +1243,14 @@ function closure_80() {
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
-  loc0 = Symbol("SemVer ANY");
+  loc0 = Symbol(<push_atom_value>);
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
   <define_class>;
-  <fclosure8>;
   <define_method>;
-  <fclosure8>;
   <define_method>;
-  <fclosure8>;
   <define_method>;
-  <fclosure8>;
   <define_method>;
-  <fclosure8>;
   <define_method>;
   loc2 = undefined;
   loc1 = <set_loc_uninitialized>;
@@ -1732,7 +1259,7 @@ function closure_80() {
   loc3 = <set_loc_uninitialized>;
   <get_loc_check>;
   <set_loc_uninitialized>.exports = <set_loc_uninitialized>;
-  loc4 = arg2("../HyperBilibili/node_modules/semver/internal/parse-options.js");
+  loc4 = arg2(<push_atom_value>);
   <is_undefined>;
   if (<is_undefined>) goto L149;
   L130:
@@ -1743,10 +1270,10 @@ function closure_80() {
   L149:
   goto L130;
   L159:
-  loc7 = arg2("../HyperBilibili/node_modules/semver/functions/cmp.js");
-  loc8 = arg2("../HyperBilibili/node_modules/semver/internal/debug.js");
-  loc9 = arg2("../HyperBilibili/node_modules/semver/classes/semver.js");
-  loc10 = arg2("../HyperBilibili/node_modules/semver/classes/range.js");
+  loc7 = arg2(<push_atom_value>);
+  loc8 = arg2(<push_atom_value>);
+  loc9 = arg2(<push_atom_value>);
+  loc10 = arg2(<push_atom_value>);
   return;
 }
 
@@ -1754,15 +1281,13 @@ function closure_81() { return __________________; }
 
 function closure_82() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   <check_ctor>;
   if (!var_ref0) goto L14;
   L9:
   L14:
   arg1 = var_ref1(arg1);
-  <instanceof>;
-  if (!<instanceof>) goto L54;
+  if (!(arg0 instanceof var_ref2)) goto L54;
   L28:
   if (!(arg0.loose === (!(!arg1.loose)))) goto L47;
   L45:
@@ -1770,13 +1295,11 @@ function closure_82() {
   L47:
   arg0 = arg0.value;
   L54:
-  <regexp>;
-  arg0 = arg0.trim().split(<regexp>).join(" ");
+  arg0 = arg0.trim().split(new RegExp(<push_const8>)).join(<push_atom_value>);
   loc0.options = arg1;
   loc0.loose = (!(!arg1.loose));
   if (!(loc0.semver === var_ref4)) goto L155;
   L146:
-  <push_empty_string>;
   loc0.value = <push_empty_string>;
   goto L179;
   L155:
@@ -1787,7 +1310,6 @@ function closure_82() {
 
 function closure_83() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
@@ -1804,7 +1326,7 @@ function closure_83() {
   <get_loc_check>;
   if (!(!<v>)) goto L91;
   L67:
-  <throw>;
+  throw TypeError(<push_atom_value>.concat(arg0));
   L91:
   <get_loc_check>;
   <get_array_el>;
@@ -1814,12 +1336,10 @@ function closure_83() {
   <get_array_el>;
   goto L113;
   L112:
-  <push_empty_string>;
   L113:
   <obj>.operator = <rhs>;
-  if (!(loc2.operator === "=")) goto L139;
+  if (!(loc2.operator === <push_atom_value>)) goto L139;
   L132:
-  <push_empty_string>;
   loc2.operator = <push_empty_string>;
   L139:
   <get_loc_check>;
@@ -1837,24 +1357,21 @@ function closure_83() {
 
 function closure_84() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   return loc0.value;
 }
 
 function closure_85() {
   L0:
-  <push_this>;
   loc1 = <push_this>;
   if ((loc1.semver === var_ref1)) goto L43;
   L37:
   L43:
   if (!<cond>) goto L47;
   L45:
-  return true;
+  return <push_true>;
   L47:
-  <typeof>;
-  if (!(<typeof> === "string")) goto L90;
+  if (!(typeof arg0 === <push_atom_value>)) goto L90;
   L57:
   <catch>;
   L62:
@@ -1864,95 +1381,89 @@ function closure_85() {
   loc0 = <rhs>;
   <catch>;
   L86:
-  return false;
+  return <push_false>;
   L89:
-  <throw>;
+  throw <value>;
   L90:
 }
 
 function closure_86() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <instanceof>;
-  if (!(!<instanceof>)) goto L25;
+  if (!(!(arg0 instanceof var_ref0))) goto L25;
   L10:
-  <throw>;
+  throw TypeError(<push_atom_value>);
   L25:
-  <push_empty_string>;
   if (!(loc0.operator === <push_empty_string>)) goto L75;
   L35:
-  <push_empty_string>;
   if (!(loc0.value === <push_empty_string>)) goto L47;
   L45:
-  return true;
+  return <push_true>;
   L47:
   L75:
-  <push_empty_string>;
   if (!(arg0.operator === <push_empty_string>)) goto L125;
   L85:
-  <push_empty_string>;
   if (!(arg0.value === <push_empty_string>)) goto L97;
   L95:
-  return true;
+  return <push_true>;
   L97:
   L125:
   arg1 = var_ref2(arg1);
   if (!var_ref2(arg1).includePrerelease) goto L170;
   L138:
-  if ((loc0.value === "<0.0.0-0")) goto L166;
+  if ((loc0.value === <push_atom_value>)) goto L166;
   L153:
   L166:
   if (!<cond>) goto L170;
   L168:
-  return false;
+  return <push_false>;
   L170:
   if (!(!arg1.includePrerelease)) goto L225;
   L179:
-  if (loc0.value.startsWith("<0.0.0")) goto L221;
+  if (loc0.value.startsWith(<push_atom_value>)) goto L221;
   L201:
   L221:
   if (!<cond>) goto L225;
   L223:
-  return false;
+  return <push_false>;
   L225:
-  if (!loc0.operator.startsWith(">")) goto L269;
+  if (!loc0.operator.startsWith(<push_atom_value>)) goto L269;
   L246:
-  if (!arg0.operator.startsWith(">")) goto L269;
+  if (!arg0.operator.startsWith(<push_atom_value>)) goto L269;
   L267:
-  return true;
+  return <push_true>;
   L269:
-  if (!loc0.operator.startsWith("<")) goto L313;
+  if (!loc0.operator.startsWith(<push_atom_value>)) goto L313;
   L290:
-  if (!arg0.operator.startsWith("<")) goto L313;
+  if (!arg0.operator.startsWith(<push_atom_value>)) goto L313;
   L311:
-  return true;
+  return <push_true>;
   L313:
   if (!(loc0.semver.version === arg0.semver.version)) goto L382;
   L338:
-  if (!loc0.operator.includes("=")) goto L382;
+  if (!loc0.operator.includes(<push_atom_value>)) goto L382;
   L359:
-  if (!arg0.operator.includes("=")) goto L382;
+  if (!arg0.operator.includes(<push_atom_value>)) goto L382;
   L380:
-  return true;
+  return <push_true>;
   L382:
-  if (!var_ref3(loc0.semver, "<", arg0.semver, arg1)) goto L452;
+  if (!var_ref3(loc0.semver, <push_atom_value>, arg0.semver, arg1)) goto L452;
   L408:
-  if (!loc0.operator.startsWith(">")) goto L452;
+  if (!loc0.operator.startsWith(<push_atom_value>)) goto L452;
   L429:
-  if (!arg0.operator.startsWith("<")) goto L452;
+  if (!arg0.operator.startsWith(<push_atom_value>)) goto L452;
   L450:
-  return true;
+  return <push_true>;
   L452:
-  if (!var_ref3(loc0.semver, ">", arg0.semver, arg1)) goto L522;
+  if (!var_ref3(loc0.semver, <push_atom_value>, arg0.semver, arg1)) goto L522;
   L478:
-  if (!loc0.operator.startsWith("<")) goto L522;
+  if (!loc0.operator.startsWith(<push_atom_value>)) goto L522;
   L499:
-  if (!arg0.operator.startsWith(">")) goto L522;
+  if (!arg0.operator.startsWith(<push_atom_value>)) goto L522;
   L520:
-  return true;
+  return <push_true>;
   L522:
-  return false;
+  return <push_false>;
 }
 
 function closure_87() {
@@ -1987,22 +1498,15 @@ function closure_87() {
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
-  <regexp>;
-  loc0 = <regexp>;
+  loc0 = new RegExp(<push_const8>);
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
   <define_class>;
-  <fclosure8>;
   <define_method>;
-  <fclosure8>;
   <define_method>;
-  <fclosure8>;
   <define_method>;
-  <fclosure8>;
   <define_method>;
-  <fclosure8>;
   <define_method>;
-  <fclosure8>;
   <define_method>;
   loc2 = undefined;
   loc1 = <set_loc_uninitialized>;
@@ -2011,13 +1515,13 @@ function closure_87() {
   loc3 = <set_loc_uninitialized>;
   <get_loc_check>;
   <set_loc_uninitialized>.exports = <set_loc_uninitialized>;
-  loc4 = arg2("../HyperBilibili/node_modules/semver/internal/lrucache.js");
+  loc4 = arg2(<push_atom_value>);
   <get_loc_check>;
   loc5 = <set_loc_uninitialized>();
-  loc6 = arg2("../HyperBilibili/node_modules/semver/internal/parse-options.js");
-  loc7 = arg2("../HyperBilibili/node_modules/semver/classes/comparator.js");
-  loc8 = arg2("../HyperBilibili/node_modules/semver/internal/debug.js");
-  loc9 = arg2("../HyperBilibili/node_modules/semver/classes/semver.js");
+  loc6 = arg2(<push_atom_value>);
+  loc7 = arg2(<push_atom_value>);
+  loc8 = arg2(<push_atom_value>);
+  loc9 = arg2(<push_atom_value>);
   <is_undefined>;
   if (<is_undefined>) goto L278;
   L238:
@@ -2041,65 +1545,33 @@ function closure_87() {
   L311:
   goto L293;
   L321:
-  <fclosure8>;
-  <set_name>;
-  loc17 = <set_name>;
-  <fclosure8>;
-  <set_name>;
-  loc18 = <set_name>;
-  <fclosure8>;
-  <set_name>;
-  loc19 = <set_name>;
-  <fclosure8>;
-  <set_name>;
-  loc20 = <set_name>;
-  <fclosure8>;
-  <set_name>;
-  loc21 = <set_name>;
-  <fclosure8>;
-  <set_name>;
-  loc22 = <set_name>;
-  <fclosure8>;
-  <set_name>;
-  loc23 = <set_name>;
-  <fclosure8>;
-  <set_name>;
-  loc24 = <set_name>;
-  <fclosure8>;
-  <set_name>;
-  loc25 = <set_name>;
-  <fclosure8>;
-  <set_name>;
-  loc26 = <set_name>;
-  <fclosure8>;
-  <set_name>;
-  loc27 = <set_name>;
-  <fclosure8>;
-  <set_name>;
-  loc28 = <set_name>;
-  <fclosure8>;
-  <set_name>;
-  loc29 = <set_name>;
-  <fclosure8>;
-  <set_name>;
-  loc30 = <set_name>;
-  <fclosure8>;
-  <set_name>;
-  loc31 = <set_name>;
+  loc17 = set_name(isNullSet, closure_9);
+  loc18 = set_name(isAny, closure_10);
+  loc19 = set_name(isSatisfiable, closure_11);
+  loc20 = set_name(parseComparator, closure_12);
+  loc21 = set_name(isX, closure_13);
+  loc22 = set_name(replaceTildes, closure_14);
+  loc23 = set_name(replaceTilde, closure_15);
+  loc24 = set_name(replaceCarets, closure_16);
+  loc25 = set_name(replaceCaret, closure_17);
+  loc26 = set_name(replaceXRanges, closure_18);
+  loc27 = set_name(replaceXRange, closure_19);
+  loc28 = set_name(replaceStars, closure_20);
+  loc29 = set_name(replaceGTE0, closure_21);
+  loc30 = set_name(hyphenReplace, closure_22);
+  loc31 = set_name(testSet, closure_23);
   return;
 }
 
 function closure_88() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
   <check_ctor>;
   if (!var_ref1) goto L14;
   L9:
   L14:
   arg1 = var_ref2(arg1);
-  <instanceof>;
-  if (!<instanceof>) goto L79;
+  if (!(arg0 instanceof var_ref3)) goto L79;
   L28:
   if (!(arg0.loose === (!(!arg1.loose)))) goto L64;
   L45:
@@ -2109,8 +1581,7 @@ function closure_88() {
   L64:
   return var_ref3(arg0.raw, arg1);
   L79:
-  <instanceof>;
-  if (!<instanceof>) goto L124;
+  if (!(arg0 instanceof var_ref4)) goto L124;
   L86:
   loc2.raw = arg0.value;
   <obj>.set = <func>(loc2(arg0));
@@ -2120,14 +1591,12 @@ function closure_88() {
   loc2.options = arg1;
   loc2.loose = (!(!arg1.loose));
   loc2.includePrerelease = (!(!arg1.includePrerelease));
-  loc2.raw = arg0.trim().replace(var_ref5, " ");
-  <fclosure8>;
-  <fclosure8>;
-  loc2.set = loc2.raw.split("||").map(<fclosure8>).filter(<fclosure8>);
+  loc2.raw = arg0.trim().replace(var_ref5, <push_atom_value>);
+  loc2.set = loc2.raw.split(<push_atom_value>).map(closure_0).filter(closure_1);
   <get_length>;
   if (!(!<get_length>)) goto L274;
   L245:
-  <throw>;
+  throw TypeError(<push_atom_value>.concat(loc2.raw));
   L274:
   <get_length>;
   if (!(<get_length> > 1)) goto L407;
@@ -2135,8 +1604,7 @@ function closure_88() {
   <set_loc_uninitialized>;
   <get_array_el>;
   loc0 = <get_array_el>;
-  <fclosure8>;
-  loc2.set = loc2.set.filter(<fclosure8>);
+  loc2.set = loc2.set.filter(closure_2);
   <get_length>;
   if (!(<get_length> === 0)) goto L344;
   L330:
@@ -2188,11 +1656,9 @@ function closure_91() {
 
 function closure_92() {
   L0:
-  <push_this>;
   loc3 = <push_this>;
   if (!(loc3.formatted === undefined)) goto L180;
   L19:
-  <push_empty_string>;
   loc3.formatted = <push_empty_string>;
   <set_loc_uninitialized>;
   loc0 = 0;
@@ -2205,7 +1671,7 @@ function closure_92() {
   <get_loc_check>;
   if (!(<lhs> > 0)) goto L74;
   L57:
-  <obj>.formatted = (loc3.formatted + "||");
+  <obj>.formatted = (loc3.formatted + <push_atom_value>);
   L74:
   <get_loc_check>;
   <get_array_el>;
@@ -2221,7 +1687,7 @@ function closure_92() {
   <get_loc_check>;
   if (!(<lhs> > 0)) goto L124;
   L107:
-  <obj>.formatted = (loc3.formatted + " ");
+  <obj>.formatted = (loc3.formatted + <push_atom_value>);
   L124:
   <get_loc_check>;
   <get_loc_check>;
@@ -2242,21 +1708,18 @@ function closure_92() {
 
 function closure_93() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   return loc0.range;
 }
 
 function closure_94() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   return loc0.range;
 }
 
 function closure_95() {
   L0:
-  <push_this>;
   loc10 = <push_this>;
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
@@ -2267,17 +1730,15 @@ function closure_95() {
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
-  <get_loc8>;
-  if (!<get_loc8>.options.includePrerelease) goto L49;
+  if (!loc8.options.includePrerelease) goto L49;
   L45:
   L49:
-  <get_loc8>;
-  if (!<get_loc8>.options.loose) goto L68;
+  if (!loc8.options.loose) goto L68;
   L64:
   L68:
   loc0 = (<lhs> | <rhs>);
   <get_loc_check>;
-  loc1 = ((<lhs> + ":") + arg0);
+  loc1 = ((<lhs> + <push_atom_value>) + arg0);
   <get_loc_check>;
   loc2 = <func>(<arg>);
   <get_loc_check>;
@@ -2286,8 +1747,7 @@ function closure_95() {
   <get_loc_check>;
   return undefined;
   L106:
-  <get_loc8>;
-  loc3 = <get_loc8>.options.loose;
+  loc3 = loc8.options.loose;
   <get_loc_check>;
   if (!<cond>) goto L138;
   L124:
@@ -2298,30 +1758,24 @@ function closure_95() {
   L150:
   loc4 = <rhs>;
   <get_loc_check>;
-  <get_loc8>;
-  arg0 = <func>(<arg>, var_ref9(<get_loc8>.options.includePrerelease));
+  arg0 = <func>(<arg>, var_ref9(loc8.options.includePrerelease));
   <get_array_el>;
   arg0 = <get_array_el>(<get_array_el>, var_ref10);
   <get_array_el>;
   arg0 = <get_array_el>(<get_array_el>, var_ref11);
   <get_array_el>;
   arg0 = <get_array_el>(<get_array_el>, var_ref12);
-  <fclosure8>;
-  <regexp>;
-  <fclosure8>;
-  loc5 = arg0.split(" ").map(<fclosure8>).join(" ").split(<regexp>).map(<fclosure8>);
+  loc5 = arg0.split(<push_atom_value>).map(closure_0).join(<push_atom_value>).split(new RegExp(<push_const8>)).map(closure_3);
   <get_loc_check>;
   if (!arg0.replace) goto L385;
   L367:
   <get_loc_check>;
-  <fclosure8>;
   <put_loc_check>;
   L385:
   <get_loc_check>;
   loc6 = Map();
   <get_loc_check>;
-  <fclosure8>;
-  loc7 = <obj>.map(<fclosure8>);
+  loc7 = <obj>.map(closure_5);
   <set_loc_uninitialized>;
   <get_loc_check>;
   <for_of_start>;
@@ -2348,11 +1802,9 @@ function closure_95() {
   if (!(<obj>.size > 1)) goto L521;
   L494:
   <get_loc_check>;
-  <push_empty_string>;
   if (!<obj>.has(<push_empty_string>)) goto L521;
   L508:
   <get_loc_check>;
-  <push_empty_string>;
   L521:
   <get_loc_check>;
   <append>;
@@ -2373,21 +1825,17 @@ function closure_99() { return var_ref0(arg0, var_ref1.options); }
 
 function closure_100() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <instanceof>;
-  if (!(!<instanceof>)) goto L25;
+  if (!(!(arg0 instanceof var_ref1))) goto L25;
   L10:
-  <throw>;
+  throw TypeError(<push_atom_value>);
   L25:
-  <fclosure8>;
 }
 
 function closure_101() {
   L0:
   if (!var_ref1(arg0, var_ref0)) goto L26;
   L9:
-  <fclosure8>;
   L26:
   return undefined;
 }
@@ -2396,26 +1844,18 @@ function closure_102() {
   L0:
   if (!var_ref1(arg0, var_ref0)) goto L21;
   L9:
-  <fclosure8>;
   L21:
   return undefined;
 }
 
-function closure_103() {
-  L0:
-  <fclosure8>;
-}
-
 function closure_105() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
   if (!(!arg0)) goto L8;
   L6:
-  return false;
+  return <push_false>;
   L8:
-  <typeof>;
-  if (!(<typeof> === "string")) goto L51;
+  if (!(typeof arg0 === <push_atom_value>)) goto L51;
   L18:
   <catch>;
   L23:
@@ -2425,9 +1865,9 @@ function closure_105() {
   loc0 = <rhs>;
   <catch>;
   L47:
-  return false;
+  return <push_false>;
   L50:
-  <throw>;
+  throw <value>;
   L51:
   <set_loc_uninitialized>;
   loc1 = 0;
@@ -2440,30 +1880,26 @@ function closure_105() {
   <get_array_el>;
   if (!<get_array_el>(<get_array_el>, arg0, loc2.options)) goto L94;
   L92:
-  return true;
+  return <push_true>;
   L94:
   <get_loc_check>;
   <post_inc>;
   <put_loc_check>;
   goto L56;
   L104:
-  return false;
+  return <push_false>;
 }
 
-function closure_106() { return (arg0.value === "<0.0.0-0"); }
+function closure_106() { return (arg0.value === <push_atom_value>); }
 
-function closure_107() {
-  L0:
-  <push_empty_string>;
-  return (arg0.value === <push_empty_string>);
-}
+function closure_107() { return (arg0.value === <push_empty_string>); }
 
 function closure_108() {
   L0:
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
-  loc0 = true;
+  loc0 = <push_true>;
   loc1 = arg0.slice();
   <get_loc_check>;
   loc2 = <set_loc_uninitialized>.pop();
@@ -2476,7 +1912,6 @@ function closure_108() {
   if (!<get_length>) goto L80;
   L44:
   <get_loc_check>;
-  <fclosure8>;
   <put_loc_check>;
   <get_loc_check>;
   <put_loc_check>;
@@ -2499,16 +1934,10 @@ function closure_111() {
   L0:
   if ((!arg0)) goto L32;
   L5:
-  if ((arg0.toLowerCase() === "x")) goto L32;
+  if ((arg0.toLowerCase() === <push_atom_value>)) goto L32;
   L24:
   L32:
   return undefined;
-}
-
-function closure_112() {
-  L0:
-  <regexp>;
-  <fclosure8>;
 }
 
 function closure_114() {
@@ -2523,7 +1952,6 @@ function closure_114() {
   L37:
   loc0 = <rhs>;
   <get_loc_check>;
-  <fclosure8>;
 }
 
 function closure_115() {
@@ -2532,7 +1960,6 @@ function closure_115() {
   loc0 = undefined;
   if (!var_ref2(arg1)) goto L41;
   L32:
-  <push_empty_string>;
   <put_loc_check>;
   goto L269;
   L41:
@@ -2562,12 +1989,6 @@ function closure_115() {
   return undefined;
 }
 
-function closure_116() {
-  L0:
-  <regexp>;
-  <fclosure8>;
-}
-
 function closure_118() {
   L0:
   <set_loc_uninitialized>;
@@ -2584,11 +2005,9 @@ function closure_118() {
   L61:
   goto L69;
   L68:
-  <push_empty_string>;
   L69:
   loc1 = <rhs>;
   <get_loc_check>;
-  <fclosure8>;
 }
 
 function closure_119() {
@@ -2597,7 +2016,6 @@ function closure_119() {
   loc0 = undefined;
   if (!var_ref2(arg1)) goto L41;
   L32:
-  <push_empty_string>;
   <put_loc_check>;
   goto L618;
   L41:
@@ -2609,7 +2027,7 @@ function closure_119() {
   L92:
   if (!var_ref2(arg3)) goto L211;
   L99:
-  if (!(arg1 === "0")) goto L161;
+  if (!(arg1 === <push_const8>)) goto L161;
   L105:
   <plus>;
   <put_loc_check>;
@@ -2621,9 +2039,9 @@ function closure_119() {
   L211:
   if (!arg4) goto L433;
   L219:
-  if (!(arg1 === "0")) goto L377;
+  if (!(arg1 === <push_const8>)) goto L377;
   L241:
-  if (!(arg2 === "0")) goto L315;
+  if (!(arg2 === <push_const8>)) goto L315;
   L247:
   <plus>;
   <put_loc_check>;
@@ -2637,9 +2055,9 @@ function closure_119() {
   <put_loc_check>;
   goto L618;
   L433:
-  if (!(arg1 === "0")) goto L573;
+  if (!(arg1 === <push_const8>)) goto L573;
   L449:
-  if (!(arg2 === "0")) goto L517;
+  if (!(arg2 === <push_const8>)) goto L517;
   L455:
   <plus>;
   <put_loc_check>;
@@ -2657,12 +2075,6 @@ function closure_119() {
   return undefined;
 }
 
-function closure_120() {
-  L0:
-  <regexp>;
-  <fclosure8>;
-}
-
 function closure_122() {
   L0:
   <set_loc_uninitialized>;
@@ -2676,7 +2088,6 @@ function closure_122() {
   L47:
   loc0 = <rhs>;
   <get_loc_check>;
-  <fclosure8>;
 }
 
 function closure_123() {
@@ -2698,33 +2109,31 @@ function closure_123() {
   loc2 = <rhs>;
   <get_loc_check>;
   loc3 = <rhs>;
-  if (!(arg1 === "=")) goto L89;
+  if (!(arg1 === <push_atom_value>)) goto L89;
   L82:
   <get_loc_check>;
   if (!<cond>) goto L89;
   L87:
-  <push_empty_string>;
   arg1 = <push_empty_string>;
   L89:
   if (!var_ref3.includePrerelease) goto L104;
   L97:
   goto L105;
   L104:
-  <push_empty_string>;
   L105:
   arg5 = <rhs>;
   <get_loc_check>;
   if (!<cond>) goto L151;
   L113:
-  if ((arg1 === ">")) goto L131;
+  if ((arg1 === <push_atom_value>)) goto L131;
   L123:
   L131:
   if (!<cond>) goto L142;
   L133:
-  arg0 = "<0.0.0-0";
+  arg0 = <push_atom_value>;
   goto L399;
   L142:
-  arg0 = "*";
+  arg0 = <push_atom_value>;
   goto L399;
   L151:
   if (!arg1) goto L301;
@@ -2738,9 +2147,9 @@ function closure_123() {
   arg3 = 0;
   L172:
   arg4 = 0;
-  if (!(arg1 === ">")) goto L220;
+  if (!(arg1 === <push_atom_value>)) goto L220;
   L185:
-  arg1 = ">=";
+  arg1 = <push_atom_value>;
   <get_loc_check>;
   if (!<cond>) goto L209;
   L196:
@@ -2755,9 +2164,9 @@ function closure_123() {
   arg4 = 0;
   goto L252;
   L220:
-  if (!(arg1 === "<=")) goto L252;
+  if (!(arg1 === <push_atom_value>)) goto L252;
   L229:
-  arg1 = "<";
+  arg1 = <push_atom_value>;
   <get_loc_check>;
   if (!<cond>) goto L247;
   L240:
@@ -2768,26 +2177,25 @@ function closure_123() {
   <plus>;
   arg3 = (<plus> + 1);
   L252:
-  if (!(arg1 === "<")) goto L269;
+  if (!(arg1 === <push_atom_value>)) goto L269;
   L261:
-  arg5 = "-0";
+  arg5 = <push_atom_value>;
   L269:
-  <push_empty_string>;
-  arg0 = <push_empty_string>.concat((arg1 + arg2), ".", arg3, ".", arg4, arg5);
+  arg0 = <push_empty_string>.concat((arg1 + arg2), <push_atom_value>, arg3, <push_atom_value>, arg4, arg5);
   goto L399;
   L301:
   <get_loc_check>;
   if (!<cond>) goto L345;
   L306:
   <plus>;
-  arg0 = ">=".concat(arg2, ".0.0", arg5, " <", (<plus> + 1), ".0.0-0");
+  arg0 = <push_atom_value>.concat(arg2, <push_atom_value>, arg5, <push_atom_value>, (<plus> + 1), <push_atom_value>);
   goto L399;
   L345:
   <get_loc_check>;
   if (!<cond>) goto L399;
   L350:
   <plus>;
-  arg0 = ">=".concat(arg2, ".", arg3, ".0", arg5, " <", arg2, ".", (<plus> + 1), ".0-0");
+  arg0 = <push_atom_value>.concat(arg2, <push_atom_value>, arg3, <push_atom_value>, arg5, <push_atom_value>, arg2, <push_atom_value>, (<plus> + 1), <push_atom_value>);
   L399:
   return arg0;
 }
@@ -2795,7 +2203,6 @@ function closure_123() {
 function closure_124() {
   L0:
   <get_array_el>;
-  <push_empty_string>;
 }
 
 function closure_125() {
@@ -2806,20 +2213,14 @@ function closure_125() {
   L47:
   L55:
   <get_array_el>;
-  <push_empty_string>;
 }
 
-function closure_126() {
-  L0:
-  <fclosure8>;
-  return <fclosure8>;
-}
+function closure_126() { return closure_0; }
 
 function closure_127() {
   L0:
   if (!var_ref0(arg2)) goto L12;
   L7:
-  <push_empty_string>;
   arg1 = <push_empty_string>;
   goto L148;
   L12:
@@ -2829,7 +2230,6 @@ function closure_127() {
   L38:
   goto L46;
   L45:
-  <push_empty_string>;
   L46:
   arg1 = <func>(<arg>, <arg>, <arg>);
   goto L148;
@@ -2840,56 +2240,52 @@ function closure_127() {
   L86:
   goto L94;
   L93:
-  <push_empty_string>;
   L94:
   arg1 = <func>(<arg>, <arg>, <arg>, <arg>, <arg>);
   goto L148;
   L100:
   if (!arg5) goto L122;
   L105:
-  arg1 = ">=".concat(arg1);
+  arg1 = <push_atom_value>.concat(arg1);
   goto L148;
   L122:
   if (!var_ref1) goto L143;
   L136:
   goto L144;
   L143:
-  <push_empty_string>;
   L144:
   arg1 = <func>(<arg>, <arg>);
   L148:
   if (!var_ref0(arg8)) goto L164;
   L157:
-  <push_empty_string>;
   arg7 = <push_empty_string>;
   goto L366;
   L164:
   if (!var_ref0(arg9)) goto L203;
   L173:
   <plus>;
-  arg7 = "<".concat((<plus> + 1), ".0.0-0");
+  arg7 = <push_atom_value>.concat((<plus> + 1), <push_atom_value>);
   goto L366;
   L203:
   if (!var_ref0(arg10)) goto L249;
   L212:
   <plus>;
-  arg7 = "<".concat(arg8, ".", (<plus> + 1), ".0-0");
+  arg7 = <push_atom_value>.concat(arg8, <push_atom_value>, (<plus> + 1), <push_atom_value>);
   goto L366;
   L249:
   if (!arg11) goto L299;
   L254:
-  arg7 = "<=".concat(arg8, ".", arg9, ".", arg10, "-", arg11);
+  arg7 = <push_atom_value>.concat(arg8, <push_atom_value>, arg9, <push_atom_value>, arg10, <push_atom_value>, arg11);
   goto L366;
   L299:
   if (!var_ref1) goto L347;
   L302:
   <plus>;
-  arg7 = "<".concat(arg8, ".", arg9, ".", (<plus> + 1), "-0");
+  arg7 = <push_atom_value>.concat(arg8, <push_atom_value>, arg9, <push_atom_value>, (<plus> + 1), <push_atom_value>);
   goto L366;
   L347:
-  arg7 = "<=".concat(arg7);
+  arg7 = <push_atom_value>.concat(arg7);
   L366:
-  <push_empty_string>;
 }
 
 function closure_128() {
@@ -2905,7 +2301,7 @@ function closure_128() {
   <get_array_el>;
   if (!(!<get_array_el>.test(arg1))) goto L32;
   L30:
-  return false;
+  return <push_false>;
   L32:
   <get_loc_check>;
   <post_inc>;
@@ -2948,16 +2344,16 @@ function closure_128() {
   <get_loc_check>;
   if (!(<obj>.patch === arg1.patch)) goto L205;
   L203:
-  return true;
+  return <push_true>;
   L205:
   <get_loc_check>;
   <post_inc>;
   <put_loc_check>;
   goto L71;
   L216:
-  return false;
+  return <push_false>;
   L218:
-  return true;
+  return <push_true>;
 }
 
 function closure_129() {
@@ -2970,7 +2366,7 @@ function closure_129() {
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
-  loc0 = arg2("../HyperBilibili/node_modules/semver/internal/debug.js");
+  loc0 = arg2(<push_atom_value>);
   <is_undefined>;
   if (<is_undefined>) goto L53;
   L37:
@@ -2991,7 +2387,7 @@ function closure_129() {
   L86:
   goto L68;
   L96:
-  loc5 = arg2("../HyperBilibili/node_modules/semver/internal/parse-options.js");
+  loc5 = arg2(<push_atom_value>);
   <is_undefined>;
   if (<is_undefined>) goto L121;
   L110:
@@ -3004,19 +2400,12 @@ function closure_129() {
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
   <define_class>;
-  <fclosure8>;
   <define_method>;
-  <fclosure8>;
   <define_method>;
-  <fclosure8>;
   <define_method>;
-  <fclosure8>;
   <define_method>;
-  <fclosure8>;
   <define_method>;
-  <fclosure8>;
   <define_method>;
-  <fclosure8>;
   <define_method>;
   loc8 = undefined;
   loc7 = <rhs>;
@@ -3030,7 +2419,6 @@ function closure_129() {
 
 function closure_130() {
   L0:
-  <push_this>;
   loc1 = <push_this>;
   <check_ctor>;
   if (!var_ref1) goto L14;
@@ -3038,8 +2426,7 @@ function closure_130() {
   L14:
   <set_loc_uninitialized>;
   arg1 = var_ref2(arg1);
-  <instanceof>;
-  if (!<instanceof>) goto L76;
+  if (!(arg0 instanceof var_ref3)) goto L76;
   L31:
   if (!(arg0.loose === (!(!arg1.loose)))) goto L67;
   L48:
@@ -3050,16 +2437,14 @@ function closure_130() {
   arg0 = arg0.version;
   goto L116;
   L76:
-  <typeof>;
-  if (!(<typeof> !== "string")) goto L116;
+  if (!(typeof arg0 !== <push_atom_value>)) goto L116;
   L86:
-  <typeof>;
-  <throw>;
+  throw TypeError(<push_atom_value>.concat(typeof arg0, <push_atom_value>));
   L116:
   <get_length>;
   if (!(<get_length> > var_ref4)) goto L155;
   L124:
-  <throw>;
+  throw TypeError(<push_atom_value>.concat(var_ref4, <push_atom_value>));
   L155:
   loc1.options = arg1;
   loc1.loose = (!(!arg1.loose));
@@ -3075,7 +2460,7 @@ function closure_130() {
   <get_loc_check>;
   if (!(!<v>)) goto L284;
   L260:
-  <throw>;
+  throw TypeError(<push_atom_value>.concat(arg0));
   L284:
   loc1.raw = arg0;
   <get_loc_check>;
@@ -3095,21 +2480,21 @@ function closure_130() {
   L349:
   if (!<cond>) goto L366;
   L351:
-  <throw>;
+  throw TypeError(<push_atom_value>);
   L366:
   if ((loc1.minor > var_ref0)) goto L388;
   L379:
   L388:
   if (!<cond>) goto L405;
   L390:
-  <throw>;
+  throw TypeError(<push_atom_value>);
   L405:
   if ((loc1.patch > var_ref0)) goto L427;
   L418:
   L427:
   if (!<cond>) goto L444;
   L429:
-  <throw>;
+  throw TypeError(<push_atom_value>);
   L444:
   <get_loc_check>;
   <get_array_el>;
@@ -3120,8 +2505,7 @@ function closure_130() {
   L463:
   <get_loc_check>;
   <get_array_el>;
-  <fclosure8>;
-  <get_array_el>.prerelease = <get_array_el>.split(".").map(<fclosure8>);
+  <get_array_el>.prerelease = <get_array_el>.split(<push_atom_value>).map(closure_0);
   L497:
   <get_loc_check>;
   <get_array_el>;
@@ -3138,8 +2522,7 @@ function closure_130() {
 
 function closure_131() {
   L0:
-  <regexp>;
-  if (!<regexp>.test(arg0)) goto L42;
+  if (!new RegExp(<push_const8>).test(arg0)) goto L42;
   L16:
   <set_loc_uninitialized>;
   <plus>;
@@ -3158,34 +2541,28 @@ function closure_131() {
 
 function closure_132() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <push_empty_string>;
-  loc0.version = <push_empty_string>.concat(loc0.major, ".", loc0.minor, ".", loc0.patch);
+  loc0.version = <push_empty_string>.concat(loc0.major, <push_atom_value>, loc0.minor, <push_atom_value>, loc0.patch);
   <get_length>;
   if (!<get_length>) goto L98;
   L54:
-  <obj>.version = (loc0.version + "-".concat(loc0.prerelease.join(".")));
+  <obj>.version = (loc0.version + <push_atom_value>.concat(loc0.prerelease.join(<push_atom_value>)));
   L98:
   return loc0.version;
 }
 
 function closure_133() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   return loc0.version;
 }
 
 function closure_134() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <instanceof>;
-  if (!(!<instanceof>)) goto L72;
+  if (!(!(arg0 instanceof var_ref1))) goto L72;
   L35:
-  <typeof>;
-  if (!(<typeof> === "string")) goto L57;
+  if (!(typeof arg0 === <push_atom_value>)) goto L57;
   L45:
   if (!(arg0 === loc0.version)) goto L57;
   L55:
@@ -3205,10 +2582,8 @@ function closure_134() {
 
 function closure_135() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <instanceof>;
-  if (!(!<instanceof>)) goto L25;
+  if (!(!(arg0 instanceof var_ref0))) goto L25;
   L10:
   arg0 = var_ref0(arg0, loc0.options);
   L25:
@@ -3222,11 +2597,9 @@ function closure_135() {
 
 function closure_136() {
   L0:
-  <push_this>;
   loc3 = <push_this>;
   <set_loc_uninitialized>;
-  <instanceof>;
-  if (!(!<instanceof>)) goto L28;
+  if (!(!(arg0 instanceof var_ref0))) goto L28;
   L13:
   arg0 = var_ref0(arg0, loc3.options);
   L28:
@@ -3300,11 +2673,9 @@ function closure_136() {
 
 function closure_137() {
   L0:
-  <push_this>;
   loc3 = <push_this>;
   <set_loc_uninitialized>;
-  <instanceof>;
-  if (!(!<instanceof>)) goto L28;
+  if (!(!(arg0 instanceof var_ref0))) goto L28;
   L13:
   arg0 = var_ref0(arg0, loc3.options);
   L28:
@@ -3354,9 +2725,8 @@ function closure_137() {
 
 function closure_138() {
   L0:
-  <push_this>;
   loc3 = <push_this>;
-  if (!(arg0 === "premajor")) goto L70;
+  if (!(arg0 === <push_atom_value>)) goto L70;
   L12:
   loc3.prerelease.length = 0;
   loc3.patch = 0;
@@ -3365,7 +2735,7 @@ function closure_138() {
   <inc>.major = <inc>;
   goto L753;
   L70:
-  if (!(<lhs> === "preminor")) goto L130;
+  if (!(<lhs> === <push_atom_value>)) goto L130;
   L79:
   loc3.prerelease.length = 0;
   loc3.patch = 0;
@@ -3373,12 +2743,12 @@ function closure_138() {
   <inc>.minor = <inc>;
   goto L753;
   L130:
-  if (!(<lhs> === "prepatch")) goto L188;
+  if (!(<lhs> === <push_atom_value>)) goto L188;
   L139:
   loc3.prerelease.length = 0;
   goto L753;
   L188:
-  if (!(<lhs> === "prerelease")) goto L245;
+  if (!(<lhs> === <push_atom_value>)) goto L245;
   L197:
   <get_length>;
   if (!(<get_length> === 0)) goto L225;
@@ -3386,7 +2756,7 @@ function closure_138() {
   L225:
   goto L753;
   L245:
-  if (!(<lhs> === "major")) goto L327;
+  if (!(<lhs> === <push_atom_value>)) goto L327;
   L254:
   if ((loc3.minor !== 0)) goto L287;
   L265:
@@ -3404,7 +2774,7 @@ function closure_138() {
   <obj>.prerelease = loc3();
   goto L753;
   L327:
-  if (!(<lhs> === "minor")) goto L390;
+  if (!(<lhs> === <push_atom_value>)) goto L390;
   L336:
   if ((loc3.patch !== 0)) goto L357;
   L347:
@@ -3419,7 +2789,7 @@ function closure_138() {
   <obj>.prerelease = loc3();
   goto L753;
   L390:
-  if (!(<lhs> === "patch")) goto L434;
+  if (!(<lhs> === <push_atom_value>)) goto L434;
   L399:
   <get_length>;
   if (!(<get_length> === 0)) goto L422;
@@ -3430,7 +2800,7 @@ function closure_138() {
   <obj>.prerelease = loc3();
   goto L753;
   L434:
-  if (!(<lhs> === "pre")) goto L729;
+  if (!(<lhs> === <push_atom_value>)) goto L729;
   L446:
   <set_loc_uninitialized>;
   if (!Number(arg2)) goto L461;
@@ -3441,9 +2811,9 @@ function closure_138() {
   loc0 = <rhs>;
   if (!(!arg1)) goto L487;
   L467:
-  if (!(arg2 === false)) goto L487;
+  if (!(arg2 === <push_false>)) goto L487;
   L472:
-  <throw>;
+  throw Error(<push_atom_value>);
   L487:
   <get_length>;
   if (!(<get_length> === 0)) goto L513;
@@ -3463,8 +2833,7 @@ function closure_138() {
   L536:
   <get_loc_check>;
   <get_array_el>;
-  <typeof>;
-  if (!(<typeof> === "number")) goto L524;
+  if (!(typeof <get_array_el> === <push_atom_value>)) goto L524;
   L555:
   <get_loc_check>;
   <to_propkey2>;
@@ -3472,18 +2841,17 @@ function closure_138() {
   <get_array_el>;
   <inc>;
   <put_array_el>;
-  <push_i8>;
   <put_loc_check>;
   goto L524;
   L578:
   <get_loc_check>;
   if (!(<lhs> === -1)) goto L646;
   L585:
-  if (!(arg1 === loc3.prerelease.join("."))) goto L628;
+  if (!(arg1 === loc3.prerelease.join(<push_atom_value>))) goto L628;
   L608:
-  if (!(arg2 === false)) goto L628;
+  if (!(arg2 === <push_false>)) goto L628;
   L613:
-  <throw>;
+  throw Error(<push_atom_value>);
   L628:
   <get_loc_check>;
   L646:
@@ -3492,7 +2860,7 @@ function closure_138() {
   <set_loc_uninitialized>;
   <get_loc_check>;
   loc2 = <func>(<arg>, <set_loc_uninitialized>);
-  if (!(arg2 === false)) goto L674;
+  if (!(arg2 === <push_false>)) goto L674;
   L665:
   <put_loc_check>;
   L674:
@@ -3510,13 +2878,13 @@ function closure_138() {
   <obj>.prerelease = <rhs>;
   goto L753;
   L729:
-  <throw>;
+  throw Error(<push_atom_value>.concat(arg0));
   L753:
   loc3.raw = loc3.format();
   <get_length>;
   if (!<get_length>) goto L822;
   L778:
-  <obj>.raw = (loc3.raw + "+".concat(loc3.build.join(".")));
+  <obj>.raw = (loc3.raw + <push_atom_value>.concat(loc3.build.join(<push_atom_value>)));
   L822:
   return loc3;
 }
@@ -3525,21 +2893,17 @@ function closure_139() {
   L0:
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
-  loc0 = arg2("../HyperBilibili/node_modules/semver/functions/parse.js");
-  <fclosure8>;
-  <set_name>;
-  loc1 = <set_name>;
+  loc0 = arg2(<push_atom_value>);
+  loc1 = set_name(clean, closure_0);
   <get_loc_check>;
-  <set_loc_uninitialized>.exports = <set_name>;
+  <set_loc_uninitialized>.exports = <set_loc_uninitialized>;
   return;
 }
 
 function closure_140() {
   L0:
   <set_loc_uninitialized>;
-  <regexp>;
-  <push_empty_string>;
-  loc0 = var_ref0(arg0.trim().replace(<regexp>, <push_empty_string>), arg1);
+  loc0 = var_ref0(arg0.trim().replace(new RegExp(<push_const8>), <push_empty_string>), arg1);
   <get_loc_check>;
   if (!<cond>) goto L46;
   L37:
@@ -3558,74 +2922,67 @@ function closure_141() {
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
-  loc0 = arg2("../HyperBilibili/node_modules/semver/functions/eq.js");
-  loc1 = arg2("../HyperBilibili/node_modules/semver/functions/neq.js");
-  loc2 = arg2("../HyperBilibili/node_modules/semver/functions/gt.js");
-  loc3 = arg2("../HyperBilibili/node_modules/semver/functions/gte.js");
-  loc4 = arg2("../HyperBilibili/node_modules/semver/functions/lt.js");
-  loc5 = arg2("../HyperBilibili/node_modules/semver/functions/lte.js");
-  <fclosure8>;
-  <set_name>;
-  loc6 = <set_name>;
+  loc0 = arg2(<push_atom_value>);
+  loc1 = arg2(<push_atom_value>);
+  loc2 = arg2(<push_atom_value>);
+  loc3 = arg2(<push_atom_value>);
+  loc4 = arg2(<push_atom_value>);
+  loc5 = arg2(<push_atom_value>);
+  loc6 = set_name(cmp, closure_0);
   <get_loc_check>;
-  <set_loc_uninitialized>.exports = <set_name>;
+  <set_loc_uninitialized>.exports = <set_loc_uninitialized>;
   return;
 }
 
 function closure_142() {
   L0:
-  if (!(arg1 === "===")) goto L48;
+  if (!(arg1 === <push_atom_value>)) goto L48;
   L10:
-  <typeof>;
-  if (!(<typeof> === "object")) goto L27;
+  if (!(typeof arg0 === <push_atom_value>)) goto L27;
   L20:
   arg0 = arg0.version;
   L27:
-  <typeof>;
-  if (!(<typeof> === "object")) goto L44;
+  if (!(typeof arg2 === <push_atom_value>)) goto L44;
   L37:
   arg2 = arg2.version;
   L44:
   return (arg0 === arg2);
   L48:
-  if (!(<lhs> === "!==")) goto L95;
+  if (!(<lhs> === <push_atom_value>)) goto L95;
   L57:
-  <typeof>;
-  if (!(<typeof> === "object")) goto L74;
+  if (!(typeof arg0 === <push_atom_value>)) goto L74;
   L67:
   arg0 = arg0.version;
   L74:
-  <typeof>;
-  if (!(<typeof> === "object")) goto L91;
+  if (!(typeof arg2 === <push_atom_value>)) goto L91;
   L84:
   arg2 = arg2.version;
   L91:
   return (arg0 !== arg2);
   L95:
-  <push_empty_string>;
   if ((<lhs> === <push_empty_string>)) goto L118;
   L100:
-  if ((<lhs> === "=")) goto L118;
+  if ((<lhs> === <push_atom_value>)) goto L118;
   L109:
-  if (!(<lhs> === "==")) goto L127;
+  if (!(<lhs> === <push_atom_value>)) goto L127;
   L118:
   L127:
-  if (!(<lhs> === "!=")) goto L145;
+  if (!(<lhs> === <push_atom_value>)) goto L145;
   L136:
   L145:
-  if (!(<lhs> === ">")) goto L163;
+  if (!(<lhs> === <push_atom_value>)) goto L163;
   L154:
   L163:
-  if (!(<lhs> === ">=")) goto L181;
+  if (!(<lhs> === <push_atom_value>)) goto L181;
   L172:
   L181:
-  if (!(<lhs> === "<")) goto L199;
+  if (!(<lhs> === <push_atom_value>)) goto L199;
   L190:
   L199:
-  if (!(<lhs> === "<=")) goto L217;
+  if (!(<lhs> === <push_atom_value>)) goto L217;
   L208:
   L217:
-  <throw>;
+  throw TypeError(<push_atom_value>.concat(arg1));
 }
 
 function closure_143() {
@@ -3635,8 +2992,8 @@ function closure_143() {
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
-  loc0 = arg2("../HyperBilibili/node_modules/semver/classes/semver.js");
-  loc1 = arg2("../HyperBilibili/node_modules/semver/functions/parse.js");
+  loc0 = arg2(<push_atom_value>);
+  loc1 = arg2(<push_atom_value>);
   <is_undefined>;
   if (<is_undefined>) goto L53;
   L36:
@@ -3647,11 +3004,9 @@ function closure_143() {
   L53:
   goto L36;
   L63:
-  <fclosure8>;
-  <set_name>;
-  loc4 = <set_name>;
+  loc4 = set_name(coerce, closure_0);
   <get_loc_check>;
-  <obj>.exports = <set_name>;
+  <obj>.exports = <rhs>;
   return;
 }
 
@@ -3663,18 +3018,15 @@ function closure_144() {
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
-  <instanceof>;
-  if (!<instanceof>) goto L27;
+  if (!(arg0 instanceof var_ref0)) goto L27;
   L25:
   return arg0;
   L27:
-  <typeof>;
-  if (!(<typeof> === "number")) goto L45;
+  if (!(typeof arg0 === <push_atom_value>)) goto L45;
   L37:
   arg0 = String(arg0);
   L45:
-  <typeof>;
-  if (!(<typeof> !== "string")) goto L57;
+  if (!(typeof arg0 !== <push_atom_value>)) goto L57;
   L55:
   return null;
   L57:
@@ -3785,7 +3137,6 @@ function closure_144() {
   <get_array_el>;
   goto L381;
   L380:
-  <push_empty_string>;
   L381:
   loc6 = <rhs>;
   if (!arg1.includePrerelease) goto L418;
@@ -3798,10 +3149,8 @@ function closure_144() {
   <get_array_el>;
   goto L419;
   L418:
-  <push_empty_string>;
   L419:
   loc7 = <rhs>;
-  <push_empty_string>;
   <get_loc_check>;
   <get_loc_check>;
   <get_loc_check>;
@@ -3813,12 +3162,10 @@ function closure_145() {
   L0:
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
-  loc0 = arg2("../HyperBilibili/node_modules/semver/classes/semver.js");
-  <fclosure8>;
-  <set_name>;
-  loc1 = <set_name>;
+  loc0 = arg2(<push_atom_value>);
+  loc1 = set_name(compareBuild, closure_0);
   <get_loc_check>;
-  <set_loc_uninitialized>.exports = <set_name>;
+  <set_loc_uninitialized>.exports = <set_loc_uninitialized>;
   return;
 }
 
@@ -3842,12 +3189,10 @@ function closure_147() {
   L0:
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
-  loc0 = arg2("../HyperBilibili/node_modules/semver/functions/compare.js");
-  <fclosure8>;
-  <set_name>;
-  loc1 = <set_name>;
+  loc0 = arg2(<push_atom_value>);
+  loc1 = set_name(compareLoose, closure_0);
   <get_loc_check>;
-  <set_loc_uninitialized>.exports = <set_name>;
+  <set_loc_uninitialized>.exports = <set_loc_uninitialized>;
   return;
 }
 
@@ -3855,12 +3200,10 @@ function closure_149() {
   L0:
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
-  loc0 = arg2("../HyperBilibili/node_modules/semver/classes/semver.js");
-  <fclosure8>;
-  <set_name>;
-  loc1 = <set_name>;
+  loc0 = arg2(<push_atom_value>);
+  loc1 = set_name(compare, closure_0);
   <get_loc_check>;
-  <set_loc_uninitialized>.exports = <set_name>;
+  <set_loc_uninitialized>.exports = <set_loc_uninitialized>;
   return;
 }
 
@@ -3868,12 +3211,10 @@ function closure_151() {
   L0:
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
-  loc0 = arg2("../HyperBilibili/node_modules/semver/functions/parse.js");
-  <fclosure8>;
-  <set_name>;
-  loc1 = <set_name>;
+  loc0 = arg2(<push_atom_value>);
+  loc1 = set_name(diff, closure_0);
   <get_loc_check>;
-  <set_loc_uninitialized>.exports = <set_name>;
+  <set_loc_uninitialized>.exports = <set_loc_uninitialized>;
   return;
 }
 
@@ -3888,8 +3229,8 @@ function closure_152() {
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
-  loc0 = var_ref0(arg0, null, true);
-  loc1 = var_ref0(arg1, null, true);
+  loc0 = var_ref0(arg0, null, <push_true>);
+  loc1 = var_ref0(arg1, null, <push_true>);
   <get_loc_check>;
   <get_loc_check>;
   loc2 = <set_loc_uninitialized>(<set_loc_uninitialized>);
@@ -3936,26 +3277,25 @@ function closure_152() {
   <get_loc_check>;
   if (!(!<obj>.minor)) goto L168;
   L162:
-  return "major";
+  return <push_atom_value>;
   L168:
   <get_loc_check>;
   if (!<obj>.patch) goto L184;
   L178:
-  return "patch";
+  return <push_atom_value>;
   L184:
   <get_loc_check>;
   if (!<obj>.minor) goto L200;
   L194:
-  return "minor";
+  return <push_atom_value>;
   L200:
-  return "major";
+  return <push_atom_value>;
   L206:
   <get_loc_check>;
   if (!<cond>) goto L218;
   L211:
   goto L219;
   L218:
-  <push_empty_string>;
   L219:
   loc8 = <rhs>;
   <get_loc_check>;
@@ -3963,35 +3303,33 @@ function closure_152() {
   if (!(<lhs> !== <obj>.major)) goto L250;
   L240:
   <get_loc_check>;
-  return (<lhs> + "major");
+  return (<lhs> + <push_atom_value>);
   L250:
   <get_loc_check>;
   <get_loc_check>;
   if (!(<lhs> !== <obj>.minor)) goto L279;
   L269:
   <get_loc_check>;
-  return (<lhs> + "minor");
+  return (<lhs> + <push_atom_value>);
   L279:
   <get_loc_check>;
   <get_loc_check>;
   if (!(<lhs> !== <obj>.patch)) goto L308;
   L298:
   <get_loc_check>;
-  return (<lhs> + "patch");
+  return (<lhs> + <push_atom_value>);
   L308:
-  return "prerelease";
+  return <push_atom_value>;
 }
 
 function closure_153() {
   L0:
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
-  loc0 = arg2("../HyperBilibili/node_modules/semver/functions/compare.js");
-  <fclosure8>;
-  <set_name>;
-  loc1 = <set_name>;
+  loc0 = arg2(<push_atom_value>);
+  loc1 = set_name(eq, closure_0);
   <get_loc_check>;
-  <set_loc_uninitialized>.exports = <set_name>;
+  <set_loc_uninitialized>.exports = <set_loc_uninitialized>;
   return;
 }
 
@@ -4001,12 +3339,10 @@ function closure_155() {
   L0:
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
-  loc0 = arg2("../HyperBilibili/node_modules/semver/functions/compare.js");
-  <fclosure8>;
-  <set_name>;
-  loc1 = <set_name>;
+  loc0 = arg2(<push_atom_value>);
+  loc1 = set_name(gt, closure_0);
   <get_loc_check>;
-  <set_loc_uninitialized>.exports = <set_name>;
+  <set_loc_uninitialized>.exports = <set_loc_uninitialized>;
   return;
 }
 
@@ -4016,12 +3352,10 @@ function closure_157() {
   L0:
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
-  loc0 = arg2("../HyperBilibili/node_modules/semver/functions/compare.js");
-  <fclosure8>;
-  <set_name>;
-  loc1 = <set_name>;
+  loc0 = arg2(<push_atom_value>);
+  loc1 = set_name(gte, closure_0);
   <get_loc_check>;
-  <set_loc_uninitialized>.exports = <set_name>;
+  <set_loc_uninitialized>.exports = <set_loc_uninitialized>;
   return;
 }
 
@@ -4031,19 +3365,16 @@ function closure_159() {
   L0:
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
-  loc0 = arg2("../HyperBilibili/node_modules/semver/classes/semver.js");
-  <fclosure8>;
-  <set_name>;
-  loc1 = <set_name>;
+  loc0 = arg2(<push_atom_value>);
+  loc1 = set_name(inc, closure_0);
   <get_loc_check>;
-  <set_loc_uninitialized>.exports = <set_name>;
+  <set_loc_uninitialized>.exports = <set_loc_uninitialized>;
   return;
 }
 
 function closure_160() {
   L0:
-  <typeof>;
-  if (!(<typeof> === "string")) goto L22;
+  if (!(typeof arg2 === <push_atom_value>)) goto L22;
   L10:
   arg4 = arg3;
   arg3 = arg2;
@@ -4051,8 +3382,7 @@ function closure_160() {
   L22:
   <catch>;
   L27:
-  <instanceof>;
-  if (!<instanceof>) goto L46;
+  if (!(arg0 instanceof var_ref0)) goto L46;
   L38:
   goto L47;
   L46:
@@ -4064,19 +3394,17 @@ function closure_160() {
   L77:
   return null;
   L80:
-  <throw>;
+  throw <value>;
 }
 
 function closure_161() {
   L0:
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
-  loc0 = arg2("../HyperBilibili/node_modules/semver/functions/compare.js");
-  <fclosure8>;
-  <set_name>;
-  loc1 = <set_name>;
+  loc0 = arg2(<push_atom_value>);
+  loc1 = set_name(lt, closure_0);
   <get_loc_check>;
-  <set_loc_uninitialized>.exports = <set_name>;
+  <set_loc_uninitialized>.exports = <set_loc_uninitialized>;
   return;
 }
 
@@ -4086,12 +3414,10 @@ function closure_163() {
   L0:
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
-  loc0 = arg2("../HyperBilibili/node_modules/semver/functions/compare.js");
-  <fclosure8>;
-  <set_name>;
-  loc1 = <set_name>;
+  loc0 = arg2(<push_atom_value>);
+  loc1 = set_name(lte, closure_0);
   <get_loc_check>;
-  <set_loc_uninitialized>.exports = <set_name>;
+  <set_loc_uninitialized>.exports = <set_loc_uninitialized>;
   return;
 }
 
@@ -4101,12 +3427,10 @@ function closure_165() {
   L0:
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
-  loc0 = arg2("../HyperBilibili/node_modules/semver/classes/semver.js");
-  <fclosure8>;
-  <set_name>;
-  loc1 = <set_name>;
+  loc0 = arg2(<push_atom_value>);
+  loc1 = set_name(major, closure_0);
   <get_loc_check>;
-  <set_loc_uninitialized>.exports = <set_name>;
+  <set_loc_uninitialized>.exports = <set_loc_uninitialized>;
   return;
 }
 
@@ -4116,12 +3440,10 @@ function closure_167() {
   L0:
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
-  loc0 = arg2("../HyperBilibili/node_modules/semver/classes/semver.js");
-  <fclosure8>;
-  <set_name>;
-  loc1 = <set_name>;
+  loc0 = arg2(<push_atom_value>);
+  loc1 = set_name(minor, closure_0);
   <get_loc_check>;
-  <set_loc_uninitialized>.exports = <set_name>;
+  <set_loc_uninitialized>.exports = <set_loc_uninitialized>;
   return;
 }
 
@@ -4131,12 +3453,10 @@ function closure_169() {
   L0:
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
-  loc0 = arg2("../HyperBilibili/node_modules/semver/functions/compare.js");
-  <fclosure8>;
-  <set_name>;
-  loc1 = <set_name>;
+  loc0 = arg2(<push_atom_value>);
+  loc1 = set_name(neq, closure_0);
   <get_loc_check>;
-  <set_loc_uninitialized>.exports = <set_name>;
+  <set_loc_uninitialized>.exports = <set_loc_uninitialized>;
   return;
 }
 
@@ -4146,12 +3466,10 @@ function closure_171() {
   L0:
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
-  loc0 = arg2("../HyperBilibili/node_modules/semver/classes/semver.js");
-  <fclosure8>;
-  <set_name>;
-  loc1 = <set_name>;
+  loc0 = arg2(<push_atom_value>);
+  loc1 = set_name(parse, closure_0);
   <get_loc_check>;
-  <set_loc_uninitialized>.exports = <set_name>;
+  <set_loc_uninitialized>.exports = <set_loc_uninitialized>;
   return;
 }
 
@@ -4165,11 +3483,10 @@ function closure_172() {
   <is_undefined>;
   if (!<is_undefined>) goto L21;
   L18:
-  arg2 = false;
+  arg2 = <push_false>;
   L21:
   loc2 = <rhs>;
-  <instanceof>;
-  if (!<instanceof>) goto L31;
+  if (!(arg0 instanceof var_ref0)) goto L31;
   L29:
   return arg0;
   L31:
@@ -4184,21 +3501,19 @@ function closure_172() {
   L57:
   return null;
   L60:
-  <throw>;
+  throw loc3;
   L62:
-  <throw>;
+  throw <value>;
 }
 
 function closure_173() {
   L0:
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
-  loc0 = arg2("../HyperBilibili/node_modules/semver/classes/semver.js");
-  <fclosure8>;
-  <set_name>;
-  loc1 = <set_name>;
+  loc0 = arg2(<push_atom_value>);
+  loc1 = set_name(patch, closure_0);
   <get_loc_check>;
-  <set_loc_uninitialized>.exports = <set_name>;
+  <set_loc_uninitialized>.exports = <set_loc_uninitialized>;
   return;
 }
 
@@ -4208,12 +3523,10 @@ function closure_175() {
   L0:
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
-  loc0 = arg2("../HyperBilibili/node_modules/semver/functions/parse.js");
-  <fclosure8>;
-  <set_name>;
-  loc1 = <set_name>;
+  loc0 = arg2(<push_atom_value>);
+  loc1 = set_name(prerelease, closure_0);
   <get_loc_check>;
-  <set_loc_uninitialized>.exports = <set_name>;
+  <set_loc_uninitialized>.exports = <set_loc_uninitialized>;
   return;
 }
 
@@ -4238,12 +3551,10 @@ function closure_177() {
   L0:
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
-  loc0 = arg2("../HyperBilibili/node_modules/semver/functions/compare.js");
-  <fclosure8>;
-  <set_name>;
-  loc1 = <set_name>;
+  loc0 = arg2(<push_atom_value>);
+  loc1 = set_name(rcompare, closure_0);
   <get_loc_check>;
-  <set_loc_uninitialized>.exports = <set_name>;
+  <set_loc_uninitialized>.exports = <set_loc_uninitialized>;
   return;
 }
 
@@ -4251,30 +3562,21 @@ function closure_179() {
   L0:
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
-  loc0 = arg2("../HyperBilibili/node_modules/semver/functions/compare-build.js");
-  <fclosure8>;
-  <set_name>;
-  loc1 = <set_name>;
+  loc0 = arg2(<push_atom_value>);
+  loc1 = set_name(rsort, closure_0);
   <get_loc_check>;
-  <set_loc_uninitialized>.exports = <set_name>;
+  <set_loc_uninitialized>.exports = <set_loc_uninitialized>;
   return;
-}
-
-function closure_180() {
-  L0:
-  <fclosure8>;
 }
 
 function closure_182() {
   L0:
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
-  loc0 = arg2("../HyperBilibili/node_modules/semver/classes/range.js");
-  <fclosure8>;
-  <set_name>;
-  loc1 = <set_name>;
+  loc0 = arg2(<push_atom_value>);
+  loc1 = set_name(satisfies, closure_0);
   <get_loc_check>;
-  <set_loc_uninitialized>.exports = <set_name>;
+  <set_loc_uninitialized>.exports = <set_loc_uninitialized>;
   return;
 }
 
@@ -4288,9 +3590,9 @@ function closure_183() {
   loc0 = <rhs>;
   <catch>;
   L24:
-  return false;
+  return <push_false>;
   L27:
-  <throw>;
+  throw <value>;
   L28:
 }
 
@@ -4298,30 +3600,21 @@ function closure_184() {
   L0:
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
-  loc0 = arg2("../HyperBilibili/node_modules/semver/functions/compare-build.js");
-  <fclosure8>;
-  <set_name>;
-  loc1 = <set_name>;
+  loc0 = arg2(<push_atom_value>);
+  loc1 = set_name(sort, closure_0);
   <get_loc_check>;
-  <set_loc_uninitialized>.exports = <set_name>;
+  <set_loc_uninitialized>.exports = <set_loc_uninitialized>;
   return;
-}
-
-function closure_185() {
-  L0:
-  <fclosure8>;
 }
 
 function closure_187() {
   L0:
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
-  loc0 = arg2("../HyperBilibili/node_modules/semver/functions/parse.js");
-  <fclosure8>;
-  <set_name>;
-  loc1 = <set_name>;
+  loc0 = arg2(<push_atom_value>);
+  loc1 = set_name(valid, closure_0);
   <get_loc_check>;
-  <set_loc_uninitialized>.exports = <set_name>;
+  <set_loc_uninitialized>.exports = <set_loc_uninitialized>;
   return;
 }
 
@@ -4381,139 +3674,139 @@ function closure_189() {
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
-  loc0 = arg2("../HyperBilibili/node_modules/semver/internal/re.js");
-  loc1 = arg2("../HyperBilibili/node_modules/semver/internal/constants.js");
-  loc2 = arg2("../HyperBilibili/node_modules/semver/classes/semver.js");
-  loc3 = arg2("../HyperBilibili/node_modules/semver/internal/identifiers.js");
-  loc4 = arg2("../HyperBilibili/node_modules/semver/functions/parse.js");
-  loc5 = arg2("../HyperBilibili/node_modules/semver/functions/valid.js");
-  loc6 = arg2("../HyperBilibili/node_modules/semver/functions/clean.js");
-  loc7 = arg2("../HyperBilibili/node_modules/semver/functions/inc.js");
-  loc8 = arg2("../HyperBilibili/node_modules/semver/functions/diff.js");
-  loc9 = arg2("../HyperBilibili/node_modules/semver/functions/major.js");
-  loc10 = arg2("../HyperBilibili/node_modules/semver/functions/minor.js");
-  loc11 = arg2("../HyperBilibili/node_modules/semver/functions/patch.js");
-  loc12 = arg2("../HyperBilibili/node_modules/semver/functions/prerelease.js");
-  loc13 = arg2("../HyperBilibili/node_modules/semver/functions/compare.js");
-  loc14 = arg2("../HyperBilibili/node_modules/semver/functions/rcompare.js");
-  loc15 = arg2("../HyperBilibili/node_modules/semver/functions/compare-loose.js");
-  loc16 = arg2("../HyperBilibili/node_modules/semver/functions/compare-build.js");
-  loc17 = arg2("../HyperBilibili/node_modules/semver/functions/sort.js");
-  loc18 = arg2("../HyperBilibili/node_modules/semver/functions/rsort.js");
-  loc19 = arg2("../HyperBilibili/node_modules/semver/functions/gt.js");
-  loc20 = arg2("../HyperBilibili/node_modules/semver/functions/lt.js");
-  loc21 = arg2("../HyperBilibili/node_modules/semver/functions/eq.js");
-  loc22 = arg2("../HyperBilibili/node_modules/semver/functions/neq.js");
-  loc23 = arg2("../HyperBilibili/node_modules/semver/functions/gte.js");
-  loc24 = arg2("../HyperBilibili/node_modules/semver/functions/lte.js");
-  loc25 = arg2("../HyperBilibili/node_modules/semver/functions/cmp.js");
-  loc26 = arg2("../HyperBilibili/node_modules/semver/functions/coerce.js");
-  loc27 = arg2("../HyperBilibili/node_modules/semver/classes/comparator.js");
-  loc28 = arg2("../HyperBilibili/node_modules/semver/classes/range.js");
-  loc29 = arg2("../HyperBilibili/node_modules/semver/functions/satisfies.js");
-  loc30 = arg2("../HyperBilibili/node_modules/semver/ranges/to-comparators.js");
-  loc31 = arg2("../HyperBilibili/node_modules/semver/ranges/max-satisfying.js");
-  loc32 = arg2("../HyperBilibili/node_modules/semver/ranges/min-satisfying.js");
-  loc33 = arg2("../HyperBilibili/node_modules/semver/ranges/min-version.js");
-  loc34 = arg2("../HyperBilibili/node_modules/semver/ranges/valid.js");
-  loc35 = arg2("../HyperBilibili/node_modules/semver/ranges/outside.js");
-  loc36 = arg2("../HyperBilibili/node_modules/semver/ranges/gtr.js");
-  loc37 = arg2("../HyperBilibili/node_modules/semver/ranges/ltr.js");
-  loc38 = arg2("../HyperBilibili/node_modules/semver/ranges/intersects.js");
-  loc39 = arg2("../HyperBilibili/node_modules/semver/ranges/simplify.js");
-  loc40 = arg2("../HyperBilibili/node_modules/semver/ranges/subset.js");
+  loc0 = arg2(<push_atom_value>);
+  loc1 = arg2(<push_atom_value>);
+  loc2 = arg2(<push_atom_value>);
+  loc3 = arg2(<push_atom_value>);
+  loc4 = arg2(<push_atom_value>);
+  loc5 = arg2(<push_atom_value>);
+  loc6 = arg2(<push_atom_value>);
+  loc7 = arg2(<push_atom_value>);
+  loc8 = arg2(<push_atom_value>);
+  loc9 = arg2(<push_atom_value>);
+  loc10 = arg2(<push_atom_value>);
+  loc11 = arg2(<push_atom_value>);
+  loc12 = arg2(<push_atom_value>);
+  loc13 = arg2(<push_atom_value>);
+  loc14 = arg2(<push_atom_value>);
+  loc15 = arg2(<push_atom_value>);
+  loc16 = arg2(<push_atom_value>);
+  loc17 = arg2(<push_atom_value>);
+  loc18 = arg2(<push_atom_value>);
+  loc19 = arg2(<push_atom_value>);
+  loc20 = arg2(<push_atom_value>);
+  loc21 = arg2(<push_atom_value>);
+  loc22 = arg2(<push_atom_value>);
+  loc23 = arg2(<push_atom_value>);
+  loc24 = arg2(<push_atom_value>);
+  loc25 = arg2(<push_atom_value>);
+  loc26 = arg2(<push_atom_value>);
+  loc27 = arg2(<push_atom_value>);
+  loc28 = arg2(<push_atom_value>);
+  loc29 = arg2(<push_atom_value>);
+  loc30 = arg2(<push_atom_value>);
+  loc31 = arg2(<push_atom_value>);
+  loc32 = arg2(<push_atom_value>);
+  loc33 = arg2(<push_atom_value>);
+  loc34 = arg2(<push_atom_value>);
+  loc35 = arg2(<push_atom_value>);
+  loc36 = arg2(<push_atom_value>);
+  loc37 = arg2(<push_atom_value>);
+  loc38 = arg2(<push_atom_value>);
+  loc39 = arg2(<push_atom_value>);
+  loc40 = arg2(<push_atom_value>);
   <object>;
   <get_loc_check>;
-  <define_field>;
+  <set_loc_uninitialized>.parse = arg0;
   <get_loc_check>;
-  <define_field>;
+  <set_loc_uninitialized>.valid = <set_loc_uninitialized>;
   <get_loc_check>;
-  <define_field>;
+  <set_loc_uninitialized>.clean = <set_loc_uninitialized>;
   <get_loc_check>;
-  <define_field>;
+  <set_loc_uninitialized>.inc = <set_loc_uninitialized>;
   <get_loc_check>;
-  <define_field>;
+  <set_loc_uninitialized>.diff = <set_loc_uninitialized>;
   <get_loc_check>;
-  <define_field>;
+  <set_loc_uninitialized>.major = <set_loc_uninitialized>;
   <get_loc_check>;
-  <define_field>;
+  <set_loc_uninitialized>.minor = <set_loc_uninitialized>;
   <get_loc_check>;
-  <define_field>;
+  <set_loc_uninitialized>.patch = <set_loc_uninitialized>;
   <get_loc_check>;
-  <define_field>;
+  <set_loc_uninitialized>.prerelease = <set_loc_uninitialized>;
   <get_loc_check>;
-  <define_field>;
+  <set_loc_uninitialized>.compare = <set_loc_uninitialized>;
   <get_loc_check>;
-  <define_field>;
+  <set_loc_uninitialized>.rcompare = <set_loc_uninitialized>;
   <get_loc_check>;
-  <define_field>;
+  <set_loc_uninitialized>.compareLoose = <set_loc_uninitialized>;
   <get_loc_check>;
-  <define_field>;
+  <set_loc_uninitialized>.compareBuild = <set_loc_uninitialized>;
   <get_loc_check>;
-  <define_field>;
+  <set_loc_uninitialized>.sort = <set_loc_uninitialized>;
   <get_loc_check>;
-  <define_field>;
+  <set_loc_uninitialized>.rsort = <set_loc_uninitialized>;
   <get_loc_check>;
-  <define_field>;
+  <set_loc_uninitialized>.gt = <set_loc_uninitialized>;
   <get_loc_check>;
-  <define_field>;
+  <set_loc_uninitialized>.lt = <set_loc_uninitialized>;
   <get_loc_check>;
-  <define_field>;
+  <set_loc_uninitialized>.eq = <set_loc_uninitialized>;
   <get_loc_check>;
-  <define_field>;
+  <set_loc_uninitialized>.neq = <set_loc_uninitialized>;
   <get_loc_check>;
-  <define_field>;
+  <set_loc_uninitialized>.gte = <set_loc_uninitialized>;
   <get_loc_check>;
-  <define_field>;
+  <set_loc_uninitialized>.lte = <set_loc_uninitialized>;
   <get_loc_check>;
-  <define_field>;
+  <obj>.cmp = <value>;
   <get_loc_check>;
-  <define_field>;
+  <obj>.coerce = <value>;
   <get_loc_check>;
-  <define_field>;
+  <obj>.Comparator = <value>;
   <get_loc_check>;
-  <define_field>;
+  <obj>.Range = <value>;
   <get_loc_check>;
-  <define_field>;
+  <obj>.satisfies = <value>;
   <get_loc_check>;
-  <define_field>;
+  <obj>.toComparators = <value>;
   <get_loc_check>;
-  <define_field>;
+  <obj>.maxSatisfying = <value>;
   <get_loc_check>;
-  <define_field>;
+  <obj>.minSatisfying = <value>;
   <get_loc_check>;
-  <define_field>;
+  <obj>.minVersion = <value>;
   <get_loc_check>;
-  <define_field>;
+  <obj>.validRange = <value>;
   <get_loc_check>;
-  <define_field>;
+  <obj>.outside = <value>;
   <get_loc_check>;
-  <define_field>;
+  <obj>.gtr = <value>;
   <get_loc_check>;
-  <define_field>;
+  <obj>.ltr = <value>;
   <get_loc_check>;
-  <define_field>;
+  <obj>.intersects = <value>;
   <get_loc_check>;
-  <define_field>;
+  <obj>.simplifyRange = <value>;
   <get_loc_check>;
-  <define_field>;
+  <obj>.subset = <value>;
   <get_loc_check>;
-  <define_field>;
+  <obj>.SemVer = <value>;
   <get_loc_check>;
-  <define_field>;
+  <obj>.re = <obj>.re;
   <get_loc_check>;
-  <define_field>;
+  <obj>.src = <obj>.src;
   <get_loc_check>;
-  <define_field>;
+  <obj>.tokens = <obj>.t;
   <get_loc_check>;
-  <define_field>;
+  <obj>.SEMVER_SPEC_VERSION = <obj>.SEMVER_SPEC_VERSION;
   <get_loc_check>;
-  <define_field>;
+  <obj>.RELEASE_TYPES = <obj>.RELEASE_TYPES;
   <get_loc_check>;
-  <define_field>;
+  <obj>.compareIdentifiers = <obj>.compareIdentifiers;
   <get_loc_check>;
-  <define_field>;
-  <obj>.exports = <define_field>;
+  <obj>.rcompareIdentifiers = <obj>.rcompareIdentifiers;
+  <obj>.exports = <obj>;
   return;
 }
 
@@ -4525,54 +3818,48 @@ function closure_190() {
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
-  loc0 = "2.0.0";
-  <push_i16>;
+  loc0 = <push_atom_value>;
   loc1 = <push_i16>;
   if (Number.MAX_SAFE_INTEGER) goto L44;
   L41:
   L44:
   loc2 = <rhs>;
-  <push_i8>;
   loc3 = <push_i8>;
   <get_loc_check>;
   loc4 = (<lhs> - 6);
-  loc5 = <func>("major", "premajor", "minor", "preminor", "patch", "prepatch", "prerelease");
+  loc5 = <func>(<push_atom_value>, <push_atom_value>, <push_atom_value>, <push_atom_value>, <push_atom_value>, <push_atom_value>, <push_atom_value>);
   <object>;
   <get_loc_check>;
-  <define_field>;
+  <obj>.MAX_LENGTH = arg0;
   <get_loc_check>;
-  <define_field>;
+  <obj>.MAX_SAFE_COMPONENT_LENGTH = <value>;
   <get_loc_check>;
-  <define_field>;
+  <obj>.MAX_SAFE_BUILD_LENGTH = <value>;
   <get_loc_check>;
-  <define_field>;
+  <obj>.MAX_SAFE_INTEGER = <value>;
   <get_loc_check>;
-  <define_field>;
+  <obj>.RELEASE_TYPES = <value>;
   <get_loc_check>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  <define_field>.exports = <define_field>;
+  <obj>.SEMVER_SPEC_VERSION = <value>;
+  <obj>.FLAG_INCLUDE_PRERELEASE = 1;
+  <obj>.FLAG_LOOSE = 2;
+  <obj>.exports = <obj>;
   return;
 }
 
 function closure_191() {
   L0:
   <set_loc_uninitialized>;
-  <typeof>;
-  if (!(<typeof> === "object")) goto L80;
+  if (!(typeof process === <push_atom_value>)) goto L80;
   L17:
   if (!process.env) goto L80;
   L29:
   if (!process.env.NODE_DEBUG) goto L80;
   L46:
-  <regexp>;
-  if (!<regexp>.test(process.env.NODE_DEBUG)) goto L80;
+  if (!new RegExp(<push_const8>).test(process.env.NODE_DEBUG)) goto L80;
   L76:
-  <fclosure8>;
   goto L82;
   L80:
-  <fclosure8>;
   L82:
   loc0 = <rhs>;
   <get_loc_check>;
@@ -4597,20 +3884,15 @@ function closure_194() {
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
-  <regexp>;
-  loc0 = <regexp>;
-  <fclosure8>;
-  <set_name>;
-  loc1 = <set_name>;
-  <fclosure8>;
-  <set_name>;
-  loc2 = <set_name>;
+  loc0 = new RegExp(<push_const8>);
+  loc1 = set_name(compareIdentifiers, closure_2);
+  loc2 = set_name(rcompareIdentifiers, closure_3);
   <object>;
   <get_loc_check>;
-  <define_field>;
+  <set_loc_uninitialized>.compareIdentifiers = arg0;
   <get_loc_check>;
-  <define_field>;
-  <set_loc_uninitialized>.exports = <define_field>;
+  <set_loc_uninitialized>.rcompareIdentifiers = <set_loc_uninitialized>;
+  <obj>.exports = <set_loc_uninitialized>;
   return;
 }
 
@@ -4664,11 +3946,8 @@ function closure_197() {
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
   <define_class>;
-  <fclosure8>;
   <define_method>;
-  <fclosure8>;
   <define_method>;
-  <fclosure8>;
   <define_method>;
   loc1 = undefined;
   loc0 = <set_loc_uninitialized>;
@@ -4681,13 +3960,11 @@ function closure_197() {
 
 function closure_198() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   <check_ctor>;
   if (!var_ref0) goto L14;
   L9:
   L14:
-  <push_i16>;
   loc0.max = <push_i16>;
   Map.map = Map();
   return;
@@ -4695,7 +3972,6 @@ function closure_198() {
 
 function closure_199() {
   L0:
-  <push_this>;
   loc1 = <push_this>;
   <set_loc_uninitialized>;
   loc0 = loc1.map.get(arg0);
@@ -4711,13 +3987,11 @@ function closure_199() {
 
 function closure_200() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
 }
 
 function closure_201() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
   <set_loc_uninitialized>;
   loc0 = loc2.delete(arg0);
@@ -4742,15 +4016,13 @@ function closure_202() {
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
   <object>;
-  <define_field>;
-  loc0 = <object>(<define_field>);
+  <object>.loose = <push_true>;
+  loc0 = Object.freeze(<object>);
   <object>;
   loc1 = Object.freeze(<object>);
-  <fclosure8>;
-  <set_name>;
-  loc2 = <set_name>;
+  loc2 = set_name(parseOptions, closure_0);
   <get_loc_check>;
-  <set_loc_uninitialized>.exports = <set_name>;
+  <set_loc_uninitialized>.exports = <set_loc_uninitialized>;
   return;
 }
 
@@ -4760,8 +4032,7 @@ function closure_203() {
   L4:
   return var_ref0;
   L8:
-  <typeof>;
-  if (!(<typeof> !== "object")) goto L22;
+  if (!(typeof arg0 !== <push_atom_value>)) goto L22;
   L18:
   return var_ref1;
   L22:
@@ -4794,7 +4065,7 @@ function closure_204() {
   L66:
   goto L44;
   L76:
-  loc3 = arg2("../HyperBilibili/node_modules/semver/internal/debug.js");
+  loc3 = arg2(<push_atom_value>);
   <object>;
   <insert2>;
   <insert2>.exports = <insert2>;
@@ -4813,17 +4084,13 @@ function closure_204() {
   <insert2>.t = <insert2>;
   loc7 = <insert2>;
   loc8 = 0;
-  loc9 = "[a-zA-Z0-9-]";
+  loc9 = <push_atom_value>;
   <get_loc_check>;
   <get_loc_check>;
   <get_loc_check>;
   loc10 = <func>(<arg>, <arg>, <func>(<arg>, <arg>));
-  <fclosure8>;
-  <set_name>;
-  loc11 = <set_name>;
-  <fclosure8>;
-  <set_name>;
-  loc12 = <set_name>;
+  loc11 = set_name(makeSafeRegex, closure_0);
+  loc12 = set_name(createToken, closure_1);
   <get_loc_check>;
   <get_loc_check>;
   <get_loc_check>;
@@ -4877,7 +4144,6 @@ function closure_204() {
   <get_loc_check>;
   <get_array_el>;
   <get_loc_check>;
-  <push_empty_string>;
   <get_loc_check>;
   <get_loc_check>;
   <get_loc_check>;
@@ -4916,28 +4182,10 @@ function closure_204() {
   <get_array_el>;
   <get_loc_check>;
   <get_loc_check>;
-  <push_empty_string>;
   <get_loc_check>;
   <get_loc_check>;
   <get_array_el>;
   <get_loc_check>;
-  <push_empty_string>;
-  <get_loc_check>;
-  <get_loc_check>;
-  <get_array_el>;
-  <get_loc_check>;
-  <get_loc_check>;
-  <get_loc_check>;
-  <get_array_el>;
-  <get_loc_check>;
-  <get_loc_check>;
-  <get_array_el>;
-  <get_loc_check>;
-  <get_loc_check>;
-  <get_array_el>;
-  <get_loc_check>;
-  <get_loc_check>;
-  <get_array_el>;
   <get_loc_check>;
   <get_loc_check>;
   <get_array_el>;
@@ -4966,24 +4214,6 @@ function closure_204() {
   <get_array_el>;
   <get_loc_check>;
   <get_loc_check>;
-  <get_loc_check>;
-  <get_array_el>;
-  <get_loc_check>;
-  <get_loc_check>;
-  <get_array_el>;
-  <get_loc_check>;
-  <push_empty_string>;
-  <get_loc_check>;
-  <get_loc_check>;
-  <get_loc_check>;
-  <get_loc_check>;
-  <push_empty_string>;
-  <get_loc_check>;
-  <get_loc_check>;
-  <get_array_el>;
-  <get_loc_check>;
-  <get_loc_check>;
-  <get_loc_check>;
   <get_array_el>;
   <get_loc_check>;
   <get_loc_check>;
@@ -4991,20 +4221,6 @@ function closure_204() {
   <get_loc_check>;
   <get_loc_check>;
   <get_array_el>;
-  <get_loc_check>;
-  <get_loc_check>;
-  <get_loc_check>;
-  <get_array_el>;
-  <get_loc_check>;
-  <get_loc_check>;
-  <get_loc_check>;
-  <get_array_el>;
-  <get_loc_check>;
-  <get_loc_check>;
-  <get_loc_check>;
-  <get_loc_check>;
-  <get_array_el>;
-  arg1.tildeTrimReplace = "$1~";
   <get_loc_check>;
   <get_loc_check>;
   <get_loc_check>;
@@ -5023,8 +4239,54 @@ function closure_204() {
   <get_loc_check>;
   <get_loc_check>;
   <get_loc_check>;
+  <get_loc_check>;
+  <get_loc_check>;
+  <get_loc_check>;
   <get_array_el>;
-  arg1.caretTrimReplace = "$1^";
+  <get_loc_check>;
+  <get_loc_check>;
+  <get_loc_check>;
+  <get_array_el>;
+  <get_loc_check>;
+  <get_loc_check>;
+  <get_array_el>;
+  <get_loc_check>;
+  <get_loc_check>;
+  <get_array_el>;
+  <get_loc_check>;
+  <get_loc_check>;
+  <get_loc_check>;
+  <get_array_el>;
+  <get_loc_check>;
+  <get_loc_check>;
+  <get_loc_check>;
+  <get_array_el>;
+  <get_loc_check>;
+  <get_loc_check>;
+  <get_loc_check>;
+  <get_loc_check>;
+  <get_array_el>;
+  arg1.tildeTrimReplace = <push_atom_value>;
+  <get_loc_check>;
+  <get_loc_check>;
+  <get_loc_check>;
+  <get_array_el>;
+  <get_loc_check>;
+  <get_loc_check>;
+  <get_array_el>;
+  <get_loc_check>;
+  <get_loc_check>;
+  <get_loc_check>;
+  <get_array_el>;
+  <get_loc_check>;
+  <get_loc_check>;
+  <get_array_el>;
+  <get_loc_check>;
+  <get_loc_check>;
+  <get_loc_check>;
+  <get_loc_check>;
+  <get_array_el>;
+  arg1.caretTrimReplace = <push_atom_value>;
   <get_loc_check>;
   <get_loc_check>;
   <get_loc_check>;
@@ -5063,7 +4325,7 @@ function closure_204() {
   <get_loc_check>;
   <get_loc_check>;
   <get_array_el>;
-  arg1.comparatorTrimReplace = "$1$2$3";
+  arg1.comparatorTrimReplace = <push_atom_value>;
   <get_loc_check>;
   <get_loc_check>;
   <get_loc_check>;
@@ -5097,17 +4359,13 @@ function closure_205() {
   <for_of_next>;
   loc1 = <for_of_next>;
   <iterator_close>;
-  <push_empty_string>;
-  <get_loc_check>;
-  <push_empty_string>;
   <get_loc_check>;
   <get_loc_check>;
-  <push_empty_string>;
-  <get_loc_check>;
-  <push_empty_string>;
   <get_loc_check>;
   <get_loc_check>;
-  arg0 = <func>(<func>(<arg>, <arg>, <func>(<func>(<func>(<func>(<arg>, <arg>, <func>(<func>(arg0.split, "*")).join, "}")).split, "+")).join, "}"));
+  <get_loc_check>;
+  <get_loc_check>;
+  arg0 = <func>(<func>(<arg>, <arg>, <func>(<func>(<func>(<func>(<arg>, <arg>, <func>(<func>(arg0.split, <push_atom_value>)).join, <push_atom_value>)).split, <push_atom_value>)).join, <push_atom_value>));
   L141:
   <for_of_next>;
   if (!<for_of_next>) goto L0;
@@ -5153,12 +4411,10 @@ function closure_207() {
   L0:
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
-  loc0 = arg2("../HyperBilibili/node_modules/semver/ranges/outside.js");
-  <fclosure8>;
-  <set_name>;
-  loc1 = <set_name>;
+  loc0 = arg2(<push_atom_value>);
+  loc1 = set_name(gtr, closure_0);
   <get_loc_check>;
-  <set_loc_uninitialized>.exports = <set_name>;
+  <set_loc_uninitialized>.exports = <set_loc_uninitialized>;
   return;
 }
 
@@ -5166,12 +4422,10 @@ function closure_209() {
   L0:
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
-  loc0 = arg2("../HyperBilibili/node_modules/semver/classes/range.js");
-  <fclosure8>;
-  <set_name>;
-  loc1 = <set_name>;
+  loc0 = arg2(<push_atom_value>);
+  loc1 = set_name(intersects, closure_0);
   <get_loc_check>;
-  <set_loc_uninitialized>.exports = <set_name>;
+  <set_loc_uninitialized>.exports = <set_loc_uninitialized>;
   return;
 }
 
@@ -5185,12 +4439,10 @@ function closure_211() {
   L0:
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
-  loc0 = arg2("../HyperBilibili/node_modules/semver/ranges/outside.js");
-  <fclosure8>;
-  <set_name>;
-  loc1 = <set_name>;
+  loc0 = arg2(<push_atom_value>);
+  loc1 = set_name(ltr, closure_0);
   <get_loc_check>;
-  <set_loc_uninitialized>.exports = <set_name>;
+  <set_loc_uninitialized>.exports = <set_loc_uninitialized>;
   return;
 }
 
@@ -5199,13 +4451,11 @@ function closure_213() {
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
-  loc0 = arg2("../HyperBilibili/node_modules/semver/classes/semver.js");
-  loc1 = arg2("../HyperBilibili/node_modules/semver/classes/range.js");
-  <fclosure8>;
-  <set_name>;
-  loc2 = <set_name>;
+  loc0 = arg2(<push_atom_value>);
+  loc1 = arg2(<push_atom_value>);
+  loc2 = set_name(maxSatisfying, closure_0);
   <get_loc_check>;
-  <set_loc_uninitialized>.exports = <set_name>;
+  <set_loc_uninitialized>.exports = <set_loc_uninitialized>;
   return;
 }
 
@@ -5227,9 +4477,8 @@ function closure_214() {
   L43:
   return null;
   L46:
-  <throw>;
+  throw <value>;
   L47:
-  <fclosure8>;
   <get_loc_check>;
   return undefined;
 }
@@ -5254,13 +4503,11 @@ function closure_216() {
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
-  loc0 = arg2("../HyperBilibili/node_modules/semver/classes/semver.js");
-  loc1 = arg2("../HyperBilibili/node_modules/semver/classes/range.js");
-  <fclosure8>;
-  <set_name>;
-  loc2 = <set_name>;
+  loc0 = arg2(<push_atom_value>);
+  loc1 = arg2(<push_atom_value>);
+  loc2 = set_name(minSatisfying, closure_0);
   <get_loc_check>;
-  <set_loc_uninitialized>.exports = <set_name>;
+  <set_loc_uninitialized>.exports = <set_loc_uninitialized>;
   return;
 }
 
@@ -5282,9 +4529,8 @@ function closure_217() {
   L43:
   return null;
   L46:
-  <throw>;
+  throw <value>;
   L47:
-  <fclosure8>;
   <get_loc_check>;
   return undefined;
 }
@@ -5310,14 +4556,12 @@ function closure_219() {
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
-  loc0 = arg2("../HyperBilibili/node_modules/semver/classes/semver.js");
-  loc1 = arg2("../HyperBilibili/node_modules/semver/classes/range.js");
-  loc2 = arg2("../HyperBilibili/node_modules/semver/functions/gt.js");
-  <fclosure8>;
-  <set_name>;
-  loc3 = <set_name>;
+  loc0 = arg2(<push_atom_value>);
+  loc1 = arg2(<push_atom_value>);
+  loc2 = arg2(<push_atom_value>);
+  loc3 = set_name(minVersion, closure_0);
   <get_loc_check>;
-  <set_loc_uninitialized>.exports = <set_name>;
+  <set_loc_uninitialized>.exports = <set_loc_uninitialized>;
   return;
 }
 
@@ -5325,7 +4569,7 @@ function closure_220() {
   L0:
   <set_loc_uninitialized>;
   arg0 = var_ref2(arg0, arg1);
-  loc0 = var_ref0("0.0.0");
+  loc0 = var_ref0(<push_atom_value>);
   <get_loc_check>;
   if (!var_ref2(var_ref0)) goto L44;
   L40:
@@ -5354,7 +4598,6 @@ function closure_220() {
   loc2 = <get_array_el>;
   loc3 = null;
   <get_loc_check>;
-  <fclosure8>;
   <get_loc_check>;
   if (!<cond>) goto L169;
   L141:
@@ -5391,7 +4634,7 @@ function closure_221() {
   L0:
   <set_loc_uninitialized>;
   loc0 = var_ref0(arg0.semver.version);
-  if (!(arg0.operator === ">")) goto L105;
+  if (!(arg0.operator === <push_atom_value>)) goto L105;
   L37:
   <get_loc_check>;
   <get_length>;
@@ -5409,10 +4652,9 @@ function closure_221() {
   <obj>.raw = <obj>.format();
   goto L119;
   L105:
-  <push_empty_string>;
   if ((<lhs> === <push_empty_string>)) goto L119;
   L110:
-  if (!(<lhs> === ">=")) goto L149;
+  if (!(<lhs> === <push_atom_value>)) goto L149;
   L119:
   if ((!var_ref1)) goto L137;
   L126:
@@ -5424,13 +4666,13 @@ function closure_221() {
   var_ref1 = <rhs>;
   goto L198;
   L149:
-  if ((<lhs> === "<")) goto L198;
+  if ((<lhs> === <push_atom_value>)) goto L198;
   L158:
-  if (!(<lhs> === "<=")) goto L169;
+  if (!(<lhs> === <push_atom_value>)) goto L169;
   L167:
   goto L198;
   L169:
-  <throw>;
+  throw Error(<push_atom_value>.concat(arg0.operator));
   L198:
   return;
 }
@@ -5447,8 +4689,8 @@ function closure_222() {
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
-  loc0 = arg2("../HyperBilibili/node_modules/semver/classes/semver.js");
-  loc1 = arg2("../HyperBilibili/node_modules/semver/classes/comparator.js");
+  loc0 = arg2(<push_atom_value>);
+  loc1 = arg2(<push_atom_value>);
   <is_undefined>;
   if (<is_undefined>) goto L61;
   L51:
@@ -5459,17 +4701,15 @@ function closure_222() {
   <get_loc_check>;
   goto L51;
   L67:
-  loc3 = arg2("../HyperBilibili/node_modules/semver/classes/range.js");
-  loc4 = arg2("../HyperBilibili/node_modules/semver/functions/satisfies.js");
-  loc5 = arg2("../HyperBilibili/node_modules/semver/functions/gt.js");
-  loc6 = arg2("../HyperBilibili/node_modules/semver/functions/lt.js");
-  loc7 = arg2("../HyperBilibili/node_modules/semver/functions/lte.js");
-  loc8 = arg2("../HyperBilibili/node_modules/semver/functions/gte.js");
-  <fclosure8>;
-  <set_name>;
-  loc9 = <set_name>;
+  loc3 = arg2(<push_atom_value>);
+  loc4 = arg2(<push_atom_value>);
+  loc5 = arg2(<push_atom_value>);
+  loc6 = arg2(<push_atom_value>);
+  loc7 = arg2(<push_atom_value>);
+  loc8 = arg2(<push_atom_value>);
+  loc9 = set_name(outside, closure_0);
   <get_loc_check>;
-  <obj>.exports = <set_name>;
+  <obj>.exports = <rhs>;
   return;
 }
 
@@ -5487,7 +4727,7 @@ function closure_223() {
   loc2 = undefined;
   loc3 = undefined;
   loc4 = undefined;
-  if (!(arg2 === ">")) goto L102;
+  if (!(arg2 === <push_atom_value>)) goto L102;
   L56:
   <put_loc_check>;
   <put_loc_check>;
@@ -5496,7 +4736,7 @@ function closure_223() {
   <put_loc_check>;
   goto L172;
   L102:
-  if (!(<lhs> === "<")) goto L157;
+  if (!(<lhs> === <push_atom_value>)) goto L157;
   L111:
   <put_loc_check>;
   <put_loc_check>;
@@ -5505,11 +4745,11 @@ function closure_223() {
   <put_loc_check>;
   goto L172;
   L157:
-  <throw>;
+  throw TypeError(<push_atom_value>);
   L172:
   if (!var_ref8(arg0, arg1, arg3)) goto L184;
   L182:
-  return false;
+  return <push_false>;
   L184:
   <set_loc_uninitialized>;
   loc5 = 0;
@@ -5527,7 +4767,6 @@ function closure_223() {
   loc7 = null;
   loc8 = null;
   <get_loc_check>;
-  <fclosure8>;
   <get_loc_check>;
   <get_loc_check>;
   if ((<lhs> === <rhs>)) goto L275;
@@ -5537,7 +4776,7 @@ function closure_223() {
   L275:
   if (!<cond>) goto L279;
   L277:
-  return false;
+  return <push_false>;
   L279:
   <get_loc_check>;
   if ((!<obj>.operator)) goto L304;
@@ -5551,7 +4790,7 @@ function closure_223() {
   <get_loc_check>;
   if (!<func>(<arg>, <obj>.semver)) goto L323;
   L321:
-  return false;
+  return <push_false>;
   L323:
   <get_loc_check>;
   <get_loc_check>;
@@ -5561,7 +4800,7 @@ function closure_223() {
   <get_loc_check>;
   if (!<func>(<arg>, <obj>.semver)) goto L354;
   L352:
-  return false;
+  return <push_false>;
   L354:
   <close_loc>;
   <close_loc>;
@@ -5570,14 +4809,14 @@ function closure_223() {
   <put_loc_check>;
   goto L190;
   L372:
-  return true;
+  return <push_true>;
 }
 
 function closure_224() {
   L0:
   if (!(arg0.semver === var_ref0)) goto L25;
   L12:
-  arg0 = var_ref1(">=0.0.0");
+  arg0 = var_ref1(<push_atom_value>);
   L25:
   if (var_ref2) goto L33;
   L31:
@@ -5603,10 +4842,9 @@ function closure_225() {
   L0:
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
-  loc0 = arg2("../HyperBilibili/node_modules/semver/functions/satisfies.js");
-  loc1 = arg2("../HyperBilibili/node_modules/semver/functions/compare.js");
-  <fclosure8>;
-  arg0.exports = <fclosure8>;
+  loc0 = arg2(<push_atom_value>);
+  loc1 = arg2(<push_atom_value>);
+  arg0.exports = closure_0;
   return;
 }
 
@@ -5622,8 +4860,7 @@ function closure_226() {
   loc0 = <set_loc_uninitialized>();
   loc1 = null;
   loc2 = null;
-  <fclosure8>;
-  loc3 = arg0.sort(<fclosure8>);
+  loc3 = arg0.sort(closure_0);
   <set_loc_uninitialized>;
   <get_loc_check>;
   <for_of_start>;
@@ -5714,7 +4951,6 @@ function closure_226() {
   goto L365;
   L333:
   <get_loc_check>;
-  <push_empty_string>;
   <get_loc_check>;
   <get_loc_check>;
   L365:
@@ -5722,9 +4958,8 @@ function closure_226() {
   if (!<for_of_next>) goto L0;
   <iterator_close>;
   <get_loc_check>;
-  loc9 = <obj>.join(" || ");
-  <typeof>;
-  if (!(<typeof> === "string")) goto L415;
+  loc9 = <obj>.join(<push_atom_value>);
+  if (!(typeof arg1.raw === <push_atom_value>)) goto L415;
   L407:
   goto L422;
   L415:
@@ -5755,8 +4990,8 @@ function closure_228() {
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
-  loc0 = arg2("../HyperBilibili/node_modules/semver/classes/range.js");
-  loc1 = arg2("../HyperBilibili/node_modules/semver/classes/comparator.js");
+  loc0 = arg2(<push_atom_value>);
+  loc1 = arg2(<push_atom_value>);
   <is_undefined>;
   if (<is_undefined>) goto L64;
   L54:
@@ -5767,26 +5002,18 @@ function closure_228() {
   <get_loc_check>;
   goto L54;
   L70:
-  loc3 = arg2("../HyperBilibili/node_modules/semver/functions/satisfies.js");
-  loc4 = arg2("../HyperBilibili/node_modules/semver/functions/compare.js");
-  <fclosure8>;
-  <set_name>;
-  loc5 = <set_name>;
+  loc3 = arg2(<push_atom_value>);
+  loc4 = arg2(<push_atom_value>);
+  loc5 = set_name(subset, closure_0);
   <get_loc_check>;
-  loc6 = <func>(<func>(">=0.0.0-0"));
+  loc6 = <func>(<func>(<push_atom_value>));
   <get_loc_check>;
-  loc7 = <func>(<func>(">=0.0.0"));
-  <fclosure8>;
-  <set_name>;
-  loc8 = <set_name>;
-  <fclosure8>;
-  <set_name>;
-  loc9 = <set_name>;
-  <fclosure8>;
-  <set_name>;
-  loc10 = <set_name>;
+  loc7 = <func>(<func>(<push_atom_value>));
+  loc8 = set_name(simpleSubset, closure_1);
+  loc9 = set_name(higherGT, closure_2);
+  loc10 = set_name(lowerLT, closure_3);
   <get_loc_check>;
-  <obj>.exports = <set_name>;
+  <obj>.exports = <rhs>;
   return;
 }
 
@@ -5807,11 +5034,11 @@ function closure_229() {
   <set_loc_uninitialized>;
   if (!(arg0 === arg1)) goto L32;
   L30:
-  return true;
+  return <push_true>;
   L32:
   arg0 = var_ref0(arg0, arg2);
   arg1 = var_ref0(arg1, arg2);
-  loc3 = false;
+  loc3 = <push_false>;
   <set_loc_uninitialized>;
   <for_of_start>;
   goto L138;
@@ -5853,7 +5080,7 @@ function closure_229() {
   if (!<for_of_next>) goto L66;
   L142:
   <iterator_close>;
-  return true;
+  return <push_true>;
 }
 
 function closure_230() {
@@ -5870,7 +5097,7 @@ function closure_230() {
   <set_loc_uninitialized>;
   if (!(arg0 === arg1)) goto L37;
   L35:
-  return true;
+  return <push_true>;
   L37:
   <get_length>;
   if (!(<get_length> === 1)) goto L97;
@@ -5884,7 +5111,7 @@ function closure_230() {
   <get_array_el>;
   if (!(<get_array_el>.semver === var_ref0)) goto L79;
   L77:
-  return true;
+  return <push_true>;
   L79:
   if (!arg2.includePrerelease) goto L93;
   L87:
@@ -5901,7 +5128,7 @@ function closure_230() {
   L117:
   if (!arg2.includePrerelease) goto L127;
   L125:
-  return true;
+  return <push_true>;
   L127:
   arg1 = var_ref2;
   L131:
@@ -5914,7 +5141,7 @@ function closure_230() {
   L152:
   loc3 = <rhs>;
   <get_loc_check>;
-  if ((<obj>.operator === ">")) goto L185;
+  if ((<obj>.operator === <push_atom_value>)) goto L185;
   L170:
   <get_loc_check>;
   L185:
@@ -5926,7 +5153,7 @@ function closure_230() {
   goto L277;
   L205:
   <get_loc_check>;
-  if ((<obj>.operator === "<")) goto L237;
+  if ((<obj>.operator === <push_atom_value>)) goto L237;
   L222:
   <get_loc_check>;
   L237:
@@ -5968,7 +5195,7 @@ function closure_230() {
   if (!(<lhs> === 0)) goto L388;
   L352:
   <get_loc_check>;
-  if ((<obj>.operator !== ">=")) goto L384;
+  if ((<obj>.operator !== <push_atom_value>)) goto L384;
   L369:
   <get_loc_check>;
   L384:
@@ -6071,7 +5298,7 @@ function closure_230() {
   if (!(<get_length> === 1)) goto L660;
   L624:
   <get_loc_check>;
-  if (!(<obj>.operator === "<")) goto L660;
+  if (!(<obj>.operator === <push_atom_value>)) goto L660;
   L640:
   <get_loc_check>;
   <get_array_el>;
@@ -6088,7 +5315,7 @@ function closure_230() {
   if (<cond>) goto L709;
   L676:
   <get_loc_check>;
-  if ((<obj>.operator === ">")) goto L709;
+  if ((<obj>.operator === <push_atom_value>)) goto L709;
   L694:
   <get_loc_check>;
   L709:
@@ -6097,7 +5324,7 @@ function closure_230() {
   if (<cond>) goto L753;
   L720:
   <get_loc_check>;
-  if ((<obj>.operator === "<")) goto L753;
+  if ((<obj>.operator === <push_atom_value>)) goto L753;
   L738:
   <get_loc_check>;
   L753:
@@ -6130,7 +5357,7 @@ function closure_230() {
   <put_loc_check>;
   L880:
   <get_loc_check>;
-  if ((<obj>.operator === ">")) goto L912;
+  if ((<obj>.operator === <push_atom_value>)) goto L912;
   L897:
   <get_loc_check>;
   L912:
@@ -6152,7 +5379,7 @@ function closure_230() {
   return <iterator_close_return>;
   L952:
   <get_loc_check>;
-  if (!(<obj>.operator === ">=")) goto L997;
+  if (!(<obj>.operator === <push_atom_value>)) goto L997;
   L968:
   <get_loc_check>;
   <get_loc_check>;
@@ -6190,7 +5417,7 @@ function closure_230() {
   <put_loc_check>;
   L1119:
   <get_loc_check>;
-  if ((<obj>.operator === "<")) goto L1151;
+  if ((<obj>.operator === <push_atom_value>)) goto L1151;
   L1136:
   <get_loc_check>;
   L1151:
@@ -6212,7 +5439,7 @@ function closure_230() {
   return <iterator_close_return>;
   L1191:
   <get_loc_check>;
-  if (!(<obj>.operator === "<=")) goto L1236;
+  if (!(<obj>.operator === <push_atom_value>)) goto L1236;
   L1207:
   <get_loc_check>;
   <get_loc_check>;
@@ -6254,7 +5481,7 @@ function closure_230() {
   <get_loc_check>;
   if (!(<lhs> !== 0)) goto L1304;
   L1302:
-  return false;
+  return <push_false>;
   L1304:
   <get_loc_check>;
   if (!<cond>) goto L1329;
@@ -6268,7 +5495,7 @@ function closure_230() {
   <get_loc_check>;
   if (!(<lhs> !== 0)) goto L1329;
   L1327:
-  return false;
+  return <push_false>;
   L1329:
   <get_loc_check>;
   if (<cond>) goto L1339;
@@ -6277,9 +5504,9 @@ function closure_230() {
   L1339:
   if (!<cond>) goto L1343;
   L1341:
-  return false;
+  return <push_false>;
   L1343:
-  return true;
+  return <push_true>;
 }
 
 function closure_231() {
@@ -6300,9 +5527,9 @@ function closure_231() {
   L43:
   return arg1;
   L45:
-  if (!(arg1.operator === ">")) goto L75;
+  if (!(arg1.operator === <push_atom_value>)) goto L75;
   L59:
-  if (!(arg0.operator === ">=")) goto L75;
+  if (!(arg0.operator === <push_atom_value>)) goto L75;
   L73:
   return arg1;
   L75:
@@ -6327,9 +5554,9 @@ function closure_232() {
   L43:
   return arg1;
   L45:
-  if (!(arg1.operator === "<")) goto L75;
+  if (!(arg1.operator === <push_atom_value>)) goto L75;
   L59:
-  if (!(arg0.operator === "<=")) goto L75;
+  if (!(arg0.operator === <push_atom_value>)) goto L75;
   L73:
   return arg1;
   L75:
@@ -6340,23 +5567,11 @@ function closure_233() {
   L0:
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
-  loc0 = arg2("../HyperBilibili/node_modules/semver/classes/range.js");
-  <fclosure8>;
-  <set_name>;
-  loc1 = <set_name>;
+  loc0 = arg2(<push_atom_value>);
+  loc1 = set_name(toComparators, closure_0);
   <get_loc_check>;
-  <set_loc_uninitialized>.exports = <set_name>;
+  <set_loc_uninitialized>.exports = <set_loc_uninitialized>;
   return;
-}
-
-function closure_234() {
-  L0:
-  <fclosure8>;
-}
-
-function closure_235() {
-  L0:
-  <fclosure8>;
 }
 
 function closure_236() { return arg0.value; }
@@ -6365,12 +5580,10 @@ function closure_237() {
   L0:
   <set_loc_uninitialized>;
   <set_loc_uninitialized>;
-  loc0 = arg2("../HyperBilibili/node_modules/semver/classes/range.js");
-  <fclosure8>;
-  <set_name>;
-  loc1 = <set_name>;
+  loc0 = arg2(<push_atom_value>);
+  loc1 = set_name(validRange, closure_0);
   <get_loc_check>;
-  <set_loc_uninitialized>.exports = <set_name>;
+  <set_loc_uninitialized>.exports = <set_loc_uninitialized>;
   return;
 }
 
@@ -6388,20 +5601,16 @@ function closure_238() {
   L36:
   return null;
   L39:
-  <throw>;
+  throw <value>;
 }
 
 function closure_239() {
   L0:
   <object>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  loc0 = arg2("./src/animation/defaults/loading.ts");
-  loc1 = arg2("./src/animation/defaults/page.ts");
+  <object>.loading = set_name(loading, closure_0);
+  <object>.page = set_name(page, closure_1);
+  loc0 = arg2(<push_atom_value>);
+  loc1 = arg2(<push_atom_value>);
   return;
 }
 
@@ -6411,18 +5620,15 @@ function closure_241() { return _atom_1544_; }
 
 function closure_242() {
   L0:
-  <fclosure8>;
-  loc0 = <fclosure8>;
+  loc0 = atom_1546;
   <object>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
+  <object>.CreateLoadingAnimation = set_name(CreateLoadingAnimation, closure_0);
   return;
 }
 
 function closure_243() { return _atom_1546_; }
 
-function <atom:1546>() {
+function atom_1546() {
   L0:
   <special_object>;
   loc3 = <special_object>;
@@ -6442,89 +5648,57 @@ function <atom:1546>() {
   <object>;
   arg0.anims = <object>;
   L39:
-  loc1 = "loadingWhite";
-  loc2 = "_颜色反转";
+  loc1 = <push_atom_value>;
+  loc2 = <push_atom_value>;
   if (!(!loc0)) goto L63;
   L55:
-  loc1 = "loading";
-  <push_empty_string>;
+  loc1 = <push_atom_value>;
   loc2 = <push_empty_string>;
   L63:
   <object>;
-  <define_field>;
-  <object>.loading_src = <define_field>;
-  <push_i8>;
-  <push_i16>;
-  var_ref0.g.animengine.SequenceAnim.loading = var_ref0.g.animengine.SequenceAnim(arg0.$page.name, arg0.anims.loading_src, <push_i8>, "/common/seqanims/".concat(loc1, "/icons8-loading").concat(loc2, "-*.png"), <push_i16>, true);
-  arg0.anims.show_loading = true;
+  <object>.value = <push_atom_value>.concat(loc1, <push_atom_value>).concat(loc2, <push_atom_value>);
+  arg0.anims.loading_src = <object>;
+  var_ref0.g.animengine.SequenceAnim.loading = var_ref0.g.animengine.SequenceAnim(arg0.$page.name, arg0.anims.loading_src, <push_i8>, <push_atom_value>.concat(loc1, <push_atom_value>).concat(loc2, <push_atom_value>), <push_i16>, <push_true>);
+  arg0.anims.show_loading = <push_true>;
   return;
 }
 
 function closure_245() {
   L0:
-  <fclosure8>;
-  loc0 = <fclosure8>;
+  loc0 = atom_1578;
   <object>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
+  <object>.PlayPageAnimation = set_name(PlayPageAnimation, closure_0);
   return;
 }
 
 function closure_246() { return _atom_1578_; }
 
-function <atom:1578>() { return; }
+function atom_1578() { return; }
 
 function closure_248() {
   L0:
-  <fclosure8>;
-  loc1 = <fclosure8>;
-  <fclosure8>;
-  loc2 = <fclosure8>;
-  <fclosure8>;
-  loc3 = <fclosure8>;
-  <fclosure8>;
-  loc4 = <fclosure8>;
-  <fclosure8>;
-  loc5 = <fclosure8>;
-  <fclosure8>;
-  loc6 = <fclosure8>;
-  <fclosure8>;
-  loc7 = <fclosure8>;
-  <fclosure8>;
-  loc8 = <fclosure8>;
-  <fclosure8>;
-  loc9 = <fclosure8>;
-  <fclosure8>;
-  loc10 = <fclosure8>;
-  <fclosure8>;
-  loc11 = <fclosure8>;
-  <fclosure8>;
-  loc12 = <fclosure8>;
-  <fclosure8>;
-  loc16 = <fclosure8>;
+  loc1 = atom_1588;
+  loc2 = atom_1592;
+  loc3 = atom_1596;
+  loc4 = atom_1600;
+  loc5 = atom_1604;
+  loc6 = atom_1606;
+  loc7 = atom_1608;
+  loc8 = atom_1610;
+  loc9 = atom_1616;
+  loc10 = atom_1618;
+  loc11 = atom_1620;
+  loc12 = atom_1622;
+  loc16 = atom_1582;
   <object>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  loc0 = arg2("./src/animation/defaults.ts");
-  <fclosure8>;
-  loc13 = <fclosure8>;
-  <fclosure8>;
-  <get_loc8>;
-  loc14 = <fclosure8>(<get_loc8>);
-  <fclosure8>;
-  <get_loc8>;
-  loc15 = <fclosure8>(<get_loc8>);
+  <object>.DomAnim = set_name(DomAnim, closure_0);
+  <object>.SequenceAnim = set_name(SequenceAnim, closure_1);
+  <object>.clearPageAnims = set_name(clearPageAnims, closure_2);
+  <object>.defaults = set_name(defaults, closure_3);
+  loc0 = arg2(<push_atom_value>);
+  loc13 = atom_1628;
+  loc14 = closure_17(loc8);
+  loc15 = closure_18(loc8);
   return;
 }
 
@@ -6536,17 +5710,17 @@ function closure_251() { return _atom_1582_; }
 
 function closure_252() { return _atom_1586_; }
 
-function <atom:1588>() {
+function atom_1588() {
   L0:
   <is_undefined>;
   if (!<is_undefined>) goto L19;
   L4:
-  <throw>;
+  throw ReferenceError(<push_atom_value>);
   L19:
   return arg0;
 }
 
-function <atom:1592>() {
+function atom_1592() {
   L0:
   arg1 = var_ref0(arg1);
   if (!var_ref2()) goto L42;
@@ -6559,17 +5733,16 @@ function <atom:1592>() {
   L53:
 }
 
-function <atom:1596>() {
+function atom_1596() {
   L0:
-  <instanceof>;
-  if (!(!<instanceof>)) goto L21;
+  if (!(!(arg0 instanceof arg1))) goto L21;
   L6:
-  <throw>;
+  throw TypeError(<push_atom_value>);
   L21:
   return;
 }
 
-function <atom:1600>() {
+function atom_1600() {
   L0:
   loc0 = 0;
   L2:
@@ -6582,11 +5755,10 @@ function <atom:1600>() {
   L21:
   L23:
   <obj>.enumerable = <rhs>;
-  loc1.configurable = true;
-  <in>;
-  if (!<in>) goto L51;
+  loc1.configurable = <push_true>;
+  if (!(loc1 in <push_atom_value>)) goto L51;
   L44:
-  loc1.writable = true;
+  loc1.writable = <push_true>;
   L51:
   <inc_loc>;
   goto L2;
@@ -6594,7 +5766,7 @@ function <atom:1600>() {
   return;
 }
 
-function <atom:1604>() {
+function atom_1604() {
   L0:
   if (!arg1) goto L13;
   L3:
@@ -6605,16 +5777,15 @@ function <atom:1604>() {
   return arg0;
 }
 
-function <atom:1606>() {
+function atom_1606() {
   L0:
-  <in>;
-  if (!<in>) goto L48;
+  if (!(arg0 in arg1)) goto L48;
   L5:
   <object>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
+  <object>.value = arg2;
+  <object>.enumerable = <push_true>;
+  <object>.configurable = <push_true>;
+  <object>.writable = <push_true>;
   goto L52;
   L48:
   <put_array_el>;
@@ -6622,13 +5793,12 @@ function <atom:1606>() {
   return arg0;
 }
 
-function <atom:1608>() {
+function atom_1608() {
   L0:
   if (!Object.setPrototypeOf) goto L24;
   L12:
   goto L26;
   L24:
-  <fclosure8>;
   L26:
   var_ref0 = <rhs>;
 }
@@ -6641,36 +5811,36 @@ function SyntaxError() {
   return undefined;
 }
 
-function <atom:1610>() {
+function atom_1610() {
   L0:
   <typeof_is_function>;
   if (<typeof_is_function>) goto L24;
   L4:
   if (!(arg1 !== null)) goto L24;
   L9:
-  <throw>;
+  throw TypeError(<push_atom_value>);
   L24:
   if (!arg1) goto L46;
   L39:
   L46:
   <object>;
   <object>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  <object>.prototype = <define_field>(<define_field>, <define_field>);
+  <object>.value = arg0;
+  <object>.writable = <push_true>;
+  <object>.configurable = <push_true>;
+  <object>.constructor = <object>;
+  <obj>.prototype = <func>(<arg>, <object>);
   if (!arg1) goto L87;
   L82:
   L87:
   return;
 }
 
-function <atom:1616>() {
+function atom_1616() {
   L0:
   if (!arg1) goto L22;
   L3:
-  if ((var_ref0(arg1) === "object")) goto L18;
+  if ((var_ref0(arg1) === <push_atom_value>)) goto L18;
   L15:
   <typeof_is_function>;
   L18:
@@ -6680,11 +5850,10 @@ function <atom:1616>() {
   L22:
 }
 
-function <atom:1618>() {
+function atom_1618() {
   L0:
   if (Object.setPrototypeOf) goto L16;
   L13:
-  <fclosure8>;
   L16:
   var_ref0 = <rhs>;
 }
@@ -6695,7 +5864,7 @@ function URIError() {
   return arg0;
 }
 
-function <atom:1620>() {
+function atom_1620() {
   L0:
   if (!arg0) goto L31;
   L3:
@@ -6704,18 +5873,16 @@ function <atom:1620>() {
   L11:
   if (!(arg0.constructor === Symbol)) goto L31;
   L25:
-  return "symbol";
+  return <push_atom_value>;
   L31:
-  <typeof>;
-  return <typeof>;
+  return typeof arg0;
 }
 
-function <atom:1622>() {
+function atom_1622() {
   L0:
   <catch>;
   L5:
-  <fclosure8>;
-  loc0 = (!<func>(Boolean.prototype.valueOf.call(Reflect.construct, Boolean(), <fclosure8>)));
+  loc0 = (!<func>(Boolean.prototype.valueOf.call(Reflect.construct, Boolean(), closure_0)));
   goto L66;
   L56:
   loc1 = <rhs>;
@@ -6723,20 +5890,17 @@ function <atom:1622>() {
   L62:
   goto L66;
   L65:
-  <throw>;
+  throw <value>;
   L66:
-  <fclosure8>;
-  <set_name>;
-  var_ref0 = <set_name>;
+  var_ref0 = set_name(_is_native_reflect_construct, closure_1);
 }
 
 function closure_267() { return; }
 
 function closure_268() { return (!(!_atom_1626_)); }
 
-function <atom:1628>() {
+function atom_1628() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   <special_object>;
   loc1 = <special_object>;
@@ -6745,22 +5909,18 @@ function <atom:1628>() {
 
 function closure_270() {
   L0:
-  <fclosure8>;
-  loc0 = <fclosure8>;
+  loc0 = atom_1564;
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
+  <object>.key = <push_atom_value>;
+  <object>.value = atom_1630;
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
+  <object>.key = <push_atom_value>;
+  <object>.value = atom_1632;
   return loc0;
 }
 
-function <atom:1564>() {
+function atom_1564() {
   L0:
-  <push_this>;
   loc3 = <push_this>;
   <special_object>;
   loc2 = <special_object>;
@@ -6799,22 +5959,19 @@ function <atom:1564>() {
   return loc1;
 }
 
-function <atom:1630>() {
+function atom_1630() {
   L0:
-  <push_this>;
   loc3 = <push_this>;
   loc0 = loc3;
   loc1 = (loc3.baseDuration / loc3.frameCount);
-  <fclosure8>;
-  <set_name>;
-  loc2 = <set_name>;
+  loc2 = set_name(updateFrame, closure_0);
   loc3.intervalId = var_ref1(loc2, loc1);
   return;
 }
 
 function closure_273() {
   L0:
-  _atom_1654_.currentFramePathRef.value = _atom_1654_.framePathPattern.replace("*", _atom_1654_.currentFrame.toString());
+  _atom_1654_.currentFramePathRef.value = _atom_1654_.framePathPattern.replace(<push_atom_value>, _atom_1654_.currentFrame.toString());
   <inc>;
   <inc>.currentFrame = <inc>;
   if (!(_atom_1654_.currentFrame > _atom_1654_.frameCount)) goto L96;
@@ -6828,31 +5985,26 @@ function closure_273() {
   return;
 }
 
-function <atom:1632>() {
+function atom_1632() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   return;
 }
 
 function closure_275() {
   L0:
-  <fclosure8>;
-  loc0 = <fclosure8>;
+  loc0 = atom_1580;
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
+  <object>.key = <push_atom_value>;
+  <object>.value = atom_1630;
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
+  <object>.key = <push_atom_value>;
+  <object>.value = atom_1632;
   return loc0;
 }
 
-function <atom:1580>() {
+function atom_1580() {
   L0:
-  <push_this>;
   loc1 = <push_this>;
   loc0 = var_ref2(loc1, var_ref1);
   loc0.pageId = arg0;
@@ -6878,24 +6030,15 @@ function <atom:1580>() {
   return loc0;
 }
 
-function <atom:1630>() {
+function atom_1630() {
   L0:
-  <push_this>;
   loc4 = <push_this>;
-  <get_loc8>;
-  loc0 = <get_loc8>;
-  <get_loc8>;
-  <get_loc8>.startTime = Date.now();
-  <get_loc8>;
-  loc1 = parseFloat(<get_loc8>.marginLeftRef.value);
-  <get_loc8>;
-  loc2 = parseFloat(<get_loc8>.marginTopRef.value);
-  <fclosure8>;
-  <set_name>;
-  loc3 = <set_name>;
-  <get_loc8>;
-  <push_i8>;
-  <get_loc8>.intervalId = var_ref1(loc3, <push_i8>);
+  loc0 = loc8;
+  loc8.startTime = Date.now();
+  loc1 = parseFloat(loc8.marginLeftRef.value);
+  loc2 = parseFloat(loc8.marginTopRef.value);
+  loc3 = set_name(step, closure_0);
+  loc8.intervalId = var_ref1(loc3, <push_i8>);
   return;
 }
 
@@ -6913,19 +6056,17 @@ function closure_278() {
   loc3 = (var_ref2 + ((var_ref0.targetMarginLeft - var_ref2) * loc2));
   loc4 = (var_ref3 + ((var_ref0.targetMarginTop - var_ref3) * loc2));
   var_ref0.marginLeftRef.value = loc3.toString();
-  <get_loc8>;
-  var_ref0.marginTopRef.value = <get_loc8>.toString();
+  var_ref0.marginTopRef.value = loc8.toString();
   return;
 }
 
-function <atom:1632>() {
+function atom_1632() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   return;
 }
 
-function <atom:1582>() {
+function atom_1582() {
   L0:
   if (!var_ref0.g.animations) goto L66;
   L13:
@@ -6933,7 +6074,6 @@ function <atom:1582>() {
   if (!<get_array_el>) goto L66;
   L28:
   <get_array_el>;
-  <fclosure8>;
   <delete>;
   L66:
   return;
@@ -6941,34 +6081,19 @@ function <atom:1582>() {
 
 function closure_282() {
   L0:
-  <fclosure8>;
-  loc0 = <fclosure8>;
-  <fclosure8>;
-  loc1 = <fclosure8>;
-  <fclosure8>;
-  loc2 = <fclosure8>;
-  <fclosure8>;
-  loc3 = <fclosure8>;
-  <fclosure8>;
-  loc4 = <fclosure8>;
-  <fclosure8>;
-  loc5 = <fclosure8>;
-  <fclosure8>;
-  loc6 = <fclosure8>;
-  <fclosure8>;
-  loc7 = <fclosure8>;
-  <fclosure8>;
-  loc8 = <fclosure8>;
+  loc0 = atom_1680;
+  loc1 = atom_1682;
+  loc2 = atom_1686;
+  loc3 = atom_1692;
+  loc4 = atom_1696;
+  loc5 = atom_1698;
+  loc6 = atom_1678;
+  loc7 = atom_1674;
+  loc8 = atom_1676;
   <object>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
+  <object>.PatchArticleContent = set_name(PatchArticleContent, closure_0);
+  <object>.estimateReadingTime = set_name(estimateReadingTime, closure_1);
+  <object>.parseArticlePageHtml = set_name(parseArticlePageHtml, closure_2);
   return;
 }
 
@@ -6978,7 +6103,7 @@ function closure_284() { return _atom_1676_; }
 
 function closure_285() { return _atom_1678_; }
 
-function <atom:1680>() {
+function atom_1680() {
   L0:
   if ((arg1 == null)) goto L11;
   L6:
@@ -7001,7 +6126,7 @@ function <atom:1680>() {
   return loc1;
 }
 
-function <atom:1682>() {
+function atom_1682() {
   L0:
   if (!Array.isArray(arg0)) goto L21;
   L16:
@@ -7009,10 +6134,9 @@ function <atom:1682>() {
   return;
 }
 
-function <atom:1686>() {
+function atom_1686() {
   L0:
-  <typeof>;
-  if (!(<typeof> !== "undefined")) goto L30;
+  if (!(typeof Symbol !== <push_atom_value>)) goto L30;
   L15:
   <get_array_el>;
   L30:
@@ -7026,12 +6150,12 @@ function <atom:1686>() {
   return;
 }
 
-function <atom:1692>() {
+function atom_1692() {
   L0:
-  <throw>;
+  throw TypeError(<push_atom_value>);
 }
 
-function <atom:1696>() {
+function atom_1696() {
   L0:
   if (var_ref0(arg0)) goto L23;
   L6:
@@ -7043,33 +6167,30 @@ function <atom:1696>() {
   return undefined;
 }
 
-function <atom:1698>() {
+function atom_1698() {
   L0:
   if (!(!arg0)) goto L5;
   L4:
   return;
   L5:
-  <typeof>;
-  if (!(<typeof> === "string")) goto L21;
+  if (!(typeof arg0 === <push_atom_value>)) goto L21;
   L15:
   L21:
-  <push_i8>;
   loc0 = Object.prototype.toString.call(arg0).slice(<push_i8>, -1);
-  if (!(Object.prototype.toString.call(arg0).slice(<push_i8>, -1) === "Object")) goto L85;
+  if (!(Object.prototype.toString.call(arg0).slice(<push_i8>, -1) === <push_atom_value>)) goto L85;
   L65:
   if (!arg0.constructor) goto L85;
   L73:
   loc0 = arg0.constructor.name;
   L85:
-  if ((loc0 === "Map")) goto L103;
+  if ((loc0 === <push_atom_value>)) goto L103;
   L95:
   L103:
   if (!<cond>) goto L119;
   L105:
   L119:
-  if ((loc0 === "Arguments")) goto L144;
+  if ((loc0 === <push_atom_value>)) goto L144;
   L129:
-  <regexp>;
   L144:
   if (!<cond>) goto L152;
   L146:
@@ -7077,38 +6198,32 @@ function <atom:1698>() {
   return;
 }
 
-function <atom:1678>() {
+function atom_1678() {
   L0:
-  <regexp>;
-  loc0 = arg0.match(<regexp>);
-  if (!arg0.match(<regexp>)) goto L269;
+  loc0 = arg0.match(new RegExp(<push_const8>));
+  if (!arg0.match(new RegExp(<push_const8>))) goto L269;
   L20:
-  loc1 = true;
-  loc2 = false;
+  loc1 = <push_true>;
+  loc2 = <push_false>;
   loc3 = undefined;
   <catch>;
   L35:
   <get_array_el2>;
   loc4 = <func>();
   L52:
-  <get_loc8>;
-  loc5 = <get_loc8>.next();
-  loc1 = <get_loc8>.next().done;
-  if (!(!<get_loc8>.next().done)) goto L177;
+  loc5 = loc8.next();
+  loc1 = loc8.next().done;
+  if (!(!loc8.next().done)) goto L177;
   L73:
-  <get_loc8>;
-  loc6 = <get_loc8>.value;
-  <regexp>;
-  loc7 = <get_loc8>.value.match(<regexp>);
-  if (!<get_loc8>.value.match(<regexp>)) goto L173;
+  loc6 = loc8.value;
+  loc7 = loc8.value.match(new RegExp(<push_const8>));
+  if (!loc8.value.match(new RegExp(<push_const8>))) goto L173;
   L99:
-  <get_loc8>;
   <get_array_el>;
   if (!<get_array_el>) goto L173;
   L105:
   <catch>;
   L110:
-  <get_loc8>;
   <get_array_el>;
   <gosub>;
   L134:
@@ -7117,12 +6232,11 @@ function <atom:1678>() {
   loc8 = <rhs>;
   <catch>;
   L142:
-  <get_loc8>;
   goto L173;
   L172:
-  <throw>;
+  throw <value>;
   L173:
-  loc1 = true;
+  loc1 = <push_true>;
   goto L52;
   L177:
   <gosub>;
@@ -7132,25 +6246,22 @@ function <atom:1678>() {
   loc9 = <rhs>;
   <catch>;
   L194:
-  loc2 = true;
-  <get_loc8>;
-  loc3 = <get_loc8>;
+  loc2 = <push_true>;
+  loc3 = loc8;
   <gosub>;
   L206:
   goto L269;
   L209:
   <gosub>;
   L214:
-  <throw>;
+  throw <value>;
   L215:
   <catch>;
   L220:
   if (!(!loc1)) goto L246;
   L224:
-  <get_loc8>;
-  if (!(<get_loc8>.return != null)) goto L246;
+  if (!(loc8.return != null)) goto L246;
   L235:
-  <get_loc8>;
   L246:
   <gosub>;
   L253:
@@ -7158,11 +6269,11 @@ function <atom:1678>() {
   L256:
   <gosub>;
   L261:
-  <throw>;
+  throw <value>;
   L262:
   if (!loc2) goto L267;
   L265:
-  <throw>;
+  throw loc3;
   L267:
   <ret>;
   L268:
@@ -7171,7 +6282,7 @@ function <atom:1678>() {
   return null;
 }
 
-function <atom:1674>() {
+function atom_1674() {
   L0:
   <catch>;
   L5:
@@ -7184,35 +6295,33 @@ function <atom:1674>() {
   loc1 = loc0.pop();
   if ((!loc0.pop())) goto L36;
   L58:
-  if (!(loc1.type === "img")) goto L376;
+  if (!(loc1.type === <push_atom_value>)) goto L376;
   L75:
-  if (loc1.attributes.src.includes(".png")) goto L127;
+  if (loc1.attributes.src.includes(<push_atom_value>)) goto L127;
   L102:
   L127:
   if (!<cond>) goto L314;
   L132:
-  if (loc1.attributes.src.startsWith("http://")) goto L184;
+  if (loc1.attributes.src.startsWith(<push_atom_value>)) goto L184;
   L159:
   L184:
   if (!(!<v>)) goto L215;
   L187:
-  loc1.attributes.src = ("https:" + loc1.attributes.src);
+  loc1.attributes.src = (<push_atom_value> + loc1.attributes.src);
   L215:
   if (!loc1.attributes) goto L376;
   L226:
-  <push_i16>;
   if ((parseInt(loc1.attributes.height) > <push_i16>)) goto L272;
   L250:
-  <push_i16>;
   L272:
   if (!<cond>) goto L376;
   L274:
-  <obj>.src = (loc1.attributes.src + "@250h");
-  loc1.attributes._patched_sign = "large_picture_scaled";
+  <obj>.src = (loc1.attributes.src + <push_atom_value>);
+  loc1.attributes._patched_sign = <push_atom_value>;
   goto L376;
   L314:
-  loc1.type = "hbhtmlrenderer-notsupportimage-tip";
-  loc1.text = "暂不支持显示该类型的图片（".concat(loc1.attributes.src, "）");
+  loc1.type = <push_atom_value>;
+  loc1.text = <push_atom_value>.concat(loc1.attributes.src, <push_atom_value>);
   <object>;
   loc1.attributes = <object>;
   <obj>.children = loc1();
@@ -7230,18 +6339,14 @@ function <atom:1674>() {
   L437:
   return;
   L474:
-  <throw>;
+  throw <value>;
 }
 
-function <atom:1676>() {
+function atom_1676() {
   L0:
-  <regexp>;
-  <push_empty_string>;
-  loc0 = arg0.replace(<regexp>, <push_empty_string>).trim();
-  <regexp>;
+  loc0 = arg0.replace(new RegExp(<push_const8>), <push_empty_string>).trim();
   <get_length>;
   loc1 = <get_length>;
-  <push_i8>;
   loc2 = <push_i8>;
   loc3 = Math.ceil((loc1 / loc2));
   return Math.ceil((loc1 / loc2));
@@ -7249,40 +6354,27 @@ function <atom:1676>() {
 
 function closure_295() {
   L0:
-  <fclosure8>;
-  loc1 = <fclosure8>;
-  <fclosure8>;
-  loc2 = <fclosure8>;
-  <fclosure8>;
-  loc3 = <fclosure8>;
-  <fclosure8>;
-  loc4 = <fclosure8>;
-  <fclosure8>;
-  loc5 = <fclosure8>;
-  <fclosure8>;
-  loc6 = <fclosure8>;
-  <fclosure8>;
-  loc7 = <fclosure8>;
-  <fclosure8>;
-  loc8 = <fclosure8>;
-  <fclosure8>;
-  loc9 = <fclosure8>;
-  <fclosure8>;
-  loc10 = <fclosure8>;
+  loc1 = atom_1744;
+  loc2 = atom_1746;
+  loc3 = atom_1596;
+  loc4 = atom_1600;
+  loc5 = atom_1604;
+  loc6 = atom_1606;
+  loc7 = atom_1752;
+  loc8 = Symbol.unscopables;
+  loc9 = atom_1756;
+  loc10 = atom_1760;
   <object>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  loc0 = arg2("./src/tsimports.js");
-  <fclosure8>;
-  loc11 = <fclosure8>();
-  loc12 = <fclosure8>()();
+  <object>.asyncFile = set_name(asyncFile, closure_0);
+  loc0 = arg2(<push_atom_value>);
+  loc11 = closure_11();
+  loc12 = closure_11()();
   return;
 }
 
 function closure_296() { return _atom_1742_; }
 
-function <atom:1744>() {
+function atom_1744() {
   L0:
   <catch>;
   L5:
@@ -7296,7 +6388,7 @@ function <atom:1744>() {
   L32:
   return;
   L38:
-  <throw>;
+  throw <value>;
   L39:
   if (!loc0.done) goto L52;
   L47:
@@ -7305,49 +6397,40 @@ function <atom:1744>() {
   return;
 }
 
-function <atom:1746>() {
-  L0:
-  <fclosure8>;
-  return <fclosure8>;
-}
+function atom_1746() { return closure_0; }
 
 function closure_299() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
   <special_object>;
   loc3 = <special_object>;
   loc0 = loc2;
   loc1 = loc3;
-  <fclosure8>;
-  return Promise(<fclosure8>);
+  return Promise(closure_0);
 }
 
 function closure_300() {
   L0:
-  <fclosure8>;
-  loc1 = <fclosure8>;
-  <fclosure8>;
-  loc2 = <fclosure8>;
+  loc1 = atom_1748;
+  loc2 = atom_1750;
   loc0 = var_ref1.apply(var_ref2, var_ref3);
   return;
 }
 
-function <atom:1748>() { return; }
+function atom_1748() { return; }
 
-function <atom:1750>() { return; }
+function atom_1750() { return; }
 
-function <atom:1596>() {
+function atom_1596() {
   L0:
-  <instanceof>;
-  if (!(!<instanceof>)) goto L21;
+  if (!(!(arg0 instanceof arg1))) goto L21;
   L6:
-  <throw>;
+  throw TypeError(<push_atom_value>);
   L21:
   return;
 }
 
-function <atom:1600>() {
+function atom_1600() {
   L0:
   loc0 = 0;
   L2:
@@ -7360,11 +6443,10 @@ function <atom:1600>() {
   L21:
   L23:
   <obj>.enumerable = <rhs>;
-  loc1.configurable = true;
-  <in>;
-  if (!<in>) goto L51;
+  loc1.configurable = <push_true>;
+  if (!(loc1 in <push_atom_value>)) goto L51;
   L44:
-  loc1.writable = true;
+  loc1.writable = <push_true>;
   L51:
   <inc_loc>;
   goto L2;
@@ -7372,7 +6454,7 @@ function <atom:1600>() {
   return;
 }
 
-function <atom:1604>() {
+function atom_1604() {
   L0:
   if (!arg1) goto L13;
   L3:
@@ -7383,16 +6465,15 @@ function <atom:1604>() {
   return arg0;
 }
 
-function <atom:1606>() {
+function atom_1606() {
   L0:
-  <in>;
-  if (!<in>) goto L48;
+  if (!(arg0 in arg1)) goto L48;
   L5:
   <object>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
+  <object>.value = arg2;
+  <object>.enumerable = <push_true>;
+  <object>.configurable = <push_true>;
+  <object>.writable = <push_true>;
   goto L52;
   L48:
   <put_array_el>;
@@ -7400,7 +6481,7 @@ function <atom:1606>() {
   return arg0;
 }
 
-function <atom:1752>() {
+function atom_1752() {
   L0:
   <special_object>;
   loc3 = <special_object>;
@@ -7422,10 +6503,8 @@ function <atom:1752>() {
   <typeof_is_function>;
   if (!<typeof_is_function>) goto L87;
   L53:
-  <fclosure8>;
-  loc2 = loc2.concat(Object.getOwnPropertySymbols(loc1).filter(<fclosure8>));
+  loc2 = loc2.concat(Object.getOwnPropertySymbols(loc1).filter(closure_0));
   L87:
-  <fclosure8>;
   <inc_loc>;
   goto L5;
   L103:
@@ -7448,8 +6527,7 @@ function Symbol.unscopables() {
   loc1 = Object.getOwnPropertySymbols(arg0);
   if (!arg1) goto L57;
   L45:
-  <fclosure8>;
-  loc1 = loc1.filter(<fclosure8>);
+  loc1 = loc1.filter(closure_0);
   L57:
   L74:
   return loc0;
@@ -7457,7 +6535,7 @@ function Symbol.unscopables() {
 
 function closure_311() { return Object.getOwnPropertyDescriptor(var_ref0, arg0).enumerable; }
 
-function <atom:1756>() {
+function atom_1756() {
   L0:
   if (!(arg1 != null)) goto L8;
   L5:
@@ -7470,40 +6548,31 @@ function <atom:1756>() {
   L22:
   goto L73;
   L53:
-  <fclosure8>;
   L73:
   return arg0;
 }
 
 function closure_313() { return; }
 
-function <atom:1760>() {
+function atom_1760() {
   L0:
-  <fclosure8>;
-  loc5 = <fclosure8>;
-  <fclosure8>;
-  loc6 = <fclosure8>;
+  loc5 = atom_1770;
+  loc6 = atom_1672;
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  loc4 = <define_field>;
+  <object>.label = 0;
+  <object>.sent = set_name(sent, closure_0);
+  <obj>.trys = <object>();
+  <obj>.ops = <obj>();
+  loc4 = <obj>;
   <object>;
-  <get_loc8>;
-  <define_field>;
-  <get_loc8>;
-  <define_field>;
-  <get_loc8>;
-  <define_field>;
-  loc3 = <define_field>;
+  <object>.next = loc8(0);
+  <object>.throw = loc8(1);
+  <object>.return = loc8(2);
+  loc3 = <object>;
   <typeof_is_function>;
   if (!<typeof_is_function>) goto L100;
   L83:
   <to_propkey2>;
-  <fclosure8>;
   <insert3>;
   <put_array_el>;
   L100:
@@ -7516,7 +6585,7 @@ function closure_315() {
   if (!(<get_array_el> & 1)) goto L11;
   L7:
   <get_array_el>;
-  <throw>;
+  throw <get_array_el>;
   L11:
   <get_array_el>;
   return <get_array_el>;
@@ -7524,22 +6593,17 @@ function closure_315() {
 
 function closure_316() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   return loc0;
 }
 
-function <atom:1770>() {
-  L0:
-  <fclosure8>;
-  return <fclosure8>;
-}
+function atom_1770() { return closure_0; }
 
-function <atom:1672>() {
+function atom_1672() {
   L0:
   if (!var_ref0) goto L18;
   L3:
-  <throw>;
+  throw TypeError(<push_atom_value>);
   L18:
   if (!var_ref1) goto L577;
   L24:
@@ -7599,8 +6663,8 @@ function <atom:1672>() {
   <inc>.label = <inc>;
   <object>;
   <get_array_el>;
-  <define_field>;
-  <define_field>;
+  <get_array_el>.value = <get_array_el>;
+  <get_array_el>.done = <push_false>;
   <gosub>;
   L208:
   return undefined;
@@ -7707,7 +6771,7 @@ function <atom:1672>() {
   L564:
   <gosub>;
   L569:
-  <throw>;
+  throw <value>;
   L570:
   var_ref3 = 0;
   var_ref0 = 0;
@@ -7718,7 +6782,7 @@ function <atom:1672>() {
   if (!(<get_array_el> & 5)) goto L588;
   L584:
   <get_array_el>;
-  <throw>;
+  throw <get_array_el>;
   L588:
   <object>;
   <get_array_el>;
@@ -7728,460 +6792,260 @@ function <atom:1672>() {
   goto L600;
   L599:
   L600:
-  <define_field>;
-  <define_field>;
-  return <define_field>;
+  <obj>.value = <value>;
+  <obj>.done = <push_true>;
+  return <obj>;
 }
 
 function closure_320() {
   L0:
-  <fclosure8>;
-  loc0 = <fclosure8>;
+  loc0 = atom_1794;
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
+  <object>.key = <push_atom_value>;
+  <object>.value = atom_1774;
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
+  <object>.key = <push_atom_value>;
+  <object>.value = atom_1776;
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
+  <object>.key = <push_atom_value>;
+  <object>.value = atom_1778;
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
+  <object>.key = <push_atom_value>;
+  <object>.value = revoke;
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
+  <object>.key = <push_atom_value>;
+  <object>.value = atom_1808;
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
+  <object>.key = <push_atom_value>;
+  <object>.value = atom_1780;
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
+  <object>.key = <push_atom_value>;
+  <object>.value = atom_1782;
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
+  <object>.key = <push_atom_value>;
+  <object>.value = atom_1784;
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
+  <object>.key = <push_atom_value>;
+  <object>.value = atom_1786;
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
+  <object>.key = <push_atom_value>;
+  <object>.value = atom_1788;
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
+  <object>.key = <push_atom_value>;
+  <object>.value = atom_1790;
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
+  <object>.key = <push_atom_value>;
+  <object>.value = atom_1792;
   return loc0;
 }
 
-function <atom:1794>() {
+function atom_1794() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   return;
 }
 
-function <atom:1774>() {
-  L0:
-  <fclosure8>;
-}
-
 function closure_323() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
-function closure_324() {
-  L0:
-  <fclosure8>;
-  return 2(Promise, Promise(<fclosure8>));
-}
+function closure_324() { return 2(Promise, Promise(closure_0)); }
 
 function closure_325() {
   L0:
   <object>;
   <object>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
+  <object>.success = set_name(success, closure_0);
+  <object>.fail = set_name(fail, closure_1);
   return;
-}
-
-function <atom:1776>() {
-  L0:
-  <fclosure8>;
 }
 
 function closure_329() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
-function closure_330() {
-  L0:
-  <fclosure8>;
-  return 2(Promise, Promise(<fclosure8>));
-}
+function closure_330() { return 2(Promise, Promise(closure_0)); }
 
 function closure_331() {
   L0:
   <object>;
   <object>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
+  <object>.success = set_name(success, closure_0);
+  <object>.fail = set_name(fail, closure_1);
   return;
-}
-
-function <atom:1778>() {
-  L0:
-  <fclosure8>;
 }
 
 function closure_335() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
-function closure_336() {
-  L0:
-  <fclosure8>;
-  return 2(Promise, Promise(<fclosure8>));
-}
+function closure_336() { return 2(Promise, Promise(closure_0)); }
 
 function closure_337() {
   L0:
   <object>;
   <object>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
+  <object>.success = set_name(success, closure_0);
+  <object>.fail = set_name(fail, closure_1);
   return;
-}
-
-function revoke() {
-  L0:
-  <fclosure8>;
 }
 
 function closure_341() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
-function closure_342() {
-  L0:
-  <fclosure8>;
-  return 2(Promise, Promise(<fclosure8>));
-}
+function closure_342() { return 2(Promise, Promise(closure_0)); }
 
 function closure_343() {
   L0:
   <object>;
   <object>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
+  <object>.success = set_name(success, closure_0);
+  <object>.fail = set_name(fail, closure_1);
   return;
-}
-
-function <atom:1808>() {
-  L0:
-  <fclosure8>;
 }
 
 function closure_347() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
-function closure_348() {
-  L0:
-  <fclosure8>;
-  return 2(Promise, Promise(<fclosure8>));
-}
+function closure_348() { return 2(Promise, Promise(closure_0)); }
 
 function closure_349() {
   L0:
   <get_array_el2>;
   <object>;
   <object>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
+  <object>.success = set_name(success, closure_0);
+  <object>.fail = set_name(fail, closure_1);
   return;
-}
-
-function <atom:1780>() {
-  L0:
-  <fclosure8>;
 }
 
 function closure_353() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
-function closure_354() {
-  L0:
-  <fclosure8>;
-  return 2(Promise, Promise(<fclosure8>));
-}
+function closure_354() { return 2(Promise, Promise(closure_0)); }
 
 function closure_355() {
   L0:
   <object>;
   <object>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
+  <object>.success = set_name(success, closure_0);
+  <object>.fail = set_name(fail, closure_1);
   return;
-}
-
-function <atom:1782>() {
-  L0:
-  <fclosure8>;
 }
 
 function closure_359() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
-function closure_360() {
-  L0:
-  <fclosure8>;
-  return 2(Promise, Promise(<fclosure8>));
-}
+function closure_360() { return 2(Promise, Promise(closure_0)); }
 
 function closure_361() {
   L0:
   <object>;
   <object>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
+  <object>.success = set_name(success, closure_0);
+  <object>.fail = set_name(fail, closure_1);
   return;
-}
-
-function <atom:1784>() {
-  L0:
-  <fclosure8>;
 }
 
 function closure_365() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
-function closure_366() {
-  L0:
-  <fclosure8>;
-  return 2(Promise, Promise(<fclosure8>));
-}
+function closure_366() { return 2(Promise, Promise(closure_0)); }
 
 function closure_367() {
   L0:
   <object>;
   <object>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
+  <object>.success = set_name(success, closure_0);
+  <object>.fail = set_name(fail, closure_1);
   return;
-}
-
-function <atom:1786>() {
-  L0:
-  <fclosure8>;
 }
 
 function closure_371() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
-function closure_372() {
-  L0:
-  <fclosure8>;
-  return 2(Promise, Promise(<fclosure8>));
-}
+function closure_372() { return 2(Promise, Promise(closure_0)); }
 
 function closure_373() {
   L0:
   <object>;
   <object>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
+  <object>.success = set_name(success, closure_0);
+  <object>.fail = set_name(fail, closure_1);
   return;
-}
-
-function <atom:1788>() {
-  L0:
-  <fclosure8>;
 }
 
 function closure_377() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
-function closure_378() {
-  L0:
-  <fclosure8>;
-  return 2(Promise, Promise(<fclosure8>));
-}
+function closure_378() { return 2(Promise, Promise(closure_0)); }
 
 function closure_379() {
   L0:
   <object>;
   <object>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
+  <object>.success = set_name(success, closure_0);
+  <object>.fail = set_name(fail, closure_1);
   return;
-}
-
-function <atom:1790>() {
-  L0:
-  <fclosure8>;
 }
 
 function closure_383() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
-function closure_384() {
-  L0:
-  <fclosure8>;
-  return 2(Promise, Promise(<fclosure8>));
-}
+function closure_384() { return 2(Promise, Promise(closure_0)); }
 
 function closure_385() {
   L0:
   <object>;
   <object>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
+  <object>.success = set_name(success, closure_0);
+  <object>.fail = set_name(fail, closure_1);
   return;
-}
-
-function <atom:1792>() {
-  L0:
-  <fclosure8>;
 }
 
 function closure_389() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
-function closure_390() {
-  L0:
-  <fclosure8>;
-  return 2(Promise, Promise(<fclosure8>));
-}
+function closure_390() { return 2(Promise, Promise(closure_0)); }
 
 function closure_391() {
   L0:
   <object>;
   <object>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
+  <object>.success = set_name(success, closure_0);
+  <object>.fail = set_name(fail, closure_1);
   return;
 }
 
 function closure_394() {
   L0:
-  <fclosure8>;
-  loc3 = <fclosure8>;
-  <fclosure8>;
-  loc4 = <fclosure8>;
+  loc3 = atom_1830;
+  loc4 = atom_1828;
   <object>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  loc0 = arg2("./src/tsimports.js");
+  <object>.GetBackgroundImageSrc = set_name(GetBackgroundImageSrc, closure_0);
+  <object>.Init = set_name(Init, closure_1);
+  loc0 = arg2(<push_atom_value>);
   <object>;
   loc1 = <object>;
   <object>;
@@ -8193,26 +7057,26 @@ function closure_395() { return _atom_1828_; }
 
 function closure_396() { return _atom_1830_; }
 
-function <atom:1830>() {
+function atom_1830() {
   L0:
   loc0 = var_ref0.g.DEVICE_INFO.screenShape;
   <object>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  var_ref1 = <define_field>;
+  <object>.Default = <push_atom_value>.concat(loc0, <push_atom_value>);
+  <object>.Pink = <push_atom_value>.concat(loc0, <push_atom_value>);
+  <object>.Yellow = <push_atom_value>.concat(loc0, <push_atom_value>);
+  <object>.Blue = <push_atom_value>.concat(loc0, <push_atom_value>);
+  var_ref1 = <object>;
   <object>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  var_ref2 = <define_field>;
+  <object>.pages/app/features/main = var_ref1.Pink;
+  <object>.pages/app/features/dynamic = var_ref1.Pink;
+  <object>.pages/app/features/savedcontent = var_ref1.Yellow;
+  <object>.pages/search/search = var_ref1.Blue;
+  <object>.pages/search/searchresult = var_ref1.Blue;
+  var_ref2 = <object>;
   return;
 }
 
-function <atom:1828>() {
+function atom_1828() {
   L0:
   loc0 = var_ref1.router.getState().name;
   <get_array_el>;
@@ -8222,43 +7086,29 @@ function <atom:1828>() {
 
 function closure_399() {
   L0:
-  <fclosure8>;
-  loc1 = <fclosure8>;
-  <fclosure8>;
-  loc2 = <fclosure8>;
-  <fclosure8>;
-  loc3 = <fclosure8>;
+  loc1 = atom_1744;
+  loc2 = atom_1746;
+  loc3 = atom_1760;
   <object>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  loc0 = arg2("./src/tsimports.js");
+  <object>.BilibiliClientLoginMethods = set_name(BilibiliClientLoginMethods, closure_0);
+  loc0 = arg2(<push_atom_value>);
   <object>;
-  <fclosure8>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
-  loc4 = <define_field>;
+  <object>.updateAccountInfo = atom_1870;
+  <object>.updateBUVID = atom_1872;
+  <object>.loginQR = atom_1874;
+  <object>.login = atom_1876;
+  <object>.logOut = atom_1878;
+  <object>.extractCookiesFromResponse = atom_1880;
+  <object>.parseCookie = atom_1882;
+  <object>.getStoredAccountData = atom_1884;
+  <object>.storeAccountData = atom_1886;
+  loc4 = <object>;
   return;
 }
 
 function closure_400() { return _atom_1868_; }
 
-function <atom:1744>() {
+function atom_1744() {
   L0:
   <catch>;
   L5:
@@ -8272,7 +7122,7 @@ function <atom:1744>() {
   L32:
   return;
   L38:
-  <throw>;
+  throw <value>;
   L39:
   if (!loc0.done) goto L52;
   L47:
@@ -8281,65 +7131,49 @@ function <atom:1744>() {
   return;
 }
 
-function <atom:1746>() {
-  L0:
-  <fclosure8>;
-  return <fclosure8>;
-}
+function atom_1746() { return closure_0; }
 
 function closure_403() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
   <special_object>;
   loc3 = <special_object>;
   loc0 = loc2;
   loc1 = loc3;
-  <fclosure8>;
-  return Promise(<fclosure8>);
+  return Promise(closure_0);
 }
 
 function closure_404() {
   L0:
-  <fclosure8>;
-  loc1 = <fclosure8>;
-  <fclosure8>;
-  loc2 = <fclosure8>;
+  loc1 = atom_1748;
+  loc2 = atom_1750;
   loc0 = var_ref1.apply(var_ref2, var_ref3);
   return;
 }
 
-function <atom:1748>() { return; }
+function atom_1748() { return; }
 
-function <atom:1750>() { return; }
+function atom_1750() { return; }
 
-function <atom:1760>() {
+function atom_1760() {
   L0:
-  <fclosure8>;
-  loc5 = <fclosure8>;
-  <fclosure8>;
-  loc6 = <fclosure8>;
+  loc5 = atom_1770;
+  loc6 = atom_1672;
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  loc4 = <define_field>;
+  <object>.label = 0;
+  <object>.sent = set_name(sent, closure_0);
+  <obj>.trys = <object>();
+  <obj>.ops = <obj>();
+  loc4 = <obj>;
   <object>;
-  <get_loc8>;
-  <define_field>;
-  <get_loc8>;
-  <define_field>;
-  <get_loc8>;
-  <define_field>;
-  loc3 = <define_field>;
+  <object>.next = loc8(0);
+  <object>.throw = loc8(1);
+  <object>.return = loc8(2);
+  loc3 = <object>;
   <typeof_is_function>;
   if (!<typeof_is_function>) goto L100;
   L83:
   <to_propkey2>;
-  <fclosure8>;
   <insert3>;
   <put_array_el>;
   L100:
@@ -8352,7 +7186,7 @@ function closure_408() {
   if (!(<get_array_el> & 1)) goto L11;
   L7:
   <get_array_el>;
-  <throw>;
+  throw <get_array_el>;
   L11:
   <get_array_el>;
   return <get_array_el>;
@@ -8360,22 +7194,17 @@ function closure_408() {
 
 function closure_409() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   return loc0;
 }
 
-function <atom:1770>() {
-  L0:
-  <fclosure8>;
-  return <fclosure8>;
-}
+function atom_1770() { return closure_0; }
 
-function <atom:1672>() {
+function atom_1672() {
   L0:
   if (!var_ref0) goto L18;
   L3:
-  <throw>;
+  throw TypeError(<push_atom_value>);
   L18:
   if (!var_ref1) goto L577;
   L24:
@@ -8435,8 +7264,8 @@ function <atom:1672>() {
   <inc>.label = <inc>;
   <object>;
   <get_array_el>;
-  <define_field>;
-  <define_field>;
+  <get_array_el>.value = <get_array_el>;
+  <get_array_el>.done = <push_false>;
   <gosub>;
   L208:
   return undefined;
@@ -8543,7 +7372,7 @@ function <atom:1672>() {
   L564:
   <gosub>;
   L569:
-  <throw>;
+  throw <value>;
   L570:
   var_ref3 = 0;
   var_ref0 = 0;
@@ -8554,7 +7383,7 @@ function <atom:1672>() {
   if (!(<get_array_el> & 5)) goto L588;
   L584:
   <get_array_el>;
-  <throw>;
+  throw <get_array_el>;
   L588:
   <object>;
   <get_array_el>;
@@ -8564,32 +7393,27 @@ function <atom:1672>() {
   goto L600;
   L599:
   L600:
-  <define_field>;
-  <define_field>;
-  return <define_field>;
+  <obj>.value = <value>;
+  <obj>.done = <push_true>;
+  return <obj>;
 }
 
-function <atom:1870>() {
+function atom_1870() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_414() {
   L0:
-  <push_this>;
   loc1 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_415() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   if (!(arg0.label === 0)) goto L32;
   L13:
-  return <func>(4, loc0.getRequest("https://api.bilibili.com/x/web-interface/nav"));
+  return <func>(4, loc0.getRequest(<push_atom_value>));
   L32:
   if (!(<lhs> === 1)) goto L136;
   L37:
@@ -8597,7 +7421,7 @@ function closure_415() {
   if (!(!arg0.sent().data.data.isLogin)) goto L106;
   L65:
   <object>;
-  <define_field>;
+  <object>.uri = <push_atom_value>;
   L106:
   loc0.accountInfo = var_ref0.data.data;
   return <func>(2, (!(!loc0.accountInfo)));
@@ -8605,27 +7429,22 @@ function closure_415() {
   return;
 }
 
-function <atom:1872>() {
+function atom_1872() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_417() {
   L0:
-  <push_this>;
   loc1 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_418() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   if (!(arg0.label === 0)) goto L32;
   L13:
-  return <func>(4, loc0.getRequest("https://api.bilibili.com/x/frontend/finger/spi"));
+  return <func>(4, loc0.getRequest(<push_atom_value>));
   L32:
   if (!(<lhs> === 1)) goto L96;
   L37:
@@ -8637,27 +7456,22 @@ function closure_418() {
   return;
 }
 
-function <atom:1874>() {
+function atom_1874() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_420() {
   L0:
-  <push_this>;
   loc1 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_421() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   if (!(arg0.label === 0)) goto L57;
   L13:
-  return <func>(4, loc0.getRequest("https://passport.bilibili.com/x/passport-login/web/qrcode/generate"));
+  return <func>(4, loc0.getRequest(<push_atom_value>));
   L57:
   if (!(<lhs> === 1)) goto L167;
   L62:
@@ -8668,18 +7482,17 @@ function closure_421() {
   L82:
   loc0.qrCodeKey = var_ref1.data.data.qrcode_key;
   <object>;
-  <define_field>;
-  <define_field>;
-  return <object>(<define_field>, <define_field>);
+  <object>.url = var_ref1.data.data.url;
+  <object>.qrcode_key = var_ref1.data.data.qrcode_key;
+  return <func>(2, <object>);
   L152:
-  <throw>;
+  throw Error(<push_atom_value>);
   L167:
   return;
 }
 
-function <atom:1876>() {
+function atom_1876() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
   <special_object>;
   loc1 = <special_object>;
@@ -8694,19 +7507,15 @@ function <atom:1876>() {
   L23:
   L24:
   loc0 = <rhs>;
-  <fclosure8>;
 }
 
 function closure_423() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_424() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   if (!(arg0.label === 0)) goto L27;
   L13:
@@ -8732,18 +7541,17 @@ function closure_424() {
   if (!(<lhs> === 3)) goto L257;
   L225:
   <object>;
-  <define_field>;
-  <define_field>;
-  return <object>(<define_field>, <define_field>);
+  <object>.success = <push_true>;
+  <object>.message = <push_atom_value>;
+  return <func>(2, <object>);
   L257:
   if (!(<lhs> === 4)) goto L306;
   L262:
   if (!(!var_ref2)) goto L273;
   L266:
-  <push_i8>;
   return <func>(3, <push_i8>);
   L273:
-  return <func>(4, loc0.getRequest("https://passport.bilibili.com/x/passport-login/web/qrcode/poll?qrcode_key=".concat(loc0.qrCodeKey)));
+  return <func>(4, loc0.getRequest(<push_atom_value>.concat(loc0.qrCodeKey)));
   L306:
   if (!(<lhs> === 5)) goto L412;
   L311:
@@ -8755,7 +7563,6 @@ function closure_424() {
   L353:
   if (!(!<v>)) goto L363;
   L356:
-  <push_i8>;
   return <func>(3, <push_i8>);
   L363:
   if (!var_ref4) goto L376;
@@ -8772,23 +7579,20 @@ function closure_424() {
   L471:
   return <func>(4, loc0.updateBUVID());
   L495:
-  <push_i8>;
   if (!(<lhs> === <push_i8>)) goto L533;
   L501:
   <object>;
-  <define_field>;
-  <define_field>;
-  return <object>(<define_field>, <define_field>);
+  <object>.success = <push_true>;
+  <object>.message = <push_atom_value>;
+  return <func>(2, <object>);
   L533:
-  <push_i8>;
   if (!(<lhs> === <push_i8>)) goto L561;
   L539:
   <object>;
-  <define_field>;
-  <define_field>;
-  return <object>(<define_field>, <define_field>);
+  <object>.success = <push_false>;
+  <object>.message = <push_atom_value>;
+  return <func>(2, <object>);
   L561:
-  <push_i8>;
   if (!(<lhs> === <push_i8>)) goto L572;
   L567:
   return <func>(2);
@@ -8796,59 +7600,55 @@ function closure_424() {
   return;
 }
 
-function <atom:1878>() {
+function atom_1878() {
   L0:
   <get_array_el2>;
   <object>;
-  <define_field>;
+  <object>.key = <push_atom_value>;
   return;
 }
 
-function <atom:1880>() {
+function atom_1880() {
   L0:
-  <push_this>;
   loc1 = <push_this>;
   loc0 = loc1;
-  <typeof>;
-  if (!(<typeof> === "string")) goto L29;
+  if (!(typeof arg0 === <push_atom_value>)) goto L29;
   L14:
-  arg0 = arg0.split(", ");
+  arg0 = arg0.split(<push_atom_value>);
   L29:
-  <fclosure8>;
   return;
 }
 
 function closure_427() {
   L0:
-  if (!arg0.includes("SESSDATA")) goto L38;
+  if (!arg0.includes(<push_atom_value>)) goto L38;
   L16:
-  var_ref0.sessData = var_ref0.parseCookie(arg0, "SESSDATA");
+  var_ref0.sessData = var_ref0.parseCookie(arg0, <push_atom_value>);
   return;
   L38:
-  if (!arg0.includes("bili_jct")) goto L76;
+  if (!arg0.includes(<push_atom_value>)) goto L76;
   L54:
-  var_ref0.biliJct = var_ref0.parseCookie(arg0, "bili_jct");
+  var_ref0.biliJct = var_ref0.parseCookie(arg0, <push_atom_value>);
   return;
   L76:
-  if (!arg0.includes("DedeUserID")) goto L131;
+  if (!arg0.includes(<push_atom_value>)) goto L131;
   L92:
-  if (!(!arg0.includes("DedeUserID__ckMd5"))) goto L131;
+  if (!(!arg0.includes(<push_atom_value>))) goto L131;
   L109:
-  var_ref0.dedeUserID = var_ref0.parseCookie(arg0, "DedeUserID");
+  var_ref0.dedeUserID = var_ref0.parseCookie(arg0, <push_atom_value>);
   return;
   L131:
-  if (!arg0.includes("sid")) goto L168;
+  if (!arg0.includes(<push_atom_value>)) goto L168;
   L147:
-  var_ref0.sid = var_ref0.parseCookie(arg0, "sid");
+  var_ref0.sid = var_ref0.parseCookie(arg0, <push_atom_value>);
   L168:
   return;
 }
 
-function <atom:1882>() {
+function atom_1882() {
   L0:
-  <push_empty_string>;
-  loc0 = RegExp(RegExp(<push_empty_string>.concat(arg1, "=([^;]+)")));
-  if (!RegExp(RegExp(<push_empty_string>.concat(arg1, "=([^;]+)")))) goto L40;
+  loc0 = RegExp(RegExp(<push_empty_string>.concat(arg1, <push_atom_value>)));
+  if (!RegExp(RegExp(<push_empty_string>.concat(arg1, <push_atom_value>)))) goto L40;
   L36:
   <get_array_el>;
   return <get_array_el>;
@@ -8856,34 +7656,19 @@ function <atom:1882>() {
   return null;
 }
 
-function <atom:1884>() {
-  L0:
-  <fclosure8>;
-}
-
 function closure_430() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
-function closure_431() {
-  L0:
-  <fclosure8>;
-  return 2(Promise, Promise(<fclosure8>));
-}
+function closure_431() { return 2(Promise, Promise(closure_0)); }
 
 function closure_432() {
   L0:
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
+  <object>.key = <push_atom_value>;
+  <object>.success = set_name(success, closure_0);
+  <object>.fail = set_name(fail, closure_1);
   return;
 }
 
@@ -8899,23 +7684,18 @@ function closure_433() {
 
 function closure_434() { return; }
 
-function <atom:1886>() {
+function atom_1886() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_436() {
   L0:
-  <push_this>;
   loc1 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_437() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   if (!loc0.sessData) goto L96;
   L10:
@@ -8926,13 +7706,12 @@ function closure_437() {
   if (!loc0.sid) goto L96;
   L34:
   <object>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  var_ref2 = <define_field>;
-  <fclosure8>;
-  return 2(Promise, Promise(<fclosure8>));
+  <object>.sessData = loc0.sessData;
+  <object>.biliJct = loc0.biliJct;
+  <object>.dedeUserID = loc0.dedeUserID;
+  <object>.sid = loc0.sid;
+  var_ref2 = <object>;
+  return 2(Promise, Promise(closure_0));
   L96:
   return <func>(2);
 }
@@ -8940,14 +7719,10 @@ function closure_437() {
 function closure_438() {
   L0:
   <object>;
-  <define_field>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
+  <object>.key = <push_atom_value>;
+  <object>.value = JSON.stringify(var_ref2);
+  <object>.success = set_name(success, closure_0);
+  <object>.fail = set_name(fail, closure_1);
   return;
 }
 
@@ -8957,55 +7732,37 @@ function closure_440() { return; }
 
 function closure_441() {
   L0:
-  <fclosure8>;
-  loc5 = <fclosure8>;
-  <fclosure8>;
-  loc6 = <fclosure8>;
-  <fclosure8>;
-  loc7 = <fclosure8>;
-  <fclosure8>;
-  loc8 = <fclosure8>;
-  <fclosure8>;
-  loc9 = <fclosure8>;
-  <fclosure8>;
-  loc10 = <fclosure8>;
-  <fclosure8>;
-  loc11 = <fclosure8>;
+  loc5 = atom_1744;
+  loc6 = atom_1746;
+  loc7 = atom_1606;
+  loc8 = atom_1752;
+  loc9 = Symbol.unscopables;
+  loc10 = atom_1756;
+  loc11 = atom_1760;
   <object>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  loc0 = arg2("./src/tsimports.js");
-  loc1 = arg2("./src/bilibiliclient/utils/utils.ts");
-  loc2 = arg2("../HyperBilibili/node_modules/semver/index.js");
+  <object>.BilibiliClientAPIRequestMethods = set_name(BilibiliClientAPIRequestMethods, closure_0);
+  loc0 = arg2(<push_atom_value>);
+  loc1 = arg2(<push_atom_value>);
+  loc2 = arg2(<push_atom_value>);
   loc3 = arg2.n(loc2);
-  loc4 = arg2("./src/eula.ts");
+  loc4 = arg2(<push_atom_value>);
   <object>;
-  <fclosure8>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
-  loc12 = <define_field>;
+  <object>.getHeaders = atom_1984;
+  <object>.getCookieString = atom_1986;
+  <object>.encWbi = atom_1988;
+  <object>.getRequest = atom_1888;
+  <object>.getRequestWbi = atom_1990;
+  <object>.postRequest = atom_1992;
+  <object>.postRequestWbi = atom_1994;
+  <object>.checkHyperbilibiliUpdates = atom_1996;
+  <object>.getEulaShowContent = atom_1998;
+  loc12 = <object>;
   return;
 }
 
 function closure_442() { return _atom_1980_; }
 
-function <atom:1744>() {
+function atom_1744() {
   L0:
   <catch>;
   L5:
@@ -9019,7 +7776,7 @@ function <atom:1744>() {
   L32:
   return;
   L38:
-  <throw>;
+  throw <value>;
   L39:
   if (!loc0.done) goto L52;
   L47:
@@ -9028,48 +7785,39 @@ function <atom:1744>() {
   return;
 }
 
-function <atom:1746>() {
-  L0:
-  <fclosure8>;
-  return <fclosure8>;
-}
+function atom_1746() { return closure_0; }
 
 function closure_445() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
   <special_object>;
   loc3 = <special_object>;
   loc0 = loc2;
   loc1 = loc3;
-  <fclosure8>;
-  return Promise(<fclosure8>);
+  return Promise(closure_0);
 }
 
 function closure_446() {
   L0:
-  <fclosure8>;
-  loc1 = <fclosure8>;
-  <fclosure8>;
-  loc2 = <fclosure8>;
+  loc1 = atom_1748;
+  loc2 = atom_1750;
   loc0 = var_ref1.apply(var_ref2, var_ref3);
   return;
 }
 
-function <atom:1748>() { return; }
+function atom_1748() { return; }
 
-function <atom:1750>() { return; }
+function atom_1750() { return; }
 
-function <atom:1606>() {
+function atom_1606() {
   L0:
-  <in>;
-  if (!<in>) goto L48;
+  if (!(arg0 in arg1)) goto L48;
   L5:
   <object>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
+  <object>.value = arg2;
+  <object>.enumerable = <push_true>;
+  <object>.configurable = <push_true>;
+  <object>.writable = <push_true>;
   goto L52;
   L48:
   <put_array_el>;
@@ -9077,7 +7825,7 @@ function <atom:1606>() {
   return arg0;
 }
 
-function <atom:1752>() {
+function atom_1752() {
   L0:
   <special_object>;
   loc3 = <special_object>;
@@ -9099,10 +7847,8 @@ function <atom:1752>() {
   <typeof_is_function>;
   if (!<typeof_is_function>) goto L87;
   L53:
-  <fclosure8>;
-  loc2 = loc2.concat(Object.getOwnPropertySymbols(loc1).filter(<fclosure8>));
+  loc2 = loc2.concat(Object.getOwnPropertySymbols(loc1).filter(closure_0));
   L87:
-  <fclosure8>;
   <inc_loc>;
   goto L5;
   L103:
@@ -9125,8 +7871,7 @@ function Symbol.unscopables() {
   loc1 = Object.getOwnPropertySymbols(arg0);
   if (!arg1) goto L57;
   L45:
-  <fclosure8>;
-  loc1 = loc1.filter(<fclosure8>);
+  loc1 = loc1.filter(closure_0);
   L57:
   L74:
   return loc0;
@@ -9134,7 +7879,7 @@ function Symbol.unscopables() {
 
 function closure_454() { return Object.getOwnPropertyDescriptor(var_ref0, arg0).enumerable; }
 
-function <atom:1756>() {
+function atom_1756() {
   L0:
   if (!(arg1 != null)) goto L8;
   L5:
@@ -9147,40 +7892,31 @@ function <atom:1756>() {
   L22:
   goto L73;
   L53:
-  <fclosure8>;
   L73:
   return arg0;
 }
 
 function closure_456() { return; }
 
-function <atom:1760>() {
+function atom_1760() {
   L0:
-  <fclosure8>;
-  loc5 = <fclosure8>;
-  <fclosure8>;
-  loc6 = <fclosure8>;
+  loc5 = atom_1770;
+  loc6 = atom_1672;
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  loc4 = <define_field>;
+  <object>.label = 0;
+  <object>.sent = set_name(sent, closure_0);
+  <obj>.trys = <object>();
+  <obj>.ops = <obj>();
+  loc4 = <obj>;
   <object>;
-  <get_loc8>;
-  <define_field>;
-  <get_loc8>;
-  <define_field>;
-  <get_loc8>;
-  <define_field>;
-  loc3 = <define_field>;
+  <object>.next = loc8(0);
+  <object>.throw = loc8(1);
+  <object>.return = loc8(2);
+  loc3 = <object>;
   <typeof_is_function>;
   if (!<typeof_is_function>) goto L100;
   L83:
   <to_propkey2>;
-  <fclosure8>;
   <insert3>;
   <put_array_el>;
   L100:
@@ -9193,7 +7929,7 @@ function closure_458() {
   if (!(<get_array_el> & 1)) goto L11;
   L7:
   <get_array_el>;
-  <throw>;
+  throw <get_array_el>;
   L11:
   <get_array_el>;
   return <get_array_el>;
@@ -9201,22 +7937,17 @@ function closure_458() {
 
 function closure_459() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   return loc0;
 }
 
-function <atom:1770>() {
-  L0:
-  <fclosure8>;
-  return <fclosure8>;
-}
+function atom_1770() { return closure_0; }
 
-function <atom:1672>() {
+function atom_1672() {
   L0:
   if (!var_ref0) goto L18;
   L3:
-  <throw>;
+  throw TypeError(<push_atom_value>);
   L18:
   if (!var_ref1) goto L577;
   L24:
@@ -9276,8 +8007,8 @@ function <atom:1672>() {
   <inc>.label = <inc>;
   <object>;
   <get_array_el>;
-  <define_field>;
-  <define_field>;
+  <get_array_el>.value = <get_array_el>;
+  <get_array_el>.done = <push_false>;
   <gosub>;
   L208:
   return undefined;
@@ -9384,7 +8115,7 @@ function <atom:1672>() {
   L564:
   <gosub>;
   L569:
-  <throw>;
+  throw <value>;
   L570:
   var_ref3 = 0;
   var_ref0 = 0;
@@ -9395,7 +8126,7 @@ function <atom:1672>() {
   if (!(<get_array_el> & 5)) goto L588;
   L584:
   <get_array_el>;
-  <throw>;
+  throw <get_array_el>;
   L588:
   <object>;
   <get_array_el>;
@@ -9405,66 +8136,56 @@ function <atom:1672>() {
   goto L600;
   L599:
   L600:
-  <define_field>;
-  <define_field>;
-  return <define_field>;
+  <obj>.value = <value>;
+  <obj>.done = <push_true>;
+  return <obj>;
 }
 
-function <atom:1984>() {
+function atom_1984() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   <object>;
-  <define_field>;
-  <push_empty_string>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  return <define_field>;
+  <object>.Accept = <push_atom_value>;
+  <object>.Accept-Encoding = <push_empty_string>;
+  <object>.Accept-Language = <push_atom_value>;
+  <object>.Cookie = loc0.getCookieString();
+  <object>.Referer = <push_atom_value>;
+  <object>.Origin = <push_atom_value>;
+  <object>.User-Agent = <push_atom_value>;
+  return <object>;
 }
 
-function <atom:1986>() {
+function atom_1986() {
   L0:
-  <push_this>;
   loc1 = <push_this>;
-  loc0 = "buvid3=".concat(loc1.buvid3, "; buvid4=").concat(loc1.buvid4, "; ");
+  loc0 = <push_atom_value>.concat(loc1.buvid3, <push_atom_value>).concat(loc1.buvid4, <push_atom_value>);
   if (!loc1.sessData) goto L138;
   L54:
-  loc0 = (loc0 + "SESSDATA=".concat(loc1.sessData, "; bili_jct=").concat(loc1.biliJct, "; DedeUserID=").concat(loc1.dedeUserID, "; sid=").concat(loc1.sid, "; "));
+  loc0 = (loc0 + <push_atom_value>.concat(loc1.sessData, <push_atom_value>).concat(loc1.biliJct, <push_atom_value>).concat(loc1.dedeUserID, <push_atom_value>).concat(loc1.sid, <push_atom_value>));
   L138:
   <add_loc>;
   return loc0;
 }
 
-function <atom:1988>() {
+function atom_1988() {
   L0:
   loc0 = var_ref0.getMixinKey((arg1 + arg2));
-  <push_i16>;
   loc1 = Math.floor((Date.now() / <push_i16>));
   arg0.wts = loc1;
-  <fclosure8>;
-  loc2 = Object.keys(arg0).sort().map(<fclosure8>).join("&");
+  loc2 = Object.keys(arg0).sort().map(closure_0).join(<push_atom_value>);
   <object>;
-  <define_field>;
-  <define_field>;
-  loc3 = <define_field>(<define_field>);
-  <push_empty_string>;
+  <object>.data = (loc2 + loc0);
+  <object>.algo = <push_atom_value>;
+  loc3 = var_ref1.crypto.hashDigest(<object>);
 }
 
 function closure_466() {
   L0:
-  <push_empty_string>;
   <get_array_el>;
-  <regexp>;
-  <push_empty_string>;
 }
 
-function <atom:1888>() {
+function atom_1888() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
   <special_object>;
   loc1 = <special_object>;
@@ -9479,81 +8200,132 @@ function <atom:1888>() {
   L23:
   L28:
   loc0 = <rhs>;
-  <fclosure8>;
 }
 
 function closure_468() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
-  <fclosure8>;
 }
 
-function closure_469() {
-  L0:
-  <push_this>;
-  loc0 = <push_this>;
-  if (!(arg0.label === 0)) goto L49;
-  L13:
-  arg0.label = 1;
-  goto L54;
-  L49:
-  if (!(<lhs> === 1)) goto L126;
-  L54:
-  <define_field>;
-  <object>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  return <object>(<define_field>, <define_field>(<define_field>));
-  L126:
-  if (!(<lhs> === 2)) goto L152;
-  L131:
-  var_ref3 = arg0.sent();
-  return <func>(2, var_ref3.data);
-  L152:
-  if (!(<lhs> === 3)) goto L203;
-  L157:
-  var_ref4 = arg0.sent();
-  return <func>(3, 4);
-  L203:
-  if (!(<lhs> === 4)) goto L214;
-  L208:
-  return <func>(2, undefined);
-  L214:
-  return;
-}
+function closure_469 (args=1, vars=1, strict=false)
+bytecode:
+00000 push_this         
+00001 put_loc0                 <fmt:none_loc>
+00002 get_arg0                 <fmt:none_arg>
+00003 get_field                881 ; label
+00008 dup               
+00009 push_0                   <fmt:none_int>
+00010 strict_eq         
+00011 if_false8                37
+00013 get_var_ref0             <fmt:none_var_ref>
+00014 get_field                756 ; g
+00019 get_field                786 ; logger
+00024 get_field2               787 ; log
+00029 push_atom_value          1029 ; getRequest: 
+00034 get_var_ref1             <fmt:none_var_ref>
+00035 add               
+00036 call_method              1
+00039 drop              
+00040 get_arg0                 <fmt:none_arg>
+00041 push_1                   <fmt:none_int>
+00042 put_field                881 ; label
+00047 goto8                    6
+00049 dup               
+00050 push_1                   <fmt:none_int>
+00051 strict_eq         
+00052 if_false8                73
+00054 get_arg0                 <fmt:none_arg>
+00055 get_field                883 ; trys
+00060 get_field2               624 ; push
+00065 push_1                   <fmt:none_int>
+00066 push_3                   <fmt:none_int>
+00067 array_from               2
+00070 push_4                   <fmt:none_int>
+00071 define_field             2147483651 ; <atom:2147483651>
+00076 call_method              1
+00079 drop              
+00080 push_4                   <fmt:none_int>
+00081 get_loc0                 <fmt:none_loc>
+00082 get_field                312 ; fetch
+00087 get_field2               312 ; fetch
+00092 object            
+00093 get_var_ref1             <fmt:none_var_ref>
+00094 define_field             961 ; url
+00099 get_var_ref2             <fmt:none_var_ref>
+00100 define_field             1030 ; responseType
+00105 get_loc0                 <fmt:none_loc>
+00106 get_field2               992 ; getHeaders
+00111 call_method              0
+00114 define_field             1031 ; header
+00119 call_method              1
+00122 array_from               2
+00125 return            
+00126 dup               
+00127 push_2                   <fmt:none_int>
+00128 strict_eq         
+00129 if_false8                22
+00131 get_arg0                 <fmt:none_arg>
+00132 get_field2               882 ; sent
+00137 call_method              0
+00140 put_var_ref3             <fmt:none_var_ref>
+00141 push_2                   <fmt:none_int>
+00142 get_var_ref3             <fmt:none_var_ref>
+00143 get_field                946 ; data
+00148 array_from               2
+00151 return            
+00152 dup               
+00153 push_3                   <fmt:none_int>
+00154 strict_eq         
+00155 if_false8                47
+00157 get_arg0                 <fmt:none_arg>
+00158 get_field2               882 ; sent
+00163 call_method              0
+00166 put_var_ref              4
+00169 get_var_ref0             <fmt:none_var_ref>
+00170 get_field                756 ; g
+00175 get_field                786 ; logger
+00180 get_field2               675 ; error
+00185 push_atom_value          1032 ; GET请求失败，详细数据：
+00190 get_var_ref              4
+00193 call_method              2
+00196 drop              
+00197 push_3                   <fmt:none_int>
+00198 push_4                   <fmt:none_int>
+00199 array_from               2
+00202 return            
+00203 dup               
+00204 push_4                   <fmt:none_int>
+00205 strict_eq         
+00206 if_false8                7
+00208 push_2                   <fmt:none_int>
+00209 undefined         
+00210 array_from               2
+00213 return            
+00214 return_undef      
 
-function <atom:1990>() {
+function atom_1990() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_471() {
   L0:
-  <push_this>;
   loc3 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_472() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   <get_array_el>;
   var_ref0 = <get_array_el>;
   <get_array_el>;
   var_ref1 = <get_array_el>;
   var_ref2 = loc0.encWbi(var_ref3, var_ref0, var_ref1);
-  <push_empty_string>;
-  return <get_array_el>(2, loc0.getRequest(<push_empty_string>.concat(var_ref4, "?").concat(var_ref2)));
+  return <get_array_el>(2, loc0.getRequest(<push_empty_string>.concat(var_ref4, <push_atom_value>).concat(var_ref2)));
 }
 
-function <atom:1992>() {
+function atom_1992() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
   <special_object>;
   loc1 = <special_object>;
@@ -9568,64 +8340,138 @@ function <atom:1992>() {
   L23:
   L24:
   loc0 = <rhs>;
-  <fclosure8>;
 }
 
 function closure_474() {
   L0:
-  <push_this>;
   loc3 = <push_this>;
-  <fclosure8>;
 }
 
-function closure_475() {
-  L0:
-  <push_this>;
-  loc0 = <push_this>;
-  if (!(arg0.label === 0)) goto L123;
-  L13:
-  <object>;
-  <object>;
-  <define_field>;
-  var_ref4 = var_ref6(<object>, loc0.getHeaders())(<object>, <define_field>);
-  if (!var_ref7) goto L114;
-  L108:
-  var_ref4 = var_ref7;
-  L114:
-  arg0.label = 1;
-  goto L128;
-  L123:
-  if (!(<lhs> === 1)) goto L214;
-  L128:
-  <define_field>;
-  <object>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  return <define_field>(<define_field>, <define_field>(<define_field>));
-  L214:
-  if (!(<lhs> === 2)) goto L244;
-  L219:
-  var_ref8 = arg0.sent();
-  return <func>(2, var_ref8.data);
-  L244:
-  if (!(<lhs> === 3)) goto L295;
-  L249:
-  var_ref9 = arg0.sent();
-  return <func>(3, 4);
-  L295:
-  if (!(<lhs> === 4)) goto L306;
-  L300:
-  return <func>(2, undefined);
-  L306:
-  return;
-}
+function closure_475 (args=1, vars=1, strict=false)
+bytecode:
+00000 push_this         
+00001 put_loc0                 <fmt:none_loc>
+00002 get_arg0                 <fmt:none_arg>
+00003 get_field                881 ; label
+00008 dup               
+00009 push_0                   <fmt:none_int>
+00010 strict_eq         
+00011 if_false8                111
+00013 get_var_ref0             <fmt:none_var_ref>
+00014 get_field                756 ; g
+00019 get_field                786 ; logger
+00024 get_field2               787 ; log
+00029 push_atom_value          1037 ; postRequest: 
+00034 get_field2               94 ; concat
+00039 get_var_ref1             <fmt:none_var_ref>
+00040 push_atom_value          1038 ; , body: 
+00045 call_method              2
+00048 get_field2               94 ; concat
+00053 get_var_ref2             <fmt:none_var_ref>
+00054 push_atom_value          1039 ; , contentType: 
+00059 call_method              2
+00062 get_field2               94 ; concat
+00067 get_var_ref3             <fmt:none_var_ref>
+00068 call_method              1
+00071 call_method              1
+00074 drop              
+00075 get_var_ref              5
+00078 get_var_ref              6
+00081 object            
+00082 get_loc0                 <fmt:none_loc>
+00083 get_field2               992 ; getHeaders
+00088 call_method              0
+00091 call2                    <fmt:npopx>
+00092 object            
+00093 get_var_ref3             <fmt:none_var_ref>
+00094 define_field             1040 ; Content-Type
+00099 call2                    <fmt:npopx>
+00100 put_var_ref              4
+00103 get_var_ref              7
+00106 if_false8                7
+00108 get_var_ref              7
+00111 put_var_ref              4
+00114 get_arg0                 <fmt:none_arg>
+00115 push_1                   <fmt:none_int>
+00116 put_field                881 ; label
+00121 goto8                    6
+00123 dup               
+00124 push_1                   <fmt:none_int>
+00125 strict_eq         
+00126 if_false8                87
+00128 get_arg0                 <fmt:none_arg>
+00129 get_field                883 ; trys
+00134 get_field2               624 ; push
+00139 push_1                   <fmt:none_int>
+00140 push_3                   <fmt:none_int>
+00141 array_from               2
+00144 push_4                   <fmt:none_int>
+00145 define_field             2147483651 ; <atom:2147483651>
+00150 call_method              1
+00153 drop              
+00154 push_4                   <fmt:none_int>
+00155 get_loc0                 <fmt:none_loc>
+00156 get_field                312 ; fetch
+00161 get_field2               312 ; fetch
+00166 object            
+00167 get_var_ref1             <fmt:none_var_ref>
+00168 define_field             961 ; url
+00173 push_atom_value          1028 ; json
+00178 define_field             1030 ; responseType
+00183 push_atom_value          1041 ; POST
+00188 define_field             1042 ; method
+00193 get_var_ref2             <fmt:none_var_ref>
+00194 define_field             946 ; data
+00199 get_var_ref              4
+00202 define_field             1031 ; header
+00207 call_method              1
+00210 array_from               2
+00213 return            
+00214 dup               
+00215 push_2                   <fmt:none_int>
+00216 strict_eq         
+00217 if_false8                26
+00219 get_arg0                 <fmt:none_arg>
+00220 get_field2               882 ; sent
+00225 call_method              0
+00228 put_var_ref              8
+00231 push_2                   <fmt:none_int>
+00232 get_var_ref              8
+00235 get_field                946 ; data
+00240 array_from               2
+00243 return            
+00244 dup               
+00245 push_3                   <fmt:none_int>
+00246 strict_eq         
+00247 if_false8                47
+00249 get_arg0                 <fmt:none_arg>
+00250 get_field2               882 ; sent
+00255 call_method              0
+00258 put_var_ref              9
+00261 get_var_ref0             <fmt:none_var_ref>
+00262 get_field                756 ; g
+00267 get_field                786 ; logger
+00272 get_field2               675 ; error
+00277 push_atom_value          1043 ; POST请求失败，详细数据：
+00282 get_var_ref              9
+00285 call_method              2
+00288 drop              
+00289 push_3                   <fmt:none_int>
+00290 push_4                   <fmt:none_int>
+00291 array_from               2
+00294 return            
+00295 dup               
+00296 push_4                   <fmt:none_int>
+00297 strict_eq         
+00298 if_false8                7
+00300 push_2                   <fmt:none_int>
+00301 undefined         
+00302 array_from               2
+00305 return            
+00306 return_undef      
 
-function <atom:1994>() {
+function atom_1994() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
   <special_object>;
   loc1 = <special_object>;
@@ -9640,53 +8486,43 @@ function <atom:1994>() {
   L23:
   L24:
   loc0 = <rhs>;
-  <fclosure8>;
 }
 
 function closure_477() {
   L0:
-  <push_this>;
   loc3 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_478() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   <get_array_el>;
   var_ref0 = <get_array_el>;
   <get_array_el>;
   var_ref1 = <get_array_el>;
   var_ref2 = loc0.encWbi(var_ref3, var_ref0, var_ref1);
-  <push_empty_string>;
-  return <get_array_el>(2, loc0.postRequest(<push_empty_string>.concat(var_ref4, "?").concat(var_ref2), var_ref5, var_ref6, var_ref7));
+  return <get_array_el>(2, loc0.postRequest(<push_empty_string>.concat(var_ref4, <push_atom_value>).concat(var_ref2), var_ref5, var_ref6, var_ref7));
 }
 
-function <atom:1996>() {
+function atom_1996() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_480() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_481() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   if (!(arg0.label === 0)) goto L57;
   L13:
   <object>;
-  <define_field>;
-  <define_field>;
-  return loc0.fetch.fetch(<object>, <define_field>(<define_field>));
+  <object>.url = <push_atom_value>;
+  <object>.header = loc0.getHeaders();
+  return <func>(4, loc0.fetch.fetch(<object>));
   L57:
   if (!(<lhs> === 1)) goto L183;
   L62:
@@ -9695,49 +8531,42 @@ function closure_481() {
   if (!var_ref3().lt(loc0.version, var_ref2)) goto L165;
   L129:
   <object>;
-  <define_field>;
-  <define_field>;
-  return <object>(<define_field>, <define_field>);
+  <object>.update = <push_true>;
+  <object>.msg = <push_atom_value>.concat(var_ref2, <push_atom_value>);
+  return <func>(2, <object>);
   L165:
   <object>;
-  <define_field>;
-  <push_empty_string>;
-  <define_field>;
-  return <object>(<define_field>, <define_field>);
+  <object>.update = <push_false>;
+  <object>.msg = <push_empty_string>;
+  return <func>(2, <object>);
   L183:
   return;
 }
 
-function <atom:1998>() {
+function atom_1998() {
   L0:
   <object>;
-  <define_field>;
-  loc0 = <define_field>;
-  return <define_field>.data;
+  <object>.data = var_ref0.eula;
+  loc0 = <object>;
+  return <object>.data;
 }
 
 function closure_483() {
   L0:
-  <fclosure8>;
-  loc0 = <fclosure8>;
-  <fclosure8>;
-  loc1 = <fclosure8>;
-  <fclosure8>;
-  loc2 = <fclosure8>;
+  loc0 = atom_1744;
+  loc1 = atom_1746;
+  loc2 = atom_1760;
   <object>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
+  <object>.BilibiliClientArticleMethods = set_name(BilibiliClientArticleMethods, closure_0);
   <object>;
-  <fclosure8>;
-  <define_field>;
-  loc3 = <define_field>;
+  <object>.getArticle = atom_2102;
+  loc3 = <object>;
   return;
 }
 
 function closure_484() { return _atom_2100_; }
 
-function <atom:1744>() {
+function atom_1744() {
   L0:
   <catch>;
   L5:
@@ -9751,7 +8580,7 @@ function <atom:1744>() {
   L32:
   return;
   L38:
-  <throw>;
+  throw <value>;
   L39:
   if (!loc0.done) goto L52;
   L47:
@@ -9760,65 +8589,49 @@ function <atom:1744>() {
   return;
 }
 
-function <atom:1746>() {
-  L0:
-  <fclosure8>;
-  return <fclosure8>;
-}
+function atom_1746() { return closure_0; }
 
 function closure_487() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
   <special_object>;
   loc3 = <special_object>;
   loc0 = loc2;
   loc1 = loc3;
-  <fclosure8>;
-  return Promise(<fclosure8>);
+  return Promise(closure_0);
 }
 
 function closure_488() {
   L0:
-  <fclosure8>;
-  loc1 = <fclosure8>;
-  <fclosure8>;
-  loc2 = <fclosure8>;
+  loc1 = atom_1748;
+  loc2 = atom_1750;
   loc0 = var_ref1.apply(var_ref2, var_ref3);
   return;
 }
 
-function <atom:1748>() { return; }
+function atom_1748() { return; }
 
-function <atom:1750>() { return; }
+function atom_1750() { return; }
 
-function <atom:1760>() {
+function atom_1760() {
   L0:
-  <fclosure8>;
-  loc5 = <fclosure8>;
-  <fclosure8>;
-  loc6 = <fclosure8>;
+  loc5 = atom_1770;
+  loc6 = atom_1672;
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  loc4 = <define_field>;
+  <object>.label = 0;
+  <object>.sent = set_name(sent, closure_0);
+  <obj>.trys = <object>();
+  <obj>.ops = <obj>();
+  loc4 = <obj>;
   <object>;
-  <get_loc8>;
-  <define_field>;
-  <get_loc8>;
-  <define_field>;
-  <get_loc8>;
-  <define_field>;
-  loc3 = <define_field>;
+  <object>.next = loc8(0);
+  <object>.throw = loc8(1);
+  <object>.return = loc8(2);
+  loc3 = <object>;
   <typeof_is_function>;
   if (!<typeof_is_function>) goto L100;
   L83:
   <to_propkey2>;
-  <fclosure8>;
   <insert3>;
   <put_array_el>;
   L100:
@@ -9831,7 +8644,7 @@ function closure_492() {
   if (!(<get_array_el> & 1)) goto L11;
   L7:
   <get_array_el>;
-  <throw>;
+  throw <get_array_el>;
   L11:
   <get_array_el>;
   return <get_array_el>;
@@ -9839,22 +8652,17 @@ function closure_492() {
 
 function closure_493() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   return loc0;
 }
 
-function <atom:1770>() {
-  L0:
-  <fclosure8>;
-  return <fclosure8>;
-}
+function atom_1770() { return closure_0; }
 
-function <atom:1672>() {
+function atom_1672() {
   L0:
   if (!var_ref0) goto L18;
   L3:
-  <throw>;
+  throw TypeError(<push_atom_value>);
   L18:
   if (!var_ref1) goto L577;
   L24:
@@ -9914,8 +8722,8 @@ function <atom:1672>() {
   <inc>.label = <inc>;
   <object>;
   <get_array_el>;
-  <define_field>;
-  <define_field>;
+  <get_array_el>.value = <get_array_el>;
+  <get_array_el>.done = <push_false>;
   <gosub>;
   L208:
   return undefined;
@@ -10022,7 +8830,7 @@ function <atom:1672>() {
   L564:
   <gosub>;
   L569:
-  <throw>;
+  throw <value>;
   L570:
   var_ref3 = 0;
   var_ref0 = 0;
@@ -10033,7 +8841,7 @@ function <atom:1672>() {
   if (!(<get_array_el> & 5)) goto L588;
   L584:
   <get_array_el>;
-  <throw>;
+  throw <get_array_el>;
   L588:
   <object>;
   <get_array_el>;
@@ -10043,14 +8851,13 @@ function <atom:1672>() {
   goto L600;
   L599:
   L600:
-  <define_field>;
-  <define_field>;
-  return <define_field>;
+  <obj>.value = <value>;
+  <obj>.done = <push_true>;
+  return <obj>;
 }
 
-function <atom:2102>() {
+function atom_2102() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
   <special_object>;
   loc1 = <special_object>;
@@ -10065,28 +8872,24 @@ function <atom:2102>() {
   L23:
   L24:
   loc0 = <rhs>;
-  <fclosure8>;
 }
 
 function closure_498() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_499() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   if (!(arg0.label === 0)) goto L60;
   L13:
-  var_ref0 = "https://www.bilibili.com/read/".concat(var_ref1);
+  var_ref0 = <push_atom_value>.concat(var_ref1);
   if (!(!var_ref2)) goto L40;
   L32:
-  var_ref0 = (var_ref0 + "?jump_opus=1");
+  var_ref0 = (var_ref0 + <push_atom_value>);
   L40:
-  return <func>(4, loc0.getRequest(var_ref0, "text"));
+  return <func>(4, loc0.getRequest(var_ref0, <push_atom_value>));
   L60:
   if (!(<lhs> === 1)) goto L86;
   L65:
@@ -10098,64 +8901,47 @@ function closure_499() {
 
 function closure_500() {
   L0:
-  <fclosure8>;
-  loc13 = <fclosure8>;
-  <fclosure8>;
-  loc14 = <fclosure8>;
+  loc13 = atom_1596;
+  loc14 = atom_1606;
   <object>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  loc0 = arg2("./src/tsimports.js");
-  loc1 = arg2("./src/bilibiliclient/account/login.ts");
-  loc2 = arg2("./src/bilibiliclient/video/video.ts");
-  loc3 = arg2("./src/bilibiliclient/video/action.ts");
-  loc4 = arg2("./src/bilibiliclient/article/article.ts");
-  loc5 = arg2("./src/bilibiliclient/folder/favfolder.ts");
-  loc6 = arg2("./src/bilibiliclient/folder/history.ts");
-  loc7 = arg2("./src/bilibiliclient/user/user.ts");
-  loc8 = arg2("./src/bilibiliclient/comment/comment.ts");
-  loc9 = arg2("./src/bilibiliclient/message/message.ts");
-  loc10 = arg2("./src/bilibiliclient/search/search.ts");
-  loc11 = arg2("./src/bilibiliclient/api/request.ts");
-  loc12 = arg2("./src/bilibiliclient/dynamic/dynamic.ts");
-  <fclosure8>;
-  loc15 = <fclosure8>;
-  <get_loc8>;
-  <get_loc8>;
-  <get_loc8>;
-  <get_loc8>;
-  <get_loc8>;
-  <get_loc8>;
-  <get_loc8>;
-  <get_loc8>;
-  <get_loc8>;
-  <get_loc8>;
+  <object>.BilibiliClient = set_name(BilibiliClient, closure_0);
+  loc0 = arg2(<push_atom_value>);
+  loc1 = arg2(<push_atom_value>);
+  loc2 = arg2(<push_atom_value>);
+  loc3 = arg2(<push_atom_value>);
+  loc4 = arg2(<push_atom_value>);
+  loc5 = arg2(<push_atom_value>);
+  loc6 = arg2(<push_atom_value>);
+  loc7 = arg2(<push_atom_value>);
+  loc8 = arg2(<push_atom_value>);
+  loc9 = arg2(<push_atom_value>);
+  loc10 = arg2(<push_atom_value>);
+  loc11 = arg2(<push_atom_value>);
+  loc12 = arg2(<push_atom_value>);
+  loc15 = atom_2108;
   return;
 }
 
 function closure_501() { return _atom_2108_; }
 
-function <atom:1596>() {
+function atom_1596() {
   L0:
-  <instanceof>;
-  if (!(!<instanceof>)) goto L21;
+  if (!(!(arg0 instanceof arg1))) goto L21;
   L6:
-  <throw>;
+  throw TypeError(<push_atom_value>);
   L21:
   return;
 }
 
-function <atom:1606>() {
+function atom_1606() {
   L0:
-  <in>;
-  if (!<in>) goto L48;
+  if (!(arg0 in arg1)) goto L48;
   L5:
   <object>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
+  <object>.value = arg2;
+  <object>.enumerable = <push_true>;
+  <object>.configurable = <push_true>;
+  <object>.writable = <push_true>;
   goto L52;
   L48:
   <put_array_el>;
@@ -10163,63 +8949,46 @@ function <atom:1606>() {
   return arg0;
 }
 
-function <atom:2108>() {
+function atom_2108() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   <special_object>;
   loc1 = <special_object>;
-  <regexp>;
-  <fclosure8>;
   loc0.fetch = var_ref2.fetch;
   return;
 }
 
 function closure_505() {
   L0:
-  <push_i8>;
   loc0 = ((<push_i8> * Math.random()) | 0);
-  if (!("x" === arg0)) goto L31;
+  if (!(<push_atom_value> === arg0)) goto L31;
   L28:
   goto L37;
   L31:
-  <push_i8>;
   L37:
-  <push_i8>;
 }
 
 function closure_506() {
   L0:
-  <fclosure8>;
-  loc0 = <fclosure8>;
-  <fclosure8>;
-  loc1 = <fclosure8>;
-  <fclosure8>;
-  loc2 = <fclosure8>;
+  loc0 = atom_1744;
+  loc1 = atom_1746;
+  loc2 = atom_1760;
   <object>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
+  <object>.BilibiliClientCommentMethods = set_name(BilibiliClientCommentMethods, closure_0);
   <object>;
-  <fclosure8>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
-  loc3 = <define_field>;
+  <object>.getReplies = atom_2138;
+  <object>.getSecReplies = atom_2140;
+  <object>.LikeReply = atom_2142;
+  <object>.GiveReply = atom_2144;
+  <object>.GiveSecReply = atom_2146;
+  <object>.GiveTreeReply = atom_2148;
+  loc3 = <object>;
   return;
 }
 
 function closure_507() { return _atom_2122_; }
 
-function <atom:1744>() {
+function atom_1744() {
   L0:
   <catch>;
   L5:
@@ -10233,7 +9002,7 @@ function <atom:1744>() {
   L32:
   return;
   L38:
-  <throw>;
+  throw <value>;
   L39:
   if (!loc0.done) goto L52;
   L47:
@@ -10242,65 +9011,49 @@ function <atom:1744>() {
   return;
 }
 
-function <atom:1746>() {
-  L0:
-  <fclosure8>;
-  return <fclosure8>;
-}
+function atom_1746() { return closure_0; }
 
 function closure_510() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
   <special_object>;
   loc3 = <special_object>;
   loc0 = loc2;
   loc1 = loc3;
-  <fclosure8>;
-  return Promise(<fclosure8>);
+  return Promise(closure_0);
 }
 
 function closure_511() {
   L0:
-  <fclosure8>;
-  loc1 = <fclosure8>;
-  <fclosure8>;
-  loc2 = <fclosure8>;
+  loc1 = atom_1748;
+  loc2 = atom_1750;
   loc0 = var_ref1.apply(var_ref2, var_ref3);
   return;
 }
 
-function <atom:1748>() { return; }
+function atom_1748() { return; }
 
-function <atom:1750>() { return; }
+function atom_1750() { return; }
 
-function <atom:1760>() {
+function atom_1760() {
   L0:
-  <fclosure8>;
-  loc5 = <fclosure8>;
-  <fclosure8>;
-  loc6 = <fclosure8>;
+  loc5 = atom_1770;
+  loc6 = atom_1672;
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  loc4 = <define_field>;
+  <object>.label = 0;
+  <object>.sent = set_name(sent, closure_0);
+  <obj>.trys = <object>();
+  <obj>.ops = <obj>();
+  loc4 = <obj>;
   <object>;
-  <get_loc8>;
-  <define_field>;
-  <get_loc8>;
-  <define_field>;
-  <get_loc8>;
-  <define_field>;
-  loc3 = <define_field>;
+  <object>.next = loc8(0);
+  <object>.throw = loc8(1);
+  <object>.return = loc8(2);
+  loc3 = <object>;
   <typeof_is_function>;
   if (!<typeof_is_function>) goto L100;
   L83:
   <to_propkey2>;
-  <fclosure8>;
   <insert3>;
   <put_array_el>;
   L100:
@@ -10313,7 +9066,7 @@ function closure_515() {
   if (!(<get_array_el> & 1)) goto L11;
   L7:
   <get_array_el>;
-  <throw>;
+  throw <get_array_el>;
   L11:
   <get_array_el>;
   return <get_array_el>;
@@ -10321,22 +9074,17 @@ function closure_515() {
 
 function closure_516() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   return loc0;
 }
 
-function <atom:1770>() {
-  L0:
-  <fclosure8>;
-  return <fclosure8>;
-}
+function atom_1770() { return closure_0; }
 
-function <atom:1672>() {
+function atom_1672() {
   L0:
   if (!var_ref0) goto L18;
   L3:
-  <throw>;
+  throw TypeError(<push_atom_value>);
   L18:
   if (!var_ref1) goto L577;
   L24:
@@ -10396,8 +9144,8 @@ function <atom:1672>() {
   <inc>.label = <inc>;
   <object>;
   <get_array_el>;
-  <define_field>;
-  <define_field>;
+  <get_array_el>.value = <get_array_el>;
+  <get_array_el>.done = <push_false>;
   <gosub>;
   L208:
   return undefined;
@@ -10504,7 +9252,7 @@ function <atom:1672>() {
   L564:
   <gosub>;
   L569:
-  <throw>;
+  throw <value>;
   L570:
   var_ref3 = 0;
   var_ref0 = 0;
@@ -10515,7 +9263,7 @@ function <atom:1672>() {
   if (!(<get_array_el> & 5)) goto L588;
   L584:
   <get_array_el>;
-  <throw>;
+  throw <get_array_el>;
   L588:
   <object>;
   <get_array_el>;
@@ -10525,14 +9273,13 @@ function <atom:1672>() {
   goto L600;
   L599:
   L600:
-  <define_field>;
-  <define_field>;
-  return <define_field>;
+  <obj>.value = <value>;
+  <obj>.done = <push_true>;
+  return <obj>;
 }
 
-function <atom:2138>() {
+function atom_2138() {
   L0:
-  <push_this>;
   loc4 = <push_this>;
   <special_object>;
   loc3 = <special_object>;
@@ -10556,7 +9303,6 @@ function <atom:2138>() {
   <get_array_el>;
   goto L46;
   L44:
-  <push_i8>;
   L46:
   loc1 = <rhs>;
   <get_length>;
@@ -10570,24 +9316,19 @@ function <atom:2138>() {
   L65:
   L66:
   loc2 = <rhs>;
-  <fclosure8>;
-  <get_loc8>;
 }
 
 function closure_521() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_522() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   if (!(arg0.label === 0)) goto L103;
   L13:
-  var_ref0 = "https://api.bilibili.com/x/v2/reply?type=".concat(var_ref1, "&oid=").concat(var_ref2, "&pn=").concat(var_ref3, "&ps=").concat(var_ref4, "&sort=").concat(var_ref5);
+  var_ref0 = <push_atom_value>.concat(var_ref1, <push_atom_value>).concat(var_ref2, <push_atom_value>).concat(var_ref3, <push_atom_value>).concat(var_ref4, <push_atom_value>).concat(var_ref5);
   return <func>(4, loc0.getRequest(var_ref0));
   L103:
   if (!(<lhs> === 1)) goto L138;
@@ -10598,9 +9339,8 @@ function closure_522() {
   return;
 }
 
-function <atom:2140>() {
+function atom_2140() {
   L0:
-  <push_this>;
   loc3 = <push_this>;
   <special_object>;
   loc2 = <special_object>;
@@ -10624,26 +9364,21 @@ function <atom:2140>() {
   <get_array_el>;
   goto L45;
   L43:
-  <push_i8>;
   L45:
   loc1 = <rhs>;
-  <fclosure8>;
 }
 
 function closure_524() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_525() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   if (!(arg0.label === 0)) goto L103;
   L13:
-  var_ref0 = "https://api.bilibili.com/x/v2/reply/reply?type=".concat(var_ref1, "&oid=").concat(var_ref2, "&pn=").concat(var_ref3, "&ps=").concat(var_ref4, "&root=").concat(var_ref5);
+  var_ref0 = <push_atom_value>.concat(var_ref1, <push_atom_value>).concat(var_ref2, <push_atom_value>).concat(var_ref3, <push_atom_value>).concat(var_ref4, <push_atom_value>).concat(var_ref5);
   return <func>(4, loc0.getRequest(var_ref0));
   L103:
   if (!(<lhs> === 1)) goto L138;
@@ -10654,29 +9389,24 @@ function closure_525() {
   return;
 }
 
-function <atom:2142>() {
+function atom_2142() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_527() {
   L0:
-  <push_this>;
   loc3 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_528() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   if (!(arg0.label === 0)) goto L120;
   L13:
-  var_ref0 = "https://api.bilibili.com/x/v2/reply/action";
-  var_ref1 = "type=".concat(var_ref2, "&oid=").concat(var_ref3, "&rpid=").concat(var_ref4, "&action=").concat(var_ref5, "&csrf=").concat(loc0.biliJct);
-  return <func>(4, loc0.postRequest(var_ref0, var_ref1, "application/x-www-form-urlencoded"));
+  var_ref0 = <push_atom_value>;
+  var_ref1 = <push_atom_value>.concat(var_ref2, <push_atom_value>).concat(var_ref3, <push_atom_value>).concat(var_ref4, <push_atom_value>).concat(var_ref5, <push_atom_value>).concat(loc0.biliJct);
+  return <func>(4, loc0.postRequest(var_ref0, var_ref1, <push_atom_value>));
   L120:
   if (!(<lhs> === 1)) goto L150;
   L125:
@@ -10686,29 +9416,24 @@ function closure_528() {
   return;
 }
 
-function <atom:2144>() {
+function atom_2144() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_530() {
   L0:
-  <push_this>;
   loc3 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_531() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   if (!(arg0.label === 0)) goto L104;
   L13:
-  var_ref0 = "https://api.bilibili.com/x/v2/reply/add";
-  var_ref1 = "type=".concat(var_ref2, "&oid=").concat(var_ref3, "&message=").concat(var_ref4, "&plat=1&csrf=").concat(loc0.biliJct);
-  return <func>(4, loc0.postRequest(var_ref0, var_ref1, "application/x-www-form-urlencoded"));
+  var_ref0 = <push_atom_value>;
+  var_ref1 = <push_atom_value>.concat(var_ref2, <push_atom_value>).concat(var_ref3, <push_atom_value>).concat(var_ref4, <push_atom_value>).concat(loc0.biliJct);
+  return <func>(4, loc0.postRequest(var_ref0, var_ref1, <push_atom_value>));
   L104:
   if (!(<lhs> === 1)) goto L134;
   L109:
@@ -10718,29 +9443,24 @@ function closure_531() {
   return;
 }
 
-function <atom:2146>() {
+function atom_2146() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_533() {
   L0:
-  <push_this>;
   loc3 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_534() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   if (!(arg0.label === 0)) goto L120;
   L13:
-  var_ref0 = "https://api.bilibili.com/x/v2/reply/add";
-  var_ref1 = "type=".concat(var_ref2, "&oid=").concat(var_ref3, "&parent=").concat(var_ref4, "&message=").concat(var_ref5, "&plat=1&csrf=").concat(loc0.biliJct);
-  return <func>(4, loc0.postRequest(var_ref0, var_ref1, "application/x-www-form-urlencoded"));
+  var_ref0 = <push_atom_value>;
+  var_ref1 = <push_atom_value>.concat(var_ref2, <push_atom_value>).concat(var_ref3, <push_atom_value>).concat(var_ref4, <push_atom_value>).concat(var_ref5, <push_atom_value>).concat(loc0.biliJct);
+  return <func>(4, loc0.postRequest(var_ref0, var_ref1, <push_atom_value>));
   L120:
   if (!(<lhs> === 1)) goto L150;
   L125:
@@ -10750,29 +9470,24 @@ function closure_534() {
   return;
 }
 
-function <atom:2148>() {
+function atom_2148() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_536() {
   L0:
-  <push_this>;
   loc3 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_537() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   if (!(arg0.label === 0)) goto L136;
   L13:
-  var_ref0 = "https://api.bilibili.com/x/v2/reply/add";
-  var_ref1 = "type=".concat(var_ref2, "&oid=").concat(var_ref3, "&parent=").concat(var_ref4, "&root=").concat(var_ref5, "&message=").concat(var_ref6, "&plat=1&csrf=").concat(loc0.biliJct);
-  return <func>(4, loc0.postRequest(var_ref0, var_ref1, "application/x-www-form-urlencoded"));
+  var_ref0 = <push_atom_value>;
+  var_ref1 = <push_atom_value>.concat(var_ref2, <push_atom_value>).concat(var_ref3, <push_atom_value>).concat(var_ref4, <push_atom_value>).concat(var_ref5, <push_atom_value>).concat(var_ref6, <push_atom_value>).concat(loc0.biliJct);
+  return <func>(4, loc0.postRequest(var_ref0, var_ref1, <push_atom_value>));
   L136:
   if (!(<lhs> === 1)) goto L166;
   L141:
@@ -10784,26 +9499,20 @@ function closure_537() {
 
 function closure_538() {
   L0:
-  <fclosure8>;
-  loc0 = <fclosure8>;
-  <fclosure8>;
-  loc1 = <fclosure8>;
-  <fclosure8>;
-  loc2 = <fclosure8>;
+  loc0 = atom_1744;
+  loc1 = atom_1746;
+  loc2 = atom_1760;
   <object>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
+  <object>.BilibiliClientDynamicMethods = set_name(BilibiliClientDynamicMethods, closure_0);
   <object>;
-  <fclosure8>;
-  <define_field>;
-  loc3 = <define_field>;
+  <object>.getDynamicList = atom_2184;
+  loc3 = <object>;
   return;
 }
 
 function closure_539() { return _atom_2128_; }
 
-function <atom:1744>() {
+function atom_1744() {
   L0:
   <catch>;
   L5:
@@ -10817,7 +9526,7 @@ function <atom:1744>() {
   L32:
   return;
   L38:
-  <throw>;
+  throw <value>;
   L39:
   if (!loc0.done) goto L52;
   L47:
@@ -10826,65 +9535,49 @@ function <atom:1744>() {
   return;
 }
 
-function <atom:1746>() {
-  L0:
-  <fclosure8>;
-  return <fclosure8>;
-}
+function atom_1746() { return closure_0; }
 
 function closure_542() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
   <special_object>;
   loc3 = <special_object>;
   loc0 = loc2;
   loc1 = loc3;
-  <fclosure8>;
-  return Promise(<fclosure8>);
+  return Promise(closure_0);
 }
 
 function closure_543() {
   L0:
-  <fclosure8>;
-  loc1 = <fclosure8>;
-  <fclosure8>;
-  loc2 = <fclosure8>;
+  loc1 = atom_1748;
+  loc2 = atom_1750;
   loc0 = var_ref1.apply(var_ref2, var_ref3);
   return;
 }
 
-function <atom:1748>() { return; }
+function atom_1748() { return; }
 
-function <atom:1750>() { return; }
+function atom_1750() { return; }
 
-function <atom:1760>() {
+function atom_1760() {
   L0:
-  <fclosure8>;
-  loc5 = <fclosure8>;
-  <fclosure8>;
-  loc6 = <fclosure8>;
+  loc5 = atom_1770;
+  loc6 = atom_1672;
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  loc4 = <define_field>;
+  <object>.label = 0;
+  <object>.sent = set_name(sent, closure_0);
+  <obj>.trys = <object>();
+  <obj>.ops = <obj>();
+  loc4 = <obj>;
   <object>;
-  <get_loc8>;
-  <define_field>;
-  <get_loc8>;
-  <define_field>;
-  <get_loc8>;
-  <define_field>;
-  loc3 = <define_field>;
+  <object>.next = loc8(0);
+  <object>.throw = loc8(1);
+  <object>.return = loc8(2);
+  loc3 = <object>;
   <typeof_is_function>;
   if (!<typeof_is_function>) goto L100;
   L83:
   <to_propkey2>;
-  <fclosure8>;
   <insert3>;
   <put_array_el>;
   L100:
@@ -10897,7 +9590,7 @@ function closure_547() {
   if (!(<get_array_el> & 1)) goto L11;
   L7:
   <get_array_el>;
-  <throw>;
+  throw <get_array_el>;
   L11:
   <get_array_el>;
   return <get_array_el>;
@@ -10905,22 +9598,17 @@ function closure_547() {
 
 function closure_548() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   return loc0;
 }
 
-function <atom:1770>() {
-  L0:
-  <fclosure8>;
-  return <fclosure8>;
-}
+function atom_1770() { return closure_0; }
 
-function <atom:1672>() {
+function atom_1672() {
   L0:
   if (!var_ref0) goto L18;
   L3:
-  <throw>;
+  throw TypeError(<push_atom_value>);
   L18:
   if (!var_ref1) goto L577;
   L24:
@@ -10980,8 +9668,8 @@ function <atom:1672>() {
   <inc>.label = <inc>;
   <object>;
   <get_array_el>;
-  <define_field>;
-  <define_field>;
+  <get_array_el>.value = <get_array_el>;
+  <get_array_el>.done = <push_false>;
   <gosub>;
   L208:
   return undefined;
@@ -11088,7 +9776,7 @@ function <atom:1672>() {
   L564:
   <gosub>;
   L569:
-  <throw>;
+  throw <value>;
   L570:
   var_ref3 = 0;
   var_ref0 = 0;
@@ -11099,7 +9787,7 @@ function <atom:1672>() {
   if (!(<get_array_el> & 5)) goto L588;
   L584:
   <get_array_el>;
-  <throw>;
+  throw <get_array_el>;
   L588:
   <object>;
   <get_array_el>;
@@ -11109,14 +9797,13 @@ function <atom:1672>() {
   goto L600;
   L599:
   L600:
-  <define_field>;
-  <define_field>;
-  return <define_field>;
+  <obj>.value = <value>;
+  <obj>.done = <push_true>;
+  return <obj>;
 }
 
-function <atom:2184>() {
+function atom_2184() {
   L0:
-  <push_this>;
   loc3 = <push_this>;
   <special_object>;
   loc2 = <special_object>;
@@ -11142,30 +9829,26 @@ function <atom:2184>() {
   L43:
   L44:
   loc1 = <rhs>;
-  <fclosure8>;
 }
 
 function closure_553() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_554() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   if (!(arg0.label === 0)) goto L74;
   L13:
-  var_ref0 = "https://api.bilibili.com/x/polymer/web-dynamic/v1/feed/all?platform=web";
+  var_ref0 = <push_atom_value>;
   if (!var_ref1) goto L39;
   L22:
-  var_ref0 = (var_ref0 + "&host_mid=".concat(var_ref1));
+  var_ref0 = (var_ref0 + <push_atom_value>.concat(var_ref1));
   L39:
   if (!var_ref2) goto L59;
   L42:
-  var_ref0 = (var_ref0 + "&offset=".concat(var_ref2));
+  var_ref0 = (var_ref0 + <push_atom_value>.concat(var_ref2));
   L59:
   return <func>(4, loc0.getRequest(var_ref0));
   L74:
@@ -11179,30 +9862,22 @@ function closure_554() {
 
 function closure_555() {
   L0:
-  <fclosure8>;
-  loc0 = <fclosure8>;
-  <fclosure8>;
-  loc1 = <fclosure8>;
-  <fclosure8>;
-  loc2 = <fclosure8>;
+  loc0 = atom_1744;
+  loc1 = atom_1746;
+  loc2 = atom_1760;
   <object>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
+  <object>.BilibiliClientFavFolderMethods = set_name(BilibiliClientFavFolderMethods, closure_0);
   <object>;
-  <fclosure8>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
-  loc3 = <define_field>;
+  <object>.getUserFavouriteFolders = atom_2192;
+  <object>.getFavouriteFolderMetadata = atom_2194;
+  <object>.getFavouriteFolderContent = atom_2196;
+  loc3 = <object>;
   return;
 }
 
 function closure_556() { return _atom_2116_; }
 
-function <atom:1744>() {
+function atom_1744() {
   L0:
   <catch>;
   L5:
@@ -11216,7 +9891,7 @@ function <atom:1744>() {
   L32:
   return;
   L38:
-  <throw>;
+  throw <value>;
   L39:
   if (!loc0.done) goto L52;
   L47:
@@ -11225,65 +9900,49 @@ function <atom:1744>() {
   return;
 }
 
-function <atom:1746>() {
-  L0:
-  <fclosure8>;
-  return <fclosure8>;
-}
+function atom_1746() { return closure_0; }
 
 function closure_559() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
   <special_object>;
   loc3 = <special_object>;
   loc0 = loc2;
   loc1 = loc3;
-  <fclosure8>;
-  return Promise(<fclosure8>);
+  return Promise(closure_0);
 }
 
 function closure_560() {
   L0:
-  <fclosure8>;
-  loc1 = <fclosure8>;
-  <fclosure8>;
-  loc2 = <fclosure8>;
+  loc1 = atom_1748;
+  loc2 = atom_1750;
   loc0 = var_ref1.apply(var_ref2, var_ref3);
   return;
 }
 
-function <atom:1748>() { return; }
+function atom_1748() { return; }
 
-function <atom:1750>() { return; }
+function atom_1750() { return; }
 
-function <atom:1760>() {
+function atom_1760() {
   L0:
-  <fclosure8>;
-  loc5 = <fclosure8>;
-  <fclosure8>;
-  loc6 = <fclosure8>;
+  loc5 = atom_1770;
+  loc6 = atom_1672;
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  loc4 = <define_field>;
+  <object>.label = 0;
+  <object>.sent = set_name(sent, closure_0);
+  <obj>.trys = <object>();
+  <obj>.ops = <obj>();
+  loc4 = <obj>;
   <object>;
-  <get_loc8>;
-  <define_field>;
-  <get_loc8>;
-  <define_field>;
-  <get_loc8>;
-  <define_field>;
-  loc3 = <define_field>;
+  <object>.next = loc8(0);
+  <object>.throw = loc8(1);
+  <object>.return = loc8(2);
+  loc3 = <object>;
   <typeof_is_function>;
   if (!<typeof_is_function>) goto L100;
   L83:
   <to_propkey2>;
-  <fclosure8>;
   <insert3>;
   <put_array_el>;
   L100:
@@ -11296,7 +9955,7 @@ function closure_564() {
   if (!(<get_array_el> & 1)) goto L11;
   L7:
   <get_array_el>;
-  <throw>;
+  throw <get_array_el>;
   L11:
   <get_array_el>;
   return <get_array_el>;
@@ -11304,22 +9963,17 @@ function closure_564() {
 
 function closure_565() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   return loc0;
 }
 
-function <atom:1770>() {
-  L0:
-  <fclosure8>;
-  return <fclosure8>;
-}
+function atom_1770() { return closure_0; }
 
-function <atom:1672>() {
+function atom_1672() {
   L0:
   if (!var_ref0) goto L18;
   L3:
-  <throw>;
+  throw TypeError(<push_atom_value>);
   L18:
   if (!var_ref1) goto L577;
   L24:
@@ -11379,8 +10033,8 @@ function <atom:1672>() {
   <inc>.label = <inc>;
   <object>;
   <get_array_el>;
-  <define_field>;
-  <define_field>;
+  <get_array_el>.value = <get_array_el>;
+  <get_array_el>.done = <push_false>;
   <gosub>;
   L208:
   return undefined;
@@ -11487,7 +10141,7 @@ function <atom:1672>() {
   L564:
   <gosub>;
   L569:
-  <throw>;
+  throw <value>;
   L570:
   var_ref3 = 0;
   var_ref0 = 0;
@@ -11498,7 +10152,7 @@ function <atom:1672>() {
   if (!(<get_array_el> & 5)) goto L588;
   L584:
   <get_array_el>;
-  <throw>;
+  throw <get_array_el>;
   L588:
   <object>;
   <get_array_el>;
@@ -11508,14 +10162,13 @@ function <atom:1672>() {
   goto L600;
   L599:
   L600:
-  <define_field>;
-  <define_field>;
-  return <define_field>;
+  <obj>.value = <value>;
+  <obj>.done = <push_true>;
+  return <obj>;
 }
 
-function <atom:2192>() {
+function atom_2192() {
   L0:
-  <push_this>;
   loc3 = <push_this>;
   <special_object>;
   loc2 = <special_object>;
@@ -11541,26 +10194,22 @@ function <atom:2192>() {
   L43:
   L44:
   loc1 = <rhs>;
-  <fclosure8>;
 }
 
 function closure_570() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_571() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   if (!(arg0.label === 0)) goto L77;
   L13:
-  var_ref0 = "https://api.bilibili.com/x/v3/fav/folder/created/list-all?up_mid=".concat(var_ref1, "&type=").concat(var_ref2);
+  var_ref0 = <push_atom_value>.concat(var_ref1, <push_atom_value>).concat(var_ref2);
   if (!var_ref3) goto L62;
   L45:
-  var_ref0 = (var_ref0 + "&rid=".concat(var_ref3));
+  var_ref0 = (var_ref0 + <push_atom_value>.concat(var_ref3));
   L62:
   return <func>(4, loc0.getRequest(var_ref0));
   L77:
@@ -11572,27 +10221,22 @@ function closure_571() {
   return;
 }
 
-function <atom:2194>() {
+function atom_2194() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_573() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_574() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   if (!(arg0.label === 0)) goto L43;
   L13:
-  var_ref0 = "https://api.bilibili.com/x/v3/fav/folder/info?media_id=".concat(var_ref1);
+  var_ref0 = <push_atom_value>.concat(var_ref1);
   return <func>(4, loc0.getRequest(var_ref0));
   L43:
   if (!(<lhs> === 1)) goto L74;
@@ -11603,9 +10247,8 @@ function closure_574() {
   return;
 }
 
-function <atom:2196>() {
+function atom_2196() {
   L0:
-  <push_this>;
   loc3 = <push_this>;
   <special_object>;
   loc2 = <special_object>;
@@ -11618,7 +10261,6 @@ function <atom:2196>() {
   <get_array_el>;
   goto L25;
   L23:
-  <push_i8>;
   L25:
   loc0 = <rhs>;
   <get_length>;
@@ -11632,26 +10274,22 @@ function <atom:2196>() {
   L44:
   L45:
   loc1 = <rhs>;
-  <fclosure8>;
 }
 
 function closure_576() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_577() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   if (!(arg0.label === 0)) goto L95;
   L13:
-  var_ref0 = "https://api.bilibili.com/x/v3/fav/resource/list?media_id=".concat(var_ref1, "&ps=").concat(var_ref2, "&pn=").concat(var_ref3);
+  var_ref0 = <push_atom_value>.concat(var_ref1, <push_atom_value>).concat(var_ref2, <push_atom_value>).concat(var_ref3);
   if (!var_ref4) goto L80;
   L61:
-  var_ref0 = (var_ref0 + "&keyword=".concat(var_ref4));
+  var_ref0 = (var_ref0 + <push_atom_value>.concat(var_ref4));
   L80:
   return <func>(4, loc0.getRequest(var_ref0));
   L95:
@@ -11665,26 +10303,20 @@ function closure_577() {
 
 function closure_578() {
   L0:
-  <fclosure8>;
-  loc0 = <fclosure8>;
-  <fclosure8>;
-  loc1 = <fclosure8>;
-  <fclosure8>;
-  loc2 = <fclosure8>;
+  loc0 = atom_1744;
+  loc1 = atom_1746;
+  loc2 = atom_1760;
   <object>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
+  <object>.BilibiliClientHistoryMethods = set_name(BilibiliClientHistoryMethods, closure_0);
   <object>;
-  <fclosure8>;
-  <define_field>;
-  loc3 = <define_field>;
+  <object>.getWatchHistory = atom_2210;
+  loc3 = <object>;
   return;
 }
 
 function closure_579() { return _atom_2118_; }
 
-function <atom:1744>() {
+function atom_1744() {
   L0:
   <catch>;
   L5:
@@ -11698,7 +10330,7 @@ function <atom:1744>() {
   L32:
   return;
   L38:
-  <throw>;
+  throw <value>;
   L39:
   if (!loc0.done) goto L52;
   L47:
@@ -11707,65 +10339,49 @@ function <atom:1744>() {
   return;
 }
 
-function <atom:1746>() {
-  L0:
-  <fclosure8>;
-  return <fclosure8>;
-}
+function atom_1746() { return closure_0; }
 
 function closure_582() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
   <special_object>;
   loc3 = <special_object>;
   loc0 = loc2;
   loc1 = loc3;
-  <fclosure8>;
-  return Promise(<fclosure8>);
+  return Promise(closure_0);
 }
 
 function closure_583() {
   L0:
-  <fclosure8>;
-  loc1 = <fclosure8>;
-  <fclosure8>;
-  loc2 = <fclosure8>;
+  loc1 = atom_1748;
+  loc2 = atom_1750;
   loc0 = var_ref1.apply(var_ref2, var_ref3);
   return;
 }
 
-function <atom:1748>() { return; }
+function atom_1748() { return; }
 
-function <atom:1750>() { return; }
+function atom_1750() { return; }
 
-function <atom:1760>() {
+function atom_1760() {
   L0:
-  <fclosure8>;
-  loc5 = <fclosure8>;
-  <fclosure8>;
-  loc6 = <fclosure8>;
+  loc5 = atom_1770;
+  loc6 = atom_1672;
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  loc4 = <define_field>;
+  <object>.label = 0;
+  <object>.sent = set_name(sent, closure_0);
+  <obj>.trys = <object>();
+  <obj>.ops = <obj>();
+  loc4 = <obj>;
   <object>;
-  <get_loc8>;
-  <define_field>;
-  <get_loc8>;
-  <define_field>;
-  <get_loc8>;
-  <define_field>;
-  loc3 = <define_field>;
+  <object>.next = loc8(0);
+  <object>.throw = loc8(1);
+  <object>.return = loc8(2);
+  loc3 = <object>;
   <typeof_is_function>;
   if (!<typeof_is_function>) goto L100;
   L83:
   <to_propkey2>;
-  <fclosure8>;
   <insert3>;
   <put_array_el>;
   L100:
@@ -11778,7 +10394,7 @@ function closure_587() {
   if (!(<get_array_el> & 1)) goto L11;
   L7:
   <get_array_el>;
-  <throw>;
+  throw <get_array_el>;
   L11:
   <get_array_el>;
   return <get_array_el>;
@@ -11786,22 +10402,17 @@ function closure_587() {
 
 function closure_588() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   return loc0;
 }
 
-function <atom:1770>() {
-  L0:
-  <fclosure8>;
-  return <fclosure8>;
-}
+function atom_1770() { return closure_0; }
 
-function <atom:1672>() {
+function atom_1672() {
   L0:
   if (!var_ref0) goto L18;
   L3:
-  <throw>;
+  throw TypeError(<push_atom_value>);
   L18:
   if (!var_ref1) goto L577;
   L24:
@@ -11861,8 +10472,8 @@ function <atom:1672>() {
   <inc>.label = <inc>;
   <object>;
   <get_array_el>;
-  <define_field>;
-  <define_field>;
+  <get_array_el>.value = <get_array_el>;
+  <get_array_el>.done = <push_false>;
   <gosub>;
   L208:
   return undefined;
@@ -11969,7 +10580,7 @@ function <atom:1672>() {
   L564:
   <gosub>;
   L569:
-  <throw>;
+  throw <value>;
   L570:
   var_ref3 = 0;
   var_ref0 = 0;
@@ -11980,7 +10591,7 @@ function <atom:1672>() {
   if (!(<get_array_el> & 5)) goto L588;
   L584:
   <get_array_el>;
-  <throw>;
+  throw <get_array_el>;
   L588:
   <object>;
   <get_array_el>;
@@ -11990,32 +10601,27 @@ function <atom:1672>() {
   goto L600;
   L599:
   L600:
-  <define_field>;
-  <define_field>;
-  return <define_field>;
+  <obj>.value = <value>;
+  <obj>.done = <push_true>;
+  return <obj>;
 }
 
-function <atom:2210>() {
+function atom_2210() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_593() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_594() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   if (!(arg0.label === 0)) goto L57;
   L13:
-  var_ref0 = "https://api.bilibili.com/x/v2/history?pn=".concat(var_ref1, "&ps=").concat(var_ref2);
+  var_ref0 = <push_atom_value>.concat(var_ref1, <push_atom_value>).concat(var_ref2);
   return <func>(4, loc0.getRequest(var_ref0));
   L57:
   if (!(<lhs> === 1)) goto L88;
@@ -12028,40 +10634,27 @@ function closure_594() {
 
 function closure_595() {
   L0:
-  <fclosure8>;
-  loc0 = <fclosure8>;
-  <fclosure8>;
-  loc1 = <fclosure8>;
-  <fclosure8>;
-  loc2 = <fclosure8>;
-  <fclosure8>;
-  loc3 = <fclosure8>;
-  <fclosure8>;
-  loc4 = <fclosure8>;
-  <fclosure8>;
-  loc5 = <fclosure8>;
-  <fclosure8>;
-  loc6 = <fclosure8>;
+  loc0 = atom_1744;
+  loc1 = atom_1746;
+  loc2 = atom_1606;
+  loc3 = atom_1752;
+  loc4 = Symbol.unscopables;
+  loc5 = atom_1756;
+  loc6 = atom_1760;
   <object>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
+  <object>.BilibiliClientMessageMethods = set_name(BilibiliClientMessageMethods, closure_0);
   <object>;
-  <fclosure8>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
-  loc7 = <define_field>;
+  <object>.getMessageNotifyFeed = atom_2214;
+  <object>.getDMSessions = atom_2216;
+  <object>.getDMSessionMessage = atom_2218;
+  <object>.SendDMSessionMessage = atom_2220;
+  loc7 = <object>;
   return;
 }
 
 function closure_596() { return _atom_2124_; }
 
-function <atom:1744>() {
+function atom_1744() {
   L0:
   <catch>;
   L5:
@@ -12075,7 +10668,7 @@ function <atom:1744>() {
   L32:
   return;
   L38:
-  <throw>;
+  throw <value>;
   L39:
   if (!loc0.done) goto L52;
   L47:
@@ -12084,48 +10677,39 @@ function <atom:1744>() {
   return;
 }
 
-function <atom:1746>() {
-  L0:
-  <fclosure8>;
-  return <fclosure8>;
-}
+function atom_1746() { return closure_0; }
 
 function closure_599() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
   <special_object>;
   loc3 = <special_object>;
   loc0 = loc2;
   loc1 = loc3;
-  <fclosure8>;
-  return Promise(<fclosure8>);
+  return Promise(closure_0);
 }
 
 function closure_600() {
   L0:
-  <fclosure8>;
-  loc1 = <fclosure8>;
-  <fclosure8>;
-  loc2 = <fclosure8>;
+  loc1 = atom_1748;
+  loc2 = atom_1750;
   loc0 = var_ref1.apply(var_ref2, var_ref3);
   return;
 }
 
-function <atom:1748>() { return; }
+function atom_1748() { return; }
 
-function <atom:1750>() { return; }
+function atom_1750() { return; }
 
-function <atom:1606>() {
+function atom_1606() {
   L0:
-  <in>;
-  if (!<in>) goto L48;
+  if (!(arg0 in arg1)) goto L48;
   L5:
   <object>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
+  <object>.value = arg2;
+  <object>.enumerable = <push_true>;
+  <object>.configurable = <push_true>;
+  <object>.writable = <push_true>;
   goto L52;
   L48:
   <put_array_el>;
@@ -12133,7 +10717,7 @@ function <atom:1606>() {
   return arg0;
 }
 
-function <atom:1752>() {
+function atom_1752() {
   L0:
   <special_object>;
   loc3 = <special_object>;
@@ -12155,10 +10739,8 @@ function <atom:1752>() {
   <typeof_is_function>;
   if (!<typeof_is_function>) goto L87;
   L53:
-  <fclosure8>;
-  loc2 = loc2.concat(Object.getOwnPropertySymbols(loc1).filter(<fclosure8>));
+  loc2 = loc2.concat(Object.getOwnPropertySymbols(loc1).filter(closure_0));
   L87:
-  <fclosure8>;
   <inc_loc>;
   goto L5;
   L103:
@@ -12181,8 +10763,7 @@ function Symbol.unscopables() {
   loc1 = Object.getOwnPropertySymbols(arg0);
   if (!arg1) goto L57;
   L45:
-  <fclosure8>;
-  loc1 = loc1.filter(<fclosure8>);
+  loc1 = loc1.filter(closure_0);
   L57:
   L74:
   return loc0;
@@ -12190,7 +10771,7 @@ function Symbol.unscopables() {
 
 function closure_608() { return Object.getOwnPropertyDescriptor(var_ref0, arg0).enumerable; }
 
-function <atom:1756>() {
+function atom_1756() {
   L0:
   if (!(arg1 != null)) goto L8;
   L5:
@@ -12203,40 +10784,31 @@ function <atom:1756>() {
   L22:
   goto L73;
   L53:
-  <fclosure8>;
   L73:
   return arg0;
 }
 
 function closure_610() { return; }
 
-function <atom:1760>() {
+function atom_1760() {
   L0:
-  <fclosure8>;
-  loc5 = <fclosure8>;
-  <fclosure8>;
-  loc6 = <fclosure8>;
+  loc5 = atom_1770;
+  loc6 = atom_1672;
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  loc4 = <define_field>;
+  <object>.label = 0;
+  <object>.sent = set_name(sent, closure_0);
+  <obj>.trys = <object>();
+  <obj>.ops = <obj>();
+  loc4 = <obj>;
   <object>;
-  <get_loc8>;
-  <define_field>;
-  <get_loc8>;
-  <define_field>;
-  <get_loc8>;
-  <define_field>;
-  loc3 = <define_field>;
+  <object>.next = loc8(0);
+  <object>.throw = loc8(1);
+  <object>.return = loc8(2);
+  loc3 = <object>;
   <typeof_is_function>;
   if (!<typeof_is_function>) goto L100;
   L83:
   <to_propkey2>;
-  <fclosure8>;
   <insert3>;
   <put_array_el>;
   L100:
@@ -12249,7 +10821,7 @@ function closure_612() {
   if (!(<get_array_el> & 1)) goto L11;
   L7:
   <get_array_el>;
-  <throw>;
+  throw <get_array_el>;
   L11:
   <get_array_el>;
   return <get_array_el>;
@@ -12257,22 +10829,17 @@ function closure_612() {
 
 function closure_613() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   return loc0;
 }
 
-function <atom:1770>() {
-  L0:
-  <fclosure8>;
-  return <fclosure8>;
-}
+function atom_1770() { return closure_0; }
 
-function <atom:1672>() {
+function atom_1672() {
   L0:
   if (!var_ref0) goto L18;
   L3:
-  <throw>;
+  throw TypeError(<push_atom_value>);
   L18:
   if (!var_ref1) goto L577;
   L24:
@@ -12332,8 +10899,8 @@ function <atom:1672>() {
   <inc>.label = <inc>;
   <object>;
   <get_array_el>;
-  <define_field>;
-  <define_field>;
+  <get_array_el>.value = <get_array_el>;
+  <get_array_el>.done = <push_false>;
   <gosub>;
   L208:
   return undefined;
@@ -12440,7 +11007,7 @@ function <atom:1672>() {
   L564:
   <gosub>;
   L569:
-  <throw>;
+  throw <value>;
   L570:
   var_ref3 = 0;
   var_ref0 = 0;
@@ -12451,7 +11018,7 @@ function <atom:1672>() {
   if (!(<get_array_el> & 5)) goto L588;
   L584:
   <get_array_el>;
-  <throw>;
+  throw <get_array_el>;
   L588:
   <object>;
   <get_array_el>;
@@ -12461,32 +11028,27 @@ function <atom:1672>() {
   goto L600;
   L599:
   L600:
-  <define_field>;
-  <define_field>;
-  return <define_field>;
+  <obj>.value = <value>;
+  <obj>.done = <push_true>;
+  return <obj>;
 }
 
-function <atom:2214>() {
+function atom_2214() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_618() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_619() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   if (!(arg0.label === 0)) goto L34;
   L13:
-  var_ref0 = "https://api.vc.bilibili.com/x/im/web/msgfeed/unread";
+  var_ref0 = <push_atom_value>;
   return <func>(4, loc0.getRequest(var_ref0));
   L34:
   if (!(<lhs> === 1)) goto L65;
@@ -12497,34 +11059,29 @@ function closure_619() {
   return;
 }
 
-function <atom:2216>() {
+function atom_2216() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_621() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_622() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   if (!(arg0.label === 0)) goto L69;
   L13:
-  var_ref0 = "https://api.vc.bilibili.com/session_svr/v1/session_svr/get_sessions";
+  var_ref0 = <push_atom_value>;
   <object>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  return <define_field>(<define_field>, <define_field>(<define_field>, <define_field>));
+  <object>.session_type = var_ref1;
+  <object>.sort_rule = var_ref2;
+  <object>.group_fold = 0;
+  <object>.unfollow_fold = 0;
+  <object>.mobi_app = <push_atom_value>;
+  return <func>(4, loc0.getRequestWbi(var_ref0, <object>));
   L69:
   if (!(<lhs> === 1)) goto L100;
   L74:
@@ -12534,9 +11091,8 @@ function closure_622() {
   return;
 }
 
-function <atom:2218>() {
+function atom_2218() {
   L0:
-  <push_this>;
   loc3 = <push_this>;
   <special_object>;
   loc2 = <special_object>;
@@ -12549,7 +11105,6 @@ function <atom:2218>() {
   <get_array_el>;
   goto L25;
   L23:
-  <push_i8>;
   L25:
   loc0 = <rhs>;
   <get_length>;
@@ -12560,28 +11115,24 @@ function <atom:2218>() {
   L37:
   L38:
   loc1 = <rhs>;
-  <fclosure8>;
 }
 
 function closure_624() {
   L0:
-  <push_this>;
   loc3 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_625() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   if (!(arg0.label === 0)) goto L72;
   L13:
-  var_ref0 = "https://api.vc.bilibili.com/svr_sync/v1/svr_sync/fetch_session_msgs";
+  var_ref0 = <push_atom_value>;
   <object>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  var_ref1 = <define_field>;
+  <object>.session_type = var_ref2;
+  <object>.talker_id = var_ref3;
+  <object>.size = var_ref4;
+  var_ref1 = <object>;
   if (!var_ref5) goto L56;
   L46:
   <put_array_el>;
@@ -12596,37 +11147,29 @@ function closure_625() {
   return;
 }
 
-function <atom:2220>() {
+function atom_2220() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_627() {
   L0:
-  <push_this>;
   loc4 = <push_this>;
-  <get_loc8>;
-  <fclosure8>;
 }
 
 function closure_628() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   if (!(arg0.label === 0)) goto L391;
   L16:
-  var_ref0 = "https://api.vc.bilibili.com/web_im/v1/web_im/send_msg";
-  <push_i16>;
+  var_ref0 = <push_atom_value>;
   <object>;
-  <push_empty_string>;
-  <define_field>;
-  var_ref1 = encodeURIComponent(JSON.stringify(<object>(<define_field>)), "&csrf=").concat(loc0.biliJct, "&csrf_token=").concat(loc0.biliJct, "&msg[msg_status]=0&msg[new_face_version]=0&from_firework=0&build=0&mobi_app=web");
+  <object>.content = <push_empty_string>.concat(var_ref4);
+  var_ref1 = Number.parseInt(Date((Date().getTime() / <push_i16>).toString()), <push_atom_value>).concat(encodeURIComponent(JSON.stringify(<object>)), <push_atom_value>).concat(loc0.biliJct, <push_atom_value>).concat(loc0.biliJct, <push_atom_value>);
   <object>;
   <object>;
-  <define_field>;
-  var_ref5 = var_ref7(<object>, loc0.getHeaders())(<object>, <define_field>);
+  <object>.Content-Type = <push_atom_value>;
+  var_ref5 = var_ref6(var_ref7(<object>, loc0.getHeaders()), <object>);
   <put_array_el>;
   <put_array_el>;
   <put_array_el>;
@@ -12634,10 +11177,10 @@ function closure_628() {
   <get_length>;
   <put_array_el>;
   <object>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  return var_ref0(<object>, <define_field>(<define_field>, <define_field>, var_ref1, "application/x-www-form-urlencoded", var_ref5));
+  <object>.w_sender_uid = loc0.accountInfo.mid;
+  <object>.w_receiver_id = var_ref2;
+  <object>.w_dev_id = loc0.dm_deviceid;
+  return <put_array_el>(4, loc0.postRequestWbi(var_ref0, <object>, var_ref1, <push_atom_value>, var_ref5));
   L391:
   if (!(<lhs> === 1)) goto L421;
   L396:
@@ -12649,30 +11192,22 @@ function closure_628() {
 
 function closure_629() {
   L0:
-  <fclosure8>;
-  loc0 = <fclosure8>;
-  <fclosure8>;
-  loc1 = <fclosure8>;
-  <fclosure8>;
-  loc2 = <fclosure8>;
+  loc0 = atom_1744;
+  loc1 = atom_1746;
+  loc2 = atom_1760;
   <object>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
+  <object>.BilibiliClientSearchMethods = set_name(BilibiliClientSearchMethods, closure_0);
   <object>;
-  <fclosure8>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
-  loc3 = <define_field>;
+  <object>.getSearchHotwords = atom_2282;
+  <object>.searchContents = atom_2284;
+  <object>.searchContentWithType = atom_2286;
+  loc3 = <object>;
   return;
 }
 
 function closure_630() { return _atom_2126_; }
 
-function <atom:1744>() {
+function atom_1744() {
   L0:
   <catch>;
   L5:
@@ -12686,7 +11221,7 @@ function <atom:1744>() {
   L32:
   return;
   L38:
-  <throw>;
+  throw <value>;
   L39:
   if (!loc0.done) goto L52;
   L47:
@@ -12695,65 +11230,49 @@ function <atom:1744>() {
   return;
 }
 
-function <atom:1746>() {
-  L0:
-  <fclosure8>;
-  return <fclosure8>;
-}
+function atom_1746() { return closure_0; }
 
 function closure_633() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
   <special_object>;
   loc3 = <special_object>;
   loc0 = loc2;
   loc1 = loc3;
-  <fclosure8>;
-  return Promise(<fclosure8>);
+  return Promise(closure_0);
 }
 
 function closure_634() {
   L0:
-  <fclosure8>;
-  loc1 = <fclosure8>;
-  <fclosure8>;
-  loc2 = <fclosure8>;
+  loc1 = atom_1748;
+  loc2 = atom_1750;
   loc0 = var_ref1.apply(var_ref2, var_ref3);
   return;
 }
 
-function <atom:1748>() { return; }
+function atom_1748() { return; }
 
-function <atom:1750>() { return; }
+function atom_1750() { return; }
 
-function <atom:1760>() {
+function atom_1760() {
   L0:
-  <fclosure8>;
-  loc5 = <fclosure8>;
-  <fclosure8>;
-  loc6 = <fclosure8>;
+  loc5 = atom_1770;
+  loc6 = atom_1672;
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  loc4 = <define_field>;
+  <object>.label = 0;
+  <object>.sent = set_name(sent, closure_0);
+  <obj>.trys = <object>();
+  <obj>.ops = <obj>();
+  loc4 = <obj>;
   <object>;
-  <get_loc8>;
-  <define_field>;
-  <get_loc8>;
-  <define_field>;
-  <get_loc8>;
-  <define_field>;
-  loc3 = <define_field>;
+  <object>.next = loc8(0);
+  <object>.throw = loc8(1);
+  <object>.return = loc8(2);
+  loc3 = <object>;
   <typeof_is_function>;
   if (!<typeof_is_function>) goto L100;
   L83:
   <to_propkey2>;
-  <fclosure8>;
   <insert3>;
   <put_array_el>;
   L100:
@@ -12766,7 +11285,7 @@ function closure_638() {
   if (!(<get_array_el> & 1)) goto L11;
   L7:
   <get_array_el>;
-  <throw>;
+  throw <get_array_el>;
   L11:
   <get_array_el>;
   return <get_array_el>;
@@ -12774,22 +11293,17 @@ function closure_638() {
 
 function closure_639() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   return loc0;
 }
 
-function <atom:1770>() {
-  L0:
-  <fclosure8>;
-  return <fclosure8>;
-}
+function atom_1770() { return closure_0; }
 
-function <atom:1672>() {
+function atom_1672() {
   L0:
   if (!var_ref0) goto L18;
   L3:
-  <throw>;
+  throw TypeError(<push_atom_value>);
   L18:
   if (!var_ref1) goto L577;
   L24:
@@ -12849,8 +11363,8 @@ function <atom:1672>() {
   <inc>.label = <inc>;
   <object>;
   <get_array_el>;
-  <define_field>;
-  <define_field>;
+  <get_array_el>.value = <get_array_el>;
+  <get_array_el>.done = <push_false>;
   <gosub>;
   L208:
   return undefined;
@@ -12957,7 +11471,7 @@ function <atom:1672>() {
   L564:
   <gosub>;
   L569:
-  <throw>;
+  throw <value>;
   L570:
   var_ref3 = 0;
   var_ref0 = 0;
@@ -12968,7 +11482,7 @@ function <atom:1672>() {
   if (!(<get_array_el> & 5)) goto L588;
   L584:
   <get_array_el>;
-  <throw>;
+  throw <get_array_el>;
   L588:
   <object>;
   <get_array_el>;
@@ -12978,32 +11492,27 @@ function <atom:1672>() {
   goto L600;
   L599:
   L600:
-  <define_field>;
-  <define_field>;
-  return <define_field>;
+  <obj>.value = <value>;
+  <obj>.done = <push_true>;
+  return <obj>;
 }
 
-function <atom:2282>() {
+function atom_2282() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_644() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_645() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   if (!(arg0.label === 0)) goto L34;
   L13:
-  var_ref0 = "https://s.search.bilibili.com/main/hotword";
+  var_ref0 = <push_atom_value>;
   return <func>(4, loc0.getRequest(var_ref0));
   L34:
   if (!(<lhs> === 1)) goto L65;
@@ -13014,9 +11523,8 @@ function closure_645() {
   return;
 }
 
-function <atom:2284>() {
+function atom_2284() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
   <special_object>;
   loc1 = <special_object>;
@@ -13029,39 +11537,33 @@ function <atom:2284>() {
   <get_array_el>;
   goto L25;
   L23:
-  <push_i8>;
   L25:
   loc0 = <rhs>;
-  <fclosure8>;
 }
 
 function closure_647() {
   L0:
-  <push_this>;
   loc3 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_648() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   if (!(arg0.label === 0)) goto L41;
   L13:
-  var_ref1 = "https://api.bilibili.com/x/web-interface/wbi/search/all/v2";
+  var_ref1 = <push_atom_value>;
   <object>;
-  <define_field>;
-  return 4(loc0.getRequestWbi, var_ref1(<object>, <define_field>));
+  <object>.keyword = var_ref2;
+  return <func>(4, loc0.getRequestWbi(var_ref1, <object>));
   L41:
   if (!(<lhs> === 1)) goto L161;
   L46:
   var_ref3 = arg0.sent();
   <object>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  var_ref0 = <define_field>;
-  <fclosure8>;
+  <obj>.users = <object>();
+  <obj>.videos = <obj>();
+  <obj>.comprehensive_videos = <obj>();
+  var_ref0 = <obj>;
   var_ref0.comprehensive_videos = var_ref0.videos.slice(0, 5);
   var_ref0.videos = var_ref0.videos.slice(0, var_ref4);
   return <func>(2, var_ref0);
@@ -13071,14 +11573,13 @@ function closure_648() {
 
 function closure_649() {
   L0:
-  if (!(arg0.result_type === "bili_user")) goto L29;
+  if (!(arg0.result_type === <push_atom_value>)) goto L29;
   L15:
   var_ref0.users = arg0.data;
   goto L55;
   L29:
-  if (!(<lhs> === "video")) goto L55;
+  if (!(<lhs> === <push_atom_value>)) goto L55;
   L38:
-  <fclosure8>;
   L55:
   return;
 }
@@ -13091,31 +11592,26 @@ function closure_650() {
   return;
 }
 
-function <atom:2286>() {
+function atom_2286() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_652() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_653() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   if (!(arg0.label === 0)) goto L82;
   L13:
-  var_ref3 = "https://api.bilibili.com/x/web-interface/wbi/search/type";
+  var_ref3 = <push_atom_value>;
   <object>;
-  <define_field>;
-  <define_field>;
-  return loc0.getRequestWbi(var_ref3, <object>(<define_field>, <define_field>));
+  <object>.keyword = var_ref1;
+  <object>.search_type = var_ref2;
+  return <func>(4, loc0.getRequestWbi(var_ref3, <object>));
   L82:
   if (!(<lhs> === 1)) goto L117;
   L87:
@@ -13127,38 +11623,26 @@ function closure_653() {
 
 function closure_654() {
   L0:
-  <fclosure8>;
-  loc0 = <fclosure8>;
-  <fclosure8>;
-  loc1 = <fclosure8>;
-  <fclosure8>;
-  loc2 = <fclosure8>;
+  loc0 = atom_1744;
+  loc1 = atom_1746;
+  loc2 = atom_1760;
   <object>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
+  <object>.BilibiliClientUserMethods = set_name(BilibiliClientUserMethods, closure_0);
   <object>;
-  <fclosure8>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
-  loc3 = <define_field>;
+  <object>.getUserInfoByUID = atom_2316;
+  <object>.getUserStatByUID = atom_2318;
+  <object>.getUserMasterPieceByUID = atom_2320;
+  <object>.getUserVideosByUID = atom_2322;
+  <object>.getUserDynamicListByUID = atom_2324;
+  <object>.getUserNavnumByUID = atom_2326;
+  <object>.getMultiUserInfoByUID = atom_2328;
+  loc3 = <object>;
   return;
 }
 
 function closure_655() { return _atom_2120_; }
 
-function <atom:1744>() {
+function atom_1744() {
   L0:
   <catch>;
   L5:
@@ -13172,7 +11656,7 @@ function <atom:1744>() {
   L32:
   return;
   L38:
-  <throw>;
+  throw <value>;
   L39:
   if (!loc0.done) goto L52;
   L47:
@@ -13181,65 +11665,49 @@ function <atom:1744>() {
   return;
 }
 
-function <atom:1746>() {
-  L0:
-  <fclosure8>;
-  return <fclosure8>;
-}
+function atom_1746() { return closure_0; }
 
 function closure_658() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
   <special_object>;
   loc3 = <special_object>;
   loc0 = loc2;
   loc1 = loc3;
-  <fclosure8>;
-  return Promise(<fclosure8>);
+  return Promise(closure_0);
 }
 
 function closure_659() {
   L0:
-  <fclosure8>;
-  loc1 = <fclosure8>;
-  <fclosure8>;
-  loc2 = <fclosure8>;
+  loc1 = atom_1748;
+  loc2 = atom_1750;
   loc0 = var_ref1.apply(var_ref2, var_ref3);
   return;
 }
 
-function <atom:1748>() { return; }
+function atom_1748() { return; }
 
-function <atom:1750>() { return; }
+function atom_1750() { return; }
 
-function <atom:1760>() {
+function atom_1760() {
   L0:
-  <fclosure8>;
-  loc5 = <fclosure8>;
-  <fclosure8>;
-  loc6 = <fclosure8>;
+  loc5 = atom_1770;
+  loc6 = atom_1672;
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  loc4 = <define_field>;
+  <object>.label = 0;
+  <object>.sent = set_name(sent, closure_0);
+  <obj>.trys = <object>();
+  <obj>.ops = <obj>();
+  loc4 = <obj>;
   <object>;
-  <get_loc8>;
-  <define_field>;
-  <get_loc8>;
-  <define_field>;
-  <get_loc8>;
-  <define_field>;
-  loc3 = <define_field>;
+  <object>.next = loc8(0);
+  <object>.throw = loc8(1);
+  <object>.return = loc8(2);
+  loc3 = <object>;
   <typeof_is_function>;
   if (!<typeof_is_function>) goto L100;
   L83:
   <to_propkey2>;
-  <fclosure8>;
   <insert3>;
   <put_array_el>;
   L100:
@@ -13252,7 +11720,7 @@ function closure_663() {
   if (!(<get_array_el> & 1)) goto L11;
   L7:
   <get_array_el>;
-  <throw>;
+  throw <get_array_el>;
   L11:
   <get_array_el>;
   return <get_array_el>;
@@ -13260,22 +11728,17 @@ function closure_663() {
 
 function closure_664() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   return loc0;
 }
 
-function <atom:1770>() {
-  L0:
-  <fclosure8>;
-  return <fclosure8>;
-}
+function atom_1770() { return closure_0; }
 
-function <atom:1672>() {
+function atom_1672() {
   L0:
   if (!var_ref0) goto L18;
   L3:
-  <throw>;
+  throw TypeError(<push_atom_value>);
   L18:
   if (!var_ref1) goto L577;
   L24:
@@ -13335,8 +11798,8 @@ function <atom:1672>() {
   <inc>.label = <inc>;
   <object>;
   <get_array_el>;
-  <define_field>;
-  <define_field>;
+  <get_array_el>.value = <get_array_el>;
+  <get_array_el>.done = <push_false>;
   <gosub>;
   L208:
   return undefined;
@@ -13443,7 +11906,7 @@ function <atom:1672>() {
   L564:
   <gosub>;
   L569:
-  <throw>;
+  throw <value>;
   L570:
   var_ref3 = 0;
   var_ref0 = 0;
@@ -13454,7 +11917,7 @@ function <atom:1672>() {
   if (!(<get_array_el> & 5)) goto L588;
   L584:
   <get_array_el>;
-  <throw>;
+  throw <get_array_el>;
   L588:
   <object>;
   <get_array_el>;
@@ -13464,35 +11927,30 @@ function <atom:1672>() {
   goto L600;
   L599:
   L600:
-  <define_field>;
-  <define_field>;
-  return <define_field>;
+  <obj>.value = <value>;
+  <obj>.done = <push_true>;
+  return <obj>;
 }
 
-function <atom:2316>() {
+function atom_2316() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_669() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_670() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   if (!(arg0.label === 0)) goto L41;
   L13:
-  var_ref0 = "https://api.bilibili.com/x/space/wbi/acc/info";
+  var_ref0 = <push_atom_value>;
   <object>;
-  <define_field>;
-  return 4(loc0.getRequestWbi, var_ref0(<object>, <define_field>));
+  <object>.mid = var_ref1;
+  return <func>(4, loc0.getRequestWbi(var_ref0, <object>));
   L41:
   if (!(<lhs> === 1)) goto L72;
   L46:
@@ -13502,29 +11960,23 @@ function closure_670() {
   return;
 }
 
-function <atom:2318>() {
+function atom_2318() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_672() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_673() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   if (!(arg0.label === 0)) goto L57;
   L13:
-  var_ref0 = "https://api.bilibili.com/x/relation/stat";
-  <push_empty_string>;
-  return <func>(4, loc0.getRequest(<push_empty_string>.concat(var_ref0, "?vmid=").concat(var_ref1)));
+  var_ref0 = <push_atom_value>;
+  return <func>(4, loc0.getRequest(<push_empty_string>.concat(var_ref0, <push_atom_value>).concat(var_ref1)));
   L57:
   if (!(<lhs> === 1)) goto L88;
   L62:
@@ -13534,29 +11986,23 @@ function closure_673() {
   return;
 }
 
-function <atom:2320>() {
+function atom_2320() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_675() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_676() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   if (!(arg0.label === 0)) goto L57;
   L13:
-  var_ref0 = "https://api.bilibili.com/x/space/masterpiece";
-  <push_empty_string>;
-  return <func>(4, loc0.getRequest(<push_empty_string>.concat(var_ref0, "?vmid=").concat(var_ref1)));
+  var_ref0 = <push_atom_value>;
+  return <func>(4, loc0.getRequest(<push_empty_string>.concat(var_ref0, <push_atom_value>).concat(var_ref1)));
   L57:
   if (!(<lhs> === 1)) goto L88;
   L62:
@@ -13566,9 +12012,8 @@ function closure_676() {
   return;
 }
 
-function <atom:2322>() {
+function atom_2322() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
   <special_object>;
   loc1 = <special_object>;
@@ -13583,28 +12028,24 @@ function <atom:2322>() {
   L23:
   L24:
   loc0 = <rhs>;
-  <fclosure8>;
 }
 
 function closure_678() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_679() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   if (!(arg0.label === 0)) goto L53;
   L13:
-  var_ref0 = "https://api.bilibili.com/x/space/wbi/arc/search";
+  var_ref0 = <push_atom_value>;
   <object>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  return var_ref0(<object>, <define_field>(<define_field>, <define_field>));
+  <object>.mid = var_ref1;
+  <object>.pn = var_ref2;
+  <object>.ps = var_ref3;
+  return <func>(4, loc0.getRequestWbi(var_ref0, <object>));
   L53:
   if (!(<lhs> === 1)) goto L88;
   L58:
@@ -13614,29 +12055,23 @@ function closure_679() {
   return;
 }
 
-function <atom:2324>() {
+function atom_2324() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_681() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_682() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   if (!(arg0.label === 0)) goto L57;
   L13:
-  var_ref0 = "https://api.bilibili.com/x/polymer/web-dynamic/v1/feed/space";
-  <push_empty_string>;
-  return <func>(4, loc0.getRequest(<push_empty_string>.concat(var_ref0, "?host_mid=").concat(var_ref1)));
+  var_ref0 = <push_atom_value>;
+  return <func>(4, loc0.getRequest(<push_empty_string>.concat(var_ref0, <push_atom_value>).concat(var_ref1)));
   L57:
   if (!(<lhs> === 1)) goto L88;
   L62:
@@ -13646,29 +12081,23 @@ function closure_682() {
   return;
 }
 
-function <atom:2326>() {
+function atom_2326() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_684() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_685() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   if (!(arg0.label === 0)) goto L57;
   L13:
-  var_ref0 = "https://api.bilibili.com/x/space/navnum";
-  <push_empty_string>;
-  return <func>(4, loc0.getRequest(<push_empty_string>.concat(var_ref0, "?mid=").concat(var_ref1)));
+  var_ref0 = <push_atom_value>;
+  return <func>(4, loc0.getRequest(<push_empty_string>.concat(var_ref0, <push_atom_value>).concat(var_ref1)));
   L57:
   if (!(<lhs> === 1)) goto L88;
   L62:
@@ -13678,32 +12107,24 @@ function closure_685() {
   return;
 }
 
-function <atom:2328>() {
+function atom_2328() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_687() {
   L0:
-  <push_this>;
   loc3 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_688() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   if (!(arg0.label === 0)) goto L71;
   L13:
-  var_ref2 = "https://api.bilibili.com/x/polymer/pc-electron/v1/user/cards";
-  <push_empty_string>;
+  var_ref2 = <push_atom_value>;
   var_ref0 = <push_empty_string>;
-  <fclosure8>;
-  <push_empty_string>;
-  return <func>(4, loc0.getRequest(<push_empty_string>.concat(var_ref2, "?uids=").concat(var_ref0)));
+  return <func>(4, loc0.getRequest(<push_empty_string>.concat(var_ref2, <push_atom_value>).concat(var_ref0)));
   L71:
   if (!(<lhs> === 1)) goto L102;
   L76:
@@ -13722,125 +12143,136 @@ function closure_689() {
   <get_length>;
   if (!(var_ref1.indexOf(arg0) != (<get_length> - 1))) goto L43;
   L35:
-  var_ref0 = (var_ref0 + ",");
+  var_ref0 = (var_ref0 + <push_atom_value>);
   L43:
   return;
 }
 
-function closure_690() {
-  L0:
-  <object>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <push_i8>;
-  <push_i8>;
-  <push_i8>;
-  <push_i8>;
-  <push_i8>;
-  <push_i8>;
-  <push_i8>;
-  <push_i8>;
-  <push_i8>;
-  <push_i8>;
-  <push_i8>;
-  <push_i8>;
-  <push_i8>;
-  <push_i8>;
-  <push_i8>;
-  <push_i8>;
-  <push_i8>;
-  <push_i8>;
-  <push_i8>;
-  <push_i8>;
-  <push_i8>;
-  <push_i8>;
-  <push_i8>;
-  <push_i8>;
-  <push_i8>;
-  <push_i8>;
-  <push_i8>;
-  <push_i8>;
-  <push_i8>;
-  <push_i8>;
-  <define_field>;
-  <push_i8>;
-  <define_field>;
-  <define_field>;
-  <push_i8>;
-  <define_field>;
-  <push_i8>;
-  <define_field>;
-  <push_i8>;
-  <define_field>;
-  <push_i8>;
-  <define_field>;
-  <push_i8>;
-  <define_field>;
-  <push_i8>;
-  <define_field>;
-  <push_i8>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  <push_i8>;
-  <define_field>;
-  <push_i8>;
-  <define_field>;
-  <push_i8>;
-  <define_field>;
-  <define_field>;
-  <push_i8>;
-  <define_field>;
-  <push_i8>;
-  <define_field>;
-  <push_i8>;
-  <define_field>;
-  <push_i8>;
-  <define_field>;
-  <push_i8>;
-  <define_field>;
-  <push_i8>;
-  <define_field>;
-  <define_field>;
-  <push_i8>;
-  <define_field>;
-  <push_i8>;
-  <define_field>;
-  <push_i8>;
-  <define_field>;
-  <push_i8>;
-  <define_field>;
-  <push_i8>;
-  <define_field>;
-  <push_i8>;
-  <define_field>;
-  <push_i8>;
-  <define_field>;
-  <push_i8>;
-  <define_field>;
-  <push_i8>;
-  <define_field>;
-  loc0 = <define_field>;
-  <fclosure8>;
-  <set_name>;
-  loc1 = <set_name>;
-  return;
-}
+function closure_690 (args=3, vars=2, strict=false)
+bytecode:
+00000 get_arg2                 <fmt:none_arg>
+00001 get_field2               768 ; r
+00006 get_arg1                 <fmt:none_arg>
+00007 call_method              1
+00010 drop              
+00011 get_arg2                 <fmt:none_arg>
+00012 get_field2               406 ; d
+00017 get_arg1                 <fmt:none_arg>
+00018 object            
+00019 fclosure8                0
+00021 set_name                 1019 ; getMixinKey
+00026 define_field             1019 ; getMixinKey
+00031 fclosure8                1
+00033 set_name                 1180 ; mixinKeyEncTab
+00038 define_field             1180 ; mixinKeyEncTab
+00043 call_method              2
+00046 drop              
+00047 push_i8                  46
+00049 push_i8                  47
+00051 push_i8                  18
+00053 push_2                   <fmt:none_int>
+00054 push_i8                  53
+00056 push_i8                  8
+00058 push_i8                  23
+00060 push_i8                  32
+00062 push_i8                  15
+00064 push_i8                  50
+00066 push_i8                  10
+00068 push_i8                  31
+00070 push_i8                  58
+00072 push_3                   <fmt:none_int>
+00073 push_i8                  45
+00075 push_i8                  35
+00077 push_i8                  27
+00079 push_i8                  43
+00081 push_5                   <fmt:none_int>
+00082 push_i8                  49
+00084 push_i8                  33
+00086 push_i8                  9
+00088 push_i8                  42
+00090 push_i8                  19
+00092 push_i8                  29
+00094 push_i8                  28
+00096 push_i8                  14
+00098 push_i8                  39
+00100 push_i8                  12
+00102 push_i8                  38
+00104 push_i8                  41
+00106 push_i8                  13
+00108 array_from               32
+00111 push_i8                  37
+00113 define_field             2147483680 ; <atom:2147483680>
+00118 push_i8                  48
+00120 define_field             2147483681 ; <atom:2147483681>
+00125 push_7                   <fmt:none_int>
+00126 define_field             2147483682 ; <atom:2147483682>
+00131 push_i8                  16
+00133 define_field             2147483683 ; <atom:2147483683>
+00138 push_i8                  24
+00140 define_field             2147483684 ; <atom:2147483684>
+00145 push_i8                  55
+00147 define_field             2147483685 ; <atom:2147483685>
+00152 push_i8                  40
+00154 define_field             2147483686 ; <atom:2147483686>
+00159 push_i8                  61
+00161 define_field             2147483687 ; <atom:2147483687>
+00166 push_i8                  26
+00168 define_field             2147483688 ; <atom:2147483688>
+00173 push_i8                  17
+00175 define_field             2147483689 ; <atom:2147483689>
+00180 push_0                   <fmt:none_int>
+00181 define_field             2147483690 ; <atom:2147483690>
+00186 push_1                   <fmt:none_int>
+00187 define_field             2147483691 ; <atom:2147483691>
+00192 push_i8                  60
+00194 define_field             2147483692 ; <atom:2147483692>
+00199 push_i8                  51
+00201 define_field             2147483693 ; <atom:2147483693>
+00206 push_i8                  30
+00208 define_field             2147483694 ; <atom:2147483694>
+00213 push_4                   <fmt:none_int>
+00214 define_field             2147483695 ; <atom:2147483695>
+00219 push_i8                  22
+00221 define_field             2147483696 ; <atom:2147483696>
+00226 push_i8                  25
+00228 define_field             2147483697 ; <atom:2147483697>
+00233 push_i8                  54
+00235 define_field             2147483698 ; <atom:2147483698>
+00240 push_i8                  21
+00242 define_field             2147483699 ; <atom:2147483699>
+00247 push_i8                  56
+00249 define_field             2147483700 ; <atom:2147483700>
+00254 push_i8                  59
+00256 define_field             2147483701 ; <atom:2147483701>
+00261 push_6                   <fmt:none_int>
+00262 define_field             2147483702 ; <atom:2147483702>
+00267 push_i8                  63
+00269 define_field             2147483703 ; <atom:2147483703>
+00274 push_i8                  57
+00276 define_field             2147483704 ; <atom:2147483704>
+00281 push_i8                  62
+00283 define_field             2147483705 ; <atom:2147483705>
+00288 push_i8                  11
+00290 define_field             2147483706 ; <atom:2147483706>
+00295 push_i8                  36
+00297 define_field             2147483707 ; <atom:2147483707>
+00302 push_i8                  20
+00304 define_field             2147483708 ; <atom:2147483708>
+00309 push_i8                  34
+00311 define_field             2147483709 ; <atom:2147483709>
+00316 push_i8                  44
+00318 define_field             2147483710 ; <atom:2147483710>
+00323 push_i8                  52
+00325 define_field             2147483711 ; <atom:2147483711>
+00330 put_loc0                 <fmt:none_loc>
+00331 fclosure8                2
+00333 set_name                 1019 ; getMixinKey
+00338 put_loc1                 <fmt:none_loc>
+00339 return_undef      
 
 function closure_691() { return _atom_2038_; }
 
 function closure_692() { return _atom_2360_; }
-
-function closure_693() {
-  L0:
-  <fclosure8>;
-  <push_empty_string>;
-  <push_i8>;
-}
 
 function closure_694() {
   L0:
@@ -13850,30 +12282,22 @@ function closure_694() {
 
 function closure_695() {
   L0:
-  <fclosure8>;
-  loc0 = <fclosure8>;
-  <fclosure8>;
-  loc1 = <fclosure8>;
-  <fclosure8>;
-  loc2 = <fclosure8>;
+  loc0 = atom_1744;
+  loc1 = atom_1746;
+  loc2 = atom_1760;
   <object>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
+  <object>.BilibiliClientVideoActionMethods = set_name(BilibiliClientVideoActionMethods, closure_0);
   <object>;
-  <fclosure8>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
-  loc3 = <define_field>;
+  <object>.LikeVideo = atom_2362;
+  <object>.CoinVideo = atom_2364;
+  <object>.starVideoToDefaultFavFolderByBVID = atom_2366;
+  loc3 = <object>;
   return;
 }
 
 function closure_696() { return _atom_2114_; }
 
-function <atom:1744>() {
+function atom_1744() {
   L0:
   <catch>;
   L5:
@@ -13887,7 +12311,7 @@ function <atom:1744>() {
   L32:
   return;
   L38:
-  <throw>;
+  throw <value>;
   L39:
   if (!loc0.done) goto L52;
   L47:
@@ -13896,65 +12320,49 @@ function <atom:1744>() {
   return;
 }
 
-function <atom:1746>() {
-  L0:
-  <fclosure8>;
-  return <fclosure8>;
-}
+function atom_1746() { return closure_0; }
 
 function closure_699() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
   <special_object>;
   loc3 = <special_object>;
   loc0 = loc2;
   loc1 = loc3;
-  <fclosure8>;
-  return Promise(<fclosure8>);
+  return Promise(closure_0);
 }
 
 function closure_700() {
   L0:
-  <fclosure8>;
-  loc1 = <fclosure8>;
-  <fclosure8>;
-  loc2 = <fclosure8>;
+  loc1 = atom_1748;
+  loc2 = atom_1750;
   loc0 = var_ref1.apply(var_ref2, var_ref3);
   return;
 }
 
-function <atom:1748>() { return; }
+function atom_1748() { return; }
 
-function <atom:1750>() { return; }
+function atom_1750() { return; }
 
-function <atom:1760>() {
+function atom_1760() {
   L0:
-  <fclosure8>;
-  loc5 = <fclosure8>;
-  <fclosure8>;
-  loc6 = <fclosure8>;
+  loc5 = atom_1770;
+  loc6 = atom_1672;
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  loc4 = <define_field>;
+  <object>.label = 0;
+  <object>.sent = set_name(sent, closure_0);
+  <obj>.trys = <object>();
+  <obj>.ops = <obj>();
+  loc4 = <obj>;
   <object>;
-  <get_loc8>;
-  <define_field>;
-  <get_loc8>;
-  <define_field>;
-  <get_loc8>;
-  <define_field>;
-  loc3 = <define_field>;
+  <object>.next = loc8(0);
+  <object>.throw = loc8(1);
+  <object>.return = loc8(2);
+  loc3 = <object>;
   <typeof_is_function>;
   if (!<typeof_is_function>) goto L100;
   L83:
   <to_propkey2>;
-  <fclosure8>;
   <insert3>;
   <put_array_el>;
   L100:
@@ -13967,7 +12375,7 @@ function closure_704() {
   if (!(<get_array_el> & 1)) goto L11;
   L7:
   <get_array_el>;
-  <throw>;
+  throw <get_array_el>;
   L11:
   <get_array_el>;
   return <get_array_el>;
@@ -13975,22 +12383,17 @@ function closure_704() {
 
 function closure_705() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   return loc0;
 }
 
-function <atom:1770>() {
-  L0:
-  <fclosure8>;
-  return <fclosure8>;
-}
+function atom_1770() { return closure_0; }
 
-function <atom:1672>() {
+function atom_1672() {
   L0:
   if (!var_ref0) goto L18;
   L3:
-  <throw>;
+  throw TypeError(<push_atom_value>);
   L18:
   if (!var_ref1) goto L577;
   L24:
@@ -14050,8 +12453,8 @@ function <atom:1672>() {
   <inc>.label = <inc>;
   <object>;
   <get_array_el>;
-  <define_field>;
-  <define_field>;
+  <get_array_el>.value = <get_array_el>;
+  <get_array_el>.done = <push_false>;
   <gosub>;
   L208:
   return undefined;
@@ -14158,7 +12561,7 @@ function <atom:1672>() {
   L564:
   <gosub>;
   L569:
-  <throw>;
+  throw <value>;
   L570:
   var_ref3 = 0;
   var_ref0 = 0;
@@ -14169,7 +12572,7 @@ function <atom:1672>() {
   if (!(<get_array_el> & 5)) goto L588;
   L584:
   <get_array_el>;
-  <throw>;
+  throw <get_array_el>;
   L588:
   <object>;
   <get_array_el>;
@@ -14179,34 +12582,29 @@ function <atom:1672>() {
   goto L600;
   L599:
   L600:
-  <define_field>;
-  <define_field>;
-  return <define_field>;
+  <obj>.value = <value>;
+  <obj>.done = <push_true>;
+  return <obj>;
 }
 
-function <atom:2362>() {
+function atom_2362() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_710() {
   L0:
-  <push_this>;
   loc3 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_711() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   if (!(arg0.label === 0)) goto L88;
   L13:
-  var_ref0 = "https://api.bilibili.com/x/web-interface/archive/like";
-  var_ref1 = "bvid=".concat(var_ref2, "&like=").concat(var_ref3, "&csrf=").concat(loc0.biliJct);
-  return <func>(4, loc0.postRequest(var_ref0, var_ref1, "application/x-www-form-urlencoded"));
+  var_ref0 = <push_atom_value>;
+  var_ref1 = <push_atom_value>.concat(var_ref2, <push_atom_value>).concat(var_ref3, <push_atom_value>).concat(loc0.biliJct);
+  return <func>(4, loc0.postRequest(var_ref0, var_ref1, <push_atom_value>));
   L88:
   if (!(<lhs> === 1)) goto L118;
   L93:
@@ -14216,29 +12614,24 @@ function closure_711() {
   return;
 }
 
-function <atom:2364>() {
+function atom_2364() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_713() {
   L0:
-  <push_this>;
   loc3 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_714() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   if (!(arg0.label === 0)) goto L88;
   L13:
-  var_ref0 = "https://api.bilibili.com/x/web-interface/coin/add";
-  var_ref1 = "bvid=".concat(var_ref2, "&multiply=").concat(var_ref3, "&csrf=").concat(loc0.biliJct);
-  return <func>(4, loc0.postRequest(var_ref0, var_ref1, "application/x-www-form-urlencoded"));
+  var_ref0 = <push_atom_value>;
+  var_ref1 = <push_atom_value>.concat(var_ref2, <push_atom_value>).concat(var_ref3, <push_atom_value>).concat(loc0.biliJct);
+  return <func>(4, loc0.postRequest(var_ref0, var_ref1, <push_atom_value>));
   L88:
   if (!(<lhs> === 1)) goto L118;
   L93:
@@ -14248,74 +12641,164 @@ function closure_714() {
   return;
 }
 
-function <atom:2366>() {
+function atom_2366() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_716() {
   L0:
-  <push_this>;
   loc8 = <push_this>;
-  <get_loc8>;
-  <fclosure8>;
 }
 
-function closure_717() {
-  L0:
-  <push_this>;
-  loc0 = <push_this>;
-  if (!(arg0.label === 0)) goto L40;
-  L13:
-  var_ref0 = 0;
-  return <func>(4, loc0.getUserFavouriteFolders(loc0.accountInfo.mid));
-  L40:
-  if (!(<lhs> === 1)) goto L90;
-  L45:
-  var_ref1 = arg0.sent();
-  <fclosure8>;
-  if (!(!var_ref0)) goto L81;
-  L75:
-  return <func>(2, false);
-  L81:
-  arg0.label = 2;
-  goto L95;
-  L90:
-  if (!(<lhs> === 2)) goto L136;
-  L95:
-  <define_field>;
-  return <func>(4, loc0.getVideoInfoByBVID(var_ref2));
-  L136:
-  if (!(<lhs> === 3)) goto L249;
-  L141:
-  var_ref3 = arg0.sent();
-  var_ref4 = arg0.sent().aid;
-  var_ref5 = "https://api.bilibili.com/x/v3/fav/resource/deal";
-  var_ref6 = "rid=".concat(var_ref4, "&csrf=").concat(loc0.biliJct, "&type=2&add_media_ids=").concat(var_ref0, "&del_media_ids=");
-  return <func>(4, loc0.postRequest(var_ref5, var_ref6, "application/x-www-form-urlencoded"));
-  L249:
-  if (!(<lhs> === 4)) goto L284;
-  L254:
-  var_ref7 = arg0.sent();
-  return <func>(2, var_ref7.data.code);
-  L284:
-  if (!(<lhs> === 5)) goto L337;
-  L289:
-  var_ref8 = arg0.sent();
-  return <func>(2, false);
-  L337:
-  if (!(<lhs> === 6)) goto L347;
-  L342:
-  return <func>(2);
-  L347:
-  return;
-}
+function closure_717 (args=1, vars=1, strict=false)
+bytecode:
+00000 push_this         
+00001 put_loc0                 <fmt:none_loc>
+00002 get_arg0                 <fmt:none_arg>
+00003 get_field                881 ; label
+00008 dup               
+00009 push_0                   <fmt:none_int>
+00010 strict_eq         
+00011 if_false8                28
+00013 push_0                   <fmt:none_int>
+00014 put_var_ref0             <fmt:none_var_ref>
+00015 push_4                   <fmt:none_int>
+00016 get_loc0                 <fmt:none_loc>
+00017 get_field2               1096 ; getUserFavouriteFolders
+00022 get_loc0                 <fmt:none_loc>
+00023 get_field                951 ; accountInfo
+00028 get_field                1124 ; mid
+00033 call_method              1
+00036 array_from               2
+00039 return            
+00040 dup               
+00041 push_1                   <fmt:none_int>
+00042 strict_eq         
+00043 if_false8                46
+00045 get_arg0                 <fmt:none_arg>
+00046 get_field2               882 ; sent
+00051 call_method              0
+00054 set_var_ref1             <fmt:none_var_ref>
+00055 get_field                889 ; list
+00060 get_field2               383 ; forEach
+00065 fclosure8                0
+00067 call_method              1
+00070 drop              
+00071 get_var_ref0             <fmt:none_var_ref>
+00072 lnot              
+00073 if_false8                7
+00075 push_2                   <fmt:none_int>
+00076 push_false        
+00077 array_from               2
+00080 return            
+00081 get_arg0                 <fmt:none_arg>
+00082 push_2                   <fmt:none_int>
+00083 put_field                881 ; label
+00088 goto8                    6
+00090 dup               
+00091 push_2                   <fmt:none_int>
+00092 strict_eq         
+00093 if_false8                42
+00095 get_arg0                 <fmt:none_arg>
+00096 get_field                883 ; trys
+00101 get_field2               624 ; push
+00106 push_2                   <fmt:none_int>
+00107 push_5                   <fmt:none_int>
+00108 array_from               2
+00111 push_6                   <fmt:none_int>
+00112 define_field             2147483651 ; <atom:2147483651>
+00117 call_method              1
+00120 drop              
+00121 push_4                   <fmt:none_int>
+00122 get_loc0                 <fmt:none_loc>
+00123 get_field2               1189 ; getVideoInfoByBVID
+00128 get_var_ref2             <fmt:none_var_ref>
+00129 call_method              1
+00132 array_from               2
+00135 return            
+00136 dup               
+00137 push_3                   <fmt:none_int>
+00138 strict_eq         
+00139 if_false8                109
+00141 get_arg0                 <fmt:none_arg>
+00142 get_field2               882 ; sent
+00147 call_method              0
+00150 set_var_ref3             <fmt:none_var_ref>
+00151 get_field                1190 ; aid
+00156 put_var_ref              4
+00159 push_atom_value          1191 ; https://api.bilibili.com/x/v3/fav/resource/deal
+00164 put_var_ref              5
+00167 push_atom_value          1192 ; rid=
+00172 get_field2               94 ; concat
+00177 get_var_ref              4
+00180 push_atom_value          1086 ; &csrf=
+00185 call_method              2
+00188 get_field2               94 ; concat
+00193 get_loc0                 <fmt:none_loc>
+00194 get_field                964 ; biliJct
+00199 push_atom_value          1193 ; &type=2&add_media_ids=
+00204 call_method              2
+00207 get_field2               94 ; concat
+00212 get_var_ref0             <fmt:none_var_ref>
+00213 push_atom_value          1194 ; &del_media_ids=
+00218 call_method              2
+00221 put_var_ref              6
+00224 push_4                   <fmt:none_int>
+00225 get_loc0                 <fmt:none_loc>
+00226 get_field2               996 ; postRequest
+00231 get_var_ref              5
+00234 get_var_ref              6
+00237 push_atom_value          1087 ; application/x-www-form-urlencoded
+00242 call_method              3
+00245 array_from               2
+00248 return            
+00249 dup               
+00250 push_4                   <fmt:none_int>
+00251 strict_eq         
+00252 if_false8                31
+00254 get_arg0                 <fmt:none_arg>
+00255 get_field2               882 ; sent
+00260 call_method              0
+00263 put_var_ref              7
+00266 push_2                   <fmt:none_int>
+00267 get_var_ref              7
+00270 get_field                946 ; data
+00275 get_field                972 ; code
+00280 array_from               2
+00283 return            
+00284 dup               
+00285 push_5                   <fmt:none_int>
+00286 strict_eq         
+00287 if_false8                49
+00289 get_arg0                 <fmt:none_arg>
+00290 get_field2               882 ; sent
+00295 call_method              0
+00298 put_var_ref              8
+00301 get_var_ref              9
+00304 get_field                756 ; g
+00309 get_field                786 ; logger
+00314 get_field2               675 ; error
+00319 push_atom_value          1195 ; Error starring video: 
+00324 get_var_ref              8
+00327 call_method              2
+00330 drop              
+00331 push_2                   <fmt:none_int>
+00332 push_false        
+00333 array_from               2
+00336 return            
+00337 dup               
+00338 push_6                   <fmt:none_int>
+00339 strict_eq         
+00340 if_false8                6
+00342 push_2                   <fmt:none_int>
+00343 array_from               1
+00346 return            
+00347 return_undef      
 
 function closure_718() {
   L0:
-  if (!(arg0.title === "默认收藏夹")) goto L21;
+  if (!(arg0.title === <push_atom_value>)) goto L21;
   L14:
   var_ref0 = arg0.id;
   L21:
@@ -14324,38 +12807,26 @@ function closure_718() {
 
 function closure_719() {
   L0:
-  <fclosure8>;
-  loc0 = <fclosure8>;
-  <fclosure8>;
-  loc1 = <fclosure8>;
-  <fclosure8>;
-  loc2 = <fclosure8>;
+  loc0 = atom_1744;
+  loc1 = atom_1746;
+  loc2 = atom_1760;
   <object>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
+  <object>.BilibiliClientVideoMethods = set_name(BilibiliClientVideoMethods, closure_0);
   <object>;
-  <fclosure8>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
-  loc3 = <define_field>;
+  <object>.getMainPageRecommendVideos = atom_2398;
+  <object>.getVideoInfoByBVID = atom_2378;
+  <object>.isVideoLikedByBVID = atom_2400;
+  <object>.isVideoCoinedByBVID = atom_2402;
+  <object>.isVideoStaredByBVID = atom_2404;
+  <object>.getVideoAISummaryByBVID = atom_2406;
+  <object>.getVideoMP4StreamByBVID = atom_2408;
+  loc3 = <object>;
   return;
 }
 
 function closure_720() { return _atom_2112_; }
 
-function <atom:1744>() {
+function atom_1744() {
   L0:
   <catch>;
   L5:
@@ -14369,7 +12840,7 @@ function <atom:1744>() {
   L32:
   return;
   L38:
-  <throw>;
+  throw <value>;
   L39:
   if (!loc0.done) goto L52;
   L47:
@@ -14378,65 +12849,49 @@ function <atom:1744>() {
   return;
 }
 
-function <atom:1746>() {
-  L0:
-  <fclosure8>;
-  return <fclosure8>;
-}
+function atom_1746() { return closure_0; }
 
 function closure_723() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
   <special_object>;
   loc3 = <special_object>;
   loc0 = loc2;
   loc1 = loc3;
-  <fclosure8>;
-  return Promise(<fclosure8>);
+  return Promise(closure_0);
 }
 
 function closure_724() {
   L0:
-  <fclosure8>;
-  loc1 = <fclosure8>;
-  <fclosure8>;
-  loc2 = <fclosure8>;
+  loc1 = atom_1748;
+  loc2 = atom_1750;
   loc0 = var_ref1.apply(var_ref2, var_ref3);
   return;
 }
 
-function <atom:1748>() { return; }
+function atom_1748() { return; }
 
-function <atom:1750>() { return; }
+function atom_1750() { return; }
 
-function <atom:1760>() {
+function atom_1760() {
   L0:
-  <fclosure8>;
-  loc5 = <fclosure8>;
-  <fclosure8>;
-  loc6 = <fclosure8>;
+  loc5 = atom_1770;
+  loc6 = atom_1672;
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  loc4 = <define_field>;
+  <object>.label = 0;
+  <object>.sent = set_name(sent, closure_0);
+  <obj>.trys = <object>();
+  <obj>.ops = <obj>();
+  loc4 = <obj>;
   <object>;
-  <get_loc8>;
-  <define_field>;
-  <get_loc8>;
-  <define_field>;
-  <get_loc8>;
-  <define_field>;
-  loc3 = <define_field>;
+  <object>.next = loc8(0);
+  <object>.throw = loc8(1);
+  <object>.return = loc8(2);
+  loc3 = <object>;
   <typeof_is_function>;
   if (!<typeof_is_function>) goto L100;
   L83:
   <to_propkey2>;
-  <fclosure8>;
   <insert3>;
   <put_array_el>;
   L100:
@@ -14449,7 +12904,7 @@ function closure_728() {
   if (!(<get_array_el> & 1)) goto L11;
   L7:
   <get_array_el>;
-  <throw>;
+  throw <get_array_el>;
   L11:
   <get_array_el>;
   return <get_array_el>;
@@ -14457,22 +12912,17 @@ function closure_728() {
 
 function closure_729() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   return loc0;
 }
 
-function <atom:1770>() {
-  L0:
-  <fclosure8>;
-  return <fclosure8>;
-}
+function atom_1770() { return closure_0; }
 
-function <atom:1672>() {
+function atom_1672() {
   L0:
   if (!var_ref0) goto L18;
   L3:
-  <throw>;
+  throw TypeError(<push_atom_value>);
   L18:
   if (!var_ref1) goto L577;
   L24:
@@ -14532,8 +12982,8 @@ function <atom:1672>() {
   <inc>.label = <inc>;
   <object>;
   <get_array_el>;
-  <define_field>;
-  <define_field>;
+  <get_array_el>.value = <get_array_el>;
+  <get_array_el>.done = <push_false>;
   <gosub>;
   L208:
   return undefined;
@@ -14640,7 +13090,7 @@ function <atom:1672>() {
   L564:
   <gosub>;
   L569:
-  <throw>;
+  throw <value>;
   L570:
   var_ref3 = 0;
   var_ref0 = 0;
@@ -14651,7 +13101,7 @@ function <atom:1672>() {
   if (!(<get_array_el> & 5)) goto L588;
   L584:
   <get_array_el>;
-  <throw>;
+  throw <get_array_el>;
   L588:
   <object>;
   <get_array_el>;
@@ -14661,32 +13111,27 @@ function <atom:1672>() {
   goto L600;
   L599:
   L600:
-  <define_field>;
-  <define_field>;
-  return <define_field>;
+  <obj>.value = <value>;
+  <obj>.done = <push_true>;
+  return <obj>;
 }
 
-function <atom:2398>() {
+function atom_2398() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_734() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_735() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   if (!(arg0.label === 0)) goto L62;
   L13:
-  var_ref0 = "https://api.bilibili.com/x/web-interface/index/top/rcmd?fresh_type=".concat(var_ref1, "&ps=").concat(var_ref2, "&version=1");
+  var_ref0 = <push_atom_value>.concat(var_ref1, <push_atom_value>).concat(var_ref2, <push_atom_value>);
   return <func>(4, loc0.getRequest(var_ref0));
   L62:
   if (!(<lhs> === 1)) goto L98;
@@ -14697,27 +13142,22 @@ function closure_735() {
   return;
 }
 
-function <atom:2378>() {
+function atom_2378() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_737() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_738() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   if (!(arg0.label === 0)) goto L43;
   L13:
-  var_ref0 = "https://api.bilibili.com/x/web-interface/view?bvid=".concat(var_ref1);
+  var_ref0 = <push_atom_value>.concat(var_ref1);
   return <func>(4, loc0.getRequest(var_ref0));
   L43:
   if (!(<lhs> === 1)) goto L74;
@@ -14728,27 +13168,22 @@ function closure_738() {
   return;
 }
 
-function <atom:2400>() {
+function atom_2400() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_740() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_741() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   if (!(arg0.label === 0)) goto L43;
   L13:
-  var_ref0 = "https://api.bilibili.com/x/web-interface/archive/has/like?bvid=".concat(var_ref1);
+  var_ref0 = <push_atom_value>.concat(var_ref1);
   return <func>(4, loc0.getRequest(var_ref0));
   L43:
   if (!(<lhs> === 1)) goto L74;
@@ -14759,27 +13194,22 @@ function closure_741() {
   return;
 }
 
-function <atom:2402>() {
+function atom_2402() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_743() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_744() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   if (!(arg0.label === 0)) goto L43;
   L13:
-  var_ref0 = "https://api.bilibili.com/x/web-interface/archive/coins?bvid=".concat(var_ref1);
+  var_ref0 = <push_atom_value>.concat(var_ref1);
   return <func>(4, loc0.getRequest(var_ref0));
   L43:
   if (!(<lhs> === 1)) goto L79;
@@ -14790,27 +13220,22 @@ function closure_744() {
   return;
 }
 
-function <atom:2404>() {
+function atom_2404() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_746() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_747() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   if (!(arg0.label === 0)) goto L43;
   L13:
-  var_ref0 = "https://api.bilibili.com/x/v2/fav/video/favoured?aid=".concat(var_ref1);
+  var_ref0 = <push_atom_value>.concat(var_ref1);
   return <func>(4, loc0.getRequest(var_ref0));
   L43:
   if (!(<lhs> === 1)) goto L79;
@@ -14821,32 +13246,27 @@ function closure_747() {
   return;
 }
 
-function <atom:2406>() {
+function atom_2406() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_749() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_750() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   if (!(arg0.label === 0)) goto L53;
   L13:
-  var_ref0 = "https://api.bilibili.com/x/web-interface/view/conclusion/get";
+  var_ref0 = <push_atom_value>;
   <object>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  return var_ref0(<object>, <define_field>(<define_field>, <define_field>));
+  <object>.bvid = var_ref1;
+  <object>.cid = var_ref2;
+  <object>.up_mid = var_ref3;
+  return <func>(4, loc0.getRequestWbi(var_ref0, <object>));
   L53:
   if (!(<lhs> === 1)) goto L98;
   L58:
@@ -14856,9 +13276,8 @@ function closure_750() {
   return;
 }
 
-function <atom:2408>() {
+function atom_2408() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
   <special_object>;
   loc1 = <special_object>;
@@ -14873,30 +13292,26 @@ function <atom:2408>() {
   L23:
   L25:
   loc0 = <rhs>;
-  <fclosure8>;
 }
 
 function closure_752() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_753() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   if (!(arg0.label === 0)) goto L70;
   L13:
-  var_ref0 = "https://api.bilibili.com/x/player/wbi/playurl";
+  var_ref0 = <push_atom_value>;
   <object>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  return <define_field>(<define_field>, <define_field>(<define_field>, <define_field>));
+  <object>.cid = var_ref1;
+  <object>.bvid = var_ref2;
+  <object>.qn = var_ref3;
+  <object>.fnval = <push_const8>;
+  <object>.platform = <push_atom_value>;
+  return <func>(4, loc0.getRequestWbi(var_ref0, <object>));
   L70:
   if (!(<lhs> === 1)) goto L130;
   L75:
@@ -14909,85 +13324,8 @@ function closure_753() {
 function closure_754() {
   L0:
   <object>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  loc0 = "    <h1>澎湃哔哩（Hyperbili）用户协议</h1>
-<p>感谢您选择使用由AstralSight Studios开发的澎湃哔哩（Hyperbili）（以下简称“本客户端”）。在使用本客户端之前，请仔细阅读并理解以下用户协议（以下简称“本协议”）。使用本客户端即表示您已阅读、理解并同意接受本协议的所有条款。</p>
-
-<h2>1. 服务说明</h2>
-<p>本客户端是基于哔哩哔哩网页端API开发的第三方工具，旨在为用户提供在部分搭载Xiaomi Vela OS的设备上浏览哔哩哔哩提供的内容的能力。本客户端不具备独立的账号系统，用户需通过哔哩哔哩官方App进行扫码登录。所有的服务和内容均来自哔哩哔哩平台，我们不对其内容的准确性、合法性或其他方面负责。</p>
-
-<h2>2. 免责声明</h2>
-<p>
-    <p><strong>服务稳定性</strong>：我们将尽力维护客户端的正常运行，但不保证其无故障、无中断或随时可用。由于哔哩哔哩API变更、网络故障、服务器问题或其他不可抗力因素导致的服务中断、数据丢失或功能异常，AstralSight Studios不承担任何责任。</p>
-    <p><strong>第三方内容</strong>：本客户端依赖哔哩哔哩平台提供的内容，AstralSight Studios不对任何第三方内容的准确性、合法性、完整性或适用性做出任何承诺或保证，用户需自行判断并承担使用风险。</p>
-    <p><strong>责任限制</strong>：在任何情况下，AstralSight Studios不对用户因使用或无法使用本客户端导致的任何间接、附带、特殊或惩罚性损害承担责任。</p>
-    <p><strong>不可抗力</strong>：对于因自然灾害、战争、网络攻击、政府行为、哔哩哔哩API关闭或变更等不可抗力事件造成的服务中断或损失，AstralSight Studios不承担任何责任。</p>
-</p>
-
-<h2>3. 账号安全与使用</h2>
-<p>用户通过哔哩哔哩官方App扫码登录并使用其哔哩哔哩账号。本客户端不会保存用户登录密码，但会保存用户的登录Token、与哔哩哔哩API交互产生的Cookies等，但不对其安全性（包括但不限于：存储安全性、传输安全性）负任何责任。用户需对其账号安全负责。如果因用户原因导致账号被盗或发生其他安全问题，AstralSight Studios不承担责任。</p>
-
-<h2>4. 用户行为规范</h2>
-<p>用户在使用本客户端时应遵守国家法律法规、哔哩哔哩平台的相关规定，以及本协议中的条款。用户不得利用本客户端进行包括但不限于以下行为：</p>
-<p>
-    <p>传播非法、侵权、骚扰、诽谤、淫秽、欺诈性内容；</p>
-    <p>侵犯他人知识产权、隐私权、名誉权等合法权益；</p>
-    <p>进行批量数据抓取、自动化访问或未经授权的网络攻击；</p>
-    <p>任何其他违反哔哩哔哩平台规则或法律法规的行为。</p>
-</p>
-<p>对于上述行为，AstralSight Studios有权立即中止或终止用户的使用权限，且不承担任何法律责任。</p>
-
-<h2>5. 开源许可</h2>
-<p>本客户端为开源项目，用户可以根据开源协议自由使用、修改和分发代码。用户在使用、修改或分发代码时，需遵守相关开源协议（如MIT、GPL等），并保留原始版权声明。任何违反开源协议的行为，将承担相应的法律责任。</p>
-
-<h2>6. 协议的修改</h2>
-<p>AstralSight Studios保留随时修改本协议的权利，并有权在不通知用户的情况下进行更新。修改后的协议一旦发布，用户继续使用本客户端即视为接受新条款。用户应定期查看本协议的最新版本，确保其知悉任何变更。</p>
-
-<h2>7. 解释权</h2>
-<p>本协议的最终解释权归AstralSight Studios所有。</p>
-
-<h1>澎湃哔哩（Hyperbili）隐私政策</h1>
-<p>AstralSight Studios高度重视用户隐私及数据安全。在您使用本客户端时，我们会根据以下隐私政策收集和处理您的信息。</p>
-
-<h2>1. 信息的收集</h2>
-<p>在使用本客户端的过程中，我们可能会收集但不限于以下信息：</p>
-<p>
-    <p><strong>设备信息</strong>：包括设备型号、操作系统、设备标识符等；</p>
-    <p><strong>网络信息</strong>：包括IP地址、网络提供商、连接时长等；</p>
-    <p><strong>操作日志</strong>：包括用户操作行为、功能使用情况、访问页面记录等；</p>
-    <p><strong>其他数据</strong>：随着产品功能的扩展，我们可能收集更多种类的用户数据，具体收集内容将在未来版本的隐私政策中进行更新。</p>
-</p>
-
-<h2>2. 数据的使用</h2>
-<p>我们将收集到的用户数据用于以下目的：</p>
-<p>
-    <p>优化和改进客户端的功能与用户体验；</p>
-    <p>分析用户行为，提升产品的使用效果；</p>
-    <p>保障客户端的安全，防止恶意攻击和非法活动；</p>
-    <p>满足法律法规要求，或配合相关部门的合法请求。</p>
-</p>
-
-<h2>3. 数据的共享</h2>
-<p>我们不会主动将用户的个人数据分享给任何第三方，除非在以下情形下：</p>
-<p>
-    <p>因任何不可抗力（包括但不限于 因资金短缺造成无法负担起数据存储费用、遭受网络攻击等）导致数据必须分享给第三方以进行包括但不限于数据存储、CDN分发、异地容灾等操作；</p>
-    <p>遵守法律法规的要求，或响应执法机关、法院的合法请求；</p>
-    <p>在维护客户端的合法权益时，为保护AstralSight Studios免受潜在侵害，可能会与相关合作伙伴或技术提供商共享必要数据。</p>
-</p>
-
-<h2>4. 数据的保护</h2>
-<p>我们将采取合理的技术手段和管理措施，保护用户数据免受未经授权的访问、泄露、篡改或破坏。然而，互联网环境中无法完全消除所有风险，用户应知晓并承担这些潜在风险。AstralSight Studios不对因用户行为或外部因素导致的数据泄露或损失负责。</p>
-
-<h2>5. 数据的存储与删除</h2>
-<p>我们将根据运营需要保留用户数据。除非法律要求，我们将在合理的时间范围内保存用户信息。如果用户希望删除其数据，可联系技术支持，但数据删除请求可能影响客户端部分功能的使用。</p>
-
-<h2>6. 政策的修改</h2>
-<p>AstralSight Studios保留在不另行通知用户的情况下，随时修改本隐私政策的权利。任何更新将通过客户端发布，用户在修改生效后继续使用本客户端即视为接受新的隐私政策。用户有责任定期查看最新版本的隐私政策。</p>
-
-<h2>7. 解释权</h2>
-<p>本隐私政策的最终解释权归AstralSight Studios所有。</p>";
+  <object>.eula = set_name(eula, closure_0);
+  loc0 = <push_atom_value>;
   return;
 }
 
@@ -14995,21 +13333,18 @@ function closure_755() { return _atom_2098_; }
 
 function closure_756() {
   L0:
-  <fclosure8>;
-  loc3 = <fclosure8>;
+  loc3 = atom_2450;
   <object>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
+  <object>.getTips = set_name(getTips, closure_0);
   loc0 = Date();
-  loc1 = Date("你所热爱的，就是你热爱的", "让我猜猜你现在使用的设备是...？", "澎湃哔哩不够澎湃怎么办？", "富哥V一点好不好，球球了", "有没有遇见将军大人Rechrd？", "关注永雏塔菲谢谢喵~", "关注孙笑川258谢谢喵~", "关注七海nanami谢谢喵~", "关注芽衣子OvO谢谢喵~", "关注嘉然今天吃什么谢谢喵~", "我觉得这是一种自信", "让我们保持忠！诚！", "雷军！金凡！", "Powered By Re:Bydour", ""游戏不开挂不好玩。"", "快去盯着易奥林做zeppbili。", "致敬一切奇迹的起点 @RX79XT_", "早上好中国，现在我有冰淇淋", "你这辈子就是被黑神话悟空害了。", "你他妈可别上课摸鱼。", "我是雷军，你们都给我去玩MIUI全防");
-  loc2 = arg2.d("您的设备已被Darock永久封禁", "澎湃哔哩即日起将停止开发与更新", "您的手表已被锁定，请支付BTC解锁", "Hacked By Dimples#1337");
+  loc1 = Date(<push_atom_value>, <push_atom_value>, <push_atom_value>, <push_atom_value>, <push_atom_value>, <push_atom_value>, <push_atom_value>, <push_atom_value>, <push_atom_value>, <push_atom_value>, <push_atom_value>, <push_atom_value>, <push_atom_value>, <push_atom_value>, <push_atom_value>, <push_atom_value>, <push_atom_value>, <push_atom_value>, <push_atom_value>, <push_atom_value>, <push_atom_value>);
+  loc2 = <func>(<push_atom_value>, <push_atom_value>, <push_atom_value>, <push_atom_value>);
   return;
 }
 
 function closure_757() { return _atom_2450_; }
 
-function <atom:2450>() {
+function atom_2450() {
   L0:
   if (!(BUILDIDENTIFIER.getMonth() === 3)) goto L58;
   L13:
@@ -15026,47 +13361,34 @@ function <atom:2450>() {
 
 function closure_759() {
   L0:
-  <fclosure8>;
-  loc0 = <fclosure8>;
-  <fclosure8>;
-  loc1 = <fclosure8>;
-  <fclosure8>;
-  loc2 = <fclosure8>;
-  <fclosure8>;
-  loc3 = <fclosure8>;
-  <fclosure8>;
-  loc4 = <fclosure8>;
-  <fclosure8>;
-  loc5 = <fclosure8>;
-  <fclosure8>;
-  loc7 = <fclosure8>;
-  <fclosure8>;
-  loc8 = <fclosure8>;
-  <fclosure8>;
-  loc10 = <fclosure8>;
-  <fclosure8>;
-  loc11 = <fclosure8>;
-  <fclosure8>;
-  loc12 = <fclosure8>;
+  loc0 = atom_1680;
+  loc1 = atom_2544;
+  loc2 = atom_2546;
+  loc3 = atom_2548;
+  loc4 = atom_2552;
+  loc5 = atom_1698;
+  loc7 = atom_2554;
+  loc8 = atom_2556;
+  loc10 = atom_2506;
+  loc11 = atom_2572;
+  loc12 = atom_2576;
   <object>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
+  <object>.parseContentHtml = set_name(parseContentHtml, closure_0);
   <object>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  loc6 = <define_field>;
-  loc9 = Set(Set("img", "br", "hr", "input", "meta", "link", "area", "base", "col", "command", "embed", "keygen", "param", "source", "track", "wbr"));
+  <object>.nbsp = <push_atom_value>;
+  <object>.lt = <push_atom_value>;
+  <object>.gt = <push_atom_value>;
+  <object>.amp = <push_atom_value>;
+  <object>.quot = <push_atom_value>;
+  <object>.apos = <push_atom_value>;
+  loc6 = <object>;
+  loc9 = Set(Set(<push_atom_value>, <push_atom_value>, <push_atom_value>, <push_atom_value>, <push_atom_value>, <push_atom_value>, <push_atom_value>, <push_atom_value>, <push_atom_value>, <push_atom_value>, <push_atom_value>, <push_atom_value>, <push_atom_value>, <push_atom_value>, <push_atom_value>, <push_atom_value>));
   return;
 }
 
 function closure_760() { return _atom_2506_; }
 
-function <atom:1680>() {
+function atom_1680() {
   L0:
   if ((arg1 == null)) goto L11;
   L6:
@@ -15089,7 +13411,7 @@ function <atom:1680>() {
   return loc1;
 }
 
-function <atom:2544>() {
+function atom_2544() {
   L0:
   if (!Array.isArray(arg0)) goto L18;
   L16:
@@ -15098,14 +13420,13 @@ function <atom:2544>() {
   return;
 }
 
-function <atom:2546>() {
+function atom_2546() {
   L0:
   if (!(arg0 == null)) goto L8;
   L5:
   goto L47;
   L8:
-  <typeof>;
-  if (!(<typeof> !== "undefined")) goto L36;
+  if (!(typeof Symbol !== <push_atom_value>)) goto L36;
   L23:
   <get_array_el>;
   L36:
@@ -15119,8 +13440,8 @@ function <atom:2546>() {
   return;
   L53:
   loc1 = <func>();
-  loc2 = true;
-  loc3 = false;
+  loc2 = <push_true>;
+  loc3 = <push_false>;
   <catch>;
   L66:
   loc0 = loc0.call(arg0);
@@ -15129,13 +13450,12 @@ function <atom:2546>() {
   loc2 = loc0.next().done;
   if (!(!loc0.next().done)) goto L127;
   L97:
-  <get_loc8>;
   if (!arg1) goto L123;
   L117:
   <get_length>;
   if ((<get_length> === arg1)) goto L127;
   L123:
-  loc2 = true;
+  loc2 = <push_true>;
   goto L77;
   L127:
   <gosub>;
@@ -15145,16 +13465,15 @@ function <atom:2546>() {
   loc6 = <rhs>;
   <catch>;
   L144:
-  loc3 = true;
-  <get_loc8>;
-  loc5 = <get_loc8>;
+  loc3 = <push_true>;
+  loc5 = loc8;
   <gosub>;
   L157:
   goto L221;
   L160:
   <gosub>;
   L165:
-  <throw>;
+  throw <value>;
   L166:
   <catch>;
   L171:
@@ -15171,12 +13490,11 @@ function <atom:2546>() {
   L207:
   <gosub>;
   L212:
-  <throw>;
+  throw <value>;
   L213:
   if (!loc3) goto L219;
   L216:
-  <get_loc8>;
-  <throw>;
+  throw loc8;
   L219:
   <ret>;
   L220:
@@ -15185,12 +13503,12 @@ function <atom:2546>() {
   return loc1;
 }
 
-function <atom:2548>() {
+function atom_2548() {
   L0:
-  <throw>;
+  throw TypeError(<push_atom_value>);
 }
 
-function <atom:2552>() {
+function atom_2552() {
   L0:
   if (var_ref0(arg0)) goto L25;
   L6:
@@ -15202,44 +13520,35 @@ function <atom:2552>() {
   return undefined;
 }
 
-function <atom:1698>() {
+function atom_1698() {
   L0:
   if (!(!arg0)) goto L5;
   L4:
   return;
   L5:
-  <typeof>;
-  if (!(<typeof> === "string")) goto L21;
+  if (!(typeof arg0 === <push_atom_value>)) goto L21;
   L15:
   L21:
-  <push_i8>;
   loc0 = Object.prototype.toString.call(arg0).slice(<push_i8>, -1);
-  if (!(Object.prototype.toString.call(arg0).slice(<push_i8>, -1) === "Object")) goto L85;
+  if (!(Object.prototype.toString.call(arg0).slice(<push_i8>, -1) === <push_atom_value>)) goto L85;
   L65:
   if (!arg0.constructor) goto L85;
   L73:
   loc0 = arg0.constructor.name;
   L85:
-  if ((loc0 === "Map")) goto L103;
+  if ((loc0 === <push_atom_value>)) goto L103;
   L95:
   L103:
   if (!<cond>) goto L119;
   L105:
   L119:
-  if ((loc0 === "Arguments")) goto L144;
+  if ((loc0 === <push_atom_value>)) goto L144;
   L129:
-  <regexp>;
   L144:
   if (!<cond>) goto L152;
   L146:
   L152:
   return;
-}
-
-function <atom:2554>() {
-  L0:
-  <regexp>;
-  <fclosure8>;
 }
 
 function closure_768() {
@@ -15251,125 +13560,87 @@ function closure_768() {
   return undefined;
 }
 
-function <atom:2556>() {
-  L0:
-  <regexp>;
-  <push_empty_string>;
-}
-
-function <atom:2506>() {
+function atom_2506() {
   L0:
   <special_object>;
   loc16 = <special_object>;
-  <get_loc8>;
   <get_length>;
   if (!(<get_length> > 1)) goto L25;
   L11:
-  <get_loc8>;
   <get_array_el>;
   if (!(<get_array_el> !== undefined)) goto L25;
   L19:
-  <get_loc8>;
   <get_array_el>;
   goto L26;
   L25:
   L26:
   loc0 = <rhs>;
-  <regexp>;
-  loc1 = <regexp>;
-  <regexp>;
-  loc2 = <regexp>;
+  loc1 = new RegExp(<push_const8>);
+  loc2 = new RegExp(<push_const8>);
   loc3 = <func>();
   loc4 = 0;
   if (!loc0) goto L74;
   L49:
-  <fclosure8>;
-  arg0 = arg0.replace(loc2, <fclosure8>);
-  <fclosure8>;
+  arg0 = arg0.replace(loc2, closure_4);
   L74:
   loc5 = loc1.exec(arg0);
   <is_null>;
   if (<is_null>) goto L402;
   L92:
-  <get_loc8>;
-  loc6 = var_ref3(<get_loc8>, 4);
+  loc6 = var_ref3(loc8, 4);
   <get_array_el>;
   loc7 = <get_array_el>;
-  <get_loc8>;
   <get_array_el>;
   loc8 = <get_array_el>;
-  <get_loc8>;
   <get_array_el>;
   loc9 = <get_array_el>;
-  <get_loc8>;
   <get_array_el>;
   loc10 = <get_array_el>;
-  <get_loc8>;
-  <get_loc8>;
-  if (!(<get_loc8>.index > <get_loc8>)) goto L207;
+  if (!(loc8.index > loc8)) goto L207;
   L133:
-  <get_loc8>;
-  <get_loc8>;
-  loc11 = arg0.slice(<get_loc8>, <get_loc8>.index);
-  if (!arg0.slice(<get_loc8>, <get_loc8>.index).trim()) goto L207;
+  loc11 = arg0.slice(loc8, loc8.index);
+  if (!arg0.slice(loc8, loc8.index).trim()) goto L207;
   L163:
   <object>;
-  <define_field>;
-  <get_loc8>;
-  <define_field>;
+  <object>.type = <push_atom_value>;
+  <object>.text = var_ref4(var_ref5(loc8.trim()));
   L207:
-  <get_loc8>;
-  if (!<func>("p", "h1", "h2", "span", "strong", "blockquote", "a").includes(<get_loc8>)) goto L322;
+  if (!<func>(<push_atom_value>, <push_atom_value>, <push_atom_value>, <push_atom_value>, <push_atom_value>, <push_atom_value>, <push_atom_value>).includes(loc8)) goto L322;
   L257:
   <object>;
-  <get_loc8>;
-  <define_field>;
-  <get_loc8>;
-  <define_field>;
-  <get_loc8>;
-  <define_field>;
-  <get_loc8>;
-  <define_field>;
-  loc12 = <define_field>;
-  <get_loc8>;
+  <object>.type = loc8;
+  <object>.style = var_ref1(loc8);
+  <object>.attributes = var_ref0(loc8);
+  <object>.text = var_ref4(var_ref5(loc8.trim()));
+  loc12 = <object>;
   goto L391;
   L322:
-  <get_loc8>;
-  loc13 = var_ref6(<get_loc8>);
+  loc13 = var_ref6(loc8);
   <object>;
-  <get_loc8>;
-  <define_field>;
-  <get_loc8>;
-  <define_field>;
-  <get_loc8>;
-  <define_field>;
-  <get_loc8>;
+  <object>.type = loc8;
+  <object>.style = var_ref1(loc8);
+  <object>.attributes = var_ref0(loc8);
   <get_length>;
   if (!(<get_length> > 0)) goto L367;
   L363:
-  <get_loc8>;
   goto L372;
   L367:
   L372:
-  <define_field>;
-  loc14 = <define_field>;
-  <get_loc8>;
+  <obj>.children = <value>;
+  loc14 = <obj>;
   L391:
   loc4 = loc1.lastIndex;
   goto L74;
   L402:
-  <get_loc8>;
   <get_length>;
-  if (!(<get_loc8> < <get_length>)) goto L476;
+  if (!(loc8 < <get_length>)) goto L476;
   L409:
-  <get_loc8>;
-  loc15 = arg0.slice(<get_loc8>);
-  if (!arg0.slice(<get_loc8>).trim()) goto L476;
+  loc15 = arg0.slice(loc8);
+  if (!arg0.slice(loc8).trim()) goto L476;
   L432:
   <object>;
-  <define_field>;
-  <get_loc8>;
-  <define_field>;
+  <object>.type = <push_atom_value>;
+  <object>.text = var_ref4(var_ref5(loc8.trim()));
   L476:
   return loc3;
 }
@@ -15377,44 +13648,39 @@ function <atom:2506>() {
 function closure_771() {
   L0:
   <object>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  loc0 = <define_field>;
-  <push_empty_string>;
+  <object>.type = arg1;
+  <object>.attributes = var_ref0(arg2);
+  <object>.style = var_ref1(arg2);
+  <obj>.children = <object>();
+  loc0 = <obj>;
   return <push_empty_string>;
 }
 
 function closure_772() {
   L0:
-  loc0 = RegExp("<".concat(arg0, "([^>]*)>"), "g");
-  <fclosure8>;
-  var_ref3 = var_ref3.replace(loc0, <fclosure8>);
+  loc0 = RegExp(<push_atom_value>.concat(arg0, <push_atom_value>), <push_atom_value>);
+  var_ref3 = var_ref3.replace(loc0, closure_0);
   return;
 }
 
 function closure_773() {
   L0:
   <object>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  loc0 = <define_field>;
-  <push_empty_string>;
+  <object>.type = var_ref0;
+  <object>.attributes = var_ref1(arg1);
+  <object>.style = var_ref2(arg1);
+  <obj>.children = <object>();
+  loc0 = <obj>;
   return <push_empty_string>;
 }
 
-function <atom:2572>() {
+function atom_2572() {
   L0:
-  <regexp>;
-  loc0 = arg0.match(<regexp>);
-  if (!arg0.match(<regexp>)) goto L45;
+  loc0 = arg0.match(new RegExp(<push_const8>));
+  if (!arg0.match(new RegExp(<push_const8>))) goto L45;
   L17:
   <get_array_el>;
   loc1 = <get_array_el>;
-  <fclosure8>;
   <object>;
   L45:
   return undefined;
@@ -15422,8 +13688,7 @@ function <atom:2572>() {
 
 function closure_775() {
   L0:
-  <fclosure8>;
-  loc0 = var_ref0(arg1.split(":").map(<fclosure8>), 2);
+  loc0 = var_ref0(arg1.split(<push_atom_value>).map(closure_0), 2);
   <get_array_el>;
   loc1 = <get_array_el>;
   <get_array_el>;
@@ -15437,10 +13702,9 @@ function closure_775() {
   return arg0;
 }
 
-function <atom:2576>() {
+function atom_2576() {
   L0:
-  <regexp>;
-  loc0 = <regexp>;
+  loc0 = new RegExp(<push_const8>);
   <object>;
   loc1 = <object>;
   L8:
@@ -15459,28 +13723,17 @@ function <atom:2576>() {
 
 function closure_778() {
   L0:
-  <fclosure8>;
-  loc1 = <fclosure8>;
-  <fclosure8>;
-  loc2 = <fclosure8>;
-  <fclosure8>;
-  loc3 = <fclosure8>;
-  <fclosure8>;
-  loc4 = <fclosure8>;
-  <fclosure8>;
-  loc5 = <fclosure8>;
-  <fclosure8>;
-  loc6 = <fclosure8>;
-  <fclosure8>;
-  loc7 = <fclosure8>;
+  loc1 = atom_1744;
+  loc2 = atom_1746;
+  loc3 = atom_1760;
+  loc4 = atom_2578;
+  loc5 = atom_2582;
+  loc6 = atom_2580;
+  loc7 = atom_2588;
   <object>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  loc0 = arg2("./src/tsimports.js");
+  <object>.Jump = set_name(Jump, closure_0);
+  <object>.NetworkCheck = set_name(NetworkCheck, closure_1);
+  loc0 = arg2(<push_atom_value>);
   return;
 }
 
@@ -15488,7 +13741,7 @@ function closure_779() { return _atom_2578_; }
 
 function closure_780() { return _atom_2580_; }
 
-function <atom:1744>() {
+function atom_1744() {
   L0:
   <catch>;
   L5:
@@ -15502,7 +13755,7 @@ function <atom:1744>() {
   L32:
   return;
   L38:
-  <throw>;
+  throw <value>;
   L39:
   if (!loc0.done) goto L52;
   L47:
@@ -15511,65 +13764,49 @@ function <atom:1744>() {
   return;
 }
 
-function <atom:1746>() {
-  L0:
-  <fclosure8>;
-  return <fclosure8>;
-}
+function atom_1746() { return closure_0; }
 
 function closure_783() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
   <special_object>;
   loc3 = <special_object>;
   loc0 = loc2;
   loc1 = loc3;
-  <fclosure8>;
-  return Promise(<fclosure8>);
+  return Promise(closure_0);
 }
 
 function closure_784() {
   L0:
-  <fclosure8>;
-  loc1 = <fclosure8>;
-  <fclosure8>;
-  loc2 = <fclosure8>;
+  loc1 = atom_1748;
+  loc2 = atom_1750;
   loc0 = var_ref1.apply(var_ref2, var_ref3);
   return;
 }
 
-function <atom:1748>() { return; }
+function atom_1748() { return; }
 
-function <atom:1750>() { return; }
+function atom_1750() { return; }
 
-function <atom:1760>() {
+function atom_1760() {
   L0:
-  <fclosure8>;
-  loc5 = <fclosure8>;
-  <fclosure8>;
-  loc6 = <fclosure8>;
+  loc5 = atom_1770;
+  loc6 = atom_1672;
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  loc4 = <define_field>;
+  <object>.label = 0;
+  <object>.sent = set_name(sent, closure_0);
+  <obj>.trys = <object>();
+  <obj>.ops = <obj>();
+  loc4 = <obj>;
   <object>;
-  <get_loc8>;
-  <define_field>;
-  <get_loc8>;
-  <define_field>;
-  <get_loc8>;
-  <define_field>;
-  loc3 = <define_field>;
+  <object>.next = loc8(0);
+  <object>.throw = loc8(1);
+  <object>.return = loc8(2);
+  loc3 = <object>;
   <typeof_is_function>;
   if (!<typeof_is_function>) goto L100;
   L83:
   <to_propkey2>;
-  <fclosure8>;
   <insert3>;
   <put_array_el>;
   L100:
@@ -15582,7 +13819,7 @@ function closure_788() {
   if (!(<get_array_el> & 1)) goto L11;
   L7:
   <get_array_el>;
-  <throw>;
+  throw <get_array_el>;
   L11:
   <get_array_el>;
   return <get_array_el>;
@@ -15590,22 +13827,17 @@ function closure_788() {
 
 function closure_789() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   return loc0;
 }
 
-function <atom:1770>() {
-  L0:
-  <fclosure8>;
-  return <fclosure8>;
-}
+function atom_1770() { return closure_0; }
 
-function <atom:1672>() {
+function atom_1672() {
   L0:
   if (!var_ref0) goto L18;
   L3:
-  <throw>;
+  throw TypeError(<push_atom_value>);
   L18:
   if (!var_ref1) goto L577;
   L24:
@@ -15665,8 +13897,8 @@ function <atom:1672>() {
   <inc>.label = <inc>;
   <object>;
   <get_array_el>;
-  <define_field>;
-  <define_field>;
+  <get_array_el>.value = <get_array_el>;
+  <get_array_el>.done = <push_false>;
   <gosub>;
   L208:
   return undefined;
@@ -15773,7 +14005,7 @@ function <atom:1672>() {
   L564:
   <gosub>;
   L569:
-  <throw>;
+  throw <value>;
   L570:
   var_ref3 = 0;
   var_ref0 = 0;
@@ -15784,7 +14016,7 @@ function <atom:1672>() {
   if (!(<get_array_el> & 5)) goto L588;
   L584:
   <get_array_el>;
-  <throw>;
+  throw <get_array_el>;
   L588:
   <object>;
   <get_array_el>;
@@ -15794,58 +14026,48 @@ function <atom:1672>() {
   goto L600;
   L599:
   L600:
-  <define_field>;
-  <define_field>;
-  return <define_field>;
+  <obj>.value = <value>;
+  <obj>.done = <push_true>;
+  return <obj>;
 }
 
-function <atom:2578>() {
+function atom_2578() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   <special_object>;
   loc1 = <special_object>;
 }
 
-function <atom:2582>() {
+function atom_2582() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   <special_object>;
   loc1 = <special_object>;
-  <fclosure8>;
-  var_ref3 = var_ref2(<fclosure8>);
+  var_ref3 = var_ref2(closure_0);
 }
 
 function closure_795() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_796() {
   L0:
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
-  return <object>(2);
+  <object>.key = <push_atom_value>;
+  <object>.success = closure_0();
+  return <func>(2);
 }
 
 function closure_797() {
   L0:
-  <fclosure8>;
-  loc0 = var_ref2(<fclosure8>);
-  <fclosure8>;
-  return <fclosure8>;
+  loc0 = var_ref2(closure_0);
+  return closure_1;
 }
 
 function closure_798() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_799() {
@@ -15854,119 +14076,98 @@ function closure_799() {
   if (!(<get_length> < 1)) goto L34;
   L6:
   <object>;
-  <define_field>;
+  <object>.uri = <push_atom_value>;
   goto L60;
   L34:
   <object>;
-  <define_field>;
+  <object>.uri = <push_atom_value>;
   L60:
   return <func>(2);
 }
 
 function closure_800() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   <special_object>;
   loc1 = <special_object>;
 }
 
-function <atom:2580>() {
+function atom_2580() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   <special_object>;
   loc1 = <special_object>;
 }
 
-function <atom:2588>() {
+function atom_2588() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   <special_object>;
   loc1 = <special_object>;
-  <fclosure8>;
-  var_ref3 = var_ref4(<fclosure8>);
+  var_ref3 = var_ref4(closure_0);
 }
 
 function closure_803() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
-function closure_804() {
-  L0:
-  <fclosure8>;
-  return 2(Promise, Promise(<fclosure8>));
-}
+function closure_804() { return 2(Promise, Promise(closure_0)); }
 
 function closure_805() {
   L0:
   <object>;
-  <fclosure8>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
+  <object>.success = atom_1796;
+  <object>.fail = atom_1798;
+  <object>.complete = atom_2592;
   return;
 }
 
-function <atom:1796>() {
+function atom_1796() {
   L0:
   if (!(!arg0.type)) goto L39;
   L9:
   return;
   L39:
-  if (!(arg0.type === "none")) goto L58;
+  if (!(arg0.type === <push_atom_value>)) goto L58;
   L53:
   return;
   L58:
   return;
 }
 
-function <atom:1798>() { return; }
+function atom_1798() { return; }
 
-function <atom:2592>() { return; }
+function atom_2592() { return; }
 
 function closure_809() {
   L0:
-  <fclosure8>;
-  loc1 = <fclosure8>;
-  <fclosure8>;
-  loc2 = <fclosure8>;
-  <fclosure8>;
-  loc3 = <fclosure8>;
-  <fclosure8>;
-  loc4 = <fclosure8>;
+  loc1 = atom_1596;
+  loc2 = atom_1600;
+  loc3 = atom_1604;
+  loc4 = atom_1606;
   <set_loc_uninitialized>;
   <object>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  loc0 = arg2("./src/tsimports.js");
-  <fclosure8>;
-  loc5 = <fclosure8>();
-  loc6 = <fclosure8>()();
-  loc7 = <fclosure8>()();
+  <object>.default = set_name(default, closure_0);
+  loc0 = arg2(<push_atom_value>);
+  loc5 = closure_5();
+  loc6 = closure_5()();
+  loc7 = closure_5()();
   return;
 }
 
 function closure_810() { return _atom_2602_; }
 
-function <atom:1596>() {
+function atom_1596() {
   L0:
-  <instanceof>;
-  if (!(!<instanceof>)) goto L21;
+  if (!(!(arg0 instanceof arg1))) goto L21;
   L6:
-  <throw>;
+  throw TypeError(<push_atom_value>);
   L21:
   return;
 }
 
-function <atom:1600>() {
+function atom_1600() {
   L0:
   loc0 = 0;
   L2:
@@ -15979,11 +14180,10 @@ function <atom:1600>() {
   L21:
   L23:
   <obj>.enumerable = <rhs>;
-  loc1.configurable = true;
-  <in>;
-  if (!<in>) goto L51;
+  loc1.configurable = <push_true>;
+  if (!(loc1 in <push_atom_value>)) goto L51;
   L44:
-  loc1.writable = true;
+  loc1.writable = <push_true>;
   L51:
   <inc_loc>;
   goto L2;
@@ -15991,7 +14191,7 @@ function <atom:1600>() {
   return;
 }
 
-function <atom:1604>() {
+function atom_1604() {
   L0:
   if (!arg1) goto L13;
   L3:
@@ -16002,16 +14202,15 @@ function <atom:1604>() {
   return arg0;
 }
 
-function <atom:1606>() {
+function atom_1606() {
   L0:
-  <in>;
-  if (!<in>) goto L48;
+  if (!(arg0 in arg1)) goto L48;
   L5:
   <object>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
+  <object>.value = arg2;
+  <object>.enumerable = <push_true>;
+  <object>.configurable = <push_true>;
+  <object>.writable = <push_true>;
   goto L52;
   L48:
   <put_array_el>;
@@ -16021,74 +14220,57 @@ function <atom:1606>() {
 
 function closure_815() {
   L0:
-  <fclosure8>;
-  loc0 = <fclosure8>;
+  loc0 = atom_2614;
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
+  <object>.key = <push_atom_value>;
+  <object>.value = atom_2604;
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
+  <object>.key = <push_atom_value>;
+  <object>.value = atom_1574;
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
+  <object>.key = <push_atom_value>;
+  <object>.value = atom_2606;
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
+  <object>.key = <push_atom_value>;
+  <object>.value = findIndex;
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
+  <object>.key = <push_atom_value>;
+  <object>.value = atom_2608;
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
+  <object>.key = <push_atom_value>;
+  <object>.value = atom_2610;
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
+  <object>.key = <push_atom_value>;
+  <object>.value = atom_2612;
   return loc0;
 }
 
-function <atom:2614>() {
+function atom_2614() {
   L0:
-  <push_this>;
   loc1 = <push_this>;
   <object>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  <regexp>;
-  loc0 = Date().toISOString().replace(<regexp>, "-");
-  <push_empty_string>;
-  loc1.logFilePath = <push_empty_string>.concat(loc1.logDirectory, "log-").concat(loc0, ".log");
+  <object>.log = <push_atom_value>;
+  <object>.warn = <push_atom_value>;
+  <object>.error = <push_atom_value>;
+  loc0 = Date().toISOString().replace(new RegExp(<push_const8>), <push_atom_value>);
+  loc1.logFilePath = <push_empty_string>.concat(loc1.logDirectory, <push_atom_value>).concat(loc0, <push_atom_value>);
   return;
 }
 
-function <atom:2604>() {
+function atom_2604() {
   L0:
-  <push_this>;
   loc1 = <push_this>;
   <object>;
-  <define_field>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  loc0 = <define_field>;
+  <object>.uri = loc1.logDirectory;
+  <object>.recursive = <push_true>;
+  <object>.success = set_name(success, closure_0);
+  <object>.fail = set_name(fail, closure_1);
+  loc0 = <object>;
   return;
 }
 
-function <atom:1574>() {
+function atom_1574() {
   L0:
-  <push_this>;
   loc4 = <push_this>;
   <special_object>;
   loc3 = <special_object>;
@@ -16103,13 +14285,11 @@ function <atom:1574>() {
     <put_array_el>;
     <inc_loc>;
   }
-  <get_loc8>;
   return;
 }
 
-function <atom:2606>() {
+function atom_2606() {
   L0:
-  <push_this>;
   loc4 = <push_this>;
   <special_object>;
   loc3 = <special_object>;
@@ -16124,13 +14304,11 @@ function <atom:2606>() {
     <put_array_el>;
     <inc_loc>;
   }
-  <get_loc8>;
   return;
 }
 
 function findIndex() {
   L0:
-  <push_this>;
   loc4 = <push_this>;
   <special_object>;
   loc3 = <special_object>;
@@ -16145,47 +14323,37 @@ function findIndex() {
     <put_array_el>;
     <inc_loc>;
   }
-  <get_loc8>;
   return;
 }
 
-function <atom:2608>() {
+function atom_2608() {
   L0:
-  <push_this>;
   loc4 = <push_this>;
-  <get_loc8>;
-  loc0 = <get_loc8>;
+  loc0 = loc8;
   loc1 = Date().toISOString();
-  <get_loc8>;
   <get_array_el>;
   loc2 = <get_array_el>;
-  <fclosure8>;
-  loc3 = arg1.map(<fclosure8>).join(" ");
-  <get_loc8>;
+  loc3 = arg1.map(closure_0).join(<push_atom_value>);
   return;
 }
 
-function <atom:2610>() {
+function atom_2610() {
   L0:
-  <push_this>;
   loc1 = <push_this>;
   <object>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  loc0 = <define_field>;
+  <object>.uri = loc1.logFilePath;
+  <object>.text = (arg0 + <push_atom_value>);
+  <object>.append = <push_true>;
+  <object>.fail = set_name(fail, closure_0);
+  loc0 = <object>;
   return;
 }
 
-function <atom:2612>() {
+function atom_2612() {
   L0:
   <catch>;
   L5:
-  <typeof>;
-  if (!(<typeof> === "string")) goto L18;
+  if (!(typeof arg0 === <push_atom_value>)) goto L18;
   L15:
   return arg0;
   L18:
@@ -16194,53 +14362,37 @@ function <atom:2612>() {
   loc0 = <rhs>;
   <catch>;
   L42:
-  return "[Circular or Unsupported Object]";
+  return <push_atom_value>;
   L49:
-  <throw>;
+  throw <value>;
 }
 
 function closure_828() {
   L0:
-  <fclosure8>;
-  loc1 = <fclosure8>;
-  <fclosure8>;
-  loc2 = <fclosure8>;
-  <fclosure8>;
-  loc3 = <fclosure8>;
-  <fclosure8>;
-  loc4 = <fclosure8>;
-  <fclosure8>;
-  loc5 = <fclosure8>;
-  <fclosure8>;
-  loc6 = <fclosure8>;
-  <fclosure8>;
-  loc10 = <fclosure8>;
-  <fclosure8>;
-  loc11 = <fclosure8>;
-  <fclosure8>;
-  loc12 = <fclosure8>;
-  <fclosure8>;
-  loc13 = <fclosure8>;
-  <fclosure8>;
-  loc14 = <fclosure8>;
+  loc1 = atom_1744;
+  loc2 = atom_1746;
+  loc3 = atom_1596;
+  loc4 = atom_1600;
+  loc5 = atom_1604;
+  loc6 = atom_1760;
+  loc10 = atom_2660;
+  loc11 = atom_2662;
+  loc12 = atom_2666;
+  loc13 = atom_2668;
+  loc14 = atom_2672;
   <object>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  loc0 = arg2("./src/asyncapi/file.ts");
-  loc7 = arg2.d();
-  loc8 = "internal://files/bilisavedcontent/";
-  <push_empty_string>;
-  <get_loc8>;
-  loc9 = <push_empty_string>.concat(<get_loc8>, "index.json");
-  <fclosure8>;
-  loc15 = <fclosure8>();
+  <object>.SavedContentManager = set_name(SavedContentManager, closure_0);
+  loc0 = arg2(<push_atom_value>);
+  loc7 = <func>();
+  loc8 = <push_atom_value>;
+  loc9 = <push_empty_string>.concat(loc8, <push_atom_value>);
+  loc15 = closure_12();
   return;
 }
 
 function closure_829() { return _atom_2654_; }
 
-function <atom:1744>() {
+function atom_1744() {
   L0:
   <catch>;
   L5:
@@ -16254,7 +14406,7 @@ function <atom:1744>() {
   L32:
   return;
   L38:
-  <throw>;
+  throw <value>;
   L39:
   if (!loc0.done) goto L52;
   L47:
@@ -16263,49 +14415,40 @@ function <atom:1744>() {
   return;
 }
 
-function <atom:1746>() {
-  L0:
-  <fclosure8>;
-  return <fclosure8>;
-}
+function atom_1746() { return closure_0; }
 
 function closure_832() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
   <special_object>;
   loc3 = <special_object>;
   loc0 = loc2;
   loc1 = loc3;
-  <fclosure8>;
-  return Promise(<fclosure8>);
+  return Promise(closure_0);
 }
 
 function closure_833() {
   L0:
-  <fclosure8>;
-  loc1 = <fclosure8>;
-  <fclosure8>;
-  loc2 = <fclosure8>;
+  loc1 = atom_1748;
+  loc2 = atom_1750;
   loc0 = var_ref1.apply(var_ref2, var_ref3);
   return;
 }
 
-function <atom:1748>() { return; }
+function atom_1748() { return; }
 
-function <atom:1750>() { return; }
+function atom_1750() { return; }
 
-function <atom:1596>() {
+function atom_1596() {
   L0:
-  <instanceof>;
-  if (!(!<instanceof>)) goto L21;
+  if (!(!(arg0 instanceof arg1))) goto L21;
   L6:
-  <throw>;
+  throw TypeError(<push_atom_value>);
   L21:
   return;
 }
 
-function <atom:1600>() {
+function atom_1600() {
   L0:
   loc0 = 0;
   L2:
@@ -16318,11 +14461,10 @@ function <atom:1600>() {
   L21:
   L23:
   <obj>.enumerable = <rhs>;
-  loc1.configurable = true;
-  <in>;
-  if (!<in>) goto L51;
+  loc1.configurable = <push_true>;
+  if (!(loc1 in <push_atom_value>)) goto L51;
   L44:
-  loc1.writable = true;
+  loc1.writable = <push_true>;
   L51:
   <inc_loc>;
   goto L2;
@@ -16330,7 +14472,7 @@ function <atom:1600>() {
   return;
 }
 
-function <atom:1604>() {
+function atom_1604() {
   L0:
   if (!arg1) goto L13;
   L3:
@@ -16341,33 +14483,25 @@ function <atom:1604>() {
   return arg0;
 }
 
-function <atom:1760>() {
+function atom_1760() {
   L0:
-  <fclosure8>;
-  loc5 = <fclosure8>;
-  <fclosure8>;
-  loc6 = <fclosure8>;
+  loc5 = atom_1770;
+  loc6 = atom_1672;
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  loc4 = <define_field>;
+  <object>.label = 0;
+  <object>.sent = set_name(sent, closure_0);
+  <obj>.trys = <object>();
+  <obj>.ops = <obj>();
+  loc4 = <obj>;
   <object>;
-  <get_loc8>;
-  <define_field>;
-  <get_loc8>;
-  <define_field>;
-  <get_loc8>;
-  <define_field>;
-  loc3 = <define_field>;
+  <object>.next = loc8(0);
+  <object>.throw = loc8(1);
+  <object>.return = loc8(2);
+  loc3 = <object>;
   <typeof_is_function>;
   if (!<typeof_is_function>) goto L100;
   L83:
   <to_propkey2>;
-  <fclosure8>;
   <insert3>;
   <put_array_el>;
   L100:
@@ -16380,7 +14514,7 @@ function closure_840() {
   if (!(<get_array_el> & 1)) goto L11;
   L7:
   <get_array_el>;
-  <throw>;
+  throw <get_array_el>;
   L11:
   <get_array_el>;
   return <get_array_el>;
@@ -16388,22 +14522,17 @@ function closure_840() {
 
 function closure_841() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   return loc0;
 }
 
-function <atom:1770>() {
-  L0:
-  <fclosure8>;
-  return <fclosure8>;
-}
+function atom_1770() { return closure_0; }
 
-function <atom:1672>() {
+function atom_1672() {
   L0:
   if (!var_ref0) goto L18;
   L3:
-  <throw>;
+  throw TypeError(<push_atom_value>);
   L18:
   if (!var_ref1) goto L577;
   L24:
@@ -16463,8 +14592,8 @@ function <atom:1672>() {
   <inc>.label = <inc>;
   <object>;
   <get_array_el>;
-  <define_field>;
-  <define_field>;
+  <get_array_el>.value = <get_array_el>;
+  <get_array_el>.done = <push_false>;
   <gosub>;
   L208:
   return undefined;
@@ -16571,7 +14700,7 @@ function <atom:1672>() {
   L564:
   <gosub>;
   L569:
-  <throw>;
+  throw <value>;
   L570:
   var_ref3 = 0;
   var_ref0 = 0;
@@ -16582,7 +14711,7 @@ function <atom:1672>() {
   if (!(<get_array_el> & 5)) goto L588;
   L584:
   <get_array_el>;
-  <throw>;
+  throw <get_array_el>;
   L588:
   <object>;
   <get_array_el>;
@@ -16592,201 +14721,301 @@ function <atom:1672>() {
   goto L600;
   L599:
   L600:
-  <define_field>;
-  <define_field>;
-  return <define_field>;
+  <obj>.value = <value>;
+  <obj>.done = <push_true>;
+  return <obj>;
 }
 
-function <atom:2660>() {
+function atom_2660() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   <special_object>;
   loc1 = <special_object>;
 }
 
-function <atom:2662>() {
+function atom_2662() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   <special_object>;
   loc1 = <special_object>;
-  <fclosure8>;
-  var_ref5 = var_ref6(<fclosure8>);
+  var_ref5 = var_ref6(closure_0);
 }
 
 function closure_847() {
   L0:
-  <push_this>;
   loc2 = <push_this>;
-  <fclosure8>;
 }
 
-function closure_848() {
-  L0:
-  if (!(arg0.label === 0)) goto L107;
-  L11:
-  <define_field>;
-  var_ref2 = JSON.stringify(var_ref1);
-  <object>;
-  <define_field>;
-  <define_field>;
-  return var_ref3.asyncFile.writeText(<object>, <define_field>(<define_field>));
-  L107:
-  if (!(<lhs> === 1)) goto L128;
-  L112:
-  return <func>(3, 3);
-  L128:
-  if (!(<lhs> === 2)) goto L195;
-  L133:
-  var_ref5 = arg0.sent();
-  return <func>(3, 3);
-  L195:
-  if (!(<lhs> === 3)) goto L205;
-  L200:
-  return <func>(2);
-  L205:
-  return;
-}
+function closure_848 (args=1, vars=0, strict=false)
+bytecode:
+00000 get_arg0                 <fmt:none_arg>
+00001 get_field                881 ; label
+00006 dup               
+00007 push_0                   <fmt:none_int>
+00008 strict_eq         
+00009 if_false8                97
+00011 get_arg0                 <fmt:none_arg>
+00012 get_field                883 ; trys
+00017 get_field2               624 ; push
+00022 push_0                   <fmt:none_int>
+00023 push_2                   <fmt:none_int>
+00024 array_from               2
+00027 push_3                   <fmt:none_int>
+00028 define_field             2147483651 ; <atom:2147483651>
+00033 call_method              1
+00036 drop              
+00037 get_var_ref0             <fmt:none_var_ref>
+00038 get_field                756 ; g
+00043 get_field                786 ; logger
+00048 get_field2               787 ; log
+00053 get_var_ref1             <fmt:none_var_ref>
+00054 call_method              1
+00057 drop              
+00058 get_var                  154 ; JSON
+00063 get_field2               987 ; stringify
+00068 get_var_ref1             <fmt:none_var_ref>
+00069 call_method              1
+00072 put_var_ref2             <fmt:none_var_ref>
+00073 push_4                   <fmt:none_int>
+00074 get_var_ref3             <fmt:none_var_ref>
+00075 get_field                871 ; asyncFile
+00080 get_field2               890 ; writeText
+00085 object            
+00086 get_var_ref              4
+00089 define_field             950 ; uri
+00094 get_var_ref2             <fmt:none_var_ref>
+00095 define_field             868 ; text
+00100 call_method              1
+00103 array_from               2
+00106 return            
+00107 dup               
+00108 push_1                   <fmt:none_int>
+00109 strict_eq         
+00110 if_false8                17
+00112 get_arg0                 <fmt:none_arg>
+00113 get_field2               882 ; sent
+00118 call_method              0
+00121 drop              
+00122 push_3                   <fmt:none_int>
+00123 push_3                   <fmt:none_int>
+00124 array_from               2
+00127 return            
+00128 dup               
+00129 push_2                   <fmt:none_int>
+00130 strict_eq         
+00131 if_false8                63
+00133 get_arg0                 <fmt:none_arg>
+00134 get_field2               882 ; sent
+00139 call_method              0
+00142 put_var_ref              5
+00145 get_var_ref0             <fmt:none_var_ref>
+00146 get_field                756 ; g
+00151 get_field                786 ; logger
+00156 get_field2               675 ; error
+00161 push_atom_value          1332 ; [SavedContentManager] saveStorageIndex Error: 
+00166 get_field2               94 ; concat
+00171 get_var_ref              5
+00174 get_field2               57 ; toString
+00179 call_method              0
+00182 call_method              1
+00185 call_method              1
+00188 drop              
+00189 push_3                   <fmt:none_int>
+00190 push_3                   <fmt:none_int>
+00191 array_from               2
+00194 return            
+00195 dup               
+00196 push_3                   <fmt:none_int>
+00197 strict_eq         
+00198 if_false8                6
+00200 push_2                   <fmt:none_int>
+00201 array_from               1
+00204 return            
+00205 return_undef      
 
-function <atom:2666>() {
+function atom_2666() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   <special_object>;
   loc1 = <special_object>;
 }
 
-function <atom:2668>() {
+function atom_2668() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   <special_object>;
   loc1 = <special_object>;
-  <fclosure8>;
-  var_ref5 = var_ref6(<fclosure8>);
+  var_ref5 = var_ref6(closure_0);
 }
 
 function closure_851() {
   L0:
-  <push_this>;
   loc3 = <push_this>;
-  <fclosure8>;
 }
 
-function closure_852() {
-  L0:
-  if (!(arg0.label === 0)) goto L63;
-  L11:
-  <define_field>;
-  <object>;
-  <define_field>;
-  return 4(var_ref0.asyncFile.access, <object>(<define_field>));
-  L63:
-  if (!(<lhs> === 1)) goto L113;
-  L68:
-  var_ref2 = arg0.sent();
-  if (!(!arg0.sent())) goto L87;
-  L81:
-  return <func>(3, 3);
-  L87:
-  <object>;
-  <define_field>;
-  return 4(var_ref0.asyncFile.readText, <object>(<define_field>));
-  L113:
-  if (!(<lhs> === 2)) goto L151;
-  L118:
-  var_ref3 = arg0.sent();
-  var_ref4 = JSON.parse(var_ref3);
-  return <func>(3, 4);
-  L151:
-  if (!(<lhs> === 3)) goto L171;
-  L156:
-  var_ref4 = <func>();
-  arg0.label = 4;
-  goto L176;
-  L171:
-  if (!(<lhs> === 4)) goto L182;
-  L176:
-  return <func>(3, 6);
-  L182:
-  if (!(<lhs> === 5)) goto L257;
-  L187:
-  var_ref5 = arg0.sent();
-  var_ref4 = <func>();
-  return <func>(3, 6);
-  L257:
-  if (!(<lhs> === 6)) goto L267;
-  L262:
-  return <func>(2);
-  L267:
-  return;
-}
-
-function <atom:2672>() {
-  L0:
-  <regexp>;
-  <fclosure8>;
-}
+function closure_852 (args=1, vars=0, strict=false)
+bytecode:
+00000 get_arg0                 <fmt:none_arg>
+00001 get_field                881 ; label
+00006 dup               
+00007 push_0                   <fmt:none_int>
+00008 strict_eq         
+00009 if_false8                53
+00011 get_arg0                 <fmt:none_arg>
+00012 get_field                883 ; trys
+00017 get_field2               624 ; push
+00022 push_0                   <fmt:none_int>
+00023 push_5                   <fmt:none_int>
+00024 array_from               2
+00027 push_6                   <fmt:none_int>
+00028 define_field             2147483651 ; <atom:2147483651>
+00033 call_method              1
+00036 drop              
+00037 push_4                   <fmt:none_int>
+00038 get_var_ref0             <fmt:none_var_ref>
+00039 get_field                871 ; asyncFile
+00044 get_field2               894 ; access
+00049 object            
+00050 get_var_ref1             <fmt:none_var_ref>
+00051 define_field             950 ; uri
+00056 call_method              1
+00059 array_from               2
+00062 return            
+00063 dup               
+00064 push_1                   <fmt:none_int>
+00065 strict_eq         
+00066 if_false8                46
+00068 get_arg0                 <fmt:none_arg>
+00069 get_field2               882 ; sent
+00074 call_method              0
+00077 set_var_ref2             <fmt:none_var_ref>
+00078 lnot              
+00079 if_false8                7
+00081 push_3                   <fmt:none_int>
+00082 push_3                   <fmt:none_int>
+00083 array_from               2
+00086 return            
+00087 push_4                   <fmt:none_int>
+00088 get_var_ref0             <fmt:none_var_ref>
+00089 get_field                871 ; asyncFile
+00094 get_field2               892 ; readText
+00099 object            
+00100 get_var_ref1             <fmt:none_var_ref>
+00101 define_field             950 ; uri
+00106 call_method              1
+00109 array_from               2
+00112 return            
+00113 dup               
+00114 push_2                   <fmt:none_int>
+00115 strict_eq         
+00116 if_false8                34
+00118 get_arg0                 <fmt:none_arg>
+00119 get_field2               882 ; sent
+00124 call_method              0
+00127 put_var_ref3             <fmt:none_var_ref>
+00128 get_var                  154 ; JSON
+00133 get_field2               419 ; parse
+00138 get_var_ref3             <fmt:none_var_ref>
+00139 call_method              1
+00142 put_var_ref              4
+00145 push_3                   <fmt:none_int>
+00146 push_4                   <fmt:none_int>
+00147 array_from               2
+00150 return            
+00151 dup               
+00152 push_3                   <fmt:none_int>
+00153 strict_eq         
+00154 if_false8                16
+00156 array_from               0
+00159 put_var_ref              4
+00162 get_arg0                 <fmt:none_arg>
+00163 push_4                   <fmt:none_int>
+00164 put_field                881 ; label
+00169 goto8                    6
+00171 dup               
+00172 push_4                   <fmt:none_int>
+00173 strict_eq         
+00174 if_false8                7
+00176 push_3                   <fmt:none_int>
+00177 push_6                   <fmt:none_int>
+00178 array_from               2
+00181 return            
+00182 dup               
+00183 push_5                   <fmt:none_int>
+00184 strict_eq         
+00185 if_false8                71
+00187 get_arg0                 <fmt:none_arg>
+00188 get_field2               882 ; sent
+00193 call_method              0
+00196 put_var_ref              5
+00199 get_var_ref              6
+00202 get_field                756 ; g
+00207 get_field                786 ; logger
+00212 get_field2               675 ; error
+00217 push_atom_value          1335 ; [SavedContentManager] loadStorageIndex Error: 
+00222 get_field2               94 ; concat
+00227 get_var_ref              5
+00230 get_field2               57 ; toString
+00235 call_method              0
+00238 call_method              1
+00241 call_method              1
+00244 drop              
+00245 array_from               0
+00248 put_var_ref              4
+00251 push_3                   <fmt:none_int>
+00252 push_6                   <fmt:none_int>
+00253 array_from               2
+00256 return            
+00257 dup               
+00258 push_6                   <fmt:none_int>
+00259 strict_eq         
+00260 if_false8                6
+00262 push_2                   <fmt:none_int>
+00263 array_from               1
+00266 return            
+00267 return_undef      
 
 function closure_854() {
   L0:
-  <push_i8>;
   loc0 = ((Math.random() * <push_i8>) | 0);
-  if (!(arg0 === "x")) goto L31;
+  if (!(arg0 === <push_atom_value>)) goto L31;
   L28:
   goto L37;
   L31:
-  <push_i8>;
   L37:
   loc1 = <rhs>;
-  <push_i8>;
 }
 
 function closure_855() {
   L0:
-  <fclosure8>;
-  loc0 = <fclosure8>;
+  loc0 = atom_2654;
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
+  <object>.key = <push_atom_value>;
+  <object>.value = atom_2674;
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
+  <object>.key = <push_atom_value>;
+  <object>.value = atom_2676;
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
+  <object>.key = <push_atom_value>;
+  <object>.value = atom_2678;
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
+  <object>.key = <push_atom_value>;
+  <object>.value = atom_2680;
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
+  <object>.key = <push_atom_value>;
+  <object>.value = atom_2682;
   return loc0;
 }
 
-function <atom:2654>() {
+function atom_2654() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   return;
 }
 
-function <atom:2674>() {
-  L0:
-  <fclosure8>;
-}
-
 function closure_858() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_859() {
@@ -16802,109 +15031,241 @@ function closure_859() {
   return;
 }
 
-function <atom:2676>() {
-  L0:
-  <fclosure8>;
-}
-
 function closure_861() {
   L0:
-  <push_this>;
   loc3 = <push_this>;
-  <fclosure8>;
 }
 
-function closure_862() {
-  L0:
-  if (!(arg0.label === 0)) goto L101;
-  L11:
-  <define_field>;
-  var_ref0 = var_ref1();
-  <push_empty_string>;
-  var_ref2 = <push_empty_string>.concat(var_ref3).concat(var_ref0, ".txt");
-  <object>;
-  <define_field>;
-  <define_field>;
-  return var_ref4.asyncFile.writeText(<object>, <define_field>(<define_field>));
-  L101:
-  if (!(<lhs> === 1)) goto L166;
-  L106:
-  <object>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  return <define_field>(4, var_ref9());
-  L166:
-  if (!(<lhs> === 2)) goto L187;
-  L171:
-  return <func>(2, var_ref0);
-  L187:
-  if (!(<lhs> === 3)) goto L256;
-  L192:
-  var_ref10 = arg0.sent();
-  return <func>(3, 4);
-  L256:
-  if (!(<lhs> === 4)) goto L266;
-  L261:
-  return <func>(2);
-  L266:
-  return;
-}
-
-function <atom:2678>() {
-  L0:
-  <fclosure8>;
-}
+function closure_862 (args=1, vars=0, strict=false)
+bytecode:
+00000 get_arg0                 <fmt:none_arg>
+00001 get_field                881 ; label
+00006 dup               
+00007 push_0                   <fmt:none_int>
+00008 strict_eq         
+00009 if_false8                91
+00011 get_arg0                 <fmt:none_arg>
+00012 get_field                883 ; trys
+00017 get_field2               624 ; push
+00022 push_0                   <fmt:none_int>
+00023 push_3                   <fmt:none_int>
+00024 array_from               2
+00027 push_4                   <fmt:none_int>
+00028 define_field             2147483651 ; <atom:2147483651>
+00033 call_method              1
+00036 drop              
+00037 get_var_ref1             <fmt:none_var_ref>
+00038 call0                    <fmt:npopx>
+00039 put_var_ref0             <fmt:none_var_ref>
+00040 push_empty_string 
+00041 get_field2               94 ; concat
+00046 get_var_ref3             <fmt:none_var_ref>
+00047 call_method              1
+00050 get_field2               94 ; concat
+00055 get_var_ref0             <fmt:none_var_ref>
+00056 push_atom_value          1344 ; .txt
+00061 call_method              2
+00064 put_var_ref2             <fmt:none_var_ref>
+00065 push_4                   <fmt:none_int>
+00066 get_var_ref              4
+00069 get_field                871 ; asyncFile
+00074 get_field2               890 ; writeText
+00079 object            
+00080 get_var_ref2             <fmt:none_var_ref>
+00081 define_field             950 ; uri
+00086 get_var_ref              5
+00089 define_field             868 ; text
+00094 call_method              1
+00097 array_from               2
+00100 return            
+00101 dup               
+00102 push_1                   <fmt:none_int>
+00103 strict_eq         
+00104 if_false8                61
+00106 get_arg0                 <fmt:none_arg>
+00107 get_field2               882 ; sent
+00112 call_method              0
+00115 drop              
+00116 get_var_ref              6
+00119 get_field2               624 ; push
+00124 object            
+00125 get_var_ref0             <fmt:none_var_ref>
+00126 define_field             1198 ; id
+00131 get_var_ref              7
+00134 define_field             1196 ; title
+00139 get_var_ref              8
+00142 define_field             852 ; type
+00147 get_var_ref2             <fmt:none_var_ref>
+00148 define_field             1345 ; fileUri
+00153 call_method              1
+00156 drop              
+00157 push_4                   <fmt:none_int>
+00158 get_var_ref              9
+00161 call0                    <fmt:npopx>
+00162 array_from               2
+00165 return            
+00166 dup               
+00167 push_2                   <fmt:none_int>
+00168 strict_eq         
+00169 if_false8                17
+00171 get_arg0                 <fmt:none_arg>
+00172 get_field2               882 ; sent
+00177 call_method              0
+00180 drop              
+00181 push_2                   <fmt:none_int>
+00182 get_var_ref0             <fmt:none_var_ref>
+00183 array_from               2
+00186 return            
+00187 dup               
+00188 push_3                   <fmt:none_int>
+00189 strict_eq         
+00190 if_false8                65
+00192 get_arg0                 <fmt:none_arg>
+00193 get_field2               882 ; sent
+00198 call_method              0
+00201 put_var_ref              10
+00204 get_var_ref              11
+00207 get_field                756 ; g
+00212 get_field                786 ; logger
+00217 get_field2               675 ; error
+00222 push_atom_value          1346 ; [SavedContentManager] storeContent Error: 
+00227 get_field2               94 ; concat
+00232 get_var_ref              10
+00235 get_field2               57 ; toString
+00240 call_method              0
+00243 call_method              1
+00246 call_method              1
+00249 drop              
+00250 push_3                   <fmt:none_int>
+00251 push_4                   <fmt:none_int>
+00252 array_from               2
+00255 return            
+00256 dup               
+00257 push_4                   <fmt:none_int>
+00258 strict_eq         
+00259 if_false8                6
+00261 push_2                   <fmt:none_int>
+00262 array_from               1
+00265 return            
+00266 return_undef      
 
 function closure_864() {
   L0:
-  <push_this>;
   loc3 = <push_this>;
-  <fclosure8>;
 }
 
-function closure_865() {
-  L0:
-  if (!(arg0.label === 0)) goto L89;
-  L11:
-  <define_field>;
-  <fclosure8>;
-  var_ref1 = var_ref2.find(<fclosure8>);
-  if (!(!var_ref2.find(<fclosure8>))) goto L58;
-  L52:
-  return <func>(2, null);
-  L58:
-  <object>;
-  <define_field>;
-  return 4(var_ref3.asyncFile.access, <object>(<define_field>));
-  L89:
-  if (!(<lhs> === 1)) goto L169;
-  L94:
-  var_ref4 = arg0.sent();
-  if (!(!arg0.sent())) goto L138;
-  L109:
-  <throw>;
-  L138:
-  <object>;
-  <define_field>;
-  return 4(var_ref3.asyncFile.readText, <object>(<define_field>));
-  L169:
-  if (!(<lhs> === 2)) goto L188;
-  L174:
-  return <func>(2, arg0.sent());
-  L188:
-  if (!(<lhs> === 3)) goto L257;
-  L193:
-  var_ref5 = arg0.sent();
-  return <func>(2, null);
-  L257:
-  if (!(<lhs> === 4)) goto L267;
-  L262:
-  return <func>(2);
-  L267:
-  return;
-}
+function closure_865 (args=1, vars=0, strict=false)
+bytecode:
+00000 get_arg0                 <fmt:none_arg>
+00001 get_field                881 ; label
+00006 dup               
+00007 push_0                   <fmt:none_int>
+00008 strict_eq         
+00009 if_false8                79
+00011 get_arg0                 <fmt:none_arg>
+00012 get_field                883 ; trys
+00017 get_field2               624 ; push
+00022 push_0                   <fmt:none_int>
+00023 push_3                   <fmt:none_int>
+00024 array_from               2
+00027 push_4                   <fmt:none_int>
+00028 define_field             2147483651 ; <atom:2147483651>
+00033 call_method              1
+00036 drop              
+00037 get_var_ref2             <fmt:none_var_ref>
+00038 get_field2               1347 ; find
+00043 fclosure8                0
+00045 call_method              1
+00048 set_var_ref1             <fmt:none_var_ref>
+00049 lnot              
+00050 if_false8                7
+00052 push_2                   <fmt:none_int>
+00053 null              
+00054 array_from               2
+00057 return            
+00058 push_4                   <fmt:none_int>
+00059 get_var_ref3             <fmt:none_var_ref>
+00060 get_field                871 ; asyncFile
+00065 get_field2               894 ; access
+00070 object            
+00071 get_var_ref1             <fmt:none_var_ref>
+00072 get_field                1345 ; fileUri
+00077 define_field             950 ; uri
+00082 call_method              1
+00085 array_from               2
+00088 return            
+00089 dup               
+00090 push_1                   <fmt:none_int>
+00091 strict_eq         
+00092 if_false8                76
+00094 get_arg0                 <fmt:none_arg>
+00095 get_field2               882 ; sent
+00100 call_method              0
+00103 set_var_ref              4
+00106 lnot              
+00107 if_false8                30
+00109 get_var                  147 ; Error
+00114 dup               
+00115 push_atom_value          1348 ; File does not exist: 
+00120 get_field2               94 ; concat
+00125 get_var_ref1             <fmt:none_var_ref>
+00126 get_field                1345 ; fileUri
+00131 call_method              1
+00134 call_constructor         1
+00137 throw             
+00138 push_4                   <fmt:none_int>
+00139 get_var_ref3             <fmt:none_var_ref>
+00140 get_field                871 ; asyncFile
+00145 get_field2               892 ; readText
+00150 object            
+00151 get_var_ref1             <fmt:none_var_ref>
+00152 get_field                1345 ; fileUri
+00157 define_field             950 ; uri
+00162 call_method              1
+00165 array_from               2
+00168 return            
+00169 dup               
+00170 push_2                   <fmt:none_int>
+00171 strict_eq         
+00172 if_false8                15
+00174 push_2                   <fmt:none_int>
+00175 get_arg0                 <fmt:none_arg>
+00176 get_field2               882 ; sent
+00181 call_method              0
+00184 array_from               2
+00187 return            
+00188 dup               
+00189 push_3                   <fmt:none_int>
+00190 strict_eq         
+00191 if_false8                65
+00193 get_arg0                 <fmt:none_arg>
+00194 get_field2               882 ; sent
+00199 call_method              0
+00202 put_var_ref              5
+00205 get_var_ref              6
+00208 get_field                756 ; g
+00213 get_field                786 ; logger
+00218 get_field2               675 ; error
+00223 push_atom_value          1349 ; [SavedContentManager] getContent Error: 
+00228 get_field2               94 ; concat
+00233 get_var_ref              5
+00236 get_field2               57 ; toString
+00241 call_method              0
+00244 call_method              1
+00247 call_method              1
+00250 drop              
+00251 push_2                   <fmt:none_int>
+00252 null              
+00253 array_from               2
+00256 return            
+00257 dup               
+00258 push_4                   <fmt:none_int>
+00259 strict_eq         
+00260 if_false8                6
+00262 push_2                   <fmt:none_int>
+00263 array_from               1
+00266 return            
+00267 return_undef      
 
 function closure_866() {
   L0:
@@ -16914,69 +15275,128 @@ function closure_866() {
   return undefined;
 }
 
-function <atom:2680>() {
-  L0:
-  <fclosure8>;
-}
-
 function closure_868() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
-  <fclosure8>;
 }
 
 function closure_869() { return <func>(2, var_ref0); }
 
-function <atom:2682>() {
-  L0:
-  <fclosure8>;
-}
-
 function closure_871() {
   L0:
-  <push_this>;
   loc3 = <push_this>;
-  <fclosure8>;
 }
 
-function closure_872() {
-  L0:
-  if (!(arg0.label === 0)) goto L106;
-  L11:
-  <define_field>;
-  <fclosure8>;
-  var_ref1 = var_ref2.findIndex(<fclosure8>);
-  if (!(var_ref2.findIndex(<fclosure8>) === -1)) goto L68;
-  L53:
-  <throw>;
-  L68:
-  <get_array_el>;
-  var_ref3 = <get_array_el>.fileUri;
-  <get_array_el2>;
-  <object>;
-  <define_field>;
-  return <func>(<get_array_el>, <object>(<define_field>));
-  L106:
-  if (!(<lhs> === 1)) goto L142;
-  L111:
-  return <func>(4, var_ref5());
-  L142:
-  if (!(<lhs> === 2)) goto L163;
-  L147:
-  return <func>(3, 4);
-  L163:
-  if (!(<lhs> === 3)) goto L232;
-  L168:
-  var_ref6 = arg0.sent();
-  return <func>(3, 4);
-  L232:
-  if (!(<lhs> === 4)) goto L242;
-  L237:
-  return <func>(2);
-  L242:
-  return;
-}
+function closure_872 (args=1, vars=0, strict=false)
+bytecode:
+00000 get_arg0                 <fmt:none_arg>
+00001 get_field                881 ; label
+00006 dup               
+00007 push_0                   <fmt:none_int>
+00008 strict_eq         
+00009 if_false8                96
+00011 get_arg0                 <fmt:none_arg>
+00012 get_field                883 ; trys
+00017 get_field2               624 ; push
+00022 push_0                   <fmt:none_int>
+00023 push_3                   <fmt:none_int>
+00024 array_from               2
+00027 push_4                   <fmt:none_int>
+00028 define_field             2147483651 ; <atom:2147483651>
+00033 call_method              1
+00036 drop              
+00037 get_var_ref2             <fmt:none_var_ref>
+00038 get_field2               1350 ; findIndex
+00043 fclosure8                0
+00045 call_method              1
+00048 set_var_ref1             <fmt:none_var_ref>
+00049 push_minus1              <fmt:none_int>
+00050 strict_eq         
+00051 if_false8                16
+00053 get_var                  147 ; Error
+00058 dup               
+00059 push_atom_value          1351 ; Content not found
+00064 call_constructor         1
+00067 throw             
+00068 get_var_ref2             <fmt:none_var_ref>
+00069 get_var_ref1             <fmt:none_var_ref>
+00070 get_array_el      
+00071 get_field                1345 ; fileUri
+00076 put_var_ref3             <fmt:none_var_ref>
+00077 push_4                   <fmt:none_int>
+00078 get_var_ref              4
+00081 get_field                871 ; asyncFile
+00086 push_atom_value          9 ; delete
+00091 get_array_el2     
+00092 object            
+00093 get_var_ref3             <fmt:none_var_ref>
+00094 define_field             950 ; uri
+00099 call_method              1
+00102 array_from               2
+00105 return            
+00106 dup               
+00107 push_1                   <fmt:none_int>
+00108 strict_eq         
+00109 if_false8                32
+00111 get_arg0                 <fmt:none_arg>
+00112 get_field2               882 ; sent
+00117 call_method              0
+00120 drop              
+00121 get_var_ref2             <fmt:none_var_ref>
+00122 get_field2               1352 ; splice
+00127 get_var_ref1             <fmt:none_var_ref>
+00128 push_1                   <fmt:none_int>
+00129 call_method              2
+00132 drop              
+00133 push_4                   <fmt:none_int>
+00134 get_var_ref              5
+00137 call0                    <fmt:npopx>
+00138 array_from               2
+00141 return            
+00142 dup               
+00143 push_2                   <fmt:none_int>
+00144 strict_eq         
+00145 if_false8                17
+00147 get_arg0                 <fmt:none_arg>
+00148 get_field2               882 ; sent
+00153 call_method              0
+00156 drop              
+00157 push_3                   <fmt:none_int>
+00158 push_4                   <fmt:none_int>
+00159 array_from               2
+00162 return            
+00163 dup               
+00164 push_3                   <fmt:none_int>
+00165 strict_eq         
+00166 if_false8                65
+00168 get_arg0                 <fmt:none_arg>
+00169 get_field2               882 ; sent
+00174 call_method              0
+00177 put_var_ref              6
+00180 get_var_ref              7
+00183 get_field                756 ; g
+00188 get_field                786 ; logger
+00193 get_field2               675 ; error
+00198 push_atom_value          1353 ; [SavedContentManager] deleteContent Error: 
+00203 get_field2               94 ; concat
+00208 get_var_ref              6
+00211 get_field2               57 ; toString
+00216 call_method              0
+00219 call_method              1
+00222 call_method              1
+00225 drop              
+00226 push_3                   <fmt:none_int>
+00227 push_4                   <fmt:none_int>
+00228 array_from               2
+00231 return            
+00232 dup               
+00233 push_4                   <fmt:none_int>
+00234 strict_eq         
+00235 if_false8                6
+00237 push_2                   <fmt:none_int>
+00238 array_from               1
+00241 return            
+00242 return_undef      
 
 function closure_873() {
   L0:
@@ -16988,37 +15408,25 @@ function closure_873() {
 
 function closure_874() {
   L0:
-  <fclosure8>;
-  loc1 = <fclosure8>;
-  <fclosure8>;
-  loc2 = <fclosure8>;
-  <fclosure8>;
-  loc4 = <fclosure8>;
-  <fclosure8>;
-  loc5 = <fclosure8>;
+  loc1 = atom_1606;
+  loc2 = atom_1752;
+  loc4 = atom_2710;
+  loc5 = atom_2712;
   <object>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  loc0 = arg2("./src/tsimports.js");
+  <object>.SETTINGS = set_name(SETTINGS, closure_0);
+  <object>.loadSettings = set_name(loadSettings, closure_1);
+  <object>.saveSettings = set_name(saveSettings, closure_2);
+  loc0 = arg2(<push_atom_value>);
   <object>;
-  <define_field>;
-  <push_i8>;
-  <define_field>;
-  <push_i16>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  loc3 = <define_field>;
+  <object>.fresh_type = 3;
+  <object>.home_vid_count = <push_i8>;
+  <object>.article_split_dom_count = <push_i16>;
+  <object>.enableFullAnimation = <push_false>;
+  <object>.startupPage = <push_atom_value>;
+  <object>.agreedAllAgreements = <push_false>;
+  <object>.enableUserTracker = <push_true>;
+  <obj>.pinnedDMUsers = <object>();
+  loc3 = <obj>;
   return;
 }
 
@@ -17028,16 +15436,15 @@ function closure_876() { return _atom_2710_; }
 
 function closure_877() { return _atom_2712_; }
 
-function <atom:1606>() {
+function atom_1606() {
   L0:
-  <in>;
-  if (!<in>) goto L48;
+  if (!(arg0 in arg1)) goto L48;
   L5:
   <object>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
+  <object>.value = arg2;
+  <object>.enumerable = <push_true>;
+  <object>.configurable = <push_true>;
+  <object>.writable = <push_true>;
   goto L52;
   L48:
   <put_array_el>;
@@ -17045,7 +15452,7 @@ function <atom:1606>() {
   return arg0;
 }
 
-function <atom:1752>() {
+function atom_1752() {
   L0:
   <special_object>;
   loc3 = <special_object>;
@@ -17067,10 +15474,8 @@ function <atom:1752>() {
   <typeof_is_function>;
   if (!<typeof_is_function>) goto L87;
   L53:
-  <fclosure8>;
-  loc2 = loc2.concat(Object.getOwnPropertySymbols(loc1).filter(<fclosure8>));
+  loc2 = loc2.concat(Object.getOwnPropertySymbols(loc1).filter(closure_0));
   L87:
-  <fclosure8>;
   <inc_loc>;
   goto L5;
   L103:
@@ -17085,18 +15490,16 @@ function closure_881() {
   return;
 }
 
-function <atom:2710>() {
+function atom_2710() {
   L0:
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
+  <object>.key = <push_atom_value>;
+  <object>.success = atom_1796;
+  <object>.fail = atom_1798;
   return;
 }
 
-function <atom:1796>() {
+function atom_1796() {
   L0:
   if (!arg0) goto L24;
   L3:
@@ -17107,60 +15510,40 @@ function <atom:1796>() {
   return;
 }
 
-function <atom:1798>() { return; }
+function atom_1798() { return; }
 
-function <atom:2712>() {
+function atom_2712() {
   L0:
   <object>;
   var_ref1 = var_ref2(<object>, var_ref1, arg0);
   <object>;
-  <define_field>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
+  <object>.key = <push_atom_value>;
+  <object>.value = JSON.stringify(var_ref1);
+  <object>.success = atom_1796;
+  <object>.fail = atom_1798;
   return;
 }
 
-function <atom:1796>() { return; }
+function atom_1796() { return; }
 
-function <atom:1798>() { return; }
+function atom_1798() { return; }
 
 function closure_888() {
   L0:
-  <fclosure8>;
-  loc1 = <fclosure8>;
-  <fclosure8>;
-  loc2 = <fclosure8>;
-  <fclosure8>;
-  loc3 = <fclosure8>;
-  <fclosure8>;
-  loc4 = <fclosure8>;
-  <fclosure8>;
-  loc5 = <fclosure8>;
-  <fclosure8>;
-  loc6 = <fclosure8>;
+  loc1 = atom_2742;
+  loc2 = atom_2744;
+  loc3 = atom_2746;
+  loc4 = atom_2748;
+  loc5 = atom_2750;
+  loc6 = atom_2752;
   <object>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  loc0 = arg2("./src/tsimports.js");
+  <object>.formatNumber = set_name(formatNumber, closure_0);
+  <object>.getCurrentTime = set_name(getCurrentTime, closure_1);
+  <object>.getDeviceInformation = set_name(getDeviceInformation, closure_2);
+  <object>.getDeviceSerial = set_name(getDeviceSerial, closure_3);
+  <object>.getNetworkType = set_name(getNetworkType, closure_4);
+  <object>.unicodeToString = set_name(unicodeToString, closure_5);
+  loc0 = arg2(<push_atom_value>);
   return;
 }
 
@@ -17176,62 +15559,46 @@ function closure_893() { return _atom_2750_; }
 
 function closure_894() { return _atom_2752_; }
 
-function <atom:2742>() {
+function atom_2742() {
   L0:
-  <push_i16>;
   if (!(arg0 < <push_i16>)) goto L16;
   L7:
   L16:
-  <push_i16>;
   if (!(arg0 < <push_i16>)) goto L44;
   L23:
-  <push_i16>;
-  return ((arg0 / <push_i16>).toFixed(1) + "k");
+  return ((arg0 / <push_i16>).toFixed(1) + <push_atom_value>);
   L44:
-  <push_i16>;
-  return ((arg0 / <push_i16>).toFixed(1) + "w");
+  return ((arg0 / <push_i16>).toFixed(1) + <push_atom_value>);
 }
 
-function <atom:2744>() {
+function atom_2744() {
   L0:
   loc0 = Date();
   loc1 = Date().getHours();
   loc2 = loc0.getMinutes();
-  <push_i8>;
   if (!(loc1 < <push_i8>)) goto L41;
   L35:
   goto L50;
   L41:
   L50:
   loc3 = <rhs>;
-  <push_i8>;
   if (!(loc2 < <push_i8>)) goto L63;
   L57:
   goto L72;
   L63:
   L72:
   loc4 = <rhs>;
-  <push_empty_string>;
-  <get_loc8>;
-  loc5 = <push_empty_string>.concat(loc3, ":").concat(<get_loc8>);
-  return <push_empty_string>.concat(loc3, ":").concat(<get_loc8>);
+  loc5 = <push_empty_string>.concat(loc3, <push_atom_value>).concat(loc8);
+  return <push_empty_string>.concat(loc3, <push_atom_value>).concat(loc8);
 }
 
-function <atom:2746>() {
-  L0:
-  <fclosure8>;
-  return Promise(<fclosure8>);
-}
+function atom_2746() { return Promise(closure_0); }
 
 function closure_898() {
   L0:
   <object>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
+  <object>.success = set_name(success, closure_0);
+  <object>.fail = set_name(fail, closure_1);
   return;
 }
 
@@ -17239,21 +15606,13 @@ function closure_899() { return; }
 
 function closure_900() { return; }
 
-function <atom:2748>() {
-  L0:
-  <fclosure8>;
-  return Promise(<fclosure8>);
-}
+function atom_2748() { return Promise(closure_0); }
 
 function closure_902() {
   L0:
   <object>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
+  <object>.success = set_name(success, closure_0);
+  <object>.fail = set_name(fail, closure_1);
   return;
 }
 
@@ -17262,25 +15621,17 @@ function closure_903() { return; }
 function closure_904() {
   L0:
   <object>;
-  <define_field>;
+  <object>.uri = <push_atom_value>;
   return;
 }
 
-function <atom:2750>() {
-  L0:
-  <fclosure8>;
-  return Promise(<fclosure8>);
-}
+function atom_2750() { return Promise(closure_0); }
 
 function closure_906() {
   L0:
   <object>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
+  <object>.success = set_name(success, closure_0);
+  <object>.fail = set_name(fail, closure_1);
   return;
 }
 
@@ -17288,46 +15639,21 @@ function closure_907() { return; }
 
 function closure_908() { return; }
 
-function <atom:2752>() {
-  L0:
-  <regexp>;
-  <fclosure8>;
-}
-
-function closure_910() {
-  L0:
-  <push_i8>;
-}
-
 function closure_911() {
   L0:
-  <fclosure8>;
-  loc1 = <fclosure8>;
-  <fclosure8>;
-  loc2 = <fclosure8>;
-  <fclosure8>;
-  loc3 = <fclosure8>;
-  <fclosure8>;
-  loc5 = <fclosure8>;
-  <fclosure8>;
-  loc6 = <fclosure8>;
-  <fclosure8>;
-  loc7 = <fclosure8>;
-  <fclosure8>;
-  loc8 = <fclosure8>;
+  loc1 = atom_1596;
+  loc2 = atom_1600;
+  loc3 = atom_1604;
+  loc5 = atom_2788;
+  loc6 = atom_1830;
+  loc7 = atom_2768;
+  loc8 = atom_2770;
   <object>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  <fclosure8>;
-  <set_name>;
-  <define_field>;
-  loc0 = arg2("./src/tsimports.js");
-  <fclosure8>;
-  loc4 = <fclosure8>();
+  <object>.Init = set_name(Init, closure_0);
+  <object>.InitPage = set_name(InitPage, closure_1);
+  <object>.OnBackPressTriggered = set_name(OnBackPressTriggered, closure_2);
+  loc0 = arg2(<push_atom_value>);
+  loc4 = closure_6();
   return;
 }
 
@@ -17337,17 +15663,16 @@ function closure_913() { return _atom_2768_; }
 
 function closure_914() { return _atom_2770_; }
 
-function <atom:1596>() {
+function atom_1596() {
   L0:
-  <instanceof>;
-  if (!(!<instanceof>)) goto L21;
+  if (!(!(arg0 instanceof arg1))) goto L21;
   L6:
-  <throw>;
+  throw TypeError(<push_atom_value>);
   L21:
   return;
 }
 
-function <atom:1600>() {
+function atom_1600() {
   L0:
   loc0 = 0;
   L2:
@@ -17360,11 +15685,10 @@ function <atom:1600>() {
   L21:
   L23:
   <obj>.enumerable = <rhs>;
-  loc1.configurable = true;
-  <in>;
-  if (!<in>) goto L51;
+  loc1.configurable = <push_true>;
+  if (!(loc1 in <push_atom_value>)) goto L51;
   L44:
-  loc1.writable = true;
+  loc1.writable = <push_true>;
   L51:
   <inc_loc>;
   goto L2;
@@ -17372,7 +15696,7 @@ function <atom:1600>() {
   return;
 }
 
-function <atom:1604>() {
+function atom_1604() {
   L0:
   if (!arg1) goto L13;
   L3:
@@ -17385,51 +15709,45 @@ function <atom:1604>() {
 
 function closure_918() {
   L0:
-  <fclosure8>;
-  loc0 = <fclosure8>;
+  loc0 = atom_2778;
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
+  <object>.key = <push_atom_value>;
+  <object>.value = atom_2772;
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
+  <object>.key = <push_atom_value>;
+  <object>.value = atom_2774;
   <object>;
-  <define_field>;
-  <fclosure8>;
-  <define_field>;
+  <object>.key = <push_atom_value>;
+  <object>.value = atom_2776;
   return loc0;
 }
 
-function <atom:2778>() {
+function atom_2778() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   return;
 }
 
-function <atom:2772>() {
+function atom_2772() {
   L0:
   <put_array_el>;
   return;
 }
 
-function <atom:2774>() {
+function atom_2774() {
   L0:
   _atom_1970_.g.currentPageName = _atom_1954_.router.getState().name;
   return;
 }
 
-function <atom:2776>() {
+function atom_2776() {
   L0:
   <get_array_el>;
-  <push_empty_string>;
   <get_array_el>.scrclass = <push_empty_string>;
   return;
 }
 
-function <atom:2788>() {
+function atom_2788() {
   L0:
   <for_in_start>;
   goto L96;
@@ -17451,27 +15769,22 @@ function <atom:2788>() {
   return;
 }
 
-function <atom:1830>() {
+function atom_1830() {
   L0:
   <object>;
   _atom_1970_.g.vmPool = <object>;
-  <push_empty_string>;
   _atom_1970_.g.currentPageName = <push_empty_string>;
-  <fclosure8>;
-  <push_i16>;
   return;
 }
 
 function closure_925() { return; }
 
-function <atom:2768>() { return; }
+function atom_2768() { return; }
 
-function <atom:2770>() {
+function atom_2770() {
   L0:
   <get_array_el>;
-  <get_array_el>.scrclass = "scroll-backanim";
-  <fclosure8>;
-  <push_i16>;
+  <get_array_el>.scrclass = <push_atom_value>;
   return;
 }
 
@@ -17482,31 +15795,25 @@ function closure_928() {
   <get_array_el>;
   loc1 = <get_array_el>.name;
   <get_array_el>;
-  <push_empty_string>;
   <get_array_el>.scrclass = <push_empty_string>;
   <get_array_el>;
-  <get_array_el>.scrclass = "scroll-frombackanim";
+  <get_array_el>.scrclass = <push_atom_value>;
   return;
 }
 
 function closure_929() {
   L0:
-  <fclosure8>;
-  loc5 = <fclosure8>;
-  <fclosure8>;
-  loc6 = <fclosure8>;
-  loc0 = arg2("./src/tsimports.js");
-  loc1 = "http://192.168.1.247:4080/trackreport";
-  loc2 = "v1";
-  <fclosure8>;
+  loc5 = atom_2830;
+  loc6 = atom_2832;
+  loc0 = arg2(<push_atom_value>);
+  loc1 = <push_atom_value>;
+  loc2 = <push_atom_value>;
   if (loc3) goto L47;
   L45:
   <object>;
   L47:
   loc3 = <func>(<arg>);
-  <fclosure8>;
-  <get_loc8>;
-  if (<get_loc8>) goto L58;
+  if (loc8) goto L58;
   L56:
   <object>;
   L58:
@@ -17552,50 +15859,49 @@ function closure_931() {
   return arg0;
 }
 
-function <atom:2830>() {
+function atom_2830() {
   L0:
   if (!_atom_1970_.g.settings.SETTINGS.agreedAllAgreements) goto L48;
   L23:
   if (!_atom_1970_.g.settings.SETTINGS.enableUserTracker) goto L48;
   L46:
-  return true;
+  return <push_true>;
   L48:
-  return false;
+  return <push_false>;
 }
 
-function <atom:2832>() {
+function atom_2832() {
   L0:
   <object>;
-  <define_field>;
+  <object>.event = arg0;
   <object>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
-  loc0 = <define_field>;
+  <object>.name = var_ref0.g.DEVICE_INFO.product;
+  <object>.serial = var_ref0.g.DEVICE_SERIAL;
+  <object>.networkType = var_ref0.g.DEVICE_NETWORK_TYPE;
+  <object>.deviceInfo = <object>;
+  <object>.version = var_ref0.g.biliclient.version;
+  <object>.payload = arg1;
+  loc0 = <object>;
   if (!var_ref1()) goto L195;
   L98:
   <object>;
-  <push_empty_string>;
-  <define_field>;
-  <define_field>;
-  <define_field>;
+  <object>.url = <push_empty_string>.concat(var_ref3, <push_atom_value>).concat(var_ref4, <push_atom_value>);
+  <object>.method = <push_atom_value>;
+  <object>.data = JSON.stringify(loc0);
   <object>;
-  <define_field>;
-  <define_field>;
+  <object>.Content-Type = <push_atom_value>;
+  <object>.header = <object>;
   L195:
   return;
 }
 
 function closure_934() {
   L0:
-  arg0.exports = JSON.parse("{"package":"com.searchstars.hyperbilibili","name":"澎湃哔哩","versionName":"2.5.0","versionCode":2,"minPlatformVersion":1000,"icon":"/common/logo.png","deviceTypeList":["watch"],"features":[{"name":"system.router"},{"name":"system.request"},{"name":"system.file"},{"name":"system.vibrator"},{"name":"system.prompt"},{"name":"system.device"},{"name":"system.fetch"},{"name":"system.storage"},{"name":"system.crypto"},{"name":"system.folme"},{"name":"system.interconnect"},{"name":"system.network"}],"config":{"logLevel":"log","designWidth":466,"background":{"features":["system.request","system.audio"]}},"display":{"backgroundColor":"#000000"},"router":{"entry":"pages/app/entry/splash","pages":{"pages/app/entry/splash":{"component":"splash"},"pages/app/entry/login":{"component":"login"},"pages/app/features/main":{"component":"main"},"pages/video/videodetail":{"component":"videodetail"},"pages/app/arealist":{"component":"arealist"},"pages/app/features/settings":{"component":"settings"},"pages/app/features/settings/about":{"component":"about"},"pages/app/features/mypage":{"component":"mypage"},"pages/folders/favfolders":{"component":"favfolders"},"pages/folders/favfolders/foldervideos":{"component":"foldervideos"},"pages/app/entry/prepage":{"component":"prepage"},"pages/reply/replys":{"component":"replys"},"pages/tools/textdetail":{"component":"textdetail"},"pages/reply/replytools":{"component":"replytools"},"pages/search/search":{"component":"search"},"pages/app/entry/introduction":{"component":"introduction"},"pages/folders/history":{"component":"history"},"pages/search/searchresult":{"component":"searchresult"},"pages/message/messages":{"component":"messages"},"pages/message/dmlist":{"component":"dmlist"},"pages/message/dmpage":{"component":"dmpage"},"pages/tools/picturedetail":{"component":"picturedetail"},"pages/app/features/settings/donation":{"component":"donation"},"pages/article/articleshow":{"component":"articleshow"},"pages/article/articlesave":{"component":"articlesave"},"pages/app/features/savedcontent":{"component":"savedcontent"},"pages/debug/componentstest":{"component":"componentstest"},"pages/error/networkerror":{"component":"networkerror"},"pages/app/entry/eularead":{"component":"eularead"},"pages/app/features/dynamic":{"component":"dynamic"},"pages/app/features/dynamic/detail":{"component":"detail"},"pages/app/features/settings/opensoftware":{"component":"opensoftware"},"pages/user":{"component":"user"},"pages/error/sessionood":{"component":"sessionood"},"pages/error/permissionerror":{"component":"permissionerror"},"pages/error/screenwidtherror":{"component":"screenwidtherror"},"pages/user/userdynamic":{"component":"userdynamic"},"pages/user/uservideos":{"component":"uservideos"},"pages/app/features/settings/cleartmp":{"component":"cleartmp"}}}}");
+  arg0.exports = JSON.parse(<push_atom_value>);
   return;
 }
 
-function <atom:1970>() {
+function atom_1970() {
   L0:
   <get_array_el>;
   loc0 = <get_array_el>;
@@ -17606,7 +15912,7 @@ function <atom:1970>() {
   <to_propkey2>;
   <object>;
   <object>;
-  <define_field>;
+  <object>.exports = <object>;
   <insert3>;
   <put_array_el>;
   loc1 = <put_array_el>;
@@ -17616,8 +15922,7 @@ function <atom:1970>() {
 
 function closure_936() {
   L0:
-  <fclosure8>;
-  _atom_1970_.n = <fclosure8>;
+  _atom_1970_.n = closure_0;
   return;
 }
 
@@ -17627,14 +15932,12 @@ function closure_937() {
   L3:
   if (!arg0.__esModule) goto L15;
   L11:
-  <fclosure8>;
   goto L17;
   L15:
-  <fclosure8>;
   L17:
   loc0 = <rhs>;
   <object>;
-  <define_field>;
+  <object>.a = loc0;
   return loc0;
 }
 
@@ -17648,8 +15951,7 @@ function closure_939() { return _atom_2856_; }
 
 function closure_940() {
   L0:
-  <fclosure8>;
-  _atom_1970_.d = <fclosure8>;
+  _atom_1970_.d = closure_0;
   return;
 }
 
@@ -17664,9 +15966,9 @@ function closure_941() {
   if (!(!var_ref0.o(arg0, loc0))) goto L63;
   L32:
   <object>;
-  <define_field>;
+  <object>.enumerable = <push_true>;
   <get_array_el>;
-  <define_field>;
+  <get_array_el>.get = <get_array_el>;
   L63:
   <for_in_next>;
   if (!<for_in_next>) goto L4;
@@ -17676,17 +15978,14 @@ function closure_941() {
 
 function closure_942() {
   L0:
-  <fclosure8>;
-  _atom_1970_.g = <fclosure8>();
+  _atom_1970_.g = closure_0();
   return;
 }
 
 function closure_943() {
   L0:
-  <push_this>;
   loc1 = <push_this>;
-  <typeof>;
-  if (!(<typeof> === "object")) goto L14;
+  if (!(typeof var_ref0 === <push_atom_value>)) goto L14;
   L12:
   return var_ref0;
   L14:
@@ -17700,27 +15999,24 @@ function closure_943() {
   loc0 = <rhs>;
   <catch>;
   L47:
-  <typeof>;
-  if (!(<typeof> === "object")) goto L60;
+  if (!(typeof var_ref1 === <push_atom_value>)) goto L60;
   L57:
   return var_ref1;
   L60:
   return;
   L62:
-  <throw>;
+  throw <value>;
 }
 
 function closure_944() {
   L0:
-  <fclosure8>;
-  _atom_1970_.o = <fclosure8>;
+  _atom_1970_.o = closure_0;
   return;
 }
 
 function closure_946() {
   L0:
-  <fclosure8>;
-  _atom_1970_.r = <fclosure8>;
+  _atom_1970_.r = closure_0;
   return;
 }
 
@@ -17732,93 +16028,68 @@ function closure_947() {
   if (!Symbol.toStringTag) goto L56;
   L20:
   <object>;
-  <define_field>;
+  <object>.value = <push_atom_value>;
   L56:
   <object>;
-  <define_field>;
+  <object>.value = <push_true>;
   return;
 }
 
 function closure_948() {
   L0:
-  <fclosure8>;
-  _atom_1970_.rv = <fclosure8>;
+  _atom_1970_.rv = closure_0;
   return;
 }
 
-function closure_949() { return "1.2.1"; }
+function closure_949() { return <push_atom_value>; }
 
 function closure_950() {
   L0:
-  _atom_1970_.ruid = "bundler=rspack@1.2.1";
+  _atom_1970_.ruid = <push_atom_value>;
   return;
 }
 
 function closure_951() {
   L0:
   loc0 = <func>();
-  <fclosure8>;
-  loc1 = <fclosure8>;
+  loc1 = atom_2876;
   <object>;
   var_ref1.default.style = loc0;
-  var_ref1.default.manifest = var_ref0("./src/manifest.json");
+  var_ref1.default.manifest = var_ref0(<push_atom_value>);
   return;
 }
 
-function <atom:2876>() {
+function atom_2876() {
   L0:
-  <fclosure8>;
-  loc14 = <fclosure8>;
-  <fclosure8>;
-  loc15 = <fclosure8>;
-  <fclosure8>;
-  loc16 = <fclosure8>;
+  loc14 = atom_2896;
+  loc15 = atom_2898;
+  loc16 = createToken;
   <object>;
-  <define_field>;
+  <object>.value = <push_true>;
   arg1.default = undefined;
-  <get_loc8>;
-  loc0 = <get_loc8>(var_ref0("../HyperBilibili/node_modules/dayjs/dayjs.min.js"));
-  <get_loc8>;
-  loc1 = <get_loc8>(var_ref0("./src/animation/engine.ts"));
-  loc2 = var_ref0("./src/bilibiliclient/client.ts");
-  <get_loc8>;
-  loc3 = <get_loc8>(var_ref0("./src/tools.ts"));
-  <get_loc8>;
-  loc4 = <get_loc8>(var_ref0("./src/articletools.ts"));
-  <get_loc8>;
-  loc5 = <get_loc8>(var_ref0("./src/funnytips.ts"));
-  <get_loc8>;
-  loc6 = <get_loc8>(var_ref0("./src/settings.ts"));
-  <get_loc8>;
-  loc7 = <get_loc8>(var_ref0("./src/jumpcheck.ts"));
-  <get_loc8>;
-  loc8 = <get_loc8>(var_ref0("./src/htmlparser.ts"));
-  <get_loc8>;
-  loc9 = <get_loc8>(var_ref0("./src/savedcontent.ts"));
-  <get_loc8>;
-  loc10 = <get_loc8>(var_ref0("./src/bgimg.ts"));
-  <get_loc8>;
-  loc11 = <get_loc8>(var_ref0("./src/usertracker.ts"));
-  <get_loc8>;
-  loc12 = <get_loc8>(var_ref0("./src/logger/logger.ts"));
-  <get_loc8>;
-  loc13 = <get_loc8>(var_ref0("./src/ui/ui.ts"));
+  loc0 = loc8(var_ref0(<push_atom_value>));
+  loc1 = loc8(var_ref0(<push_atom_value>));
+  loc2 = var_ref0(<push_atom_value>);
+  loc3 = loc8(var_ref0(<push_atom_value>));
+  loc4 = loc8(var_ref0(<push_atom_value>));
+  loc5 = loc8(var_ref0(<push_atom_value>));
+  loc6 = loc8(var_ref0(<push_atom_value>));
+  loc7 = loc8(var_ref0(<push_atom_value>));
+  loc8 = loc8(var_ref0(<push_atom_value>));
+  loc9 = loc8(var_ref0(<push_atom_value>));
+  loc10 = loc8(var_ref0(<push_atom_value>));
+  loc11 = loc8(var_ref0(<push_atom_value>));
+  loc12 = loc8(var_ref0(<push_atom_value>));
+  loc13 = loc8(var_ref0(<push_atom_value>));
   <object>;
-  <define_field>;
-  <define_field>;
-  <get_loc8>;
-  <define_field>;
-  <get_loc8>;
-  <define_field>;
-  <get_loc8>;
-  <define_field>;
-  <get_loc8>;
-  <define_field>;
-  <get_loc8>;
-  <define_field>;
-  <fclosure8>;
+  <object>.dayjs = loc0.default;
+  <object>.tools = loc3;
+  <object>.funnytips = loc8;
+  <object>.jumpcheck = loc8;
+  <object>.articletools = loc8;
+  <object>.htmlparser = loc8;
+  <object>.bgimg = loc8;
   <define_method>;
-  <fclosure8>;
   <define_method>;
   <insert2>;
   <insert2>.default = <insert2>;
@@ -17826,18 +16097,15 @@ function <atom:2876>() {
   return;
 }
 
-function <atom:2896>() {
+function atom_2896() {
   L0:
-  <typeof>;
-  if (!(<lhs> != <typeof>)) goto L16;
+  if (!(<push_atom_value> != typeof WeakMap)) goto L16;
   L14:
   return null;
   L16:
   loc0 = WeakMap();
   loc1 = WeakMap();
-  <fclosure8>;
-  <set_name>;
-  var_ref0 = <set_name>;
+  var_ref0 = set_name(_getRequireWildcardCache, closure_0);
 }
 
 function closure_954() {
@@ -17849,7 +16117,7 @@ function closure_954() {
   return var_ref1;
 }
 
-function <atom:2898>() {
+function atom_2898() {
   L0:
   if (!(!arg1)) goto L17;
   L4:
@@ -17861,16 +16129,14 @@ function <atom:2898>() {
   L17:
   if ((null === arg0)) goto L42;
   L23:
-  <typeof>;
-  if (!(<lhs> != <typeof>)) goto L52;
+  if (!(<push_atom_value> != typeof arg0)) goto L52;
   L34:
-  <typeof>;
   L42:
   if (!<cond>) goto L52;
   L44:
   <object>;
-  <define_field>;
-  return <define_field>;
+  <object>.default = arg0;
+  return <object>;
   L52:
   loc0 = var_ref0(arg1);
   if (!var_ref0(arg1)) goto L80;
@@ -17889,7 +16155,7 @@ function <atom:2898>() {
   goto L214;
   L113:
   loc3 = <rhs>;
-  if (!("default" !== loc3)) goto L214;
+  if (!(<push_atom_value> !== loc3)) goto L214;
   L123:
   <object>;
   if (!<object>.hasOwnProperty.call(arg0, loc3)) goto L214;
@@ -17902,14 +16168,11 @@ function <atom:2898>() {
   loc4 = <rhs>;
   if (!<cond>) goto L205;
   L166:
-  <get_loc8>;
-  if (<get_loc8>.get) goto L184;
+  if (loc8.get) goto L184;
   L176:
-  <get_loc8>;
   L184:
   if (!<cond>) goto L205;
   L186:
-  <get_loc8>;
   goto L213;
   L205:
   <to_propkey2>;
@@ -17937,13 +16200,12 @@ function createToken() {
   return arg0;
   L13:
   <object>;
-  <define_field>;
-  return <define_field>;
+  <object>.default = arg0;
+  return <object>;
 }
 
 function closure_957() {
   L0:
-  <push_this>;
   loc0 = <push_this>;
   var_ref0.g.logger = var_ref1.default;
   var_ref0.g.ui = var_ref2;

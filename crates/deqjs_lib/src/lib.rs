@@ -1133,6 +1133,7 @@ fn disassemble_function_with_atoms_and_instrs(
     Ok(out)
 }
 
+#[allow(dead_code)]
 fn disassemble_function_with_atoms(b: &FunctionBytecode, atoms: &AtomTable) -> Result<String, DeqjsError> {
     let instrs = decode_instructions(b)?;
     let func_name = b.func_name.to_string();
@@ -1240,7 +1241,15 @@ fn display_func_name(options: DecompileOptions, b: &FunctionBytecode, idx: usize
     if options.deobfuscate && matches!(b.func_name, AtomRepr::Null) {
         format!("closure_{idx}")
     } else {
-        b.func_name.to_string()
+        let name = b.func_name.to_string();
+        if name.starts_with("<atom:") && name.ends_with(">") {
+            if let Some(num_str) = name.strip_prefix("<atom:").and_then(|s| s.strip_suffix(">")) {
+                if let Ok(num) = num_str.parse::<u32>() {
+                    return format!("atom_{}", num);
+                }
+            }
+        }
+        name
     }
 }
 
@@ -1255,7 +1264,7 @@ fn decompile_functions_with(
         let instrs = decode(b)?;
         let func_name = display_func_name(options, b, idx);
         let s = match options.mode {
-            DecompileMode::Pseudo => pseudo_decompile_from_instrs(b, atoms, &instrs, &func_name, options.optimize)
+            DecompileMode::Pseudo => pseudo_decompile_from_instrs(b, atoms, &instrs, &func_name, options.optimize, options.deobfuscate)
                 .or_else(|_| disassemble_function_with_atoms_and_instrs(b, atoms, &instrs, &func_name))?,
             DecompileMode::Disasm => disassemble_function_with_atoms_and_instrs(b, atoms, &instrs, &func_name)?,
         };
@@ -1305,6 +1314,7 @@ pub struct Instr {
 }
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[allow(dead_code)]
 enum OpFmtV1 {
     None,
     NoneInt,
@@ -1830,6 +1840,14 @@ fn var_ref_name(b: &FunctionBytecode, idx: u16) -> String {
     }
 }
 
+fn closure_name(deobfuscate: bool, b: &FunctionBytecode, idx: u16) -> String {
+    if let Some(Value::Function(closure)) = b.cpool.get(idx as usize) {
+        display_func_name(DecompileOptions { mode: DecompileMode::Pseudo, version: DecompileVersion::Legacy, deobfuscate, optimize: false }, closure, idx as usize)
+    } else {
+        format!("<fclosure{}>", idx)
+    }
+}
+
 fn sanitize_ident(s: &str) -> String {
     if s.is_empty() {
         return "_".into();
@@ -2076,6 +2094,7 @@ fn pseudo_decompile_from_instrs(
     instrs: &[Instr],
     func_name: &str,
     optimize: bool,
+    deobfuscate: bool,
 ) -> Result<String, DeqjsError> {
     let blocks = build_cfg(&instrs);
 
@@ -2092,24 +2111,19 @@ fn pseudo_decompile_from_instrs(
                         stack.push(v.to_string());
                     }
                 }
-                "push_minus1" | "push_0" | "push_1" | "push_2" | "push_3" | "push_4" | "push_5" | "push_6" | "push_7" => {
-                    let n = match ins.name {
-                        "push_minus1" => -1,
-                        "push_0" => 0,
-                        "push_1" => 1,
-                        "push_2" => 2,
-                        "push_3" => 3,
-                        "push_4" => 4,
-                        "push_5" => 5,
-                        "push_6" => 6,
-                        _ => 7,
-                    };
-                    stack.push(n.to_string());
+                n if n == "push_minus1" || n.starts_with("push_") => {
+                    let num_str = if n == "push_minus1" { "-1" } else { &n[5..] };
+                    if let Ok(n) = num_str.parse::<i32>() {
+                        stack.push(n.to_string());
+                    } else {
+                        stack.push(format!("<{}>", n));
+                    }
                 }
                 "push_true" => stack.push("true".into()),
-                "push_false" => stack.push("false".into()),
-                "null" => stack.push("null".into()),
+                "push_this" => stack.push("this".into()),
+                "push_empty_string" => stack.push("\"\"".into()),
                 "undefined" => stack.push("undefined".into()),
+                "null" => stack.push("null".into()),
                 "push_const" | "push_const8" => {
                     if let Some(Operand::Const(idx)) = ins.operand {
                         let expr = if (idx as usize) < b.cpool.len() {
@@ -2129,6 +2143,11 @@ fn pseudo_decompile_from_instrs(
                         }
                     }
                 }
+                "fclosure" | "fclosure8" => {
+                    if let Some(Operand::Const(idx)) = ins.operand {
+                        stack.push(closure_name(deobfuscate, b, idx as u16));
+                    }
+                }
                 "get_loc0_loc1" => {
                     stack.push(loc_name(b, 0));
                     stack.push(loc_name(b, 1));
@@ -2143,14 +2162,22 @@ fn pseudo_decompile_from_instrs(
                         stack.push(loc_name(b, idx));
                     }
                 }
-                "get_arg0" => stack.push(arg_name(b, 0)),
-                "get_arg1" => stack.push(arg_name(b, 1)),
-                "get_arg2" => stack.push(arg_name(b, 2)),
-                "get_arg3" => stack.push(arg_name(b, 3)),
-                "get_loc0" => stack.push(loc_name(b, 0)),
-                "get_loc1" => stack.push(loc_name(b, 1)),
-                "get_loc2" => stack.push(loc_name(b, 2)),
-                "get_loc3" => stack.push(loc_name(b, 3)),
+                n if n.starts_with("get_arg") && n != "get_arg" && n.chars().skip(7).all(|c| c.is_ascii_digit()) => {
+                    let idx_str = &n[7..];
+                    if let Ok(idx) = idx_str.parse::<u16>() {
+                        stack.push(arg_name(b, idx));
+                    } else {
+                        stack.push(format!("<{}>", n));
+                    }
+                }
+                n if n.starts_with("get_loc") && n != "get_loc" && n != "get_loc0_loc1" && n.chars().skip(7).all(|c| c.is_ascii_digit()) => {
+                    let idx_str = &n[7..];
+                    if let Ok(idx) = idx_str.parse::<u16>() {
+                        stack.push(loc_name(b, idx));
+                    } else {
+                        stack.push(format!("<{}>", n));
+                    }
+                }
                 "get_var_ref" | "get_var_ref_check" => {
                     if let Some(Operand::U16(idx)) = ins.operand {
                         stack.push(var_ref_name(b, idx));
@@ -2158,10 +2185,14 @@ fn pseudo_decompile_from_instrs(
                         stack.push("<get_var_ref>".into());
                     }
                 }
-                "get_var_ref0" => stack.push(var_ref_name(b, 0)),
-                "get_var_ref1" => stack.push(var_ref_name(b, 1)),
-                "get_var_ref2" => stack.push(var_ref_name(b, 2)),
-                "get_var_ref3" => stack.push(var_ref_name(b, 3)),
+                n if n.starts_with("get_var_ref") && n != "get_var_ref" && n != "get_var_ref_check" && n.chars().skip(11).all(|c| c.is_ascii_digit()) => {
+                    let idx_str = &n[11..];
+                    if let Ok(idx) = idx_str.parse::<u16>() {
+                        stack.push(var_ref_name(b, idx));
+                    } else {
+                        stack.push(format!("<{}>", n));
+                    }
+                }
                 "set_var_ref" | "set_var_ref_check" => {
                     let rhs = stack.pop().unwrap_or("<rhs>".into());
                     if let Some(Operand::U16(idx)) = ins.operand {
@@ -2173,29 +2204,16 @@ fn pseudo_decompile_from_instrs(
                         stack.push(rhs);
                     }
                 }
-                "set_var_ref0" => {
-                    let rhs = stack.pop().unwrap_or("<rhs>".into());
-                    let name = var_ref_name(b, 0);
-                    stmts.push(Stmt::Expr(format!("{name} = {rhs}")));
-                    stack.push(rhs);
-                }
-                "set_var_ref1" => {
-                    let rhs = stack.pop().unwrap_or("<rhs>".into());
-                    let name = var_ref_name(b, 1);
-                    stmts.push(Stmt::Expr(format!("{name} = {rhs}")));
-                    stack.push(rhs);
-                }
-                "set_var_ref2" => {
-                    let rhs = stack.pop().unwrap_or("<rhs>".into());
-                    let name = var_ref_name(b, 2);
-                    stmts.push(Stmt::Expr(format!("{name} = {rhs}")));
-                    stack.push(rhs);
-                }
-                "set_var_ref3" => {
-                    let rhs = stack.pop().unwrap_or("<rhs>".into());
-                    let name = var_ref_name(b, 3);
-                    stmts.push(Stmt::Expr(format!("{name} = {rhs}")));
-                    stack.push(rhs);
+                n if n.starts_with("set_var_ref") && n != "set_var_ref" && n != "set_var_ref_check" && n.chars().skip(11).all(|c| c.is_ascii_digit()) => {
+                    let idx_str = &n[11..];
+                    if let Ok(idx) = idx_str.parse::<u16>() {
+                        let rhs = stack.pop().unwrap_or("<rhs>".into());
+                        let name = var_ref_name(b, idx);
+                        stmts.push(Stmt::Expr(format!("{name} = {rhs}")));
+                        stack.push(rhs);
+                    } else {
+                        stack.push(format!("<{}>", n));
+                    }
                 }
                 "put_var_ref" | "put_var_ref_check" | "put_var_ref_check_init" => {
                     let rhs = stack.pop().unwrap_or("<rhs>".into());
@@ -2206,25 +2224,15 @@ fn pseudo_decompile_from_instrs(
                         stmts.push(Stmt::Expr(format!("<put_var_ref> = {rhs}")));
                     }
                 }
-                "put_var_ref0" => {
-                    let rhs = stack.pop().unwrap_or("<rhs>".into());
-                    let name = var_ref_name(b, 0);
-                    stmts.push(Stmt::Expr(format!("{name} = {rhs}")));
-                }
-                "put_var_ref1" => {
-                    let rhs = stack.pop().unwrap_or("<rhs>".into());
-                    let name = var_ref_name(b, 1);
-                    stmts.push(Stmt::Expr(format!("{name} = {rhs}")));
-                }
-                "put_var_ref2" => {
-                    let rhs = stack.pop().unwrap_or("<rhs>".into());
-                    let name = var_ref_name(b, 2);
-                    stmts.push(Stmt::Expr(format!("{name} = {rhs}")));
-                }
-                "put_var_ref3" => {
-                    let rhs = stack.pop().unwrap_or("<rhs>".into());
-                    let name = var_ref_name(b, 3);
-                    stmts.push(Stmt::Expr(format!("{name} = {rhs}")));
+                n if n.starts_with("put_var_ref") && n != "put_var_ref" && n != "put_var_ref_check" && n != "put_var_ref_check_init" && n.chars().skip(11).all(|c| c.is_ascii_digit()) => {
+                    let idx_str = &n[11..];
+                    if let Ok(idx) = idx_str.parse::<u16>() {
+                        let rhs = stack.pop().unwrap_or("<rhs>".into());
+                        let name = var_ref_name(b, idx);
+                        stmts.push(Stmt::Expr(format!("{name} = {rhs}")));
+                    } else {
+                        stack.push(format!("<{}>", n));
+                    }
                 }
                 "drop" => {
                     let _ = stack.pop();
@@ -2272,6 +2280,50 @@ fn pseudo_decompile_from_instrs(
                     };
                     stack.push(format!("({lhs} {op} {rhs})"));
                 }
+                "regexp" => {
+                    let flags = stack.pop().unwrap_or("<flags>".into());
+                    let pattern = stack.pop().unwrap_or("<pattern>".into());
+                    if flags.starts_with('"') && flags.ends_with('"') && flags.len() < 20 && !flags.contains("\\u") {
+                        stack.push(format!("new RegExp({}, {})", pattern, flags));
+                    } else {
+                        stack.push(format!("new RegExp({})", pattern));
+                    }
+                }
+                "in" => {
+                    let prop = stack.pop().unwrap_or("<prop>".into());
+                    let obj = stack.pop().unwrap_or("<obj>".into());
+                    stack.push(format!("({} in {})", prop, obj));
+                }
+                "instanceof" => {
+                    let constructor = stack.pop().unwrap_or("<constructor>".into());
+                    let obj = stack.pop().unwrap_or("<obj>".into());
+                    stack.push(format!("({} instanceof {})", obj, constructor));
+                }
+                "typeof" => {
+                    let value = stack.pop().unwrap_or("<value>".into());
+                    stack.push(format!("typeof {}", value));
+                }
+                "define_field" => {
+                    let value = stack.pop().unwrap_or("<value>".into());
+                    let obj = stack.pop().unwrap_or("<obj>".into());
+                    if let Some(Operand::Atom(idx)) = ins.operand {
+                        let prop = atoms.resolve_idx(idx)?;
+                        stmts.push(Stmt::Expr(format!("{obj}.{} = {value}", prop)));
+                        stack.push(obj);
+                    } else {
+                        stmts.push(Stmt::Expr(format!("<define_field> {obj} {value}")));
+                        stack.push("<define_field>".into());
+                    }
+                }
+                "set_name" => {
+                    let value = stack.pop().unwrap_or("<value>".into());
+                    if let Some(Operand::Atom(idx)) = ins.operand {
+                        let name = atoms.resolve_idx(idx)?;
+                        stack.push(format!("set_name({}, {})", name, value));
+                    } else {
+                        stack.push(format!("<set_name> {value}"));
+                    }
+                }
                 "not" | "lnot" => {
                     let v = stack.pop().unwrap_or("<v>".into());
                     let op = if ins.name == "not" { "~" } else { "!" };
@@ -2288,20 +2340,19 @@ fn pseudo_decompile_from_instrs(
                         stack.push(format!("{func}({})", args.join(", ")));
                     }
                 }
-                "call0" | "call1" | "call2" | "call3" => {
-                    let argc = match ins.name {
-                        "call0" => 0,
-                        "call1" => 1,
-                        "call2" => 2,
-                        _ => 3,
-                    };
-                    let mut args = Vec::with_capacity(argc);
-                    for _ in 0..argc {
-                        args.push(stack.pop().unwrap_or("<arg>".into()));
+                n if n.starts_with("call") && n != "call" && n != "tail_call" && n != "call_method" && n != "tail_call_method" && n != "call_constructor" && n != "array_from" && n.chars().skip(4).all(|c| c.is_ascii_digit()) => {
+                    let idx_str = &n[4..];
+                    if let Ok(argc) = idx_str.parse::<u32>() {
+                        let mut args = Vec::with_capacity(argc as usize);
+                        for _ in 0..argc {
+                            args.push(stack.pop().unwrap_or("<arg>".into()));
+                        }
+                        args.reverse();
+                        let func = stack.pop().unwrap_or("<func>".into());
+                        stack.push(format!("{func}({})", args.join(", ")));
+                    } else {
+                        stack.push(format!("<{}>", n));
                     }
-                    args.reverse();
-                    let func = stack.pop().unwrap_or("<func>".into());
-                    stack.push(format!("{func}({})", args.join(", ")));
                 }
                 "put_loc" | "put_loc8" => {
                     let rhs = stack.pop().unwrap_or("<rhs>".into());
@@ -2313,21 +2364,15 @@ fn pseudo_decompile_from_instrs(
                     let name = loc_name(b, idx);
                     stmts.push(Stmt::Assign(name, rhs));
                 }
-                "put_loc0" => {
-                    let rhs = stack.pop().unwrap_or("<rhs>".into());
-                    stmts.push(Stmt::Assign(loc_name(b, 0), rhs));
-                }
-                "put_loc1" => {
-                    let rhs = stack.pop().unwrap_or("<rhs>".into());
-                    stmts.push(Stmt::Assign(loc_name(b, 1), rhs));
-                }
-                "put_loc2" => {
-                    let rhs = stack.pop().unwrap_or("<rhs>".into());
-                    stmts.push(Stmt::Assign(loc_name(b, 2), rhs));
-                }
-                "put_loc3" => {
-                    let rhs = stack.pop().unwrap_or("<rhs>".into());
-                    stmts.push(Stmt::Assign(loc_name(b, 3), rhs));
+                n if n.starts_with("put_loc") && n != "put_loc" && n != "put_loc8" && n.chars().skip(7).all(|c| c.is_ascii_digit()) => {
+                    let idx_str = &n[7..];
+                    if let Ok(idx) = idx_str.parse::<u16>() {
+                        let rhs = stack.pop().unwrap_or("<rhs>".into());
+                        let name = loc_name(b, idx);
+                        stmts.push(Stmt::Assign(name, rhs));
+                    } else {
+                        stack.push(format!("<{}>", n));
+                    }
                 }
                 "set_loc" | "set_loc8" => {
                     let rhs = stack.last().cloned().unwrap_or("<rhs>".into());
@@ -2338,21 +2383,14 @@ fn pseudo_decompile_from_instrs(
                     };
                     stmts.push(Stmt::Assign(loc_name(b, idx), rhs));
                 }
-                "set_loc0" => {
-                    let rhs = stack.last().cloned().unwrap_or("<rhs>".into());
-                    stmts.push(Stmt::Assign(loc_name(b, 0), rhs));
-                }
-                "set_loc1" => {
-                    let rhs = stack.last().cloned().unwrap_or("<rhs>".into());
-                    stmts.push(Stmt::Assign(loc_name(b, 1), rhs));
-                }
-                "set_loc2" => {
-                    let rhs = stack.last().cloned().unwrap_or("<rhs>".into());
-                    stmts.push(Stmt::Assign(loc_name(b, 2), rhs));
-                }
-                "set_loc3" => {
-                    let rhs = stack.last().cloned().unwrap_or("<rhs>".into());
-                    stmts.push(Stmt::Assign(loc_name(b, 3), rhs));
+                n if n.starts_with("set_loc") && n != "set_loc" && n != "set_loc8" && n.chars().skip(7).all(|c| c.is_ascii_digit()) => {
+                    let idx_str = &n[7..];
+                    if let Ok(idx) = idx_str.parse::<u16>() {
+                        let rhs = stack.last().cloned().unwrap_or("<rhs>".into());
+                        stmts.push(Stmt::Assign(loc_name(b, idx), rhs));
+                    } else {
+                        stack.push(format!("<{}>", n));
+                    }
                 }
                 "put_arg" => {
                     let rhs = stack.pop().unwrap_or("<rhs>".into());
@@ -2363,21 +2401,15 @@ fn pseudo_decompile_from_instrs(
                     let name = arg_name(b, idx);
                     stmts.push(Stmt::Assign(name, rhs));
                 }
-                "put_arg0" => {
-                    let rhs = stack.pop().unwrap_or("<rhs>".into());
-                    stmts.push(Stmt::Assign(arg_name(b, 0), rhs));
-                }
-                "put_arg1" => {
-                    let rhs = stack.pop().unwrap_or("<rhs>".into());
-                    stmts.push(Stmt::Assign(arg_name(b, 1), rhs));
-                }
-                "put_arg2" => {
-                    let rhs = stack.pop().unwrap_or("<rhs>".into());
-                    stmts.push(Stmt::Assign(arg_name(b, 2), rhs));
-                }
-                "put_arg3" => {
-                    let rhs = stack.pop().unwrap_or("<rhs>".into());
-                    stmts.push(Stmt::Assign(arg_name(b, 3), rhs));
+                n if n.starts_with("put_arg") && n != "put_arg" && n.chars().skip(7).all(|c| c.is_ascii_digit()) => {
+                    let idx_str = &n[7..];
+                    if let Ok(idx) = idx_str.parse::<u16>() {
+                        let rhs = stack.pop().unwrap_or("<rhs>".into());
+                        let name = arg_name(b, idx);
+                        stmts.push(Stmt::Assign(name, rhs));
+                    } else {
+                        stack.push(format!("<{}>", n));
+                    }
                 }
                 "set_arg" => {
                     let rhs = stack.last().cloned().unwrap_or("<rhs>".into());
@@ -2387,21 +2419,14 @@ fn pseudo_decompile_from_instrs(
                     };
                     stmts.push(Stmt::Assign(arg_name(b, idx), rhs));
                 }
-                "set_arg0" => {
-                    let rhs = stack.last().cloned().unwrap_or("<rhs>".into());
-                    stmts.push(Stmt::Assign(arg_name(b, 0), rhs));
-                }
-                "set_arg1" => {
-                    let rhs = stack.last().cloned().unwrap_or("<rhs>".into());
-                    stmts.push(Stmt::Assign(arg_name(b, 1), rhs));
-                }
-                "set_arg2" => {
-                    let rhs = stack.last().cloned().unwrap_or("<rhs>".into());
-                    stmts.push(Stmt::Assign(arg_name(b, 2), rhs));
-                }
-                "set_arg3" => {
-                    let rhs = stack.last().cloned().unwrap_or("<rhs>".into());
-                    stmts.push(Stmt::Assign(arg_name(b, 3), rhs));
+                n if n.starts_with("set_arg") && n != "set_arg" && n.chars().skip(7).all(|c| c.is_ascii_digit()) => {
+                    let idx_str = &n[7..];
+                    if let Ok(idx) = idx_str.parse::<u16>() {
+                        let rhs = stack.last().cloned().unwrap_or("<rhs>".into());
+                        stmts.push(Stmt::Assign(arg_name(b, idx), rhs));
+                    } else {
+                        stack.push(format!("<{}>", n));
+                    }
                 }
                 "get_var" | "get_var_undef" => {
                     if let Some(Operand::Atom(idx)) = ins.operand {
@@ -2409,6 +2434,22 @@ fn pseudo_decompile_from_instrs(
                         stack.push(a.to_string());
                     }
                 }
+                // "get_length" => {
+                //     let obj = stack.pop().unwrap_or("<obj>".into());
+                //     stack.push(format!("{obj}.length"));
+                // }
+                // "get_array_el" | "get_array_el2" => {
+                //     let idx = stack.pop().unwrap_or("<idx>".into());
+                //     let arr = stack.pop().unwrap_or("<arr>".into());
+                //     stack.push(format!("{arr}[{idx}]"));
+                // }
+                // "get_loc_check" => {
+                //     if let Some(Operand::U16(idx)) = ins.operand {
+                //         stack.push(loc_name(b, idx));
+                //     } else {
+                //         stack.push("<get_loc_check>".into());
+                //     }
+                // }
                 "put_var" | "put_var_init" => {
                     let rhs = stack.pop().unwrap_or("<rhs>".into());
                     if let Some(Operand::Atom(idx)) = ins.operand {
@@ -2437,6 +2478,10 @@ fn pseudo_decompile_from_instrs(
                 }
                 "return_undef" => {
                     stmts.push(Stmt::Return(None));
+                }
+                "throw" => {
+                    let v = stack.pop().unwrap_or("<value>".into());
+                    stmts.push(Stmt::Expr(format!("throw {}", v)));
                 }
                 "if_false" | "if_true" | "if_false8" | "if_true8" => {
                     let cond = stack.pop().unwrap_or("<cond>".into());
@@ -2509,10 +2554,11 @@ fn pseudo_decompile_from_instrs(
     Ok(out)
 }
 
+#[allow(dead_code)]
 fn pseudo_decompile(b: &FunctionBytecode, atoms: &AtomTable) -> Result<String, DeqjsError> {
     let instrs = decode_instructions(b)?;
     let func_name = b.func_name.to_string();
-    pseudo_decompile_from_instrs(b, atoms, &instrs, &func_name, false)
+    pseudo_decompile_from_instrs(b, atoms, &instrs, &func_name, false, false)
 }
 
 pub fn decompile_with_mode(bytecode: &[u8], mode: DecompileMode) -> Result<String, DeqjsError> {
